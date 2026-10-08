@@ -94,7 +94,7 @@ def compute(path):
         rw["O"] = rw["cpa"] / rw["q"] if rw["q"] > 0 else 0.0
         rw["P"] = ((rw["N"] / rw["L"] / rw["q"] * rw["cpa"] + rw["fixed"]) / rw["N"]) if rw["N"] > 0 else 0.0
         rw["sort"] = rw["P"] + rw["row"] / 1e6
-        paid = rw["type"] == "Channel" and rw["basis"] in ("CPC", "CPA")
+        paid = rw["type"] == "Channel" and rw["basis"] in ("CPC", "CPA") and opn[rw["role"]] > 0
         rw["Z"] = min(x["B2"], rw["mx"] * rw["cpa"]) if paid else 0.0
         rw["AE"] = rw["Z"] / rw["cpa"] if rw["cpa"] > 0 else 0.0
         rw["AF"] = rw["AE"] * rw["q"]
@@ -127,7 +127,7 @@ def compute(path):
     B1 = x["B1"]
     reserve = planned / (1 - B1) * B1 if B1 < 1 else 0.0
     total = planned + reserve
-    rec = math.ceil(total / x["B5"] - 1e-12) * x["B5"]
+    rec = math.ceil(total / x["B5"] - 1e-12) * x["B5"] if x["B5"] > 0 else total
     hpq = hires_plan / qual if qual > 0 else 0.0
     max_cap_hires = slots * hpq
     hires = min(hires_plan, max_cap_hires)

@@ -68,6 +68,19 @@ CASES = [
  ("reserve_99", "Reserve 99% of total", {"B1": 0.99}, {}),
  ("reserve_100", "Reserve 100% (invalid)", {"B1": 1}, {"budget_ok": False, "weekly_ok": False, "matrix_ok": True, "flag_contains": "reserve share"}),
  ("combo_cap45_cut", "Capacity 45 and the budget scenarios", {"G3": 45, "B3": 0.3}, {}),
+ ("cap2_cut50", "Capacity 2/week with a 50% budget cut", {"G3": 2, "B3": 0.5}, {}),
+ ("elec500_mech0", "500 electrician openings, no mechatronics openings", {"G5": 500, "G6": 0}, {}),
+ ("mech_auto_0_g4_40", "Polish cap 40% with no mechatronics or automation openings", {"G4": 0.4, "G6": 0, "G7": 0}, {}),
+ ("all_apply_1", "Every CPC channel converts 100% of clicks", {**{("C%02d" % n, "F"): 1.0 for n in (5, 6, 7, 8, 13, 14, 17, 18, 19, 20)}}, {}),
+ ("i2q_1", "Every construction electrician qualifies", {"I2Q": 1}, {}),
+ ("stepstone_1app", "StepStone ads bring 1 application each", {("C09", "F"): 1, ("C10", "F"): 1, ("C11", "F"): 1, ("C12", "F"): 1}, {}),
+ ("deadline_first_assess", "Last assessment falls on the first assessment day", {"T1": D(2026, 11, 8)}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "no application can sign"}),
+ ("t0_0", "Assessments start on launch day", {"T0": 0}, {}),
+ ("b2_1euro", "€1 test tranches", {"B2": 1}, {}),
+ ("levels_all_100", "All scenario levels at 100%", {"B3": 0, "B6": 0, "B7": 0}, {}),
+ ("w_all_week6", "All regular spend in week 6 (after the supervisor cut-off)", {"W1": 0, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 1}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "supervisor cut-off"}),
+ ("open_1000_cap1000", "1,000 openings per role, capacity 1,000/week", {"G3": 1000, "G5": 1000, "G6": 1000, "G7": 1000, "G8": 1000}, {}),
+ ("round_step_0", "Rounding step 0 (no rounding)", {"B5": 0}, {}),
  ("combo_stress", "Capacity 45 + electrician pass 40% + 30% cut + I2 rejected", {"G3": 45, "PE": 0.40, "I2Q": 0}, {}),
 ]
 
@@ -184,6 +197,8 @@ def run_case(name, desc, edits, expect, tmpdir):
     tests_hires = {r: sum(rw["AG"] for rw in o["rows"] if rw["role"] == r) for r in ROLES}
     over = [r for r in ROLES if U[r] > max(opn[r], tests_hires[r]) + 1e-6]
     chk("hires never exceed openings (except unavoidable test hires)", not over, str(over))
+    zero = [r for r in ROLES if opn[r] == 0 and U[r] > 1e-9]
+    chk("roles with no openings get no hires and no tests", not zero, str(zero))
     short_ok = all(close(C.cell(39 + i, 5).value, max(0, opn[r] - U[r]) if opn[r] - U[r] > 0.05 else 0) for i, r in enumerate(ROLES))
     chk("shortfall column = openings − planned hires", short_ok)
     neg = [f"{C.cell(rr,1).value}:{C.cell(4,c).value}" for rr in range(5, 35) for c in (21, 22, 23, 24, 25, 27)
