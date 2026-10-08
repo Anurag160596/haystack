@@ -1,12 +1,10 @@
-# How I used AI (draft: edit so it's true for you, ≤150 words)
+# How I used AI
 
-I used Claude (Anthropic) as an analyst. It structured the model (one Assumptions input tab feeding Funnel, Channels, Budget, Weekly and Tracker), wrote the openpyxl/Excel formulas and drafted the memo. It also ran web searches for benchmarks: StepStone and Pracuj.pl ad prices, Indeed CPC ranges, the Appcast apply rate, recognition timelines and WSI wage data.
+I used Claude (Anthropic) as my analyst. It built the model structure, wrote the Excel formulas, drafted the memo, and ran web searches for benchmarks. Those benchmarks were StepStone and Pracuj.pl ad prices, Indeed and LinkedIn CPC ranges, the Appcast apply rate, recognition timelines, WSI wages and plant headcount.
 
-What I checked myself:
-- I opened each linked source and confirmed the figure we quote.
-- I hand-traced one role (electricians) from applications to signatures.
-- I checked that channel, week and role totals tie to the budget.
-- I changed inputs (pass rate, capacity, share qualified) and watched the outputs move.
-- I re-derived the 27 Nov application cut-off.
+Checks on the AI's output:
+- The model was recomputed independently in plain Python, and it matched the spreadsheet exactly.
+- A second AI pass audited every memo number, date and citation, and found real errors. They were fixed: fixed costs left out of the channel ranking, cash timing, test sizes and a tracker bug.
+- Every cited figure was re-read on its source page. Weekdays were verified.
 
-Every rate and volume labelled "Own estimate" is a judgement I can defend line by line. I changed [list your edits] where I disagreed with the AI's first draft.
+All rates and volumes labelled "Own estimate" are judgements. I own them and can defend them line by line.
