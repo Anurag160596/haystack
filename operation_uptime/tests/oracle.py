@@ -192,13 +192,15 @@ def compute(path):
     cpq2 = x["I2C"] / x["I2Q"] if x["I2Q"] > 0 else 0
     i3row = [rw for rw in rows if rw["id"] == "I3-M"][0]
     cpq3 = i3row["cpa"] / i3row["q"] if i3row["q"] > 0 else 0
-    bar = lambda pq: (max(1, math.floor(pq * x["TP1"] + 1e-9)), max(1, math.ceil(pq * x["TK1"] - 1e-9)))
+    def bar(pq):
+        p_ = max(1, math.floor(pq * x["TP1"] + 1e-9))
+        return (p_, min(p_, max(1, math.ceil(pq * x["TK1"] - 1e-9))))
     out["tests"] = [
         dict(planq=pq1, budget=sum(x["I1R" + RS[r]] for r in ROLES) * x["I1M"], passq=bar(pq1)[0], killq=bar(pq1)[1]),
         dict(planq=pq2, budget=x["I2F"] + rowv("I2-E", "X") * sh2, passq=bar(pq2)[0], killq=bar(pq2)[1],
-             passcpq=xround(cpq2 * x["TP2"] / 10) * 10, killcpq=xround(cpq2 * x["TK2"] / 10) * 10),
+             passcpq=xround(cpq2 * x["TP2"] / 10) * 10, killcpq=max(xround(cpq2 * x["TP2"] / 10) * 10, xround(cpq2 * x["TK2"] / 10) * 10)),
         dict(planq=pq3, budget=x["I3T"] + rowv("I3-M", "X") * sh3, passq=bar(pq3)[0], killq=bar(pq3)[1],
-             passcpq=xround(cpq3 * x["TP2"] / 10) * 10, killcpq=xround(cpq3 * x["TK2"] / 10) * 10),
+             passcpq=xround(cpq3 * x["TP2"] / 10) * 10, killcpq=max(xround(cpq3 * x["TP2"] / 10) * 10, xround(cpq3 * x["TK2"] / 10) * 10)),
     ]
     out["openings"] = opn
     return out

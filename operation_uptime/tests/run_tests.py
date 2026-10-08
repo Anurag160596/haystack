@@ -109,6 +109,8 @@ CASES = [
  ("spend_after_cutoff_wk11", "All regular spend in week 11, no supervisors", {"G8": 0, "W1": 0, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 0, "W11": 1}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "after the last useful application"}),
  ("t0_100", "First assessment 100 days after launch", {"T0": 100}, {"weekly_ok": False, "flag_contains": "assessments start"}),
  ("fractional_openings", "Fractional openings (2.5 electricians)", {"G5": 2.5}, {}),
+ ("tp_tk_equal", "Initiative pass and kill thresholds both 100% (contradictory)", {"TP1": 1, "TK1": 1}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
+ ("tp_tk_close", "Kill threshold just below pass (59% vs 60%)", {"TK1": 0.59, "TK2": 1.25}, {}),
  ("combo_stress", "Capacity 45 + electrician pass 40% + 30% cut + I2 rejected", {"G3": 45, "PE": 0.40, "I2Q": 0}, {}),
 ]
 
@@ -220,6 +222,11 @@ def run_case(name, desc, edits, expect, tmpdir):
     chk(f"matches independent oracle ({len(cmpv)} outputs)", not bad, "; ".join(bad[:6]))
 
     # ---- invariants
+    overlap = [j + 1 for j, r_ in enumerate((53, 54, 55))
+               if isinstance(I[f"G{r_}"].value, (int, float)) and isinstance(I[f"I{r_}"].value, (int, float)) and I[f"I{r_}"].value > I[f"G{r_}"].value]
+    overlap += [j + 1 for j, r_ in enumerate((54, 55))
+                if isinstance(I[f"H{r_}"].value, (int, float)) and isinstance(I[f"J{r_}"].value, (int, float)) and I[f"J{r_}"].value < I[f"H{r_}"].value]
+    chk("initiative kill bars never overlap pass bars", not overlap, str(overlap))
     U = {r: sum((C.cell(rr, 21).value or 0) for rr in range(5, 35) if C.cell(rr, 3).value == r) for r in ROLES}
     opn = o["openings"]
     over = [r for r in ROLES if U[r] > max(opn[r], 0) + 1e-6]
