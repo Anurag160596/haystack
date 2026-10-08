@@ -81,6 +81,27 @@ CASES = [
  ("w_all_week6", "All regular spend in week 6 (after the supervisor cut-off)", {"W1": 0, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 1}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "supervisor cut-off"}),
  ("open_1000_cap1000", "1,000 openings per role, capacity 1,000/week", {"G3": 1000, "G5": 1000, "G6": 1000, "G7": 1000, "G8": 1000}, {}),
  ("round_step_0", "Rounding step 0 (no rounding)", {"B5": 0}, {}),
+ ("neg_open_elec", "Typo: electrician openings −5", {"G5": -5}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
+ ("rate_above_1", "Typo: electrician pass rate 150%", {"PE": 1.5}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
+ ("channel_q_above_1", "Typo: programmatic electricians 120% qualified", {("C05", "G"): 1.2}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
+ ("negative_cost", "Typo: Meta mechatronics cost −€12 per application", {("C16", "E"): -12}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
+ ("deadline_after_end", "Last signing date after the campaign ends (5 Jan 2027)", {"T1": D(2027, 1, 5)}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
+ ("negative_capacity", "Typo: capacity −10/week", {"G3": -10}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
+ ("cap3_open1", "Capacity 3/week, 1 opening per role", {"G3": 3, "G5": 1, "G6": 1, "G7": 1, "G8": 1}, {}),
+ ("pass_all_1", "Everyone qualified passes the assessment", {"PE": 1, "PM": 1, "PA": 1, "PS": 1}, {}),
+ ("offer_all_1", "Everyone who passes gets an offer", {"OE": 1, "OM": 1, "OA": 1, "OS": 1}, {}),
+ ("q_all_1", "Every channel 100% qualified (test hires must stay ≤ openings)", {**{("C%02d" % n, "G"): 1.0 for n in range(1, 21)}}, {}),
+ ("b2_100k", "€100,000 test tranches (capped at openings)", {"B2": 100000}, {}),
+ ("i1c_1", "Every past applicant re-applies", {"I1C": 1}, {}),
+ ("i1b_0", "No referral bonus", {"I1B": 0}, {}),
+ ("i2s_0", "No construction electrician applies", {"I2S": 0}, {}),
+ ("i3x_0", "No Polish applications", {"I3X": 0}, {}),
+ ("t345_0", "Interview, offer and signature are instant", {"T3": 0, "T4": 0, "T5": 0}, {}),
+ ("t1_31dec", "Last signing date 31 Dec", {"T1": D(2026, 12, 31)}, {}),
+ ("w_even_1_6", "Spend split evenly over weeks 1–6", {"W1": 1/6, "W2": 1/6, "W3": 1/6, "W4": 1/6, "W5": 1/6, "W6": 1 - 5/6}, {}),
+ ("b4_half_b2_0", "Test split 50/50 with no tests", {"B4": 0.5, "B2": 0}, {}),
+ ("i1a_0", "Initiative-1 conversion adjustment 0", {"I1A": 0}, {}),
+ ("i1w_even", "Rediscovery waves 1/3 each", {"I1W1": 1/3, "I1W2": 1/3, "I1W3": 1 - 2/3}, {}),
  ("combo_stress", "Capacity 45 + electrician pass 40% + 30% cut + I2 rejected", {"G3": 45, "PE": 0.40, "I2Q": 0}, {}),
 ]
 
@@ -194,9 +215,8 @@ def run_case(name, desc, edits, expect, tmpdir):
     # ---- invariants
     U = {r: sum((C.cell(rr, 21).value or 0) for rr in range(5, 35) if C.cell(rr, 3).value == r) for r in ROLES}
     opn = o["openings"]
-    tests_hires = {r: sum(rw["AG"] for rw in o["rows"] if rw["role"] == r) for r in ROLES}
-    over = [r for r in ROLES if U[r] > max(opn[r], tests_hires[r]) + 1e-6]
-    chk("hires never exceed openings (except unavoidable test hires)", not over, str(over))
+    over = [r for r in ROLES if U[r] > max(opn[r], 0) + 1e-6]
+    chk("hires never exceed openings (strict, test hires included)", not over, str(over))
     zero = [r for r in ROLES if opn[r] == 0 and U[r] > 1e-9]
     chk("roles with no openings get no hires and no tests", not zero, str(zero))
     short_ok = all(close(C.cell(39 + i, 5).value, max(0, opn[r] - U[r]) if opn[r] - U[r] > 0.05 else 0) for i, r in enumerate(ROLES))

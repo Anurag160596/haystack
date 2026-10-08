@@ -1,6 +1,6 @@
 # Model test report: Operation_Uptime_Model.xlsx
 
-**Result: 120/120 scenarios passed · 1798/1798 checks passed · deck-vs-model 45/45.**
+**Result: 141/141 scenarios passed · 2107/2107 checks passed · deck-vs-model 45/45.**
 
 ## How the model is tested
 
@@ -8,7 +8,8 @@ Each scenario copies the model, changes inputs on the Assumptions tab, recalcula
 1. **Zero formula errors** across all ~2,800 formulas.
 2. **The model's own tie-out flags**: budget, weekly plan and channel × week matrix. For invalid inputs the test expects the flag to fire and to name the problem.
 3. **Invariants**:
-   - hires never exceed openings
+   - hires never exceed openings (strict, including test hires)
+   - roles with no openings get no hires
    - shortfall = openings − hires
    - no negative hires, applications or spend
    - Polish hires ≤ the 40% cap
@@ -21,6 +22,14 @@ Each scenario copies the model, changes inputs on the Assumptions tab, recalcula
 4. **Agreement with an independent oracle** (`oracle.py`): a separate plain-Python re-implementation that reads the same inputs and recomputes 59 outputs. These cover spend, reserve, budget, hires by role, slots, qualified, applications, the four budget scenarios by role, the six sensitivity cases and the three initiative test bars.
 
 `test_deck.py` checks that 45 headline figures on the slides equal the model's values. A negative test against a deliberately altered model fails 17 of them, so the check is real.
+
+## Robustness features
+
+- **Input validation, two layers.** Excel data-validation rules reject out-of-range entries when typed: shares 0–100%, counts and costs ≥ 0, reserve 0–99%, dates inside the campaign. Summary C19 re-checks every input by formula, which also catches pasted values. Any invalid input turns the Budget and Weekly tie-out flags to '✗ invalid input: …'.
+- **Test hires can never exceed openings.** Each role's €750 tests are capped so their expected hires stay within its openings.
+- **Costs are clamped at zero**, so a negative typo can't create negative spend.
+- **Divide-by-zero guards everywhere** a denominator can be zero: capacity, openings, conversion, apply rates, empty ATS, rounding step.
+- **Live Summary labels**: the hardest role is recomputed from channel coverage, and the capacity label follows the input.
 
 ## Bugs the tests found (all fixed)
 
@@ -98,6 +107,27 @@ Each scenario copies the model, changes inputs on the Assumptions tab, recalcula
 | `w_all_week6` | All regular spend in week 6 (after the supervisor cut-off) | ✅ 15/15 |
 | `open_1000_cap1000` | 1,000 openings per role, capacity 1,000/week | ✅ 15/15 |
 | `round_step_0` | Rounding step 0 (no rounding) | ✅ 15/15 |
+| `neg_open_elec` | Typo: electrician openings −5 | ✅ 14/14 |
+| `rate_above_1` | Typo: electrician pass rate 150% | ✅ 14/14 |
+| `channel_q_above_1` | Typo: programmatic electricians 120% qualified | ✅ 14/14 |
+| `negative_cost` | Typo: Meta mechatronics cost −€12 per application | ✅ 14/14 |
+| `deadline_after_end` | Last signing date after the campaign ends (5 Jan 2027) | ✅ 14/14 |
+| `negative_capacity` | Typo: capacity −10/week | ✅ 14/14 |
+| `cap3_open1` | Capacity 3/week, 1 opening per role | ✅ 15/15 |
+| `pass_all_1` | Everyone qualified passes the assessment | ✅ 15/15 |
+| `offer_all_1` | Everyone who passes gets an offer | ✅ 15/15 |
+| `q_all_1` | Every channel 100% qualified (test hires must stay ≤ openings) | ✅ 15/15 |
+| `b2_100k` | €100,000 test tranches (capped at openings) | ✅ 15/15 |
+| `i1c_1` | Every past applicant re-applies | ✅ 15/15 |
+| `i1b_0` | No referral bonus | ✅ 15/15 |
+| `i2s_0` | No construction electrician applies | ✅ 15/15 |
+| `i3x_0` | No Polish applications | ✅ 15/15 |
+| `t345_0` | Interview, offer and signature are instant | ✅ 15/15 |
+| `t1_31dec` | Last signing date 31 Dec | ✅ 15/15 |
+| `w_even_1_6` | Spend split evenly over weeks 1–6 | ✅ 15/15 |
+| `b4_half_b2_0` | Test split 50/50 with no tests | ✅ 15/15 |
+| `i1a_0` | Initiative-1 conversion adjustment 0 | ✅ 15/15 |
+| `i1w_even` | Rediscovery waves 1/3 each | ✅ 15/15 |
 | `combo_stress` | Capacity 45 + electrician pass 40% + 30% cut + I2 rejected | ✅ 15/15 |
 
 ## Random scenarios

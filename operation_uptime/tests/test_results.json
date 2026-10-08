@@ -29,7 +29,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -111,7 +111,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -193,7 +193,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -275,7 +275,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -357,7 +357,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -439,7 +439,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -521,7 +521,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -603,7 +603,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -685,7 +685,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -767,7 +767,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -849,7 +849,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -931,7 +931,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -1013,7 +1013,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -1095,7 +1095,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -1132,17 +1132,17 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 103.9375), (0.85, 99.08061390625), (0.7, 92.4970032242064), (0.5, 79.4991517857143)]"
+    "detail": "[(1, 100), (0.85, 95.4224383509165), (0.7, 89.7566461843191), (0.5, 78.9653170969837)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "103.9375 vs 103.9375"
+    "detail": "100 vs 100"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -1177,7 +1177,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -1259,7 +1259,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -1341,7 +1341,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -1423,7 +1423,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -1505,7 +1505,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -1587,7 +1587,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -1669,7 +1669,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -1751,7 +1751,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -1833,7 +1833,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -1915,7 +1915,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -1997,7 +1997,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -2079,7 +2079,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -2161,7 +2161,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -2238,7 +2238,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -2325,7 +2325,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -2407,7 +2407,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -2489,7 +2489,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -2566,7 +2566,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -2648,7 +2648,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -2730,7 +2730,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -2812,7 +2812,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -2849,17 +2849,17 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 15.6096827922078), (0.85, 15.6096827922078), (0.7, 14.5816765422078), (0.5, 12.6722702922078)]"
+    "detail": "[(1, 4), (0.85, 4), (0.7, 3.76251321826322), (0.5, 3.17380087725326)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "15.6096827922078 vs 15.6096827922078"
+    "detail": "4 vs 4"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "4 vs 4"
+    "detail": "4 vs 3.9999999999999956"
    }
   ],
   "passed": true
@@ -2894,7 +2894,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -2931,17 +2931,17 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 63.2380681818182), (0.85, 59.8054668048618), (0.7, 54.3224160925325), (0.5, 45.0238410925325)]"
+    "detail": "[(1, 56), (0.85, 52.7355887919282), (0.7, 47.6220496631481), (0.5, 38.9594399080688)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "63.2380681818182 vs 63.2380681818182"
+    "detail": "56 vs 56"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "56 vs 56"
+    "detail": "56 vs 56.0"
    }
   ],
   "passed": true
@@ -2976,7 +2976,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -3058,7 +3058,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -3140,7 +3140,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -3222,7 +3222,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -3304,7 +3304,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -3386,7 +3386,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -3468,7 +3468,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -3550,7 +3550,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -3614,7 +3614,7 @@
    {
     "check": "Budget flag is \u2717 (expected for invalid input)",
     "ok": true,
-    "detail": "\u2717 reserve share must be below 100%"
+    "detail": "\u2717 invalid input: reserve share must be 0\u201399%; "
    },
    {
     "check": "Weekly matrix flag is \u2713",
@@ -3624,12 +3624,12 @@
    {
     "check": "Weekly flag explains the problem",
     "ok": true,
-    "detail": "\u2717 reserve share must be below 100%"
+    "detail": "\u2717 invalid input: reserve share must be 0\u201399%; "
    },
    {
     "check": "Weekly tie-out flag is \u2717 (expected for invalid input)",
     "ok": true,
-    "detail": "\u2717 reserve share must be below 100%"
+    "detail": "\u2717 invalid input: reserve share must be 0\u201399%; "
    },
    {
     "check": "matches independent oracle (59 outputs)",
@@ -3637,7 +3637,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -3709,7 +3709,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -3791,7 +3791,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -3873,7 +3873,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -3955,7 +3955,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -4037,7 +4037,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -4072,19 +4072,19 @@
     "detail": ""
    },
    {
-    "check": "scenarios never assess more qualified than there are slots (capacity binding)",
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(373.040093240093, 0.863560949561317), (373.024733985151, 0.863596506594335), (368.838966588967, 0.873397027765379), (320.987387449152, 1)]"
+    "detail": "[(1, 100), (0.85, 99.4313968999637), (0.7, 97.20870544529), (0.5, 86.1868330112045)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "112.086022982454 vs 112.086022982454"
+    "detail": "100 vs 100"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "100 vs 99.99999999999999"
    }
   ],
   "passed": true
@@ -4119,7 +4119,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -4201,7 +4201,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -4288,7 +4288,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -4365,7 +4365,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -4447,7 +4447,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -4529,7 +4529,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -4616,7 +4616,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -4693,7 +4693,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -4775,7 +4775,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -4828,6 +4828,1698 @@
   "passed": true
  },
  {
+  "name": "neg_open_elec",
+  "desc": "Typo: electrician openings \u22125",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: a count, cost or day value is negative; "
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly flag explains the problem",
+    "ok": true,
+    "detail": "\u2717 invalid input: a count, cost or day value is negative; "
+   },
+   {
+    "check": "Weekly tie-out flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: a count, cost or day value is negative; "
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 70), (0.85, 67.8776861831898), (0.7, 64.4342999880368), (0.5, 59.07235621552)]"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "65 vs 64.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "rate_above_1",
+  "desc": "Typo: electrician pass rate 150%",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: a share/rate is outside 0\u2013100%; "
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly flag explains the problem",
+    "ok": true,
+    "detail": "\u2717 invalid input: a share/rate is outside 0\u2013100%; "
+   },
+   {
+    "check": "Weekly tie-out flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: a share/rate is outside 0\u2013100%; "
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 98.9127232005017), (0.7, 94.9043344202712), (0.5, 88.2934956713023)]"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "channel_q_above_1",
+  "desc": "Typo: programmatic electricians 120% qualified",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: a channel input (Assumptions \u00a77) is out of range; "
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly flag explains the problem",
+    "ok": true,
+    "detail": "\u2717 invalid input: a channel input (Assumptions \u00a77) is out of range; "
+   },
+   {
+    "check": "Weekly tie-out flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: a channel input (Assumptions \u00a77) is out of range; "
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 97.0241005387206), (0.7, 92.7642584171077), (0.5, 85.7180058560581)]"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "negative_cost",
+  "desc": "Typo: Meta mechatronics cost \u2212\u20ac12 per application",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: a channel input (Assumptions \u00a77) is out of range; "
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly flag explains the problem",
+    "ok": true,
+    "detail": "\u2717 invalid input: a channel input (Assumptions \u00a77) is out of range; "
+   },
+   {
+    "check": "Weekly tie-out flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: a channel input (Assumptions \u00a77) is out of range; "
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "0 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 97.2530655500228), (0.7, 91.8741626215363), (0.5, 82.729850809265)]"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 100.0"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "deadline_after_end",
+  "desc": "Last signing date after the campaign ends (5 Jan 2027)",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: last signing date must fall inside the campaign; "
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly flag explains the problem",
+    "ok": true,
+    "detail": "\u2717 invalid input: last signing date must fall inside the campaign; "
+   },
+   {
+    "check": "Weekly tie-out flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: last signing date must fall inside the campaign; "
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 96.8809299857171), (0.7, 90.6720880966647), (0.5, 80.2795630966647)]"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "negative_capacity",
+  "desc": "Typo: capacity \u221210/week",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: a count, cost or day value is negative; "
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly flag explains the problem",
+    "ok": true,
+    "detail": "\u2717 invalid input: a count, cost or day value is negative; "
+   },
+   {
+    "check": "Weekly tie-out flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: a count, cost or day value is negative; "
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenarios never assess more qualified than there are slots (capacity binding)",
+    "ok": true,
+    "detail": "[(290.6797502142, -0.201498138512462), (280.507678320089, -0.208805081280493), (261.760619150707, -0.223759512647342), (221.385619150707, -0.264567449304629)]"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "cap3_open1",
+  "desc": "Capacity 3/week, 1 opening per role",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "0 vs cap 0.4"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 4), (0.85, 4), (0.7, 3.76251321826322), (0.5, 3.17380087725326)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "4 vs 4"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "4 vs 3.9999999999999956"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "pass_all_1",
+  "desc": "Everyone qualified passes the assessment",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "0 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 97.1920633532069), (0.7, 92.1376575298104), (0.5, 88.5604014829044)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 100"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "offer_all_1",
+  "desc": "Everyone who passes gets an offer",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "10.3315909090909 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 96.8987964635187), (0.7, 90.7859541946007), (0.5, 81.4055721925134)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999999"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "q_all_1",
+  "desc": "Every channel 100% qualified (test hires must stay \u2264 openings)",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "0 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 98.4289472601541), (0.7, 90.8097492183062), (0.5, 79.6873646041209)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999999"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "b2_100k",
+  "desc": "\u20ac100,000 test tranches (capped at openings)",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "0 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 95.702894903789), (0.7, 89.7043287009804), (0.5, 81.1079488852107)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999999"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "i1c_1",
+  "desc": "Every past applicant re-applies",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "0 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 99.9174190154794), (0.7, 98.8453756263078), (0.5, 96.8764995579964)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "i1b_0",
+  "desc": "No referral bonus",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "7.51080681818182 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 96.9820706669686), (0.7, 91.0850964990711), (0.5, 84.4285761384205)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 100.0"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "i2s_0",
+  "desc": "No construction electrician applies",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 96.4308704307167), (0.7, 90.7893534232171), (0.5, 82.4328224272009)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "i3x_0",
+  "desc": "No Polish applications",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "0 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 96.6228784210234), (0.7, 90.3352879107143), (0.5, 79.9427629107143)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "t345_0",
+  "desc": "Interview, offer and signature are instant",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 96.8809299857171), (0.7, 90.6720880966647), (0.5, 80.2795630966647)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "t1_31dec",
+  "desc": "Last signing date 31 Dec",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 96.8809299857171), (0.7, 90.6720880966647), (0.5, 80.2795630966647)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "w_even_1_6",
+  "desc": "Spend split evenly over weeks 1\u20136",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 96.8809299857171), (0.7, 90.6720880966647), (0.5, 80.2795630966647)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "b4_half_b2_0",
+  "desc": "Test split 50/50 with no tests",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "18 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 95.8542942842007), (0.7, 89.5884563766234), (0.5, 80.28033)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 100"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "i1a_0",
+  "desc": "Initiative-1 conversion adjustment 0",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "18 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 94.7305644728535), (0.7, 87.8844719649915), (0.5, 76.0029912337662)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 100"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "i1w_even",
+  "desc": "Rediscovery waves 1/3 each",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 96.8809299857171), (0.7, 90.6720880966647), (0.5, 80.2795630966647)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
   "name": "combo_stress",
   "desc": "Capacity 45 + electrician pass 40% + 30% cut + I2 rejected",
   "checks": [
@@ -4857,7 +6549,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -4939,7 +6631,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -5021,7 +6713,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -5103,7 +6795,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -5140,7 +6832,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 83), (0.85, 78.3089167463018), (0.66, 69.4883171035912), (0.5, 60.2761457309591)]"
+    "detail": "[(1, 83), (0.85, 78.3683010484995), (0.66, 69.5629289617998), (0.5, 60.3691660245586)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5185,7 +6877,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -5222,12 +6914,12 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(481.367564914787, 0.511043987858941), (451.367564914787, 0.5450103621124), (439.492182957692, 0.559736918059544), (360.38019902751, 0.682612420615321)]"
+    "detail": "[(481.294024891403, 0.511122073571361), (451.294024891403, 0.545099173558073), (440.044552858731, 0.559034303235596), (361.37133178557, 0.680740220272845)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "78.761496629881 vs 78.761496629881"
+    "detail": "78.7735311077767 vs 78.7735311077767"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -5267,7 +6959,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -5304,17 +6996,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(296.114835138396, 0.751638898697544), (275.48848566293, 0.807915539685216), (231.38841863138, 0.961895283644262), (199.989672833835, 1)]"
+    "detail": "[(292.39729837803, 0.761195229251652), (273.217880316003, 0.81462980502595), (229.810679879649, 0.96849906491721), (199.717210867371, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "49.7858736405109 vs 49.7858736405109"
+    "detail": "48.7164946721057 vs 48.7164946721057"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "64 vs 64"
+    "detail": "64 vs 63.999999999999986"
    }
   ],
   "passed": true
@@ -5349,7 +7041,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -5431,7 +7123,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -5468,12 +7160,12 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 101.325415392857), (0.85, 98.206091009283), (0.9, 100.123099063894), (0.5, 75.822248195429)]"
+    "detail": "[(1, 100), (0.85, 95.4491830998715), (0.9, 97.7649010020359), (0.5, 73.4992077787624)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "101.325415392857 vs 101.325415392857"
+    "detail": "100 vs 100"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -5513,7 +7205,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -5550,12 +7242,12 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 142.335365509714), (0.85, 139.203218298871), (0.79, 136.727876241029), (0.5, 118.444771883773)]"
+    "detail": "[(1, 141), (0.85, 139.007200211227), (0.79, 136.994250071315), (0.5, 118.711145714059)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "142.335365509714 vs 142.335365509714"
+    "detail": "141 vs 141"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -5595,7 +7287,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -5632,12 +7324,12 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 103.320781762571), (0.85, 100.949447201964), (0.44, 86.3531897923937), (0.5, 88.9986125337617)]"
+    "detail": "[(1, 103), (0.85, 100.92860618679), (0.44, 86.4554862957271), (0.5, 89.1009090370951)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "103.320781762571 vs 103.320781762571"
+    "detail": "103 vs 103"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -5677,7 +7369,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -5759,7 +7451,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -5841,7 +7533,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -5923,7 +7615,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -6005,7 +7697,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -6042,17 +7734,17 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 41.0969681504351), (0.85, 39.0890081016169), (0.76, 37.1545824402636), (0.5, 30.55679234471)]"
+    "detail": "[(1, 27), (0.85, 27), (0.76, 26.1561192732141), (0.5, 22.7193405795355)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "41.0969681504351 vs 41.0969681504351"
+    "detail": "27 vs 27"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "27 vs 27"
+    "detail": "27 vs 26.999999999999993"
    }
   ],
   "passed": true
@@ -6087,7 +7779,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -6169,7 +7861,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -6251,7 +7943,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -6288,12 +7980,12 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(623.859928930756, 0.544536153005575), (587.338781783544, 0.578395801964058), (489.452590872473, 0.694069848744142), (486.3240681452, 0.698534800076682)]"
+    "detail": "[(623.763742762054, 0.544620122051364), (587.706846669206, 0.578033568333594), (489.864894358059, 0.693485672533164), (486.736371630786, 0.697943086883131)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "59.8339009077111 vs 59.8339009077111"
+    "detail": "59.8163901612772 vs 59.8163901612772"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -6333,7 +8025,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -6415,7 +8107,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -6497,7 +8189,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -6579,7 +8271,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -6661,7 +8353,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -6698,12 +8390,12 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 40.8890967963182), (0.85, 37.6899344867811), (0.45, 28.0023492896044), (0.5, 29.4617043296044)]"
+    "detail": "[(1, 40.7375487), (0.85, 37.5632408502647), (0.45, 27.8823624120822), (0.5, 29.3417174520822)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "40.8890967963182 vs 40.8890967963182"
+    "detail": "40.7375487 vs 40.7375487"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -6743,7 +8435,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -6825,7 +8517,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -6907,7 +8599,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -6989,7 +8681,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -7026,17 +8718,17 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 68.948220584), (0.85, 66.4096865910509), (0.52, 52.5118239780841), (0.5, 51.6540114610723)]"
+    "detail": "[(1, 66), (0.85, 63.5017884750732), (0.52, 50.44530297067), (0.5, 49.6487627763019)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "68.948220584 vs 68.948220584"
+    "detail": "66 vs 66"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "66 vs 66"
+    "detail": "66 vs 66.0"
    }
   ],
   "passed": true
@@ -7071,7 +8763,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -7108,7 +8800,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 180), (0.85, 177.222605297073), (0.7, 170.552462752989), (0.5, 154.753608841922)]"
+    "detail": "[(1, 180), (0.85, 177.535133574053), (0.7, 171.075445624503), (0.5, 155.276314040343)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7153,7 +8845,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -7190,7 +8882,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 73), (0.85, 72.4625408990926), (0.79, 72.0201442877326), (0.5, 67.1699157149871)]"
+    "detail": "[(1, 73), (0.85, 72.5462971081348), (0.79, 72.1061777769945), (0.5, 67.3967263906293)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7235,7 +8927,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -7272,12 +8964,12 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(397.410693475036, 0.884295710202491), (383.42753014182, 0.916544963004056), (330.309057055677, 1), (336.300723722343, 1)]"
+    "detail": "[(381.93000136621, 0.92013869078488), (367.789015408798, 0.955516768324247), (320.216370921103, 1), (325.75866258777, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "93.8487124212166 vs 93.8487124212166"
+    "detail": "90.8707681222776 vs 90.8707681222776"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -7317,7 +9009,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -7399,7 +9091,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -7434,14 +9126,14 @@
     "detail": ""
    },
    {
-    "check": "scenarios never assess more qualified than there are slots (capacity binding)",
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(433.667463938385, 0.999449134349061), (403.790269735986, 1), (411.588076192154, 1), (284.89852219585, 1)]"
+    "detail": "[(1, 80.715193675), (0.85, 76.3904998622268), (0.88, 77.6070571666988), (0.5, 57.7019912574775)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "81.4928225154095 vs 81.4928225154095"
+    "detail": "80.715193675 vs 80.715193675"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -7481,7 +9173,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -7563,7 +9255,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -7645,7 +9337,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -7727,7 +9419,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -7764,12 +9456,12 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(431.986519562482, 0.555903590200165), (419.328571538872, 0.57268422292707), (430.992362194694, 0.557185876612765), (373.143933909, 0.643566289895582)]"
+    "detail": "[(413.417773287456, 0.580872116922467), (404.913040006614, 0.593072668489349), (413.417773287456, 0.580872116922467), (364.068338228296, 0.659609287397771)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "56.3067739299529 vs 56.3067739299529"
+    "detail": "54.0211068737895 vs 54.0211068737895"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -7809,7 +9501,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -7846,17 +9538,17 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 58.5946108454546), (0.85, 58.0036174574578), (0.43, 43.8058948990115), (0.5, 47.0031821109916)]"
+    "detail": "[(1, 58), (0.85, 56.6194777243348), (0.43, 43.2591353095136), (0.5, 46.0625816149195)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "58.5946108454546 vs 58.5946108454546"
+    "detail": "58 vs 58"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "58 vs 58.0"
+    "detail": "58 vs 58"
    }
   ],
   "passed": true
@@ -7891,7 +9583,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -7928,12 +9620,12 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(216.75823090117, 0.972775714124009), (210.681752506396, 1), (197.360804519421, 1), (184.428604021167, 1)]"
+    "detail": "[(214.327045110307, 0.983810245452795), (209.529623249957, 1), (196.282263832802, 1), (183.518834245647, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "86.5587156910796 vs 86.5587156910796"
+    "detail": "86.5753015998459 vs 86.5753015998459"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -7973,7 +9665,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -8055,7 +9747,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -8137,7 +9829,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -8219,7 +9911,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -8301,7 +9993,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -8383,7 +10075,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -8465,7 +10157,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -8547,7 +10239,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -8629,7 +10321,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -8666,12 +10358,12 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 48.2460824237403), (0.85, 47.1648864785824), (0.97, 48.2460824237403), (0.5, 43.3954665411092)]"
+    "detail": "[(1, 47.5031804), (0.85, 46.5572655103617), (0.97, 47.5031804), (0.5, 42.8297016088229)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "48.2460824237403 vs 48.2460824237403"
+    "detail": "47.5031804 vs 47.5031804"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -8711,7 +10403,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -8793,7 +10485,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -8830,7 +10522,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 41), (0.85, 39.9298930112871), (0.71, 37.8513691385144), (0.5, 33.2090060370193)]"
+    "detail": "[(1, 41), (0.85, 39.9536332221284), (0.71, 37.8878652261304), (0.5, 33.2575857923289)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8875,7 +10567,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -8957,7 +10649,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -8994,17 +10686,17 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 41.0889162909091), (0.85, 40.5741910345549), (0.73, 39.4179162306225), (0.5, 33.8841190946837)]"
+    "detail": "[(1, 39), (0.85, 38.7411240515203), (0.73, 38.0807493345784), (0.5, 33.5261938796415)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "41.0889162909091 vs 41.0889162909091"
+    "detail": "39 vs 39"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "39 vs 39"
+    "detail": "39 vs 38.999999999999986"
    }
   ],
   "passed": true
@@ -9039,7 +10731,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -9121,7 +10813,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -9203,7 +10895,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -9240,12 +10932,12 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(501.493664425821, 0.595649171473173), (477.93919379322, 0.625004790554014), (471.06778379322, 0.63412166144949), (384.359410492172, 0.777174377835011)]"
+    "detail": "[(501.469491382657, 0.595677884392663), (477.985910030426, 0.624943705339078), (471.114500030426, 0.634058781241065), (384.425255582812, 0.777041261925981)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "60.5913559953009 vs 60.5913559953009"
+    "detail": "60.5942767661334 vs 60.5942767661335"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -9285,7 +10977,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -9367,7 +11059,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -9449,7 +11141,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -9531,7 +11223,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -9613,7 +11305,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -9695,7 +11387,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },
@@ -9732,12 +11424,12 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 55.0833408647045), (0.85, 53.9828940717228), (0.65, 50.2075916397228), (0.5, 45.8464840305209)]"
+    "detail": "[(1, 34.438605955), (0.85, 33.5719082027543), (0.65, 30.4258228427543), (0.5, 27.849895030242)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "55.0833408647045 vs 55.0833408647045"
+    "detail": "34.438605955 vs 34.438605955"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -9777,7 +11469,7 @@
     "detail": ""
    },
    {
-    "check": "hires never exceed openings (except unavoidable test hires)",
+    "check": "hires never exceed openings (strict, test hires included)",
     "ok": true,
     "detail": "[]"
    },

@@ -65,10 +65,10 @@ def compute(path):
     for c in chans:
         b = c["basis"]; rate = _num(c["rate"])
         if b in ("CPC", "Slot"):
-            cpa = c["unit"] / rate if rate > 0 else 0.0
+            cpa = max(0.0, c["unit"] / rate) if rate > 0 else 0.0
             mx = 0.0 if rate <= 0 else (c["mx"] * rate if b == "Slot" else c["mx"])
         else:
-            cpa = c["unit"]; mx = c["mx"]
+            cpa = max(0.0, c["unit"]); mx = c["mx"]
         rows.append(dict(id=c["id"], chan=c["chan"], role=c["role"], type="Channel", basis=b, cpa=cpa, q=c["q"], mx=mx,
                          adj=c["adj"], fixed=c["fixed"], slotsize=rate if b == "Slot" else None, unit=c["unit"], cap=None))
     for r in ROLES:
@@ -95,7 +95,12 @@ def compute(path):
         rw["P"] = ((rw["N"] / rw["L"] / rw["q"] * rw["cpa"] + rw["fixed"]) / rw["N"]) if rw["N"] > 0 else 0.0
         rw["sort"] = rw["P"] + rw["row"] / 1e6
         paid = rw["type"] == "Channel" and rw["basis"] in ("CPC", "CPA") and opn[rw["role"]] > 0
-        rw["Z"] = min(x["B2"], rw["mx"] * rw["cpa"]) if paid else 0.0
+        if paid:
+            ntest = sum(1 for o in rows if o["role"] == rw["role"] and o["type"] == "Channel" and o["basis"] in ("CPC", "CPA"))
+            cap_spend = opn[rw["role"]] / ntest / (rw["q"] * rw["L"]) * rw["cpa"] if rw["q"] * rw["L"] > 0 else 0.0
+            rw["Z"] = min(x["B2"], rw["mx"] * rw["cpa"], cap_spend)
+        else:
+            rw["Z"] = 0.0
         rw["AE"] = rw["Z"] / rw["cpa"] if rw["cpa"] > 0 else 0.0
         rw["AF"] = rw["AE"] * rw["q"]
         rw["AG"] = rw["AF"] * rw["L"]
@@ -111,7 +116,7 @@ def compute(path):
         rw["V"] = rw["U"] / rw["L"] if rw["L"] > 0 else 0.0
         rw["W"] = rw["V"] / rw["q"] if rw["q"] > 0 else 0.0
         if rw["basis"] == "Slot":
-            rw["X"] = math.ceil(rw["W"] / rw["slotsize"] - 1e-12) * rw["unit"] if rw["slotsize"] else 0.0
+            rw["X"] = math.ceil(rw["W"] / rw["slotsize"] - 1e-12) * max(0.0, rw["unit"]) if rw["slotsize"] else 0.0
         else:
             rw["X"] = rw["W"] * rw["cpa"]
         rw["Y"] = rw["fixed"] if rw["U"] > 0 else 0.0
