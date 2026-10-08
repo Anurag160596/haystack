@@ -1,6 +1,6 @@
 # Model test report: Operation_Uptime_Model.xlsx
 
-**Result: 141/141 scenarios passed · 2107/2107 checks passed · deck-vs-model 45/45.**
+**Result: 148/148 scenarios passed · 2209/2209 checks passed · deck-vs-model 45/45.**
 
 ## How the model is tested
 
@@ -25,11 +25,16 @@ Each scenario copies the model, changes inputs on the Assumptions tab, recalcula
 
 ## Robustness features
 
-- **Input validation, two layers.** Excel data-validation rules reject out-of-range entries when typed: shares 0–100%, counts and costs ≥ 0, reserve 0–99%, dates inside the campaign. Summary C19 re-checks every input by formula, which also catches pasted values. Any invalid input turns the Budget and Weekly tie-out flags to '✗ invalid input: …'.
+- **Input validation, two layers.** Excel data-validation rules reject out-of-range entries when typed: shares 0–100%, counts and costs ≥ 0, reserve 0–99%, dates inside the campaign. Summary C19 re-checks every numeric input by formula; the list is generated automatically, so no input can be missed. It also catches pasted values. Any invalid input turns the Budget and Weekly tie-out flags to '✗ invalid input: …'.
 - **Test hires can never exceed openings.** Each role's €750 tests are capped so their expected hires stay within its openings.
+- **Schedule sanity flags**: spend placed after the last useful application date, assessments starting after the last useful assessment day, and no spend before the supervisor cut-off are each named explicitly.
 - **Costs are clamped at zero**, so a negative typo can't create negative spend.
 - **Divide-by-zero guards everywhere** a denominator can be zero: capacity, openings, conversion, apply rates, empty ATS, rounding step.
 - **Live Summary labels**: the hardest role is recomputed from channel coverage, and the capacity label follows the input.
+
+## Independent reviewers' edge cases
+
+Four independent review passes wrote 60+ edge cases of their own. Re-run against the current model, all pass, except cases whose expected result was written before a fix the reviewer requested. For example, a 100% reserve and negative openings are now correctly flagged as invalid input.
 
 ## Bugs the tests found (all fixed)
 
@@ -128,6 +133,13 @@ Each scenario copies the model, changes inputs on the Assumptions tab, recalcula
 | `b4_half_b2_0` | Test split 50/50 with no tests | ✅ 15/15 |
 | `i1a_0` | Initiative-1 conversion adjustment 0 | ✅ 15/15 |
 | `i1w_even` | Rediscovery waves 1/3 each | ✅ 15/15 |
+| `i3x_negative` | Typo: Polish max applications −100 | ✅ 14/14 |
+| `threshold_negative` | Typo: Tracker scale-up threshold −1 | ✅ 14/14 |
+| `campaign_end_before_start` | Campaign end before its start | ✅ 14/14 |
+| `spend_after_cutoff_wk7` | All regular spend in week 7 (after the 27 Nov cut-off), no supervisors | ✅ 15/15 |
+| `spend_after_cutoff_wk11` | All regular spend in week 11, no supervisors | ✅ 15/15 |
+| `t0_100` | First assessment 100 days after launch | ✅ 15/15 |
+| `fractional_openings` | Fractional openings (2.5 electricians) | ✅ 15/15 |
 | `combo_stress` | Capacity 45 + electrician pass 40% + 30% cut + I2 rejected | ✅ 15/15 |
 
 ## Random scenarios

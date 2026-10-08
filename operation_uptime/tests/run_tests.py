@@ -102,6 +102,13 @@ CASES = [
  ("b4_half_b2_0", "Test split 50/50 with no tests", {"B4": 0.5, "B2": 0}, {}),
  ("i1a_0", "Initiative-1 conversion adjustment 0", {"I1A": 0}, {}),
  ("i1w_even", "Rediscovery waves 1/3 each", {"I1W1": 1/3, "I1W2": 1/3, "I1W3": 1 - 2/3}, {}),
+ ("i3x_negative", "Typo: Polish max applications −100", {"I3X": -100}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
+ ("threshold_negative", "Typo: Tracker scale-up threshold −1", {"R3": -1}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
+ ("campaign_end_before_start", "Campaign end before its start", {"G2": D(2026, 10, 1)}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
+ ("spend_after_cutoff_wk7", "All regular spend in week 7 (after the 27 Nov cut-off), no supervisors", {"G8": 0, "W1": 0, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 0, "W7": 1}, {"weekly_ok": False, "flag_contains": "after the last useful application"}),
+ ("spend_after_cutoff_wk11", "All regular spend in week 11, no supervisors", {"G8": 0, "W1": 0, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 0, "W11": 1}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "after the last useful application"}),
+ ("t0_100", "First assessment 100 days after launch", {"T0": 100}, {"weekly_ok": False, "flag_contains": "assessments start"}),
+ ("fractional_openings", "Fractional openings (2.5 electricians)", {"G5": 2.5}, {}),
  ("combo_stress", "Capacity 45 + electrician pass 40% + 30% cut + I2 rejected", {"G3": 45, "PE": 0.40, "I2Q": 0}, {}),
 ]
 
@@ -236,7 +243,7 @@ def run_case(name, desc, edits, expect, tmpdir):
     order = sorted(range(4), key=lambda j: -lv[j])
     mono = all(tot[order[k]] >= tot[order[k + 1]] - 1e-6 for k in range(3))
     Scn = wb["Scenarios"]
-    factors = [Scn.cell(47, c).value for c in range(6, 10)]
+    factors = [Scn.cell(47, c).value if isinstance(Scn.cell(47, c).value, (int, float)) else 1.0 for c in range(6, 10)]
     if all(isinstance(f_, (int, float)) and f_ >= 0.9999 for f_ in factors):
         chk("scenario hires never rise when the budget falls (capacity not binding)", mono, str(list(zip(lv, tot))))
     else:

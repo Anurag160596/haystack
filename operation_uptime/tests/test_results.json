@@ -6520,6 +6520,565 @@
   "passed": true
  },
  {
+  "name": "i3x_negative",
+  "desc": "Typo: Polish max applications \u2212100",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: a count, cost or day value is negative; "
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly flag explains the problem",
+    "ok": true,
+    "detail": "\u2717 invalid input: a count, cost or day value is negative; "
+   },
+   {
+    "check": "Weekly tie-out flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: a count, cost or day value is negative; "
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "0 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 96.6228784210234), (0.7, 90.3352879107143), (0.5, 79.9427629107143)]"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "threshold_negative",
+  "desc": "Typo: Tracker scale-up threshold \u22121",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: a count, cost or day value is negative; "
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly flag explains the problem",
+    "ok": true,
+    "detail": "\u2717 invalid input: a count, cost or day value is negative; "
+   },
+   {
+    "check": "Weekly tie-out flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: a count, cost or day value is negative; "
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 96.8809299857171), (0.7, 90.6720880966647), (0.5, 80.2795630966647)]"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "campaign_end_before_start",
+  "desc": "Campaign end before its start",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: last signing date must fall inside the campaign; campaign end must be after its start; "
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly flag explains the problem",
+    "ok": true,
+    "detail": "\u2717 invalid input: last signing date must fall inside the campaign; campaign end must be after its start; "
+   },
+   {
+    "check": "Weekly tie-out flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 invalid input: last signing date must fall inside the campaign; campaign end must be after its start; "
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.85, 96.8809299857171), (0.7, 90.6720880966647), (0.5, 80.2795630966647)]"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "spend_after_cutoff_wk7",
+  "desc": "All regular spend in week 7 (after the 27 Nov cut-off), no supervisors",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly flag explains the problem",
+    "ok": true,
+    "detail": "\u2717 a spend share falls after the last useful application (Funnel B19): move shares into weeks 1\u20136"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 a spend share falls after the last useful application (Funnel B19): move shares into weeks 1\u20136"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 90), (0.85, 87.6971011196456), (0.7, 82.4927755966647), (0.5, 73.7411755966647)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "90 vs 90"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "90 vs 89.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "spend_after_cutoff_wk11",
+  "desc": "All regular spend in week 11, no supervisors",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 matrix \u2260 planned spend"
+   },
+   {
+    "check": "Weekly flag explains the problem",
+    "ok": true,
+    "detail": "\u2717 a spend share falls after the last useful application (Funnel B19): move shares into weeks 1\u20136"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 a spend share falls after the last useful application (Funnel B19): move shares into weeks 1\u20136"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 90), (0.85, 87.6971011196456), (0.7, 82.4927755966647), (0.5, 73.7411755966647)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "90 vs 90"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "90 vs 89.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "t0_100",
+  "desc": "First assessment 100 days after launch",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly flag explains the problem",
+    "ok": true,
+    "detail": "\u2717 assessments start (Funnel B13) after the last useful assessment day (Funnel B17): no hire can sign in time"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2717 (expected for invalid input)",
+    "ok": true,
+    "detail": "\u2717 assessments start (Funnel B13) after the last useful assessment day (Funnel B17): no hire can sign in time"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenarios never assess more qualified than there are slots (capacity binding)",
+    "ok": true,
+    "detail": "[(290.6797502142, 0), (280.507678320089, 0), (261.760619150707, 0), (221.385619150707, 0)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "0 vs 0"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
+  "name": "fractional_openings",
+  "desc": "Fractional openings (2.5 electricians)",
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (59 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "13.7984318181818 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 72.5), (0.85, 70.4551662706115), (0.7, 66.9137065738121), (0.5, 61.3378469893296)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "72.5 vs 72.5"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "72.5 vs 72.49999999999997"
+   }
+  ],
+  "passed": true
+ },
+ {
   "name": "combo_stress",
   "desc": "Capacity 45 + electrician pass 40% + 30% cut + I2 rejected",
   "checks": [
