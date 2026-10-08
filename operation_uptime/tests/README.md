@@ -1,6 +1,6 @@
 # Model test report: Operation_Uptime_Model.xlsx
 
-**Result: 93/93 scenarios passed · 1301/1301 checks passed · deck-vs-model 45/45.**
+**Result: 107/107 scenarios passed · 1496/1496 checks passed · deck-vs-model 45/45.**
 
 ## How the model is tested
 
@@ -14,8 +14,9 @@ Each scenario copies the model, changes inputs on the Assumptions tab, recalcula
    - Polish hires ≤ the 40% cap
    - expected hires ≤ plan and ≤ the capacity limit
    - weekly signatures = expected hires
-   - scenario hires never rise when the budget falls
-   - the 100% scenario = the plan
+   - when capacity doesn't bind, scenario hires never rise as the budget falls
+   - when capacity binds, scenarios never assess more qualified applicants than there are slots
+   - the 100% scenario = expected hires
    - with no actuals, the Tracker forecasts the plan
 4. **Agreement with an independent oracle** (`oracle.py`): a separate plain-Python re-implementation that reads the same inputs and recomputes 59 outputs. These cover spend, reserve, budget, hires by role, slots, qualified, applications, the four budget scenarios by role, the six sensitivity cases and the three initiative test bars.
 
@@ -28,6 +29,8 @@ Each scenario copies the model, changes inputs on the Assumptions tab, recalcula
 - **The Tracker's 'no actuals' forecast scaled from openings instead of planned hires**, overstating it when channels can't cover the openings (270 vs 126). Fixed.
 - **Supervisor referral bonuses in weeks 10–11 fell outside the 9-week cash matrix.** The matrix now covers all 11 weeks.
 - **Divide-by-zero guards added** for zero capacity, zero openings, zero conversion, an empty ATS, rejected initiatives and deadlines before the campaign.
+- **Budget-cut scenarios ignored the capacity cap.** Found by an independent reviewer's own edge cases. Scenario hires are now scaled by assessment slots ÷ qualified, the same rule as Budget C13.
+- **A reserve share of 100% or more was accepted silently.** It is now flagged in Budget B40 and Weekly S15.
 - **Infeasible inputs now produce explicit flags**, e.g. 'supervisors cannot apply in time' and 'shares must sum to 100%'.
 
 ## Named scenarios
@@ -66,6 +69,20 @@ Each scenario copies the model, changes inputs on the Assumptions tab, recalcula
 | `weights_bad` | Weekly spend shares sum to 131% | ✅ 14/14 |
 | `i1_waves_bad` | Rediscovery wave shares sum to 90% | ✅ 14/14 |
 | `round_step_1` | Recommended budget not rounded | ✅ 14/14 |
+| `capacity_1` | Recruiters can assess 1 qualified applicant a week | ✅ 14/14 |
+| `capacity_1000_open3x` | Capacity 1,000/week and 3× the openings | ✅ 14/14 |
+| `open_1_each` | 1 opening per role (test hires exceed it) | ✅ 14/14 |
+| `mech_open_1` | 1 mechatronics opening (fractional Polish cap) | ✅ 14/14 |
+| `q_001_all` | Every channel and initiative 1% qualified | ✅ 14/14 |
+| `i3_minutes_0` | Polish pre-screen calls take no time | ✅ 14/14 |
+| `t2_0` | Application assessed the same day | ✅ 14/14 |
+| `weights_week1` | All regular spend in week 1 | ✅ 14/14 |
+| `i1_all_week1` | All rediscovery re-applications in week 1 | ✅ 14/14 |
+| `round_100k` | Budget rounded to €100k steps | ✅ 14/14 |
+| `automation_no_volume` | Automation: every source has zero volume | ✅ 14/14 |
+| `reserve_99` | Reserve 99% of total | ✅ 14/14 |
+| `reserve_100` | Reserve 100% (invalid) | ✅ 13/13 |
+| `combo_cap45_cut` | Capacity 45 and the budget scenarios | ✅ 14/14 |
 | `combo_stress` | Capacity 45 + electrician pass 40% + 30% cut + I2 rejected | ✅ 14/14 |
 
 ## Random scenarios
@@ -90,3 +107,7 @@ python3 tests/run_tests.py            # all scenarios (≈5 min)
 python3 tests/run_tests.py --only base,capacity_45
 python3 tests/test_deck.py             # deck vs model
 ```
+
+## Finding worth knowing
+
+When recruiter capacity binds, a smaller budget can produce as many or more hires: the cut removes the most expensive sources, which here also convert worst, freeing slots for better candidates. The model shows this, and Budget B43 notes it: a capacity-bound plan should be re-optimised for hires per assessment slot.

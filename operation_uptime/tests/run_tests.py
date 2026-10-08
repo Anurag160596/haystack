@@ -54,6 +54,20 @@ CASES = [
  ("weights_bad", "Weekly spend shares sum to 131%", {"W6": 0.5}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "shares must sum"}),
  ("i1_waves_bad", "Rediscovery wave shares sum to 90%", {"I1W3": 0.15}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "shares must sum"}),
  ("round_step_1", "Recommended budget not rounded", {"B5": 1}, {}),
+ ("capacity_1", "Recruiters can assess 1 qualified applicant a week", {"G3": 1}, {}),
+ ("capacity_1000_open3x", "Capacity 1,000/week and 3× the openings", {"G3": 1000, "G5": 90, "G6": 135, "G7": 45, "G8": 30}, {}),
+ ("open_1_each", "1 opening per role (test hires exceed it)", {"G5": 1, "G6": 1, "G7": 1, "G8": 1}, {}),
+ ("mech_open_1", "1 mechatronics opening (fractional Polish cap)", {"G6": 1}, {}),
+ ("q_001_all", "Every channel and initiative 1% qualified", {**{("C%02d" % n, "G"): 0.01 for n in range(1, 21)}, "I1Q": 0.01, "I1FQ": 0.01, "I2Q": 0.01, "I3Q": 0.01}, {}),
+ ("i3_minutes_0", "Polish pre-screen calls take no time", {"I3H": 0}, {}),
+ ("t2_0", "Application assessed the same day", {"T2": 0}, {}),
+ ("weights_week1", "All regular spend in week 1", {"W1": 1, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 0}, {}),
+ ("i1_all_week1", "All rediscovery re-applications in week 1", {"I1W1": 1, "I1W2": 0, "I1W3": 0}, {}),
+ ("round_100k", "Budget rounded to €100k steps", {"B5": 100000}, {}),
+ ("automation_no_volume", "Automation: every source has zero volume", {("C03", "H"): 0, ("C07", "H"): 0, ("C11", "H"): 0, ("C13", "H"): 0, ("C19", "H"): 0, "I1RA": 0, "I1FA": 0}, {}),
+ ("reserve_99", "Reserve 99% of total", {"B1": 0.99}, {}),
+ ("reserve_100", "Reserve 100% (invalid)", {"B1": 1}, {"budget_ok": False, "weekly_ok": False, "matrix_ok": True, "flag_contains": "reserve share"}),
+ ("combo_cap45_cut", "Capacity 45 and the budget scenarios", {"G3": 45, "B3": 0.3}, {}),
  ("combo_stress", "Capacity 45 + electrician pass 40% + 30% cut + I2 rejected", {"G3": 45, "PE": 0.40, "I2Q": 0}, {}),
 ]
 
@@ -120,7 +134,8 @@ def run_case(name, desc, edits, expect, tmpdir):
     o = oracle.compute(path)
 
     # ---- model's own tie-out flags
-    chk("Budget: channel totals tie to planned spend", str(Bg["B40"].value).startswith("✓"), str(Bg["B40"].value))
+    exp_bg = expect.get("budget_ok", True)
+    chk(f"Budget flag is {'✓' if exp_bg else '✗ (expected for invalid input)'}", str(Bg["B40"].value).startswith("✓") == exp_bg, str(Bg["B40"].value))
     exp_mx = expect.get("matrix_ok", True)
     chk(f"Weekly matrix flag is {'✓' if exp_mx else '✗ (expected for invalid input)'}", str(Wk["B55"].value).startswith("✓") == exp_mx, str(Wk["B55"].value))
     if "flag_contains" in expect:
@@ -185,8 +200,18 @@ def run_case(name, desc, edits, expect, tmpdir):
     lv = [Bg[f"B{45+j}"].value or 0 for j in range(4)]
     order = sorted(range(4), key=lambda j: -lv[j])
     mono = all(tot[order[k]] >= tot[order[k + 1]] - 1e-6 for k in range(3))
-    chk("scenario hires never rise when the budget falls", mono, str(list(zip(lv, tot))))
-    chk("scenario at 100% budget = plan hires", close(Bg["H45"].value, o["hires_plan"]))
+    Scn = wb["Scenarios"]
+    factors = [Scn.cell(47, c).value for c in range(6, 10)]
+    if all(isinstance(f_, (int, float)) and f_ >= 0.9999 for f_ in factors):
+        chk("scenario hires never rise when the budget falls (capacity not binding)", mono, str(list(zip(lv, tot))))
+    else:
+        # capacity binds: hires may rise as low-conversion sources are cut; check the cap instead
+        qrow = [Scn.cell(46, c).value or 0 for c in range(6, 10)]
+        slots = F["B22"].value or 0
+        capped = all(f_ <= 1 + 1e-9 and (q_ * f_ <= slots + 1e-6) for f_, q_ in zip(factors, qrow))
+        chk("scenarios never assess more qualified than there are slots (capacity binding)", capped, str(list(zip(qrow, factors))))
+    if exp_bg:
+        chk("scenario at 100% budget = expected hires (capacity-capped)", close(Bg["H45"].value, c13), f"{Bg['H45'].value} vs {c13}")
     trk = T["N44"].value or 0
     chk("Tracker forecast with no actuals = planned hires", close(trk, sum(min(opn[r], U[r]) for r in ROLES)), f"{trk} vs {sum(min(opn[r], U[r]) for r in ROLES)}")
     return dict(name=name, desc=desc, checks=checks)
@@ -209,7 +234,8 @@ def main():
     passed = sum(r["passed"] for r in results)
     checks = sum(len(r["checks"]) for r in results); ok = sum(c["ok"] for r in results for c in r["checks"])
     print(f"\nCASES {passed}/{len(results)} passed · CHECKS {ok}/{checks} passed")
-    json.dump(results, open(os.path.join(HERE, "test_results.json"), "w"), indent=1, default=str)
+    if ONLY is None:  # partial runs must not overwrite the full results file
+        json.dump(results, open(os.path.join(HERE, "test_results.json"), "w"), indent=1, default=str)
     return 0 if passed == len(results) else 1
 
 

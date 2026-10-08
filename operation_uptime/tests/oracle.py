@@ -145,6 +145,7 @@ def compute(path):
         avail = rec * L * (1 - B1)
         sav = max(0.0, planned - avail)
         hb = {r: 0.0 for r in ROLES}
+        qs = 0.0
         for rw in rows:
             above = sum(o["AA"] for o in rows if keys[o["row"]] > keys[rw["row"]])
             cut = min(rw["AA"], max(0.0, sav - above))
@@ -155,6 +156,9 @@ def compute(path):
             else:
                 h = rw["U"]
             hb[rw["role"]] += h
+            qs += h * rw["V"] / rw["U"] if rw["U"] > 0 else 0.0
+        factor = min(1.0, slots / qs) if qs > 0 else 1.0
+        hb = {r: v * factor for r, v in hb.items()}
         scen.append(dict(level=L, budget=rec * L, by_role=hb, total=sum(hb.values())))
     out["scen"] = scen
 
