@@ -71,7 +71,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -81,7 +81,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -158,17 +158,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(305.266862584336, 0.842354309163893), (296.381092987133, 0.867608842896131), (280.136191217742, 0.917920872790719), (250.921783469108, 1)]"
+    "detail": "[(308.698076082958, 0.832991447195652), (285.248673219653, 0.901469073424391), (261.702341522019, 0.982577594252139), (230.302227494486, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "84.2354309163893 vs 84.2354309163893"
+    "detail": "83.2991447195653 vs 83.2991447195653"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -245,7 +245,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -255,7 +255,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -332,7 +332,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(305.266862584336, 0), (296.381092987133, 0), (280.136191217742, 0), (250.921783469108, 0)]"
+    "detail": "[(308.698076082958, 0), (285.248673219653, 0), (261.702341522019, 0), (230.302227494486, 0)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -342,7 +342,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -419,17 +419,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(329.07638639386, 0.955053985276103), (316.53930197407, 0.992880543824095), (303.472531787735, 1), (277.03808853917, 1)]"
+    "detail": "[(332.507599892482, 0.945198589106955), (307.790778618437, 1), (280.38917131127, 1), (243.092279585585, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "95.5053985276103 vs 95.5053985276103"
+    "detail": "94.5198589106955 vs 94.5198589106956"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -506,7 +506,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 70), (0.85, 68.6534355921687), (0.7, 65.6505449671687), (0.5, 60.9094450992561)]"
+    "detail": "[(1, 70), (0.85, 66.8069787842171), (0.7, 63.2509240967171), (0.5, 56.8710017596211)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -516,7 +516,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "70 vs 70.0"
+    "detail": "70 vs 70"
    }
   ],
   "passed": true
@@ -578,7 +578,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "15.3773391339047 vs cap 18.0"
+    "detail": "18 vs cap 18.0"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -593,7 +593,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.8246384097081), (0.7, 93.3166026954224), (0.5, 87.3315137980217)]"
+    "detail": "[(1, 100), (0.85, 95.8022946496574), (0.7, 90.3659870376066), (0.5, 79.9877913166682)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -680,7 +680,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 70), (0.85, 68.6534355921687), (0.7, 65.6505449671687), (0.5, 60.9094450992561)]"
+    "detail": "[(1, 70), (0.85, 66.8069787842171), (0.7, 63.2509240967171), (0.5, 56.8710017596211)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -690,7 +690,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "70 vs 70.0"
+    "detail": "70 vs 70"
    }
   ],
   "passed": true
@@ -767,17 +767,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(378.266267346241, 0.830858422799931), (361.892629567377, 0.868450166176155), (341.669379613822, 0.919853323235877), (313.160062843636, 1)]"
+    "detail": "[(562.901480844863, 0.558331653016795), (518.589939452936, 0.606038972945091), (457.525711087237, 0.686924705365442), (371.997760776678, 0.844859156220541)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "102.191275926323 vs 102.191275926323"
+    "detail": "100.541054564391 vs 100.541054564391"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "122.9948125 vs 122.9948125"
+    "detail": "180.0740725 vs 180.0740725"
    }
   ],
   "passed": true
@@ -941,7 +941,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 96.3027315457715), (0.7, 90.0979036385961), (0.5, 80.9989153554751)]"
+    "detail": "[(1, 100), (0.85, 93.5543701937095), (0.7, 85.5761613997459), (0.5, 72.3560489162627)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -951,7 +951,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "100 vs 100.0"
    }
   ],
   "passed": true
@@ -1013,7 +1013,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "22.7830043504285 vs cap 45"
+    "detail": "18.19125 vs cap 45"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -1028,7 +1028,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3165864254559), (0.7, 92.973784814439), (0.5, 85.8613569025155)]"
+    "detail": "[(1, 100), (0.85, 94.4367596771261), (0.7, 88.0871807197394), (0.5, 78.2016983011114)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1038,7 +1038,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 99.99999999999997"
+    "detail": "100 vs 100.0"
    }
   ],
   "passed": true
@@ -1115,7 +1115,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.2710887837987), (0.7, 92.649454140952), (0.5, 85.6583294006786)]"
+    "detail": "[(1, 100), (0.85, 94.4427373491869), (0.7, 88.0592319695039), (0.5, 78.1719380578051)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1125,7 +1125,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -1187,7 +1187,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "16.1693206695236 vs cap 18.0"
+    "detail": "18 vs cap 18.0"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -1202,7 +1202,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.2741282181764), (0.7, 93.4615625106509), (0.5, 84.6507957155849)]"
+    "detail": "[(1, 100), (0.85, 95.4549242135867), (0.7, 89.1581000803138), (0.5, 78.8995762467687)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1212,7 +1212,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 99.99999999999999"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -1289,7 +1289,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1299,7 +1299,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -1376,7 +1376,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1386,7 +1386,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -1463,7 +1463,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3971127232256), (0.7, 92.9423129792082), (0.5, 85.5787629359187)]"
+    "detail": "[(1, 100), (0.85, 94.5777423411241), (0.7, 88.2095008650092), (0.5, 78.268665353945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1473,7 +1473,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -1550,7 +1550,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.1166483377507), (0.7, 92.5485629792082), (0.5, 85.2688671025854)]"
+    "detail": "[(1, 100), (0.85, 94.3406720286241), (0.7, 87.9783867345744), (0.5, 78.092884103945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1560,7 +1560,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -1637,7 +1637,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (1, 100), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (1, 100), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1647,7 +1647,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -1724,7 +1724,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0, 20.5554), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0, 14.876434750001), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1734,7 +1734,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -1811,7 +1811,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 96.6693666437392), (0.7, 93.0023557741739), (0.5, 87.9174164941753)]"
+    "detail": "[(1, 100), (0.85, 94.0171407786241), (0.7, 87.0011041258787), (0.5, 76.7597591039449)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1821,7 +1821,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 99.99999999999999"
    }
   ],
   "passed": true
@@ -1898,7 +1898,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 96.8271405567826), (0.7, 93.114124594734), (0.5, 85.5553379792083)]"
+    "detail": "[(1, 100), (0.85, 94.551859841124), (0.7, 88.139242169357), (0.5, 78.203752853945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1908,7 +1908,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -1985,7 +1985,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.0840305929421), (0.7, 93.540529808451), (0.5, 87.2357196319894)]"
+    "detail": "[(1, 100), (0.85, 93.8177228098741), (0.7, 87.0875327862505), (0.5, 77.570237228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1995,7 +1995,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 99.99999999999999"
    }
   ],
   "passed": true
@@ -2072,7 +2072,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.5690472704325), (0.7, 93.8344829453991), (0.5, 86.7582329453991)]"
+    "detail": "[(1, 100), (0.85, 95.5398324545986), (0.7, 90.6558474918478), (0.5, 82.729821484375)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2082,7 +2082,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 99.99999999999999"
    }
   ],
   "passed": true
@@ -2159,7 +2159,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 98.2013041871796), (0.7, 94.2431703704709), (0.5, 87.1072200299692)]"
+    "detail": "[(1, 100), (0.85, 96.4396376365809), (0.7, 92.3857352928309), (0.5, 84.3377198583)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2246,17 +2246,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(314.469362584336, 0.999416005752954), (301.363422631392, 1), (285.445720768038, 1), (261.42864260271, 1)]"
+    "detail": "[(314.377076082958, 0.999709387852376), (287.410363887694, 1), (259.529170442503, 1), (223.091607495795, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "99.9416005752954 vs 99.9416005752954"
+    "detail": "99.9709387852376 vs 99.9709387852376"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "100 vs 100.0"
    }
   ],
   "passed": true
@@ -2328,7 +2328,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(305.266862584336, 0), (296.381092987133, 0), (280.136191217742, 0), (250.921783469108, 0)]"
+    "detail": "[(308.698076082958, 0), (285.248673219653, 0), (261.702341522019, 0), (230.302227494486, 0)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2338,7 +2338,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -2415,7 +2415,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2425,7 +2425,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -2502,7 +2502,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2512,7 +2512,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -2589,7 +2589,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2599,7 +2599,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -2676,7 +2676,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2686,7 +2686,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -2763,7 +2763,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 96.9231503489239), (0.7, 92.2769069792082), (0.5, 85.055063769252)]"
+    "detail": "[(1, 100), (0.85, 94.3340719911241), (0.7, 87.9719525171831), (0.5, 78.087990353945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2773,7 +2773,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -2850,17 +2850,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(305.266862584336, 0.0187189846480865), (296.381092987133, 0.0192801965088029), (280.136191217742, 0.0203982416175715), (250.921783469108, 0.0227731751117145)]"
+    "detail": "[(308.698076082958, 0.0185109210487923), (285.248673219653, 0.0200326460760976), (261.702341522019, 0.0218350576500475), (230.302227494486, 0.0248121165672291)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "1.87189846480865 vs 1.87189846480865"
+    "detail": "1.85109210487923 vs 1.85109210487923"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -2922,7 +2922,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "40.429125 vs cap 54.0"
+    "detail": "18.19125 vs cap 54.0"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -2937,17 +2937,17 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 232.644085), (0.85, 223.061095096204), (0.7, 210.450436337855), (0.5, 191.330456546052)]"
+    "detail": "[(1, 300), (0.85, 282.399815303994), (0.7, 255.603912367197), (0.5, 210.444084759298)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "232.644085 vs 232.644085"
+    "detail": "300 vs 300"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "232.644085 vs 232.644085"
+    "detail": "300 vs 300.0"
    }
   ],
   "passed": true
@@ -3024,7 +3024,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 4), (0.85, 3.83692079137032), (0.7, 3.60724019006537), (0.5, 3.22247603526894)]"
+    "detail": "[(1, 4), (0.85, 4), (0.7, 3.83214057166181), (0.5, 3.42746431487986)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3111,7 +3111,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 56), (0.85, 53.4559491741831), (0.7, 49.6416776194119), (0.5, 42.5654276194119)]"
+    "detail": "[(1, 56), (0.85, 51.7943113022874), (0.7, 46.8603835170241), (0.5, 38.8414134536256)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3183,7 +3183,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "1.8376875 vs cap 18.0"
+    "detail": "1.299375 vs cap 18.0"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -3198,17 +3198,17 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 14.63322755), (0.85, 13.6321966755978), (0.7, 12.4289149842391), (0.5, 10.6202656130241)]"
+    "detail": "[(1, 46.585558035), (0.85, 41.9317821516899), (0.7, 36.1561054225), (0.5, 27.6684565086208)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "14.63322755 vs 14.63322755"
+    "detail": "46.585558035 vs 46.585558035"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "14.63322755 vs 14.63322755"
+    "detail": "46.585558035 vs 46.585558035"
    }
   ],
   "passed": true
@@ -3285,7 +3285,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.1667204917787), (0.7, 92.7182990798844), (0.5, 85.5798494727748)]"
+    "detail": "[(1, 100), (0.85, 94.7314245144195), (0.7, 88.4359984299442), (0.5, 78.5731245666073)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3295,7 +3295,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -3372,7 +3372,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3382,7 +3382,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -3459,7 +3459,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3469,7 +3469,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -3546,7 +3546,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3556,7 +3556,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -3633,7 +3633,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 100), (0.7, 100), (0.5, 99.9427713706471)]"
+    "detail": "[(1, 100), (0.85, 100), (0.7, 100), (0.5, 89.0679247780526)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3643,7 +3643,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -3720,7 +3720,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 85), (0.85, 82.77688824652), (0.7, 79.3818527569894), (0.5, 72.8793527569894)]"
+    "detail": "[(1, 85), (0.85, 80.5021537371824), (0.7, 75.5273790688135), (0.5, 67.5494674945699)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3730,7 +3730,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "85 vs 85.0"
+    "detail": "85 vs 85"
    }
   ],
   "passed": true
@@ -3807,7 +3807,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 96.9259325556278), (0.7, 92.2808129792083), (0.5, 85.0581379359187)]"
+    "detail": "[(1, 100), (0.85, 94.3359306223741), (0.7, 87.9737644519657), (0.5, 78.089368478945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3817,7 +3817,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -3894,12 +3894,12 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 20.5554), (0.85, 20.5554), (0.7, 20.5554), (0.5, 20.5554)]"
+    "detail": "[(1, 14.876434750001), (0.85, 14.876434750001), (0.7, 14.876434750001), (0.5, 14.876434750001)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -3976,17 +3976,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(305.266862584336, 0.842354309163893), (296.381092987133, 0.867608842896131), (280.136191217742, 0.917920872790719), (250.921783469108, 1)]"
+    "detail": "[(308.698076082958, 0.832991447195652), (285.248673219653, 0.901469073424391), (261.702341522019, 0.982577594252139), (230.302227494486, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "84.2354309163893 vs 84.2354309163893"
+    "detail": "83.2991447195653 vs 83.2991447195653"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -4063,17 +4063,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(305.266862584336, 0.037437969296173), (296.381092987133, 0.0385603930176058), (250.921783469108, 0.0455463502234291), (250.921783469108, 0.0455463502234291)]"
+    "detail": "[(308.698076082958, 0.0370218420975846), (285.248673219653, 0.0400652921521951), (230.302227494486, 0.0496242331344583), (230.302227494486, 0.0496242331344583)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "3.7437969296173 vs 3.7437969296173"
+    "detail": "3.70218420975846 vs 3.70218420975846"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -4148,19 +4148,19 @@
     "detail": ""
    },
    {
-    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(1, 77.9948125), (0.85, 73.0361731095871), (0.7, 67.0890314087083), (0.5, 58.6075096695778)]"
+    "detail": "[(444.263359632742, 0.707431093452145), (402.90400327651, 0.78005110827857), (347.324577096273, 0.904876115917933), (267.498490139752, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "77.9948125 vs 77.9948125"
+    "detail": "95.5555988057093 vs 95.5555988057093"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "77.9948125 vs 77.9948125"
+    "detail": "135.0740725 vs 135.0740725"
    }
   ],
   "passed": true
@@ -4237,7 +4237,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 40), (0.85, 37.9521223747325), (0.7, 35.3977727231802), (0.5, 29.8515227231802)]"
+    "detail": "[(1, 40), (0.85, 36.6092751006569), (0.7, 32.9109782256569), (0.5, 27.291873625)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4324,7 +4324,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4334,7 +4334,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -4411,17 +4411,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(316.40540479318, 0.993300713340056), (310.698608622255, 1), (294.761108622255, 1), (271.269582993254, 1)]"
+    "detail": "[(315.879391787747, 0.994954791153), (301.071770211353, 1), (284.636223336353, 1), (257.669486267205, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "99.3300713340056 vs 99.3300713340055"
+    "detail": "99.4954791153 vs 99.4954791153"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -4498,7 +4498,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.5146104000903), (0.7, 93.6230886609599), (0.5, 86.6368711733352)]"
+    "detail": "[(1, 100), (0.85, 94.5239692573573), (0.7, 88.1240943377332), (0.5, 78.1276269684197)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4508,7 +4508,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -4585,7 +4585,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(305.266862584336, 0), (296.381092987133, 0), (280.136191217742, 0), (250.921783469108, 0)]"
+    "detail": "[(308.698076082958, 0), (285.248673219653, 0), (261.702341522019, 0), (230.302227494486, 0)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4595,7 +4595,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -4672,7 +4672,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4682,7 +4682,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -4759,7 +4759,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.2700085015041), (0.7, 92.6479288662721), (0.5, 85.6566944926145)]"
+    "detail": "[(1, 100), (0.85, 94.4426330946478), (0.7, 88.0591552552703), (0.5, 78.1718563713526)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4856,7 +4856,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -4933,7 +4933,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4943,7 +4943,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -5005,7 +5005,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "40.429125 vs cap 400.0"
+    "detail": "18.19125 vs cap 400.0"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -5020,17 +5020,17 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 255.19330375), (0.85, 244.388116015625), (0.7, 229.89767476087), (0.5, 205.0449981875)]"
+    "detail": "[(1, 743.77775275), (0.85, 700.754353446701), (0.7, 626.649062177989), (0.5, 500.755061004576)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "255.19330375 vs 255.19330375"
+    "detail": "743.77775275 vs 743.77775275"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "255.19330375 vs 255.19330374999998"
+    "detail": "743.77775275 vs 743.77775275"
    }
   ],
   "passed": true
@@ -5107,7 +5107,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 96.9230459815346), (0.7, 92.2767604555793), (0.5, 85.0549484497293)]"
+    "detail": "[(1, 100), (0.85, 94.334027929343), (0.7, 87.9719095624153), (0.5, 78.0879576833213)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5117,7 +5117,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -5194,12 +5194,12 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 70), (0.85, 68.6534355921687), (0.7, 65.6505449671687), (0.5, 60.9094450992561)]"
+    "detail": "[(1, 70), (0.85, 66.8069787842171), (0.7, 63.2509240967171), (0.5, 56.8710017596211)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "65 vs 65.0"
+    "detail": "65 vs 65"
    }
   ],
   "passed": true
@@ -5276,12 +5276,12 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 98.5807960088353), (0.7, 95.2618116338353), (0.5, 89.8603795421908)]"
+    "detail": "[(1, 100), (0.85, 96.2326561258988), (0.7, 92.2498748758988), (0.5, 84.065749061762)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -5358,7 +5358,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 98.2152677779552), (0.7, 94.4191581125313), (0.5, 87.6771080856278)]"
+    "detail": "[(1, 100), (0.85, 96.5162560266723), (0.7, 92.5334747766723), (0.5, 84.771131100568)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -5430,7 +5430,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "0.905772207571388 vs cap 18.0"
+    "detail": "18 vs cap 18.0"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -5440,12 +5440,12 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3858133490212), (0.7, 93.5221127365169), (0.5, 86.4458627365169)]"
+    "detail": "[(1, 100), (0.85, 95.2891598299537), (0.7, 89.6855741802477), (0.5, 80.7404100877638)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -5522,12 +5522,12 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -5604,12 +5604,12 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(305.266862584336, -0.187189846480865), (296.381092987133, -0.192801965088029), (280.136191217742, -0.203982416175715), (250.921783469108, -0.227731751117145)]"
+    "detail": "[(308.698076082958, -0.185109210487923), (285.248673219653, -0.200326460760976), (261.702341522019, -0.218350576500475), (230.302227494486, -0.248121165672291)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -5686,7 +5686,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 4), (0.85, 3.83692079137032), (0.7, 3.60724019006537), (0.5, 3.22247603526894)]"
+    "detail": "[(1, 4), (0.85, 4), (0.7, 3.83214057166181), (0.5, 3.42746431487986)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5758,7 +5758,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "4.60546245532461 vs cap 18.0"
+    "detail": "18 vs cap 18.0"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -5773,7 +5773,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 98.5769920780137), (0.7, 96.2570941649006), (0.5, 91.9331632482022)]"
+    "detail": "[(1, 100), (0.85, 96.0047715155932), (0.7, 90.3584834370318), (0.5, 78.8220609008792)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5783,7 +5783,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "100 vs 99.99999999999999"
    }
   ],
   "passed": true
@@ -5860,7 +5860,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 96.8123718140583), (0.7, 91.7123718140583), (0.5, 85.178289634098)]"
+    "detail": "[(1, 100), (0.85, 94.5650662799131), (0.7, 88.2202136124901), (0.5, 78.4321638606519)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5870,7 +5870,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 99.99999999999999"
+    "detail": "100 vs 100.0"
    }
   ],
   "passed": true
@@ -6034,7 +6034,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 94.5756958126646), (0.7, 87.5405641216347), (0.5, 76.5020908919935)]"
+    "detail": "[(1, 100), (0.85, 94.415316577038), (0.7, 85.2574458280265), (0.5, 70.1587476426562)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6044,7 +6044,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 99.99999999999999"
    }
   ],
   "passed": true
@@ -6106,7 +6106,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "0 vs cap 18.0"
+    "detail": "18 vs cap 18.0"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -6121,7 +6121,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 99.9860993241261), (0.7, 99.7342561333409), (0.5, 99.2793598324005)]"
+    "detail": "[(1, 100), (0.85, 96.6311173200748), (0.7, 92.6915224235836), (0.5, 86.0047719468013)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6131,7 +6131,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 99.99999999999997"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -6193,7 +6193,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "17.0193481004285 vs cap 18.0"
+    "detail": "18 vs cap 18.0"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -6208,7 +6208,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.4754522956485), (0.7, 93.8183632979101), (0.5, 86.9333632979101)]"
+    "detail": "[(1, 100), (0.85, 94.8549771059678), (0.7, 89.0032151326722), (0.5, 79.7747615648824)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6218,7 +6218,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 99.99999999999997"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -6295,7 +6295,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 96.6693666437392), (0.7, 93.0023557741739), (0.5, 87.9174164941753)]"
+    "detail": "[(1, 100), (0.85, 94.0171407786241), (0.7, 87.0011041258787), (0.5, 76.7597591039449)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6305,7 +6305,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 99.99999999999999"
    }
   ],
   "passed": true
@@ -6382,7 +6382,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 96.3027315457715), (0.7, 90.0979036385961), (0.5, 80.9989153554751)]"
+    "detail": "[(1, 100), (0.85, 93.5543701937095), (0.7, 85.5761613997459), (0.5, 72.3560489162627)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6392,7 +6392,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "100 vs 100.0"
    }
   ],
   "passed": true
@@ -6469,7 +6469,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6479,7 +6479,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -6556,7 +6556,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6566,7 +6566,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -6643,7 +6643,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6653,7 +6653,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -6730,7 +6730,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.2710887837987), (0.7, 92.649454140952), (0.5, 85.6583294006786)]"
+    "detail": "[(1, 100), (0.85, 94.4427373491869), (0.7, 88.0592319695039), (0.5, 78.1719380578051)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6740,7 +6740,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -6817,17 +6817,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(314.469362584336, 0.999416005752954), (301.363422631392, 1), (285.445720768038, 1), (261.42864260271, 1)]"
+    "detail": "[(314.377076082958, 0.999709387852376), (287.410363887694, 1), (259.529170442503, 1), (223.091607495795, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "99.9416005752954 vs 99.9416005752954"
+    "detail": "99.9709387852376 vs 99.9709387852376"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "100 vs 100.0"
    }
   ],
   "passed": true
@@ -6904,7 +6904,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6914,7 +6914,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -6991,12 +6991,12 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 96.3027315457715), (0.7, 90.0979036385961), (0.5, 80.9989153554751)]"
+    "detail": "[(1, 100), (0.85, 93.5543701937095), (0.7, 85.5761613997459), (0.5, 72.3560489162627)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "100 vs 100.0"
    }
   ],
   "passed": true
@@ -7073,12 +7073,12 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -7155,12 +7155,12 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -7237,7 +7237,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 90), (0.85, 87.6559295070127), (0.7, 84.250437131028), (0.5, 77.747937131028)]"
+    "detail": "[(1, 90), (0.85, 84.9769298539449), (0.7, 79.1497814164449), (0.5, 69.6589008236836)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7247,7 +7247,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "90 vs 90.0"
+    "detail": "90 vs 90"
    }
   ],
   "passed": true
@@ -7273,8 +7273,8 @@
    },
    {
     "check": "Weekly tie-out flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 ties to plan \u00b7 \u2139 10% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
+    "ok": false,
+    "detail": "\u2717 shares must sum to 100%"
    },
    {
     "check": "matches independent oracle (59 outputs)",
@@ -7324,7 +7324,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7334,10 +7334,10 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
-  "passed": true
+  "passed": false
  },
  {
   "name": "lags_one_day_longer",
@@ -7361,7 +7361,7 @@
    {
     "check": "Weekly tie-out flag is \u2713",
     "ok": true,
-    "detail": "\u2713 ties to plan \u00b7 \u2139 25% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
+    "detail": "\u2713 ties to plan \u00b7 \u2139 21% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
    },
    {
     "check": "matches independent oracle (59 outputs)",
@@ -7411,17 +7411,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(305.266862584336, 0.952328343971401), (296.381092987133, 0.980879997385348), (280.136191217742, 1), (250.921783469108, 1)]"
+    "detail": "[(308.698076082958, 0.941743108357307), (285.248673219653, 1), (261.702341522019, 1), (230.302227494486, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "95.2328343971401 vs 95.2328343971401"
+    "detail": "94.1743108357307 vs 94.1743108357307"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -7448,7 +7448,7 @@
    {
     "check": "Weekly tie-out flag is \u2713",
     "ok": true,
-    "detail": "\u2713 ties to plan \u00b7 \u2139 25% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
+    "detail": "\u2713 ties to plan \u00b7 \u2139 21% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
    },
    {
     "check": "matches independent oracle (59 outputs)",
@@ -7496,19 +7496,19 @@
     "detail": ""
    },
    {
-    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(308.698076082958, 0.992648141241486), (285.248673219653, 1), (261.702341522019, 1), (230.302227494486, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "99.2648141241486 vs 99.2648141241486"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -7585,7 +7585,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 90), (0.85, 87.6559295070127), (0.7, 84.250437131028), (0.5, 77.747937131028)]"
+    "detail": "[(1, 90), (0.85, 84.9769298539449), (0.7, 79.1497814164449), (0.5, 69.6589008236836)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7595,7 +7595,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "90 vs 90.0"
+    "detail": "90 vs 90"
    }
   ],
   "passed": true
@@ -7672,7 +7672,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(305.266862584336, 0), (296.381092987133, 0), (280.136191217742, 0), (250.921783469108, 0)]"
+    "detail": "[(308.698076082958, 0), (285.248673219653, 0), (261.702341522019, 0), (230.302227494486, 0)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7682,7 +7682,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -7759,7 +7759,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 72.5), (0.85, 71.4799975718715), (0.7, 68.3734102336451), (0.5, 63.6791821105241)]"
+    "detail": "[(1, 72.5), (0.85, 69.2347486646291), (0.7, 65.6075728833791), (0.5, 59.2449931498837)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7846,12 +7846,12 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -7928,7 +7928,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.3129734075831), (0.7, 92.8241879792082), (0.5, 85.4857941859187)]"
+    "detail": "[(1, 100), (0.85, 94.3643790598741), (0.7, 88.0014981476179), (0.5, 78.110462228945)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7938,7 +7938,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 100"
    }
   ],
   "passed": true
@@ -8015,12 +8015,12 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(321.57638639386, 0.799632274080953), (307.702345452331, 0.835687023330452), (292.497376508232, 0.8791287642049), (272.224084582766, 0.944599951679428)]"
+    "detail": "[(329.507599892482, 0.780385208798712), (303.485848494214, 0.847297685933978), (275.956539488003, 0.931823748840845), (235.98682756127, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "79.9632274080953 vs 79.9632274080953"
+    "detail": "78.0385208798712 vs 78.0385208798712"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -8102,17 +8102,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(489.121410422992, 0.922937662937666), (448.624433158317, 1), (454.808346201795, 0.99256879342376), (339.610797444547, 1)]"
+    "detail": "[(491.551580346071, 0.918374773835023), (435.967341307389, 1), (445.47847594426, 1), (269.522485162137, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "109.829581889582 vs 109.829581889582"
+    "detail": "109.286598086368 vs 109.286598086368"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "119 vs 119.0"
+    "detail": "119 vs 118.99999999999997"
    }
   ],
   "passed": true
@@ -8189,17 +8189,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(477.385892492822, 0.586527596234341), (454.309240967342, 0.616320283082527), (469.852990967342, 0.595931079258496), (381.289818093938, 0.73434953338045)]"
+    "detail": "[(501.42583939408, 0.558407600889396), (455.01376863033, 0.615365993962883), (483.479105586852, 0.579135678800707), (341.421345188984, 0.82010103921597)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "59.8293421290816 vs 59.8293421290816"
+    "detail": "59.191205694276 vs 59.191205694276"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "102.00601389125 vs 102.00601389125"
+    "detail": "106 vs 105.99999999999997"
    }
   ],
   "passed": true
@@ -8276,7 +8276,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 83), (0.85, 80.8164734448883), (0.66, 75.9971200092758), (0.5, 69.9090844772646)]"
+    "detail": "[(1, 83), (0.85, 79.0736472974633), (0.66, 73.7202286978586), (0.5, 66.5987484289994)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8286,7 +8286,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "83 vs 82.99999999999999"
+    "detail": "83 vs 83.0"
    }
   ],
   "passed": true
@@ -8348,7 +8348,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "44.82 vs cap 44.82"
+    "detail": "21.682206 vs cap 44.82"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -8363,17 +8363,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(472.64132128114, 0.507784633280597), (457.601455924502, 0.524473855781606), (450.755920210216, 0.532438930337449), (381.354081674873, 0.629336387186264)]"
+    "detail": "[(494.280220774251, 0.485554529420698), (441.133385292234, 0.544053132231216), (416.907593366768, 0.575667135400107), (299.816265727017, 0.800490258318808)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "77.7883792706534 vs 77.7883792706533"
+    "detail": "75.7465065896289 vs 75.7465065896289"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "153.191676495 vs 153.191676495"
+    "detail": "156 vs 155.99999999999997"
    }
   ],
   "passed": true
@@ -8450,17 +8450,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(290.35729837803, 0.747847077913462), (271.770087098965, 0.798994692391531), (234.920397657971, 0.924325257864593), (218.942903786991, 0.991778465467485)]"
+    "detail": "[(289.25479837803, 0.750697510846719), (257.729300736834, 0.842522974772591), (201.994216937951, 1), (179.781209407408, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "47.8622129864615 vs 47.8622129864615"
+    "detail": "48.04464069419 vs 48.0446406941901"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "64 vs 64"
+    "detail": "64 vs 63.999999999999986"
    }
   ],
   "passed": true
@@ -8522,7 +8522,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "34.97437845 vs cap 43.68"
+    "detail": "15.7368645 vs cap 43.68"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -8537,17 +8537,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(342.98034563117, 0.916337388684327), (329.127497064529, 0.954905673603123), (290.611782778815, 1), (288.277497064529, 1)]"
+    "detail": "[(355.29951971111, 0.884565547798253), (328.370770364142, 0.957106242852222), (266.612759051293, 1), (262.869849274757, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "97.1317632005386 vs 97.1317632005386"
+    "detail": "93.7639480666149 vs 93.7639480666149"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "106 vs 105.99999999999999"
+    "detail": "106 vs 106.0"
    }
   ],
   "passed": true
@@ -8609,7 +8609,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "13.65 vs cap 13.649999999999999"
+    "detail": "10.3028625 vs cap 13.649999999999999"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -8624,7 +8624,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 96.2675693133068), (0.9, 97.6335727441128), (0.5, 80.717032645532)]"
+    "detail": "[(1, 100), (0.85, 94.8108576225185), (0.9, 96.676538986649), (0.5, 81.5066173941573)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8634,7 +8634,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "100 vs 99.99999999999996"
    }
   ],
   "passed": true
@@ -8696,7 +8696,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "33.4527714653107 vs cap 54.6"
+    "detail": "23.1623343 vs cap 54.6"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -8711,7 +8711,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 141), (0.85, 136.354134446936), (0.79, 132.543181866722), (0.5, 110.315908516281)]"
+    "detail": "[(1, 141), (0.85, 133.586977411676), (0.79, 128.593726823635), (0.5, 99.904383113045)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8721,7 +8721,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "141 vs 140.99999999999997"
+    "detail": "141 vs 140.99999999999994"
    }
   ],
   "passed": true
@@ -8798,7 +8798,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 103), (0.85, 100.257788141253), (0.44, 87.8248609240073), (0.5, 90.3084554343591)]"
+    "detail": "[(1, 103), (0.85, 97.5644127461031), (0.44, 72.8936164274563), (0.5, 76.8912448827337)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8808,7 +8808,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "103 vs 103.0"
+    "detail": "103 vs 102.99999999999997"
    }
   ],
   "passed": true
@@ -8885,17 +8885,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(228.732777144265, 0.824418043298157), (219.290653332587, 0.859915485250673), (216.252573306637, 0.871996229631185), (181.836608861056, 1)]"
+    "detail": "[(247.935413394377, 0.760566737884591), (229.210658826228, 0.822699212755158), (223.542584292066, 0.843559311835876), (179.615006652314, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "58.9667298802143 vs 58.9667298802143"
+    "detail": "57.0425053413443 vs 57.0425053413443"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "71.525278176 vs 71.525278176"
+    "detail": "75 vs 74.99999999999996"
    }
   ],
   "passed": true
@@ -8957,7 +8957,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "37.33710552 vs cap 57.62"
+    "detail": "16.7999832 vs cap 57.62"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -8972,7 +8972,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 130), (0.85, 127.160172919041), (0.62, 116.639333876413), (0.5, 108.065038024152)]"
+    "detail": "[(1, 130), (0.85, 124.079446881674), (0.62, 114.764048695086), (0.5, 109.903840945562)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8982,7 +8982,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "130 vs 130.0"
+    "detail": "130 vs 129.99999999999994"
    }
   ],
   "passed": true
@@ -9044,7 +9044,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "0 vs cap 13.440000000000001"
+    "detail": "8.54450145286027 vs cap 13.440000000000001"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -9059,17 +9059,17 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 109.734297728), (0.85, 106.156929258429), (0.72, 102.312375477038), (0.5, 95.328659342157)]"
+    "detail": "[(1, 110), (0.85, 104.846995078026), (0.72, 100.19571525726), (0.5, 90.9498734714904)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "109.734297728 vs 109.734297728"
+    "detail": "110 vs 110"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "109.734297728 vs 109.73429772799996"
+    "detail": "110 vs 109.99999999999994"
    }
   ],
   "passed": true
@@ -9131,7 +9131,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "8.73655643999999 vs cap 23.4"
+    "detail": "23.4 vs cap 23.4"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -9146,17 +9146,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(361.495927472994, 0.885210525708912), (323.486539722265, 0.989221994444472), (240.605456063582, 1), (260.199037296686, 1)]"
+    "detail": "[(365.621562272848, 0.875221904339432), (352.678238669021, 0.907342628248497), (248.263294392867, 1), (273.281581383347, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "107.110473610778 vs 107.110473610778"
+    "detail": "105.901850425071 vs 105.901850425071"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "121 vs 120.99999999999997"
+    "detail": "121 vs 120.99999999999999"
    }
   ],
   "passed": true
@@ -9218,7 +9218,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "0 vs cap 16.0"
+    "detail": "4.04447843561405 vs cap 16.0"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -9233,7 +9233,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 27), (0.85, 26.7035001841971), (0.76, 26.4404790149557), (0.5, 24.9443893307958)]"
+    "detail": "[(1, 27), (0.85, 26.7636512070866), (0.76, 26.5409075950783), (0.5, 25.0715248028838)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9243,7 +9243,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "27 vs 27.0"
+    "detail": "27 vs 27"
    }
   ],
   "passed": true
@@ -9305,7 +9305,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "14.89732398 vs cap 36.54"
+    "detail": "6.7031118 vs cap 36.54"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -9318,19 +9318,19 @@
     "detail": ""
    },
    {
-    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(1, 70), (0.85, 68.5149923085005), (0.48, 55.8710808916887), (0.5, 56.8386284680676)]"
+    "detail": "[(454.261356126453, 0.968605394374593), (420.754988487764, 1), (334.542529481552, 1), (339.202662400807, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "70 vs 70"
+    "detail": "67.8023776062215 vs 67.8023776062215"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "70 vs 69.99999999999999"
+    "detail": "70 vs 70.0"
    }
   ],
   "passed": true
@@ -9392,7 +9392,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "28.83218976 vs cap 36.54"
+    "detail": "12.9731616 vs cap 36.54"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -9407,17 +9407,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(511.58945427219, 0.636671227278641), (494.583626952106, 0.658562613003416), (497.022682852728, 0.655330826844372), (423.89889486351, 0.7683772938808)]"
+    "detail": "[(519.61295427219, 0.626840195257461), (481.54878587442, 0.676388966743707), (486.769889911688, 0.669134004515724), (356.029717195229, 0.914851401394901)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "101.230725137304 vs 101.230725137304"
+    "detail": "99.6675910459362 vs 99.6675910459362"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "159 vs 159"
+    "detail": "159 vs 159.0"
    }
   ],
   "passed": true
@@ -9479,7 +9479,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "20.48957856 vs cap 62.4"
+    "detail": "9.2193696 vs cap 62.4"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -9494,17 +9494,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(621.738742762054, 0.533067265450132), (586.791604003801, 0.564814781205398), (477.038587594501, 0.694762604215776), (472.590551880216, 0.701301729604989)]"
+    "detail": "[(678.445921970515, 0.488511406282689), (612.851179008389, 0.540797803415884), (447.482539328929, 0.740651404914259), (440.859908376548, 0.75177752644609)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "58.5475237533787 vs 58.5475237533787"
+    "detail": "56.1788117225092 vs 56.1788117225092"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "109.8313994275 vs 109.83139942749999"
+    "detail": "115 vs 114.99999999999997"
    }
   ],
   "passed": true
@@ -9581,7 +9581,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 101), (0.85, 97.6191075565475), (0.84, 97.3701731894381), (0.5, 83.6181524834371)]"
+    "detail": "[(1, 101), (0.85, 93.9324088016252), (0.84, 93.4542974577859), (0.5, 72.8609210430086)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9591,7 +9591,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "101 vs 101.0"
+    "detail": "101 vs 101"
    }
   ],
   "passed": true
@@ -9653,7 +9653,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "36.58203648 vs cap 59.63"
+    "detail": "16.4602368 vs cap 59.63"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -9668,12 +9668,12 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(426.322399659196, 0.683587284321774), (409.638393568502, 0.711428850430342), (360.687290519363, 0.807981259913361), (336.750812258494, 0.865413120978214)]"
+    "detail": "[(441.041899659196, 0.660772982462133), (406.499218342554, 0.716922833497275), (324.237192486116, 0.898812900500459), (292.312275094811, 0.996976850643876)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "113.475489197414 vs 113.475489197414"
+    "detail": "109.688315088714 vs 109.688315088714"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -9740,7 +9740,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "3.4157066 vs cap 20.47"
+    "detail": "13.0218197828 vs cap 20.47"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -9755,17 +9755,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(466.566602238949, 0.453158392422374), (449.091261474287, 0.470791996117869), (462.682008544786, 0.456963027573842), (373.113009256116, 0.566660947711529)]"
+    "detail": "[(566.50403287167, 0.373216357096025), (536.036894062965, 0.394429140550419), (558.65181455986, 0.378462158214142), (386.809697384653, 0.546595839913294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "46.0693213791257 vs 46.0693213791257"
+    "detail": "44.785962851523 vs 44.785962851523"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "101.66273459675 vs 101.66273459675"
+    "detail": "120 vs 120"
    }
   ],
   "passed": true
@@ -9827,7 +9827,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "28.98 vs cap 28.98"
+    "detail": "21.19005 vs cap 28.98"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -9842,17 +9842,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(398.623783803601, 0.845767038599394), (373.479879315733, 0.902706881453827), (287.599938257359, 1), (287.599938257359, 1)]"
+    "detail": "[(409.199420943376, 0.823908441428391), (381.464115410266, 0.883812771694812), (269.809579941356, 1), (269.809579941356, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "134.476959137304 vs 134.476959137304"
+    "detail": "131.001442187114 vs 131.001442187114"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "159 vs 159.0"
+    "detail": "159 vs 158.99999999999991"
    }
   ],
   "passed": true
@@ -9927,19 +9927,19 @@
     "detail": ""
    },
    {
-    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(1, 39.9550527), (0.85, 37.2873287569869), (0.45, 28.6819358163264), (0.5, 29.7968468096183)]"
+    "detail": "[(331.949926491134, 0.860715014262601), (298.987040705677, 0.955607591017776), (183.889897848534, 1), (198.277040705677, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "39.9550527 vs 39.9550527"
+    "detail": "58.5286209698569 vs 58.5286209698569"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "39.9550527 vs 39.955052699999996"
+    "detail": "68 vs 68.0"
    }
   ],
   "passed": true
@@ -10001,7 +10001,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "0 vs cap 0.7000000000000001"
+    "detail": "0.7 vs cap 0.7000000000000001"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -10016,7 +10016,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 47), (0.85, 45.9820113759301), (0.66, 43.4408739770438), (0.5, 41.2936673636327)]"
+    "detail": "[(1, 47), (0.85, 45.4919166615588), (0.66, 41.4659042614128), (0.5, 38.075578029711)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10026,7 +10026,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "47 vs 47.0"
+    "detail": "47 vs 46.99999999999996"
    }
   ],
   "passed": true
@@ -10103,7 +10103,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 83), (0.85, 80.7161094722541), (0.96, 82.6132738560732), (0.5, 66.5142552981885)]"
+    "detail": "[(1, 83), (0.85, 78.6802809596077), (0.96, 81.9428251428577), (0.5, 63.0569814118326)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10113,7 +10113,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "83 vs 82.99999999999997"
+    "detail": "83 vs 83"
    }
   ],
   "passed": true
@@ -10190,17 +10190,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(501.798950322502, 0.409953599109912), (483.207451322144, 0.425726642152173), (342.129832795299, 0.601275498349678), (373.828561017315, 0.55029044638662)]"
+    "detail": "[(502.516494635596, 0.409368225541455), (451.532379665883, 0.455591437022759), (300.348065380169, 0.684919629676658), (331.272129665883, 0.620982773050564)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "62.8049543525114 vs 62.8049543525114"
+    "detail": "63.042706733384 vs 63.042706733384"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "153.2001536 vs 153.2001536"
+    "detail": "154 vs 154"
    }
   ],
   "passed": true
@@ -10262,7 +10262,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "5.0773463356664 vs cap 19.44"
+    "detail": "13.7837844294918 vs cap 19.44"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -10277,7 +10277,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 66), (0.85, 64.1229529916572), (0.52, 54.1833841936085), (0.5, 53.5744667014972)]"
+    "detail": "[(1, 66), (0.85, 62.6648510545252), (0.52, 51.1403639973481), (0.5, 50.2704818657605)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10287,7 +10287,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "66 vs 66"
+    "detail": "66 vs 66.0"
    }
   ],
   "passed": true
@@ -10349,7 +10349,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "33.44 vs cap 33.44"
+    "detail": "24.892245 vs cap 33.44"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -10364,7 +10364,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 180), (0.85, 175.304020711098), (0.7, 162.942520547646), (0.5, 142.692680321913)]"
+    "detail": "[(1, 180), (0.85, 174.151761485654), (0.7, 159.356790734628), (0.5, 131.757937876659)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10374,7 +10374,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "180 vs 180"
+    "detail": "180 vs 179.99999999999997"
    }
   ],
   "passed": true
@@ -10451,7 +10451,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 73), (0.85, 72.4705420227165), (0.79, 71.7416878101501), (0.5, 63.1983672011348)]"
+    "detail": "[(1, 73), (0.85, 70.5633490494061), (0.79, 68.4117128679878), (0.5, 54.6469579970028)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10523,7 +10523,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "25.98196095 vs cap 39.69"
+    "detail": "11.6906895 vs cap 39.69"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -10538,17 +10538,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(379.770945998905, 0.902799823075806), (364.683401545594, 0.940150117619975), (323.666987906374, 1), (327.101496834946, 1)]"
+    "detail": "[(497.532044900489, 0.689115698920896), (458.83889724137, 0.747227719616772), (355.52064931884, 0.964380391164453), (364.215377740628, 0.941358228705284)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "89.1584216652994 vs 89.1584216652994"
+    "detail": "86.8285780640329 vs 86.8285780640329"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "98.7576862405 vs 98.75768624049998"
+    "detail": "126 vs 126.0"
    }
   ],
   "passed": true
@@ -10623,19 +10623,19 @@
     "detail": ""
    },
    {
-    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(1, 108.250014796), (0.85, 106.653174199318), (0.56, 98.4906723660108), (0.5, 94.624275941012)]"
+    "detail": "[(441.17772543163, 0.854854711383891), (385.918080611711, 0.977261434719657), (278.054316962098, 1), (263.458006092533, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "108.250014796 vs 108.250014796"
+    "detail": "100.872855943299 vs 100.872855943299"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "108.250014796 vs 108.250014796"
+    "detail": "118 vs 117.99999999999997"
    }
   ],
   "passed": true
@@ -10712,17 +10712,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(426.36036564323, 0.991783422971782), (397.15512311939, 1), (404.689781504483, 1), (309.250775293303, 1)]"
+    "detail": "[(461.273680636234, 0.916716389007708), (416.438033643149, 1), (426.355527742528, 0.991794676841864), (300.733935817062, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "80.0519910688218 vs 80.0519910688218"
+    "detail": "77.9208930656552 vs 77.9208930656552"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "80.715193675 vs 80.715193675"
+    "detail": "85 vs 84.99999999999996"
    }
   ],
   "passed": true
@@ -10784,7 +10784,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "31.04329536 vs cap 80.91000000000001"
+    "detail": "13.9680576 vs cap 80.91000000000001"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -10799,17 +10799,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(468.217502863958, 0.73226041478582), (455.279423531884, 0.75306970870194), (373.66069513127, 0.917562771050068), (389.204980845556, 0.88091663706944)]"
+    "detail": "[(485.506722177894, 0.706184131332206), (446.867849644197, 0.767245043764349), (333.148577577158, 1), (349.790422269896, 0.980178761420165)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "106.91002055873 vs 106.91002055873"
+    "detail": "103.102883174502 vs 103.102883174502"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "146 vs 146.0"
+    "detail": "146 vs 146"
    }
   ],
   "passed": true
@@ -10871,7 +10871,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "3.49789547855998 vs cap 12.4"
+    "detail": "10.8615629183657 vs cap 12.4"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -10886,7 +10886,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 84), (0.85, 82.078159487858), (0.71, 77.0251359821503), (0.5, 65.2251419215303)]"
+    "detail": "[(1, 84), (0.85, 80.4150876947324), (0.71, 72.8225928484366), (0.5, 60.0265336770925)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10896,7 +10896,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "84 vs 83.99999999999997"
+    "detail": "84 vs 83.99999999999993"
    }
   ],
   "passed": true
@@ -10958,7 +10958,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "39.7175724 vs cap 56.760000000000005"
+    "detail": "17.871084 vs cap 56.760000000000005"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -10973,17 +10973,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(576.398074915728, 0.535344308040139), (554.668782498548, 0.556316559193118), (524.304683119666, 0.588534564931591), (494.117310241463, 0.624490221604738)]"
+    "detail": "[(760.508594191549, 0.405743512865167), (716.360429583745, 0.430748846290589), (639.545406427423, 0.482485567827225), (577.178236396367, 0.534620692730906)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "78.5996702133743 vs 78.5996702133743"
+    "detail": "67.8516921962849 vs 67.8516921962848"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "146.8207825 vs 146.8207825"
+    "detail": "167.2280395 vs 167.2280395"
    }
   ],
   "passed": true
@@ -11045,7 +11045,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "21.9993246 vs cap 29.279999999999998"
+    "detail": "9.898686 vs cap 29.279999999999998"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -11060,17 +11060,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(406.283905284526, 0.576655169546135), (395.756476230488, 0.591994644073157), (405.031280244174, 0.578438569348211), (357.399203091726, 0.65552948148456)]"
+    "detail": "[(419.234905284526, 0.558841144505153), (391.489326100648, 0.598447259390877), (413.68962196657, 0.566332104663353), (320.852021072715, 0.730198655138338)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "53.6289307677905 vs 53.6289307677905"
+    "detail": "51.9722264389793 vs 51.9722264389793"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "93 vs 93"
+    "detail": "93 vs 92.99999999999999"
    }
   ],
   "passed": true
@@ -11132,7 +11132,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "0 vs cap 8.12"
+    "detail": "3.73661056740625 vs cap 8.12"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -11147,7 +11147,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 58), (0.85, 57.4576690010646), (0.43, 50.8961100245353), (0.5, 52.7567236225952)]"
+    "detail": "[(1, 58), (0.85, 57.065171633931), (0.43, 44.0001788514356), (0.5, 47.1583082349121)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11157,7 +11157,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "58 vs 57.999999999999964"
+    "detail": "58 vs 57.99999999999996"
    }
   ],
   "passed": true
@@ -11234,17 +11234,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(210.316191998561, 0.978119106091902), (201.521927865183, 1), (180.186278593444, 1), (160.699992879158, 1)]"
+    "detail": "[(214.552045110307, 0.958808319018926), (203.152825182345, 1), (187.098519372289, 1), (170.75319679509, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "86.0744813360874 vs 86.0744813360874"
+    "detail": "84.3751320736655 vs 84.3751320736655"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "88 vs 88.0"
+    "detail": "88 vs 87.99999999999997"
    }
   ],
   "passed": true
@@ -11321,12 +11321,12 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(365.804137448773, 0.952890885823406), (349.712849278572, 0.996736120192614), (352.011701452485, 0.990226822384423), (299.713796729257, 1)]"
+    "detail": "[(367.842878459331, 0.947609560993492), (346.021937651154, 1), (349.064896310372, 0.998586315197663), (248.767305107973, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "104.817997440575 vs 104.817997440575"
+    "detail": "104.237051709284 vs 104.237051709284"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -11408,7 +11408,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 131), (0.85, 126.238409173799), (0.89, 127.7463836996), (0.5, 104.903042431884)]"
+    "detail": "[(1, 131), (0.85, 123.404834630511), (0.89, 125.586585008267), (0.5, 95.4116224363172)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11418,7 +11418,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "131 vs 130.99999999999997"
+    "detail": "131 vs 131.0"
    }
   ],
   "passed": true
@@ -11480,7 +11480,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "16.44127551 vs cap 31.72"
+    "detail": "7.3978191 vs cap 31.72"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -11495,17 +11495,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(461.432471208781, 0.85448194240174), (441.357647757099, 0.893347416294709), (388.037952798496, 1), (374.212024227068, 1)]"
+    "detail": "[(476.880971208781, 0.826801105706299), (428.532300278484, 0.920084003071613), (320.451689943289, 1), (298.090184356697, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "82.8847484129688 vs 82.8847484129688"
+    "detail": "80.199707253511 vs 80.199707253511"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "97 vs 97.0"
+    "detail": "97 vs 96.99999999999994"
    }
   ],
   "passed": true
@@ -11567,7 +11567,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "26.384292 vs cap 60.48"
+    "detail": "11.87172 vs cap 60.48"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -11582,17 +11582,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(504.900106373263, 0.735647639483723), (484.618734111795, 0.76643461196217), (405.907842188032, 0.91505640646507), (415.164985045175, 0.89465293270856)]"
+    "detail": "[(511.653270709836, 0.725938037908513), (474.028183265987, 0.783557991994234), (328.379444104927, 1), (339.934773297473, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "95.634193132884 vs 95.634193132884"
+    "detail": "94.3719449281067 vs 94.3719449281067"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "130 vs 130.0"
+    "detail": "130 vs 129.99999999999997"
    }
   ],
   "passed": true
@@ -11654,7 +11654,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "0 vs cap 1.52"
+    "detail": "0.501166812320545 vs cap 1.52"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -11669,17 +11669,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(347.470666531737, 0.608478907123114), (326.704498639936, 0.647155372236208), (242.109364802722, 0.873277130774556), (239.52180921266, 0.882711149033006)]"
+    "detail": "[(347.847406714408, 0.607819886960262), (321.421868491451, 0.65779149508676), (222.657636513523, 0.949568021736053), (219.404297407378, 0.963648269094758)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "54.1546227339572 vs 54.1546227339572"
+    "detail": "54.0959699394633 vs 54.0959699394633"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "89 vs 88.99999999999999"
+    "detail": "89 vs 88.99999999999997"
    }
   ],
   "passed": true
@@ -11741,7 +11741,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "20.29669488 vs cap 33.599999999999994"
+    "detail": "9.1325808 vs cap 33.599999999999994"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -11756,12 +11756,12 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(424.829733705639, 0.699439878068291), (403.282432678382, 0.736810813130133), (403.282432678382, 0.736810813130133), (338.238303470729, 0.878501500550991)]"
+    "detail": "[(432.385623865809, 0.687217244843171), (391.408394853683, 0.759163219414176), (391.408394853683, 0.759163219414176), (291.353630935115, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "81.1350258559218 vs 81.1350258559218"
+    "detail": "79.7172004018079 vs 79.7172004018079"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -11843,7 +11843,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 55), (0.85, 52.7978682088917), (0.83, 52.4169011819774), (0.5, 43.2682104804669)]"
+    "detail": "[(1, 55), (0.85, 50.6977610585539), (0.83, 50.0151951353325), (0.5, 36.7371577387186)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11853,7 +11853,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "55 vs 55"
+    "detail": "55 vs 55.0"
    }
   ],
   "passed": true
@@ -11930,17 +11930,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(477.094993203856, 0.598862469286497), (455.618622389526, 0.627090886267633), (372.369674651678, 0.767286664741292), (375.513413782113, 0.760863061685642)]"
+    "detail": "[(551.598092963754, 0.517975477723525), (508.708547553291, 0.561646323987421), (360.474140331743, 0.792606885618326), (365.068835983916, 0.782631267180728)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "67.1857625304421 vs 67.185762530442"
+    "detail": "64.2289592377171 vs 64.2289592377171"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "112.1889682125 vs 112.1889682125"
+    "detail": "124 vs 123.99999999999991"
    }
   ],
   "passed": true
@@ -12002,7 +12002,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "0 vs cap 3.78"
+    "detail": "2.39942218734686 vs cap 3.78"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -12017,17 +12017,17 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 47.5031804), (0.85, 46.5743412240167), (0.97, 47.3924864525384), (0.5, 44.1880843074949)]"
+    "detail": "[(1, 54), (0.85, 52.4856594895069), (0.97, 53.7003227115181), (0.5, 45.2835632774286)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "47.5031804 vs 47.5031804"
+    "detail": "54 vs 54"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "47.5031804 vs 47.5031804"
+    "detail": "54 vs 54.0"
    }
   ],
   "passed": true
@@ -12104,7 +12104,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 76), (0.85, 73.3463305955391), (0.82, 72.6829122686819), (0.5, 65.6064501155391)]"
+    "detail": "[(1, 76), (0.85, 71.4886406134704), (0.82, 70.5378167443276), (0.5, 60.2587198051583)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12114,7 +12114,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "76 vs 76"
+    "detail": "76 vs 76.0"
    }
   ],
   "passed": true
@@ -12176,7 +12176,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "8.55946624805302 vs cap 8.74"
+    "detail": "8.5486968 vs cap 8.74"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -12191,7 +12191,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 41), (0.85, 40.5827785276686), (0.71, 39.7862557719131), (0.5, 37.8691768375959)]"
+    "detail": "[(1, 41), (0.85, 40.06238996434), (0.71, 38.690744152481), (0.5, 35.819114222505)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12278,17 +12278,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(218.610465426042, 0.862591039289581), (212.98668612735, 0.885367212383771), (179.201342499247, 1), (180.729092499247, 1)]"
+    "detail": "[(223.288429158431, 0.844519482187905), (209.026248835976, 0.902142336771309), (168.989843864998, 1), (172.685442823331, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "61.2439637895603 vs 61.2439637895603"
+    "detail": "59.9608832353413 vs 59.9608832353413"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "71 vs 71.0"
+    "detail": "71 vs 71"
    }
   ],
   "passed": true
@@ -12365,7 +12365,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 39), (0.85, 38.8496171765971), (0.73, 37.9836100886303), (0.5, 32.995922061116)]"
+    "detail": "[(1, 39), (0.85, 38.2352744097124), (0.73, 36.7146283031983), (0.5, 29.0102151798728)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12452,17 +12452,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(445.737751848766, 0.538433190827034), (422.267393389709, 0.568360246983372), (361.003262832253, 0.664813935799578), (351.3305920248, 0.683117284540535)]"
+    "detail": "[(655.463101416761, 0.366153334156031), (593.701962662451, 0.404243231610221), (445.022591381408, 0.539298464051025), (420.2572187106, 0.571078828190861)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "60.9735171840263 vs 60.9735171840263"
+    "detail": "54.5568467892487 vs 54.5568467892487"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "113.242493633 vs 113.24249363300001"
+    "detail": "149 vs 149.0"
    }
   ],
   "passed": true
@@ -12524,7 +12524,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "17.94406284 vs cap 27.929999999999996"
+    "detail": "8.0740044 vs cap 27.929999999999996"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -12539,17 +12539,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(492.24288472514, 0.928693682181141), (445.355618683293, 1), (485.16317490963, 0.942245580011319), (350.933426134038, 1)]"
+    "detail": "[(514.399431214929, 0.8886923845603), (459.134248106003, 0.995662726160462), (503.963425124637, 0.907095305636118), (323.940792224693, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "102.878743552307 vs 102.878743552307"
+    "detail": "101.310931839874 vs 101.310931839874"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "110.777908288 vs 110.77790828799999"
+    "detail": "114 vs 114"
    }
   ],
   "passed": true
@@ -12611,7 +12611,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "24.2 vs cap 24.200000000000003"
+    "detail": "11.6296992 vs cap 24.200000000000003"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -12626,17 +12626,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(496.641819001765, 0.586798292609217), (472.720873234062, 0.616491862173969), (466.029717954559, 0.62534332082442), (403.996892688501, 0.721363398339986)]"
+    "detail": "[(520.745380158827, 0.559637363157568), (488.303021595738, 0.596819103179424), (474.466582359687, 0.614223598170384), (340.687329287061, 0.855413590045832)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "59.6910160337914 vs 59.6910160337914"
+    "detail": "58.7619231315447 vs 58.7619231315447"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "101.72322719 vs 101.72322719"
+    "detail": "105 vs 105.0"
    }
   ],
   "passed": true
@@ -12698,7 +12698,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "23.18191326 vs cap 63.18"
+    "detail": "10.4307966 vs cap 63.18"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -12713,17 +12713,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(587.319792813927, 0.593495116010609), (556.891382231792, 0.625923545763084), (521.169705650251, 0.668825192240451), (441.565293040489, 0.789399515915909)]"
+    "detail": "[(612.602590660219, 0.569000905131275), (545.466152309136, 0.639034020893528), (495.367520010999, 0.703662259818102), (386.061413178701, 0.902891137711504)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "76.4011859017186 vs 76.4011859017186"
+    "detail": "74.539118572197 vs 74.539118572197"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "128.73094291875 vs 128.73094291875"
+    "detail": "131 vs 131"
    }
   ],
   "passed": true
@@ -12800,17 +12800,17 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 84.613932055), (0.85, 82.2096478342083), (0.83, 81.8430543945515), (0.5, 69.4394669089064)]"
+    "detail": "[(1, 89), (0.85, 85.7709406533349), (0.83, 85.3234438338918), (0.5, 74.7510320205965)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "84.613932055 vs 84.613932055"
+    "detail": "89 vs 89"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "84.613932055 vs 84.61393205499996"
+    "detail": "89 vs 89.0"
    }
   ],
   "passed": true
@@ -12872,7 +12872,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "0 vs cap 1.82"
+    "detail": "1.82 vs cap 1.82"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -12887,17 +12887,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(240.658284793599, 0.926031460118968), (228.987385940014, 0.973228904912356), (212.833845567343, 1), (186.140042833662, 1)]"
+    "detail": "[(241.647457349454, 0.922240793681774), (226.809665884099, 0.982573392489471), (205.980100666708, 1), (181.244991971056, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "67.6002965886847 vs 67.6002965886847"
+    "detail": "67.3235779387695 vs 67.3235779387695"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "73 vs 73"
+    "detail": "73 vs 72.99999999999996"
    }
   ],
   "passed": true
@@ -12974,17 +12974,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(388.904918625641, 0.602424148076248), (372.743243672822, 0.628544496144806), (334.624511665153, 0.700145106286044), (323.757714597752, 0.723645194298457)]"
+    "detail": "[(404.527171108777, 0.579159401440343), (378.049995618772, 0.619721510384487), (317.720057513639, 0.737396675926438), (302.442753165813, 0.774644827271718)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "79.5837341253915 vs 79.5837341253915"
+    "detail": "78.1865191944463 vs 78.1865191944463"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "132.105816773 vs 132.10581677300002"
+    "detail": "135 vs 135"
    }
   ],
   "passed": true
@@ -13046,7 +13046,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "9.28 vs cap 9.28"
+    "detail": "9.19485 vs cap 9.28"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -13061,17 +13061,17 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(530.252818865938, 0.711251017862498), (520.064796012252, 0.725184361707829), (478.235077290184, 0.788613957971999), (471.178652709179, 0.800424329443544)]"
+    "detail": "[(543.737918028416, 0.693611470964487), (509.998352160083, 0.739498187681352), (409.017132904484, 0.922071049847513), (402.274179608394, 0.937526881566195)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "76.3029707816213 vs 76.3029707816213"
+    "detail": "75.6036503351291 vs 75.6036503351291"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "107.27994599 vs 107.27994599"
+    "detail": "109 vs 109"
    }
   ],
   "passed": true
@@ -13148,17 +13148,17 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 34.438605955), (0.85, 32.7569812459183), (0.65, 30.4706956116326), (0.5, 28.7559813859183)]"
+    "detail": "[(1, 42), (0.85, 38.8278280920192), (0.65, 33.9474876034478), (0.5, 30.2872322370192)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "34.438605955 vs 34.438605955"
+    "detail": "42 vs 42"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "34.438605955 vs 34.438605955"
+    "detail": "42 vs 42.0"
    }
   ],
   "passed": true
@@ -13220,7 +13220,7 @@
    {
     "check": "Polish hires \u2264 40%-rule cap",
     "ok": true,
-    "detail": "28.71 vs cap 28.71"
+    "detail": "14.5354041 vs cap 28.71"
    },
    {
     "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
@@ -13235,12 +13235,12 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(483.09216994425, 0.461313920453029), (460.90349259633, 0.483522356495412), (473.458866615521, 0.470700114774949), (354.726806426231, 0.628250075325187)]"
+    "detail": "[(496.89918693904, 0.448495688290355), (459.139338829615, 0.4853801972735), (479.662692866882, 0.464612208060532), (319.680067553284, 0.697125549812383)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "67.3518323861423 vs 67.3518323861423"
+    "detail": "65.4803704903919 vs 65.4803704903919"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
