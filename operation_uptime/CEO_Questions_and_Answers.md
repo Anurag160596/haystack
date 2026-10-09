@@ -88,6 +88,7 @@ Yes (6 + 8 + 3 + 7 = 24). It's a sprint, and it depends on client commitments: o
 - Each extra day of offer approval costs ~8 assessment slots (55 ÷ 7).
 - If offers take 7 days instead of 3: ~92 hires (model run).
 - The 6 + 8 days for screening and interview scheduling are SmartRecruiters' global medians (6 days to review, 14 to interview; Recruiting Benchmarks 2025). Germany's are 8 + 12, so the client has to keep pace.
+- At German pace (8 + 12 days instead of 6 + 8) the cut-off moves 6 days earlier: ~92 hires (model run); the +9 slots a week ask restores 100 (slide 1).
 - Why can assessments start Thu 22 Oct if review takes 6 days? At launch there is no queue, so the first applicants and re-applicants are assessed within 2 days (T0). The 6-day median includes waiting in a queue, so it applies once the queue is full, which is why it sets the 24 Nov cut-off. This 2-day start is my own estimate, not sourced: published review times are 5–10 days once a queue exists. If first assessments slip to Mon 26 Oct, the model gives ~92 hires (model run, T0 = 6), and 100 would need 60 assessments a week. So the kick-off locks recruiter time from 22 Oct, and slide 1 shows the downside.
 
 **12. Is assessment the only bottleneck? What about interviewers?**
@@ -160,7 +161,7 @@ Most firms pay €501–1,000 per successful referral (Radancy survey of 335 fir
 
 **21. Will construction electricians cut it?**
 Only if the client accepts the profile. That decision is needed by 23 Oct.
-- They face the automation-level pass rate (factor 0.9) and get a 2–4 week in-house bridge.
+- They face the automation-level pass rate (factor 0.9) and get a 2–4 week bridge course after signing, run by the client's maintenance trainers. That is onboarding time, not campaign budget; the ask is a named trainer by 23 Oct.
 - 118 applications → 8.4 hires at €1,329.
 - If the client says no, programmatic ads fill all 30 electricians and the budget rises to €130k.
 
@@ -241,7 +242,7 @@ Yes. That's why internal promotion is only the fallback for a supervisor shortfa
 **32. How do I know the spreadsheet is right?**
 - An independent Python re-implementation recomputes the headline outputs.
 - 152 scenarios pass, including edge cases.
-- Each of the 181 inputs was changed one at a time with no errors and matching results; derived cells recalculate live from them.
+- Each of the 183 inputs was changed one at a time with no errors and matching results; derived cells recalculate live from them.
 - All 14 live Tracker rules change a decision when actuals are typed in.
 - The deck matches the model on all 43 checks.
 - Report: `tests/README.md`.
@@ -249,8 +250,8 @@ Yes. That's why internal promotion is only the fallback for a supervisor shortfa
 **33. Which numbers are guesses?**
 None are unexplained. Every input on the Assumptions tab carries one of three labels:
 - **Given (11):** from the brief.
-- **Researched (54):** read from, or calculated by stated arithmetic from, the linked source: costs, rates, pools, reach, timings, volumes.
-- **Own estimate (83):** my judgement, with the reason and the benchmark it starts from where there is one. Examples: pass rates (from Gem's ~35%), acceptance (from Königsteiner's ~77%), the decision rules (cut at 1.5× plan cost, judge after €500 or 30 applications), the 3-day offer.
+- **Researched (50):** read from, or calculated by stated arithmetic from, the linked source: costs, rates, pools, reach, timings, volumes.
+- **Own estimate (89):** my judgement, with the reason and the benchmark it starts from where there is one. Examples: pass rates (from Gem's ~35%), acceptance (from Königsteiner's ~77%), the decision rules (cut at 1.5× plan cost, judge after €500 or 30 applications), the 3-day offer.
 
 Calculated cells are in black text: channel caps, rediscovery pool, referral volumes.
 
