@@ -22,15 +22,15 @@ Each scenario copies the model, changes inputs on the Assumptions tab, recalcula
    - initiative kill bars never overlap pass bars
 4. **Agreement with an independent oracle** (`oracle.py`): a separate plain-Python re-implementation that reads the same inputs and recomputes 49 outputs. These cover spend, reserve, budget, hires by role, slots, qualified, applications, the recommended and 30%-cut budgets by role, the six sensitivity cases and the three initiative test bars.
 
-`test_deck.py` checks that 45 headline figures on the slides equal the model's values. A negative test against a deliberately altered model fails 17 of them, so the check is real.
+`test_deck.py` checks that 43 headline figures on the slides equal the model's values. A negative test against a deliberately altered model fails 17 of them, so the check is real.
 
 ## Every input, one at a time (`test_every_input.py`)
 
-Each of the 183 inputs (every Assumptions value and every typed channel value) is moved on its own. The 35 derived cells (channel qualified shares and caps, rediscovery and referral volumes, I2/I3 sizes) are live formulas on the evidence inputs in Assumptions §6a, so moving those inputs moves them:
+Each of the 178 inputs (every Assumptions value and every typed channel value) is moved on its own. The 35 derived cells (channel qualified shares and caps, rediscovery and referral volumes, I2/I3 sizes) are live formulas on the evidence inputs in Assumptions §6a, so moving those inputs moves them:
 - counts, costs and volumes up 20%, shares down 20%, day inputs +1 day, dates shifted by a few days;
 - weekly and rediscovery shares (which must sum to 100%) move 2 points to a neighbouring week.
 
-Each time the model recalculates and must pass the full check set above: zero formula errors, tie-out flags, invariants and the 59-output oracle. A fired flag is accepted only when it names the problem. Where the economic direction is known, the headline must move the right way. Examples: more openings → more spend; lower pass rate → more qualified needed; dearer channel → plan never cheaper; longer lags → never more slots. The report also records how many output cells each input moves.
+Each time the model recalculates and must pass the full check set above: zero formula errors, tie-out flags, invariants and the 49-output oracle. A fired flag is accepted only when it names the problem. Where the economic direction is known, the headline must move the right way. Examples: more openings → more spend; lower pass rate → more qualified needed; dearer channel → plan never cheaper; longer lags → never more slots. The report also records how many output cells each input moves.
 
 Inputs that change nothing at the base plan, and why:
 - **G2 (campaign end):** not binding, because the 18 Dec signing date (T1) comes first.
