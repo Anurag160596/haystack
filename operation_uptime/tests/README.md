@@ -61,7 +61,7 @@ Four independent review passes wrote 60+ edge cases of their own. Re-run against
 
 ## Every input sourced or derived
 
-Each of the 183 inputs (150 labelled rows on the Assumptions tab: 11 Given, 50 Researched, 89 Own estimate) carries a linked source, a stated calculation from one, or one line of reasoning. Independent source checks reopened every link; where a source did not support a number, the number or its label was corrected (e.g. the social-media quality index 0.50 → 0.41). Recommended budget after all corrections: €122.5k.
+Each of the 183 inputs (151 labelled rows on the Assumptions tab: 11 Given, 45 Researched, 95 Own estimate) carries a linked source, a stated calculation from one, or one line of reasoning. Independent source checks reopened every link; where a source did not support a number, the number or its label was corrected (e.g. the social-media quality index 0.50 → 0.41). Recommended budget after all corrections: €122.5k.
 
 ## Bugs the tests found (all fixed)
 

@@ -1,13 +1,7 @@
-# How I Used AI
+# How AI Was Used: Executive Summary
 
-- I used Claude (Anthropic) as my analyst.
-- It built the Excel model with live formulas and generated the 8 slides directly from the model's values.
-- It researched benchmarks: TalentBait cost per application, IAB, BA and KOFA labour-market data, Redline campaign volumes, StepStone and Pracuj.pl prices, SmartRecruiters timings.
-- I directed the approach and cut everything the brief didn't ask for.
+I used Claude as my analyst, not as the author of the plan. It did the heavy lifting: it built the Excel model with live formulas and generated the deck directly from the model, so every slide figure traces back to a cell. It also researched the benchmarks behind each input, from IAB, BA, KOFA, Eurostat, TalentBait, StepStone and Pracuj.pl.
 
-**How the output was checked**
+My role was to set the standard and make the judgement calls. I required every number to carry a source or a stated reason, challenged the plan as a CEO would, and cut the deck and model back to what the brief asks.
 
-- Every input is labelled Given, Researched (with link) or Own estimate (with one line of reasoning).
-- Independent AI reviews reopened every source; claims a source didn't support were corrected (e.g. social-media quality index 0.50 → 0.41).
-- Automated tests ran 152 scenarios, changed each of the 183 inputs one at a time, and matched every deck figure to the model. All pass.
-- The Own estimates are mine; I can defend each one.
+To check the work, independent AI reviews reopened every source and recomputed the key figures. Where a source didn't support a number, I corrected it, which moved the budget from €117.5k to €122.5k. Automated tests then ran 152 scenarios and changed each input one at a time, with zero errors.

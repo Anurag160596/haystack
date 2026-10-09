@@ -250,8 +250,8 @@ Yes. That's why internal promotion is only the fallback for a supervisor shortfa
 **33. Which numbers are guesses?**
 None are unexplained. Every input on the Assumptions tab carries one of three labels:
 - **Given (11):** from the brief.
-- **Researched (50):** read from, or calculated by stated arithmetic from, the linked source: costs, rates, pools, reach, timings, volumes.
-- **Own estimate (89):** my judgement, with the reason and the benchmark it starts from where there is one. Examples: pass rates (from Gem's ~35%), acceptance (from Königsteiner's ~77%), the decision rules (cut at 1.5× plan cost, judge after €500 or 30 applications), the 3-day offer.
+- **Researched (45):** read from, or calculated by stated arithmetic from, the linked source: costs, rates, pools, reach, timings, volumes.
+- **Own estimate (95):** my judgement, with the reason and the benchmark it starts from where there is one. Examples: pass rates (from Gem's ~35%), acceptance (from Königsteiner's ~77%), the decision rules (cut at 1.5× plan cost, judge after €500 or 30 applications), the 3-day offer.
 
 Calculated cells are in black text: channel caps, rediscovery pool, referral volumes.
 
