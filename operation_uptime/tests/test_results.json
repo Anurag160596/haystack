@@ -3403,13 +3403,13 @@
    },
    {
     "check": "Weekly matrix flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 matrix ties to planned spend"
+    "ok": false,
+    "detail": "\u2717 matrix \u2260 planned spend"
    },
    {
     "check": "Weekly tie-out flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 ties to plan"
+    "ok": false,
+    "detail": "\u2717 weeks \u2260 planned spend"
    },
    {
     "check": "matches independent oracle (49 outputs)",
@@ -3453,7 +3453,7 @@
    },
    {
     "check": "weekly signatures total = expected hires",
-    "ok": true,
+    "ok": false,
     "detail": ""
    },
    {
@@ -3472,7 +3472,7 @@
     "detail": "100 vs 100.0"
    }
   ],
-  "passed": true
+  "passed": false
  },
  {
   "name": "i1_all_week1",

@@ -272,11 +272,13 @@ def compute(path):
     pq1 = sum(rowv(f"I1a-{RS[r]}", "V") for r in ROLES) * i12 + sum(rowv(f"I1b-{RS[r]}", "V") for r in ROLES) * w12
     # I2 / I3 are paced from their go-live day (Weekly cols AB, AC)
     def late_share(lag):
-        live = start + dt.timedelta(days=lag); raw = []
+        live = start + dt.timedelta(days=lag); raw = []; days = []
         for k_ in range(11):
             s_ = start + dt.timedelta(days=7 * k_); e_ = min(s_ + dt.timedelta(days=6), end)
             u_ = max(0, (min(e_, lastAppE) - s_).days + 1); a_ = max(0, (min(e_, lastAppE) - max(s_, live)).days + 1)
-            raw.append(W[k_] * a_ / u_ if u_ > 0 else 0.0)
+            raw.append(W[k_] * a_ / u_ if u_ > 0 else 0.0); days.append(a_)
+        if sum(raw) <= 0:   # typed shares leave nothing after go-live: spread evenly over the live days
+            raw = days
         t_ = sum(raw)
         return [v / t_ if t_ > 0 else 0.0 for v in raw]
     AB, AC = late_share(x["I2L"]), late_share(x["I3L"])

@@ -6,7 +6,7 @@
   "edits": {
    "G1": "2026-10-21 00:00:00"
   },
-  "cells_changed": 207,
+  "cells_changed": 230,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -204,7 +204,7 @@
   "edits": {
    "G3": "66.0"
   },
-  "cells_changed": 43,
+  "cells_changed": 44,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -308,7 +308,7 @@
   "edits": {
    "G4": "0.32000000000000006"
   },
-  "cells_changed": 185,
+  "cells_changed": 218,
   "delta": {
    "rec": 5000,
    "planned": 5640.019240020003,
@@ -407,7 +407,7 @@
   "edits": {
    "G5": "36.0"
   },
-  "cells_changed": 611,
+  "cells_changed": 609,
   "delta": {
    "rec": 10000,
    "planned": 10047.126296297007,
@@ -511,7 +511,7 @@
   "edits": {
    "G6": "54.0"
   },
-  "cells_changed": 641,
+  "cells_changed": 643,
   "delta": {
    "rec": 7500,
    "planned": 6844.080370670999,
@@ -615,7 +615,7 @@
   "edits": {
    "G7": "18.0"
   },
-  "cells_changed": 628,
+  "cells_changed": 625,
   "delta": {
    "rec": 5000,
    "planned": 4471.167389333001,
@@ -719,7 +719,7 @@
   "edits": {
    "G8": "12.0"
   },
-  "cells_changed": 595,
+  "cells_changed": 593,
   "delta": {
    "rec": 2500,
    "planned": 3077.961058336994,
@@ -1021,7 +1021,7 @@
   "edits": {
    "T1": "2026-12-20 00:00:00"
   },
-  "cells_changed": 130,
+  "cells_changed": 131,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1120,7 +1120,7 @@
   "edits": {
    "T2": "7"
   },
-  "cells_changed": 149,
+  "cells_changed": 172,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1224,7 +1224,7 @@
   "edits": {
    "T3": "9"
   },
-  "cells_changed": 209,
+  "cells_changed": 232,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1328,7 +1328,7 @@
   "edits": {
    "T4": "4"
   },
-  "cells_changed": 209,
+  "cells_changed": 232,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1432,7 +1432,7 @@
   "edits": {
    "T5": "8"
   },
-  "cells_changed": 209,
+  "cells_changed": 232,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1640,7 +1640,7 @@
   "edits": {
    "QE": "0.2"
   },
-  "cells_changed": 362,
+  "cells_changed": 364,
   "delta": {
    "rec": 12500,
    "planned": 12111.720370370997,
@@ -2036,7 +2036,7 @@
   "edits": {
    "PE": "0.4"
   },
-  "cells_changed": 460,
+  "cells_changed": 461,
   "delta": {
    "rec": 15000,
    "planned": 14007.777037036998,
@@ -2140,7 +2140,7 @@
   "edits": {
    "PM": "0.44000000000000006"
   },
-  "cells_changed": 501,
+  "cells_changed": 503,
   "delta": {
    "rec": 12500,
    "planned": 10813.555550145,
@@ -2244,7 +2244,7 @@
   "edits": {
    "PA": "0.36000000000000004"
   },
-  "cells_changed": 490,
+  "cells_changed": 488,
   "delta": {
    "rec": 5000,
    "planned": 6068.604793424005,
@@ -2348,7 +2348,7 @@
   "edits": {
    "PS": "0.32000000000000006"
   },
-  "cells_changed": 443,
+  "cells_changed": 441,
   "delta": {
    "rec": 5000,
    "planned": 4018.180822921,
@@ -2452,7 +2452,7 @@
   "edits": {
    "OE": "0.7200000000000001"
   },
-  "cells_changed": 460,
+  "cells_changed": 461,
   "delta": {
    "rec": 15000,
    "planned": 14007.777037036998,
@@ -2556,7 +2556,7 @@
   "edits": {
    "OM": "0.7200000000000001"
   },
-  "cells_changed": 501,
+  "cells_changed": 503,
   "delta": {
    "rec": 12500,
    "planned": 10813.555550145,
@@ -2660,7 +2660,7 @@
   "edits": {
    "OA": "0.7200000000000001"
   },
-  "cells_changed": 490,
+  "cells_changed": 488,
   "delta": {
    "rec": 5000,
    "planned": 6068.604793424005,
@@ -2764,7 +2764,7 @@
   "edits": {
    "OS": "0.68"
   },
-  "cells_changed": 443,
+  "cells_changed": 441,
   "delta": {
    "rec": 5000,
    "planned": 4018.180822921,
@@ -2868,7 +2868,7 @@
   "edits": {
    "AE": "0.5599999999999999"
   },
-  "cells_changed": 464,
+  "cells_changed": 465,
   "delta": {
    "rec": 15000,
    "planned": 14007.777037036998,
@@ -2972,7 +2972,7 @@
   "edits": {
    "AM": "0.6000000000000001"
   },
-  "cells_changed": 505,
+  "cells_changed": 507,
   "delta": {
    "rec": 12500,
    "planned": 10813.555550145,
@@ -3076,7 +3076,7 @@
   "edits": {
    "AA": "0.5599999999999999"
   },
-  "cells_changed": 494,
+  "cells_changed": 492,
   "delta": {
    "rec": 5000,
    "planned": 6068.604793424005,
@@ -3180,7 +3180,7 @@
   "edits": {
    "AS": "0.5599999999999999"
   },
-  "cells_changed": 447,
+  "cells_changed": 445,
   "delta": {
    "rec": 5000,
    "planned": 4018.180822921,
@@ -3787,10 +3787,10 @@
   "label": "W1 Share of media spend in week 1",
   "change": "\u22122 pts (to W2)",
   "edits": {
-   "W1": "0.23",
-   "W2": "0.16499999999999998"
+   "W1": "0.296",
+   "W2": "0.151"
   },
-  "cells_changed": 65,
+  "cells_changed": 115,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -3887,10 +3887,10 @@
   "label": "W2 Share of media spend in week 2",
   "change": "\u22122 pts (to W3)",
   "edits": {
-   "W2": "0.12499999999999999",
-   "W3": "0.19999999999999998"
+   "W2": "0.111",
+   "W3": "0.181"
   },
-  "cells_changed": 63,
+  "cells_changed": 71,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -3987,10 +3987,10 @@
   "label": "W3 Share of media spend in week 3",
   "change": "\u22122 pts (to W4)",
   "edits": {
-   "W3": "0.16",
-   "W4": "0.205"
+   "W3": "0.14100000000000001",
+   "W4": "0.19"
   },
-  "cells_changed": 65,
+  "cells_changed": 74,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4087,10 +4087,10 @@
   "label": "W4 Share of media spend in week 4",
   "change": "\u22122 pts (to W5)",
   "edits": {
-   "W4": "0.165",
-   "W5": "0.235"
+   "W4": "0.15000000000000002",
+   "W5": "0.215"
   },
-  "cells_changed": 104,
+  "cells_changed": 112,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4187,10 +4187,10 @@
   "label": "W5 Share of media spend in week 5",
   "change": "\u22122 pts (to W6)",
   "edits": {
-   "W5": "0.195",
-   "W6": "0.045"
+   "W5": "0.17500000000000002",
+   "W6": "0.047"
   },
-  "cells_changed": 108,
+  "cells_changed": 116,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4287,10 +4287,10 @@
   "label": "W6 Share of media spend in week 6",
   "change": "\u22122 pts (to W5)",
   "edits": {
-   "W6": "0.005000000000000001",
-   "W5": "0.235"
+   "W6": "0.006999999999999999",
+   "W5": "0.215"
   },
-  "cells_changed": 107,
+  "cells_changed": 116,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4388,9 +4388,9 @@
   "change": "+2 pts (from W6)",
   "edits": {
    "W7": "0.02",
-   "W6": "0.005000000000000001"
+   "W6": "0.006999999999999999"
   },
-  "cells_changed": 133,
+  "cells_changed": 156,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4488,9 +4488,9 @@
   "change": "+2 pts (from W6)",
   "edits": {
    "W8": "0.02",
-   "W6": "0.005000000000000001"
+   "W6": "0.006999999999999999"
   },
-  "cells_changed": 133,
+  "cells_changed": 156,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4588,9 +4588,9 @@
   "change": "+2 pts (from W6)",
   "edits": {
    "W9": "0.02",
-   "W6": "0.005000000000000001"
+   "W6": "0.006999999999999999"
   },
-  "cells_changed": 133,
+  "cells_changed": 156,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4688,9 +4688,9 @@
   "change": "+2 pts (from W6)",
   "edits": {
    "W10": "0.02",
-   "W6": "0.005000000000000001"
+   "W6": "0.006999999999999999"
   },
-  "cells_changed": 133,
+  "cells_changed": 156,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4788,9 +4788,9 @@
   "change": "+2 pts (from W6)",
   "edits": {
    "W11": "0.02",
-   "W6": "0.005000000000000001"
+   "W6": "0.006999999999999999"
   },
-  "cells_changed": 133,
+  "cells_changed": 156,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -6968,7 +6968,7 @@
   "edits": {
    "TK1": "0.24"
   },
-  "cells_changed": 3,
+  "cells_changed": 2,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -8060,7 +8060,7 @@
   "edits": {
    "F4": "0.7200000000000001"
   },
-  "cells_changed": 1,
+  "cells_changed": 0,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -9242,7 +9242,7 @@
   "edits": {
    "RD2": "35.4"
   },
-  "cells_changed": 222,
+  "cells_changed": 250,
   "delta": {
    "rec": -2500,
    "planned": -1817.199999999997,
@@ -9539,7 +9539,7 @@
   "edits": {
    "MSH": "0.062400000000000004"
   },
-  "cells_changed": 458,
+  "cells_changed": 459,
   "delta": {
    "rec": 0,
    "planned": 1797.373333334006,
@@ -9638,7 +9638,7 @@
   "edits": {
    "TURN": "0.096"
   },
-  "cells_changed": 458,
+  "cells_changed": 459,
   "delta": {
    "rec": 0,
    "planned": 1797.373333334006,
@@ -9737,7 +9737,7 @@
   "edits": {
    "REFSH": "0.08800000000000001"
   },
-  "cells_changed": 446,
+  "cells_changed": 447,
   "delta": {
    "rec": 2500,
    "planned": 2101.8881249999977,
@@ -16371,7 +16371,7 @@
   "edits": {
    "I1C": "0.096"
   },
-  "cells_changed": 467,
+  "cells_changed": 468,
   "delta": {
    "rec": 0,
    "planned": 1820.872000000003,
@@ -16470,7 +16470,7 @@
   "edits": {
    "I1Q": "0.4"
   },
-  "cells_changed": 447,
+  "cells_changed": 448,
   "delta": {
    "rec": 0,
    "planned": 1820.872000000003,
@@ -16866,7 +16866,7 @@
   "edits": {
    "I1A": "1.38"
   },
-  "cells_changed": 580,
+  "cells_changed": 581,
   "delta": {
    "rec": -2500,
    "planned": -1676.3257500000036,
@@ -17064,7 +17064,7 @@
   "edits": {
    "I2C": "100.8"
   },
-  "cells_changed": 124,
+  "cells_changed": 125,
   "delta": {
    "rec": 2500,
    "planned": 1982.3999999999942,
@@ -17163,7 +17163,7 @@
   "edits": {
    "I2A": "1.08"
   },
-  "cells_changed": 208,
+  "cells_changed": 226,
   "delta": {
    "rec": -5000,
    "planned": -3799.5999999994965,
@@ -17361,7 +17361,7 @@
   "edits": {
    "I3C": "16.8"
   },
-  "cells_changed": 110,
+  "cells_changed": 106,
   "delta": {
    "rec": 0,
    "planned": 969.6969696970045,
@@ -17460,7 +17460,7 @@
   "edits": {
    "I3Q": "0.11200000000000002"
   },
-  "cells_changed": 130,
+  "cells_changed": 126,
   "delta": {
    "rec": 0,
    "planned": 1623.3766233770002,
@@ -17559,7 +17559,7 @@
   "edits": {
    "I3A": "1.2"
   },
-  "cells_changed": 193,
+  "cells_changed": 188,
   "delta": {
    "rec": -2500,
    "planned": -1082.251082250994,
@@ -17658,7 +17658,7 @@
   "edits": {
    "I3H": "18.0"
   },
-  "cells_changed": 110,
+  "cells_changed": 106,
   "delta": {
    "rec": 0,
    "planned": 329.00432900499436,
@@ -17757,7 +17757,7 @@
   "edits": {
    "I3W": "22.8"
   },
-  "cells_changed": 110,
+  "cells_changed": 106,
   "delta": {
    "rec": 0,
    "planned": 329.00432900499436,
@@ -17935,6 +17935,204 @@
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
     "detail": "[(1, 100), (0.7, 87.0167513312124)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 100.0"
+   }
+  ]
+ },
+ {
+  "key": "I2L",
+  "label": "I2L I2: days from campaign start to go-live (ads, quiz, German copy)",
+  "change": "+1 day",
+  "edits": {
+   "I2L": "4"
+  },
+  "cells_changed": 75,
+  "delta": {
+   "rec": 0,
+   "planned": 0.0,
+   "hires": 0,
+   "qneed": 0.0
+  },
+  "flags": {},
+  "passed": true,
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (49 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "initiative kill bars never overlap pass bars",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "18 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.7, 87.0578063312124)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 100.0"
+   }
+  ]
+ },
+ {
+  "key": "I3L",
+  "label": "I3L I3: days from campaign start to go-live (translation, freelancer hired)",
+  "change": "+1 day",
+  "edits": {
+   "I3L": "8"
+  },
+  "cells_changed": 65,
+  "delta": {
+   "rec": 0,
+   "planned": 0.0,
+   "hires": 0,
+   "qneed": 0.0
+  },
+  "flags": {},
+  "passed": true,
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (49 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "initiative kill bars never overlap pass bars",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "18 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.7, 87.0578063312124)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
