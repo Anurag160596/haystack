@@ -35,11 +35,11 @@ Each time the model recalculates and must pass the full check set above: zero fo
 Inputs that change nothing at the base plan, and why:
 - **G2 (campaign end):** not binding, because the 18 Dec signing date (T1) comes first.
 - **G9 (recognition time):** information only.
-- **R1–R13 and F1, F3, F4:** Tracker rules and flag thresholds (F2 moves a pool read-out at base). These act only once actuals exist or a threshold is crossed; see below.
+- **R1–R13, F3 and F4:** Tracker rules and flag thresholds (F1 and F2 move a pool read-out at base). These act only once actuals exist or a threshold is crossed; see below.
 
 ## Tracker rules live (`test_tracker_rules.py`)
 
-A realistic week of actuals is typed into the Tracker: ten channel cells (one clear performer, one dud) and role-level interview, offer and signing results. Each rule R1–R13 and threshold F1–F4 is then moved, and the test confirms that a decision, re-forecast or flag changes. Example: raising R6 from €750 to €1,500 turns StepStone mechatronics (€1,449 spent, 0 qualified) from SWITCH OFF to HOLD. R13 is tested with slack capacity, because a week that is already 'Full' (F4) cannot also be under-paced.
+A realistic week of actuals is typed into the Tracker: ten channel cells (one clear performer, one dud) and role-level interview, offer and signing results. Each rule R1–R13 and threshold F1–F4 is then moved, and the test confirms that a decision, re-forecast or flag changes. Example: raising R6 from €750 to €1,500 turns the Polish corridor (€900 spent, 0 qualified, ≥3 expected) from SWITCH OFF to HOLD. R13 is tested with slack capacity, because a week that is already 'Full' (F4) cannot also be under-paced.
 
 ## Robustness features
 
@@ -56,6 +56,18 @@ A realistic week of actuals is typed into the Tracker: ten channel cells (one cl
 ## Independent reviewers' edge cases
 
 Four independent review passes wrote 60+ edge cases of their own. Re-run against the current model, all pass, except cases whose expected result was written before a fix the reviewer requested. For example, a 100% reserve and negative openings are now correctly flagged as invalid input.
+
+## Every input sourced or derived
+
+Each of the 134 inputs carries a linked benchmark or a written derivation on the Assumptions tab. Checking the old values against the research corrected several of them:
+- the rediscovery pool (700 → 136, because consented applicant data is kept for at most about a year);
+- channel quality (IAB decisive ÷ used index);
+- channel volume caps (Trendence reach × in-market pool);
+- Polish language pass (Eurostat, 22% → 14%);
+- relocators (Destatis and IAB mobility rates);
+- the zero-qualified switch-off rule (R11 = 3, a 5% false-kill risk).
+
+The recommended budget rose from €102.5k to €207.5k as a result.
 
 ## Bugs the tests found (all fixed)
 

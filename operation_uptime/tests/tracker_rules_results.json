@@ -2,14 +2,15 @@
  "decisions": {
   "C05": "HOLD",
   "C06": "Wait \u2013 too little data",
-  "C09": "HOLD",
-  "C10": "SWITCH OFF",
+  "C09": "ADD +25% (if slots free)",
+  "C10": "HOLD",
   "C13": "ADD +25% (if slots free)",
   "C14": "HOLD",
   "C15": "HOLD",
   "C17": "HOLD",
   "C18": "Wait \u2013 too little data",
-  "I1a-E": "Wait \u2013 too little data"
+  "I1a-E": "Wait \u2013 too little data",
+  "I3-M": "SWITCH OFF"
  },
  "results": [
   {
@@ -31,9 +32,9 @@
    "ok": true,
    "cells": 5,
    "example": [
-    "Tracker!V13: 345 \u2192 258.75",
-    "Tracker!V19: 1512 \u2192 900",
-    "Tracker!W13: 1.07142857142857 \u2192 0.803571428571429"
+    "Tracker!V13: 667.127071823204 \u2192 400.276243093923",
+    "Tracker!V19: 1163.07692307692 \u2192 692.307692307692",
+    "Tracker!W13: 0.74585635359116 \u2192 0.447513812154696"
    ],
    "context": null
   },
@@ -42,8 +43,9 @@
    "base": 0.8,
    "value": 0.4,
    "ok": true,
-   "cells": 1,
+   "cells": 2,
    "example": [
+    "Tracker!X13: 'ADD +25% (if slots free)' \u2192 'HOLD'",
     "Tracker!X17: 'ADD +25% (if slots free)' \u2192 'HOLD'"
    ],
    "context": null
@@ -53,11 +55,11 @@
    "base": 1.5,
    "value": 0.75,
    "ok": true,
-   "cells": 6,
+   "cells": 5,
    "example": [
-    "Tracker!X13: 'HOLD' \u2192 'CUT 50%'",
-    "Tracker!X17: 'ADD +25% (if slots free)' \u2192 'CUT 50%'",
-    "Tracker!X18: 'HOLD' \u2192 'CUT 50%'"
+    "Tracker!X14: 'HOLD' \u2192 'CUT 50%'",
+    "Tracker!X18: 'HOLD' \u2192 'CUT 50%'",
+    "Tracker!X19: 'HOLD' \u2192 'CUT 50%'"
    ],
    "context": null
   },
@@ -66,11 +68,11 @@
    "base": 2,
    "value": 1.0,
    "ok": true,
-   "cells": 4,
+   "cells": 5,
    "example": [
-    "Tracker!X13: 'HOLD' \u2192 'SWITCH OFF'",
+    "Tracker!X14: 'HOLD' \u2192 'SWITCH OFF'",
     "Tracker!X18: 'HOLD' \u2192 'SWITCH OFF'",
-    "Tracker!X21: 'HOLD' \u2192 'SWITCH OFF'"
+    "Tracker!X19: 'HOLD' \u2192 'SWITCH OFF'"
    ],
    "context": null
   },
@@ -81,7 +83,7 @@
    "ok": true,
    "cells": 1,
    "example": [
-    "Tracker!X14: 'SWITCH OFF' \u2192 'HOLD'"
+    "Tracker!X34: 'SWITCH OFF' \u2192 'HOLD'"
    ],
    "context": null
   },
@@ -90,8 +92,9 @@
    "base": 0.25,
    "value": 0.125,
    "ok": true,
-   "cells": 1,
+   "cells": 2,
    "example": [
+    "Tracker!X13: 'ADD +25% (if slots free)' \u2192 'ADD +13% (if slots free)'",
     "Tracker!X17: 'ADD +25% (if slots free)' \u2192 'ADD +13% (if slots free)'"
    ],
    "context": null
@@ -101,11 +104,11 @@
    "base": 30,
    "value": 15.0,
    "ok": true,
-   "cells": 27,
+   "cells": 31,
    "example": [
-    "Tracker!U10: 0.252941176470588 \u2192 0.278947368421053",
-    "Tracker!U13: 0.28 \u2192 0.271428571428571",
-    "Tracker!U14: 0.276315789473684 \u2192 0.228260869565217"
+    "Tracker!U10: 0.233529411764706 \u2192 0.261578947368421",
+    "Tracker!U13: 0.181 \u2192 0.200714285714286",
+    "Tracker!U14: 0.156315789473684 \u2192 0.129130434782609"
    ],
    "context": null
   },
@@ -114,35 +117,35 @@
    "base": 10,
    "value": 20,
    "ok": true,
-   "cells": 10,
+   "cells": 8,
    "example": [
     "Tracker!I40: 0.416666666666667 \u2192 0.5",
     "Tracker!I41: 0.6 \u2192 0.55",
-    "Tracker!L40: 0.251887658104485 \u2192 0.302265189725383"
+    "Tracker!L40: 0.259016103894566 \u2192 0.310819324673479"
    ],
    "context": null
   },
   {
    "rule": "R10",
-   "base": 5,
-   "value": 2.5,
+   "base": 7,
+   "value": 3.5,
    "ok": true,
    "cells": 6,
    "example": [
     "Tracker!K40: 0.7 \u2192 0.5",
-    "Tracker!L40: 0.251887658104485 \u2192 0.179919755788918",
-    "Tracker!N40: 26.0073481027462 \u2192 19.1481057876758"
+    "Tracker!L40: 0.259016103894566 \u2192 0.185011502781833",
+    "Tracker!N40: 25.9218067532652 \u2192 19.0870048237609"
    ],
    "context": null
   },
   {
    "rule": "R11",
-   "base": 2,
-   "value": 0.5,
+   "base": 3,
+   "value": 1.5,
    "ok": true,
    "cells": 1,
    "example": [
-    "Tracker!X21: 'HOLD' \u2192 'SWITCH OFF'"
+    "Tracker!X14: 'HOLD' \u2192 'SWITCH OFF'"
    ],
    "context": null
   },
@@ -151,8 +154,9 @@
    "base": 0.5,
    "value": 1.0,
    "ok": true,
-   "cells": 1,
+   "cells": 2,
    "example": [
+    "Tracker!X14: 'HOLD' \u2192 'SWITCH OFF'",
     "Tracker!X21: 'HOLD' \u2192 'SWITCH OFF'"
    ],
    "context": null
@@ -177,7 +181,7 @@
    "ok": true,
    "cells": 2,
    "example": [
-    "Funnel!K58: 'Tight' \u2192 'Very hard'",
+    "Funnel!K60: 'Tight' \u2192 'Very hard'",
     "Funnel!K61: 'Tight' \u2192 'Very hard'"
    ],
    "context": null
@@ -187,10 +191,9 @@
    "base": 0.12,
    "value": 0.06,
    "ok": true,
-   "cells": 2,
+   "cells": 1,
    "example": [
-    "Funnel!K59: 'Comfortable' \u2192 'Tight'",
-    "Funnel!K60: 'Comfortable' \u2192 'Tight'"
+    "Funnel!K58: 'Comfortable' \u2192 'Tight'"
    ],
    "context": null
   },
@@ -210,7 +213,7 @@
    "base": 0.9,
    "value": 0.99,
    "ok": true,
-   "cells": 5,
+   "cells": 4,
    "example": [
     "Weekly!S4: 'Full' \u2192 None",
     "Weekly!S5: 'Full' \u2192 None",

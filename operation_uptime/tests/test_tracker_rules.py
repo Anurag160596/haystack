@@ -15,7 +15,7 @@ import run_tests as rt
 HERE = os.path.dirname(os.path.abspath(__file__))
 # week-1 actuals: channel ID → (spend €, applications, qualified)
 ACT = {"C09": (1449, 20, 5), "C13": (800, 12, 6), "C14": (600, 4, 0), "C17": (750, 3, 0), "C05": (500, 2, 0),
-       "C15": (750, 15, 1), "C06": (400, 4, 2), "C18": (300, 3, 1), "I1a-E": (30, 12, 6), "C10": (1449, 8, 0)}   # C13 = clear performer, C10 = clear dud
+       "C15": (750, 15, 1), "C06": (400, 4, 2), "C18": (300, 3, 1), "I1a-E": (30, 12, 6), "C10": (1449, 8, 0), "I3-M": (900, 10, 0)}   # C13 = clear performer; C10 and I3-M = duds (I3-M is cheap enough for the zero-qualified rule)
 # role actuals: qualified assessed, interviewed, passed, offers, signed
 ROLE = {"Electricians": (30, 12, 5, 4, 2), "Mechatronics": (40, 15, 9, 7, 5), "Automation": (10, 4, 2, 1, 1), "Supervisors": (8, 3, 1, 1, 0)}
 RULES = ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10", "R11", "R12", "R13", "F1", "F2", "F3", "F4"]

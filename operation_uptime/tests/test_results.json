@@ -7273,8 +7273,8 @@
    },
    {
     "check": "Weekly tie-out flag is \u2713",
-    "ok": false,
-    "detail": "\u2717 shares must sum to 100%"
+    "ok": true,
+    "detail": "\u2713 ties to plan \u00b7 \u2139 10% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
    },
    {
     "check": "matches independent oracle (59 outputs)",
@@ -7337,7 +7337,7 @@
     "detail": "100 vs 100"
    }
   ],
-  "passed": false
+  "passed": true
  },
  {
   "name": "lags_one_day_longer",
