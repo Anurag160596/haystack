@@ -11,7 +11,8 @@ text = subprocess.run(["markitdown", DECK], capture_output=True, text=True).stdo
 slides = text.split("<!-- Slide number:")
 wb = load_workbook(MODEL, data_only=True)
 B, F, I = wb["Budget"], wb["Funnel"], wb["Initiatives"]
-k = lambda v, d=1: "€" + f"{v/1000:.{d}f}k"
+import re as _re
+k = lambda v, d=1: "€" + _re.sub(r"(\.\d*?)0+$", r"\1", _re.sub(r"\.0+$", "", f"{v/1000:.{d}f}")) + "k"
 e0 = lambda v: "€" + f"{round(v):,}"
 n0 = lambda v: f"{round(v):,}"
 R = ["Electricians", "Mechatronics", "Automation", "Supervisors"]

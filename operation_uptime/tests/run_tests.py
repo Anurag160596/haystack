@@ -25,6 +25,7 @@ def _current(key):
     A_ = load_workbook(MODEL, data_only=True)["Assumptions"]
     return next(A_.cell(r, 4).value for r in range(1, A_.max_row + 1) if A_.cell(r, 1).value == key)
 _W6 = _current("W6")
+_W5 = _current("W5")
 
 # name, description, {input ID or (channel ID, column letter): value}, expected flags
 CASES = [
@@ -111,7 +112,7 @@ CASES = [
  ("threshold_negative", "Typo: Tracker scale-up threshold −1", {"R3": -1}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
  ("campaign_end_before_start", "Campaign end before its start", {"G2": D(2026, 10, 1)}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
  ("spend_after_cutoff_wk7", "All regular spend in week 7 (after the 24 Nov cut-off), no supervisors", {"G8": 0, "W1": 0, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 0, "W7": 1}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "no spend share falls before the last useful application"}),
- ("spend_partly_late", "10 pts of weekly spend typed into week 7: re-spread over weeks 1–6, plan still ties", {"W6": _W6 - 0.10, "W7": 0.10}, {}),
+ ("spend_partly_late", "10 pts of weekly spend typed into week 7: re-spread over weeks 1–6, plan still ties", {"W5": _W5 - 0.10, "W7": 0.10}, {}),
  ("lags_one_day_longer", "Every lag one day longer (cut-off moves into week 5): week-6 share re-spread", {"T2": 7, "T3": 9, "T4": 4, "T5": 8}, {}),
  ("start_one_day_later", "Campaign starts Wed 21 Oct: week 6 now starts after the cut-off", {"G1": D(2026, 10, 21)}, {}),
  ("spend_after_cutoff_wk11", "All regular spend in week 11, no supervisors", {"G8": 0, "W1": 0, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 0, "W11": 1}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "no spend share falls before the last useful application"}),
