@@ -6,7 +6,7 @@
   "edits": {
    "G1": "2026-10-21 00:00:00"
   },
-  "cells_changed": 206,
+  "cells_changed": 207,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -204,7 +204,7 @@
   "edits": {
    "G3": "66.0"
   },
-  "cells_changed": 44,
+  "cells_changed": 43,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -407,7 +407,7 @@
   "edits": {
    "G5": "36.0"
   },
-  "cells_changed": 597,
+  "cells_changed": 598,
   "delta": {
    "rec": 12500,
    "planned": 10009.559629629992,
@@ -719,7 +719,7 @@
   "edits": {
    "G8": "12.0"
   },
-  "cells_changed": 585,
+  "cells_changed": 584,
   "delta": {
    "rec": 5000,
    "planned": 3070.4943916699995,
@@ -1021,7 +1021,7 @@
   "edits": {
    "T1": "2026-12-20 00:00:00"
   },
-  "cells_changed": 43,
+  "cells_changed": 130,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1120,7 +1120,7 @@
   "edits": {
    "T2": "7"
   },
-  "cells_changed": 148,
+  "cells_changed": 149,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1224,7 +1224,7 @@
   "edits": {
    "T3": "9"
   },
-  "cells_changed": 208,
+  "cells_changed": 209,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1328,7 +1328,7 @@
   "edits": {
    "T4": "4"
   },
-  "cells_changed": 208,
+  "cells_changed": 209,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1432,7 +1432,7 @@
   "edits": {
    "T5": "8"
   },
-  "cells_changed": 208,
+  "cells_changed": 209,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1536,7 +1536,7 @@
   "edits": {
    "T6": "8"
   },
-  "cells_changed": 91,
+  "cells_changed": 88,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1838,7 +1838,7 @@
   "edits": {
    "QA": "0.2"
   },
-  "cells_changed": 285,
+  "cells_changed": 286,
   "delta": {
    "rec": 7500,
    "planned": 4756.858977071999,
@@ -2348,7 +2348,7 @@
   "edits": {
    "PS": "0.32000000000000006"
   },
-  "cells_changed": 436,
+  "cells_changed": 435,
   "delta": {
    "rec": 5000,
    "planned": 4018.180822919996,
@@ -2764,7 +2764,7 @@
   "edits": {
    "OS": "0.68"
   },
-  "cells_changed": 436,
+  "cells_changed": 435,
   "delta": {
    "rec": 5000,
    "planned": 4018.180822919996,
@@ -3180,7 +3180,7 @@
   "edits": {
    "AS": "0.5599999999999999"
   },
-  "cells_changed": 440,
+  "cells_changed": 439,
   "delta": {
    "rec": 5000,
    "planned": 4018.180822919996,
@@ -3787,10 +3787,10 @@
   "label": "W1 Share of media spend in week 1",
   "change": "\u22122 pts (to W2)",
   "edits": {
-   "W1": "0.24000000000000002",
+   "W1": "0.23",
    "W2": "0.16499999999999998"
   },
-  "cells_changed": 63,
+  "cells_changed": 65,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -3888,9 +3888,9 @@
   "change": "\u22122 pts (to W3)",
   "edits": {
    "W2": "0.12499999999999999",
-   "W3": "0.205"
+   "W3": "0.19999999999999998"
   },
-  "cells_changed": 61,
+  "cells_changed": 63,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -3987,10 +3987,10 @@
   "label": "W3 Share of media spend in week 3",
   "change": "\u22122 pts (to W4)",
   "edits": {
-   "W3": "0.165",
-   "W4": "0.21"
+   "W3": "0.16",
+   "W4": "0.205"
   },
-  "cells_changed": 62,
+  "cells_changed": 65,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4087,10 +4087,10 @@
   "label": "W4 Share of media spend in week 4",
   "change": "\u22122 pts (to W5)",
   "edits": {
-   "W4": "0.17",
-   "W5": "0.21"
+   "W4": "0.165",
+   "W5": "0.235"
   },
-  "cells_changed": 56,
+  "cells_changed": 104,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4187,10 +4187,10 @@
   "label": "W5 Share of media spend in week 5",
   "change": "\u22122 pts (to W6)",
   "edits": {
-   "W5": "0.17",
-   "W6": "0.05"
+   "W5": "0.195",
+   "W6": "0.045"
   },
-  "cells_changed": 107,
+  "cells_changed": 108,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4287,8 +4287,8 @@
   "label": "W6 Share of media spend in week 6",
   "change": "\u22122 pts (to W5)",
   "edits": {
-   "W6": "0.009999999999999998",
-   "W5": "0.21"
+   "W6": "0.005000000000000001",
+   "W5": "0.235"
   },
   "cells_changed": 107,
   "delta": {
@@ -4388,9 +4388,9 @@
   "change": "+2 pts (from W6)",
   "edits": {
    "W7": "0.02",
-   "W6": "0.009999999999999998"
+   "W6": "0.005000000000000001"
   },
-  "cells_changed": 131,
+  "cells_changed": 133,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4488,9 +4488,9 @@
   "change": "+2 pts (from W6)",
   "edits": {
    "W8": "0.02",
-   "W6": "0.009999999999999998"
+   "W6": "0.005000000000000001"
   },
-  "cells_changed": 131,
+  "cells_changed": 133,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4588,9 +4588,9 @@
   "change": "+2 pts (from W6)",
   "edits": {
    "W9": "0.02",
-   "W6": "0.009999999999999998"
+   "W6": "0.005000000000000001"
   },
-  "cells_changed": 131,
+  "cells_changed": 133,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4688,9 +4688,9 @@
   "change": "+2 pts (from W6)",
   "edits": {
    "W10": "0.02",
-   "W6": "0.009999999999999998"
+   "W6": "0.005000000000000001"
   },
-  "cells_changed": 131,
+  "cells_changed": 133,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4788,9 +4788,9 @@
   "change": "+2 pts (from W6)",
   "edits": {
    "W11": "0.02",
-   "W6": "0.009999999999999998"
+   "W6": "0.005000000000000001"
   },
-  "cells_changed": 131,
+  "cells_changed": 133,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -7367,7 +7367,7 @@
    "I1W3": "0.09",
    "I1W2": "0.31"
   },
-  "cells_changed": 31,
+  "cells_changed": 29,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -8060,7 +8060,7 @@
   "edits": {
    "F4": "0.7200000000000001"
   },
-  "cells_changed": 0,
+  "cells_changed": 1,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -8351,7 +8351,7 @@
   "edits": {
    "CXH": "0.852"
   },
-  "cells_changed": 468,
+  "cells_changed": 469,
   "delta": {
    "rec": -10000,
    "planned": -8353.486269397908,
@@ -8549,7 +8549,7 @@
   "edits": {
    "RXP": "0.288"
   },
-  "cells_changed": 49,
+  "cells_changed": 50,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -8648,7 +8648,7 @@
   "edits": {
    "RXL": "0.12"
   },
-  "cells_changed": 170,
+  "cells_changed": 171,
   "delta": {
    "rec": 2500,
    "planned": 1128.9541630759923,
@@ -8747,7 +8747,7 @@
   "edits": {
    "RXG": "0.084"
   },
-  "cells_changed": 43,
+  "cells_changed": 44,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -8945,7 +8945,7 @@
   "edits": {
    "CPS": "0.10400000000000001"
   },
-  "cells_changed": 296,
+  "cells_changed": 297,
   "delta": {
    "rec": 10000,
    "planned": 8094.788888888987,
@@ -9440,7 +9440,7 @@
   "edits": {
    "STAFF": "12843.6"
   },
-  "cells_changed": 464,
+  "cells_changed": 463,
   "delta": {
    "rec": -2500,
    "planned": -1846.446666666714,
@@ -11752,7 +11752,7 @@
   "edits": {
    "('C07', 'I')": "1.2"
   },
-  "cells_changed": 220,
+  "cells_changed": 221,
   "delta": {
    "rec": 0,
    "planned": -89.44099378900137,
@@ -15168,7 +15168,7 @@
   "edits": {
    "('C17', 'I')": "1.2"
   },
-  "cells_changed": 204,
+  "cells_changed": 205,
   "delta": {
    "rec": 0,
    "planned": -106.43389199300145,
@@ -15772,7 +15772,7 @@
   "edits": {
    "('C19', 'I')": "1.2"
   },
-  "cells_changed": 218,
+  "cells_changed": 219,
   "delta": {
    "rec": 0,
    "planned": -63.46368715100107,
