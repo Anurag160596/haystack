@@ -220,6 +220,7 @@ def compute(path):
         sav = max(0.0, planned - avail)
         hb = {r: 0.0 for r in ROLES}
         qs = 0.0
+        hs = {}
         for rw in rows:
             above = sum(o["AA"] for o in rows if keys[o["row"]] > keys[rw["row"]])
             cut = min(rw["AA"], max(0.0, sav - above))
@@ -229,6 +230,15 @@ def compute(path):
                 h = rw["U"] * (1 - cut / rw["AA"])
             else:
                 h = rw["U"]
+            hs[rw["row"]] = h
+        # Polish hires stay within the 40% cap of the scenario's own mechatronics hires: P <= G4/(1-G4) x other mechatronics
+        if x["G4"] < 1:
+            other_m = sum(hs[rw["row"]] for rw in rows if rw["role"] == "Mechatronics" and rw["id"] != "I3-M")
+            for rw in rows:
+                if rw["id"] == "I3-M":
+                    hs[rw["row"]] = min(hs[rw["row"]], x["G4"] / (1 - x["G4"]) * other_m)
+        for rw in rows:
+            h = hs[rw["row"]]
             hb[rw["role"]] += h
             qs += h * rw["V"] / rw["U"] if rw["U"] > 0 else 0.0
         factor = min(1.0, slots / qs) if qs > 0 else 1.0
