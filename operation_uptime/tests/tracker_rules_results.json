@@ -161,12 +161,12 @@
   },
   {
    "rule": "R13",
-   "base": 47,
-   "value": 23.5,
+   "base": 50,
+   "value": 25.0,
    "ok": true,
    "cells": 1,
    "example": [
-    "Weekly!S4: 'Under 47 \u2013 release reserve' \u2192 None"
+    "Weekly!S4: 'Under 50 \u2013 release reserve' \u2192 None"
    ],
    "context": {
     "G3": 80
@@ -208,7 +208,7 @@
   },
   {
    "rule": "F4",
-   "base": 0.86,
+   "base": 0.9,
    "value": 0.99,
    "ok": true,
    "cells": 5,

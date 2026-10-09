@@ -4088,7 +4088,7 @@
    "W2": "0.12499999999999999",
    "W3": "0.19999999999999998"
   },
-  "cells_changed": 63,
+  "cells_changed": 64,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4188,7 +4188,7 @@
    "W3": "0.16",
    "W4": "0.19999999999999998"
   },
-  "cells_changed": 64,
+  "cells_changed": 65,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4388,7 +4388,7 @@
    "W5": "0.165",
    "W6": "0.24"
   },
-  "cells_changed": 108,
+  "cells_changed": 109,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4488,7 +4488,7 @@
    "W6": "0.2",
    "W5": "0.205"
   },
-  "cells_changed": 108,
+  "cells_changed": 109,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -8454,7 +8454,7 @@
   "label": "F4 Weekly flag: 'full' when a week's slot use exceeds",
   "change": "down 20%",
   "edits": {
-   "F4": "0.6880000000000001"
+   "F4": "0.7200000000000001"
   },
   "cells_changed": 0,
   "delta": {
@@ -8553,7 +8553,7 @@
   "label": "R13 Pacing floor: release reserve to the cheapest cells with capacity when next week's forecast qualified falls below",
   "change": "up 20%",
   "edits": {
-   "R13": "56.4"
+   "R13": "60.0"
   },
   "cells_changed": 0,
   "delta": {

@@ -69,7 +69,7 @@ Each of the 134 inputs carries a linked benchmark, a written derivation or a sta
 - **Relocators:** Destatis and IAB mobility rates.
 - **Initiative test bars:** Poisson quantiles at the 5% and 1% significance levels.
 - **Scale-up trigger:** a one-sided 95% test.
-- **Capacity flag:** the 85% occupancy standard (BMJ 1999).
+- **Capacity flags:** Bagust et al., BMJ 1999 (verified on PubMed): risk above 85% use, regular shortages at 90%.
 
 The recommended budget moved from €102.5k to €117.5k as a result.
 
