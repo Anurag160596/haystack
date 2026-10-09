@@ -7,7 +7,7 @@ Every number below comes from the delivered model (`Operation_Uptime_Model.xlsx`
 ## A. The headline
 
 **1. What exactly am I approving?**
-€120k for 100 signed maintenance contracts by Fri 18 Dec. €101.7k is planned spend: €72.6k paid channels including €9k of tests, €27.4k for the three new sources, and €1.6k set-up. The other €18.3k is a reserve (15% plus rounding up), released only by the Tracker rules from week 3.
+€122.5k for 100 signed maintenance contracts by Fri 18 Dec. €102.3k is planned spend: €73.2k paid channels including €9k of tests, €27.4k for the three new sources, and €1.6k set-up. The other €20.2k is a reserve (15% plus rounding up), released only by the Tracker rules from week 3.
 - Excluded: Joveo's fees and the client's internal recruiter time.
 - *Show:* Summary C5–C7, Budget C4–C12, slide 5.
 
@@ -18,8 +18,8 @@ Every number below comes from the delivered model (`Operation_Uptime_Model.xlsx`
 - The client can't do 55 a week and manages only 45 → ~83.5 hires.
 - *Show:* Funnel B22–B26, slide 3 chart, slide 1 "How sure".
 
-**3. Is €1,017 per hire cheap or expensive?**
-Cheap. That is media cost per hire; all-in, if the whole reserve is spent, it is €1,200 (€120k ÷ 100).
+**3. Is €1,023 per hire cheap or expensive?**
+Cheap. That is media cost per hire; all-in, if the whole reserve is spent, it is €1,225 (€122.5k ÷ 100).
 - **German benchmark:** total cost of a skilled hire is €4,700, of which about a third (~€1,570) is recruiting (IZA DP 7656, 2013, 1,001 firms from BIBB's 2007 survey, so 2007-era euros, https://docs.iza.org/dp7656.pdf).
 - **Agency:** 20–30% of a €46–50k median salary (gehalt.de: Mechatroniker €46.3k, Industrieelektriker €49.7k, https://www.gehalt.de/beruf/mechatroniker, https://www.gehalt.de/beruf/industrieelektriker) = €9,200–15,000 per hire (20% × €46k; 30% × €50k), so €0.92–1.5M for 100.
 - **US comparison:** about $4,700 per hire (SHRM benchmarking, 2022, https://www.shrm.org/in/topics-tools/news/talent-acquisition/real-costs-recruitment).
@@ -34,19 +34,19 @@ More money buys at most ~2 more hires: there are only ~6 spare assessment slots 
 **5. Why a 15% reserve?**
 Three reasons:
 - High-risk projects carry 10–20% contingency (Mastt).
-- The reserve plus rounding (€18.3k) covers about a third (34%) of the extra media a 30% miss on the qualified share would need: a full re-run of the model gives €155.8k planned, +€54.1k (+53%), because the cheap channels hit their caps. The Funnel table's +43% is a lower bound that ignores caps.
+- The reserve plus rounding (€20.2k) covers just over a third (37%: 20.2 ÷ 54.0) of the extra media a 30% miss on the qualified share would need: a full re-run of the model gives €156.3k planned, +€54.0k (+53%), and a €185k budget, because the cheap channels hit their caps. The Funnel table's +43% is a lower bound that ignores caps.
 - IZA finds hiring costs are convex: 10% more hires raises total hiring cost by ~13%, and the marginal hire costs up to ~€7,000 at 20 or more hires.
 
 It is released only from week 3 by the Tracker rules. With no reserve the budget would be €102.5k.
-- *Show:* Summary C7, Funnel row 45.
+- *Show:* Summary C7, Funnel row 45, slide 3 (€185k).
 
-**6. What do I get with 30% less (€84k)?**
+**6. What do I get with 30% less (€85.75k)?**
 About 87 hires.
-- Electricians fall to ~20.6 of 30, supervisors to ~7.5 of 10.
-- Mechatronics (44.4 of 45) and automation (14.5 of 15) stay almost full.
-- Rule: cut the most expensive cost-per-hire cells first.
-- Advice: keep the money; the last €36k buys ~13 hires, mostly electricians. If forced, know that the cut rule removes the dearest channels first, which are mostly electrician programmatic (9.4 of the 13 lost hires): agree that up front, and cover supervisors by internal promotion.
-- *Show:* Budget rows 45–46, slide 6.
+- Electricians fall to ~20.5 of 30, supervisors to ~8.1 of 10.
+- Mechatronics (44.0 of 45) and automation (14.5 of 15) stay almost full. The Polish corridor drops from 18 to 17.6 hires so it stays within 40% of mechatronics hires (17.6 ÷ 44.0).
+- Rule: cut the most expensive cost-per-hire cells first; keep the reserve at 15%.
+- Advice: keep the money; the last €36.75k buys ~13 hires, mostly electricians. If forced, know that the cut rule removes the dearest cells first. Of the ~12.9 lost hires, 9.0 are electrician programmatic (its whole €20.3k is cut) and 0.5 other electrician cells (the Meta and Search tests); the rest are supervisors 1.9 (1.6 of them LinkedIn), mechatronics 1.0 (0.6 Meta and Search tests, 0.4 Polish) and automation 0.5. Agree that up front, and cover supervisors by internal promotion.
+- *Show:* Budget rows 45–46 and the scenario rows below (56–91, column F vs G), slide 6.
 
 ---
 
@@ -99,8 +99,8 @@ The brief gives assessment capacity only. In the model every qualified applicant
 ## C. Channels and Joveo
 
 **13. Programmatic is Joveo's core product. What role does it play?**
-It is the biggest paid channel: €35.2k (35% of planned spend) for ~16 hires. At the market-median Indeed cost of €161 per application (TalentBait, 2,549 DACH campaigns) and job-board quality, programmatic costs €2,143 per hire on average. That's dearer than StepStone (€1,564) and LinkedIn (€1,687) but cheaper than Meta (€2,388) and Search (€3,393), so it fills the electrician and mechatronics gap after the cheaper sources; for automation and supervisors it stays at test level. Two points add to that:
-- **Joveo's platform runs LinkedIn, Meta and search too** ("Reach passive candidates across LinkedIn, Meta, search, display, audio, and other channels", https://www.joveo.com/), so most of the €72.6k of paid media can run through Joveo.
+It is the biggest paid channel: €35.7k (35% of planned spend) for ~16.7 hires. At the market-median Indeed cost of €161 per application (TalentBait, 2,549 DACH campaigns) and job-board quality, programmatic costs €2,142 per hire on average. That's dearer than StepStone (€1,564) and LinkedIn (€1,687) but cheaper than Meta (€2,388) and Search (€3,442), so it fills the electrician and mechatronics gap after the cheaper sources; for automation and supervisors it stays at test level. Two points add to that:
+- **Joveo's platform runs LinkedIn, Meta and search too** ("Reach passive candidates across LinkedIn, Meta, search, display, audio, and other channels", https://www.joveo.com/), so most of the €73.2k of paid media can run through Joveo.
 - **Joveo's own published manufacturing cases show cost per application down 17–32%** ("Manufacturing giant cut CPAs by 17%", "Global manufacturer reduced CPA by 32%", https://www.joveo.com/customers/). Applied to programmatic, the budget falls to €115k–€107.5k (model runs).
 
 These are vendor results, so they're shown as upside, not built into the base.
@@ -118,7 +118,7 @@ Not very, and the model now buys almost none. The social-media quality index is 
 - *Show:* Channels rows 19–20 (C15–C16), Budget row 33, slide 4.
 
 **16. Why spend €9k on tests?**
-That's about 9% of planned spend (€9k ÷ €101.7k), in line with the common 70/20/10 budgeting rule of thumb, which keeps about 10% for experiments.
+That's about 9% of planned spend (€9k ÷ €102.3k), in line with the common 70/20/10 budgeting rule of thumb, which keeps about 10% for experiments.
 - Only the 12 pay-per-click cells get a €750 test: programmatic, LinkedIn, Meta and Search × role (4 + 2 + 2 + 4 = 12; 12 × €750 = €9k).
 - Tests run in weeks 1–2, so each is fully spent by 2 Nov and judged by Mon 9 Nov on real data.
 - Test applicants are real candidates and their hires count (~3.6 in the plan). Duds are cut from Mon 2 Nov.
@@ -128,7 +128,7 @@ That's about 9% of planned spend (€9k ÷ €101.7k), in line with the common 7
 The Tracker rules:
 - **Scale up** +25% a week if cost per qualified is 20% better than plan and slots are free.
 - **Cut 50%** at ≥1.5× plan, **switch off** at ≥2× (common ad practice).
-- **Switch off** a test fully spent (€750) with zero qualified.
+- **Switch off** a test that is fully spent (€750) and has 30+ applications with none qualified. At the 25% baseline share qualified, that happens by chance less than 0.1% of the time (0.75^30 ≈ 0.02%).
 - **Pause** the costliest cells if next week is forecast above 55 qualified; **release reserve** below 50.
 - A channel is judged only after €500 spend or 30 applications.
 
@@ -136,7 +136,7 @@ The rules were tested: all 14 live rules (R1–R7, R9, R10, R13, F1–F4) change
 - *Show:* Tracker column X, Assumptions rows 83–103, slide 8.
 
 **18. 20 free organic hires. Realistic?**
-Organic volume = openings × 27 applications per vacancy at firms with 250+ staff (IAB) × 13% coming via the careers page (CareerPlug). Qualified share = 25% × careers-page index 0.71 = 17.8%. That gives ~20.3 hires.
+Organic volume = openings × 27 applications per vacancy at firms with 250+ staff (IAB) × 13% coming via the careers page (CareerPlug). Qualified share = 25% × careers-page index 0.70 = 17.5%. That gives ~20.0 hires.
 - It is free media, but it uses slots like everything else.
 - *Show:* Budget row 29.
 
@@ -149,7 +149,7 @@ Only consented talent-pool records; the plan uses the last 12 months of records.
 - Day-1 ask: a GDPR-checked export.
 - The pool is 211 records: 10,703 staff × 7.8% in maintenance (BA occupation data) × 12% turnover (IAB) ≈ 100 hires a year, × runners-up per hire.
 - At ~€2.50 per application and ~€14 a hire it's the cheapest paid source.
-- If the export is empty, the budget rises to €132.5k.
+- If the export is empty, the budget rises to €135k.
 - Joveo's AI Talent CRM and Talent Campaigns do this re-engagement ("Re-engage past applicants… through personalized email, SMS, and WhatsApp campaigns", https://www.joveo.com/), which makes it the repeatable product.
 - *Show:* Initiatives rows 5–12, slide 7.
 
@@ -171,7 +171,7 @@ Only if the client accepts the profile. That decision is needed by 23 Oct.
 - **Supply:** ~13,800 Poles already commute to Brandenburg jobs, ~1,700 of them in machine, metal and building trades (IAB 2020).
 - **Language** is the binding filter: 14% of vocationally trained Poles speak a foreign language well (Eurostat AES 2022). A Polish-speaking freelancer pre-screens applicants.
 
-It delivers 18 hires (the 40% cap) at €383 each. Without it the budget would be €152.5k.
+It delivers 18 hires (the 40% cap) at €383 each. Without it the budget would be €155k (slide 7).
 
 **23. Why not foreign-trained electricians?**
 The brief says recognition takes 2–4 months, so the plan buys none. But in German law the industrial electrician is non-regulated for employees (BIBB: "This profession is not regulated in Germany"), so recognition is legally needed only for self-employment or the master-craftsman route.
@@ -179,7 +179,7 @@ The brief says recognition takes 2–4 months, so the plan buys none. But in Ger
 - That's an upside to raise.
 
 **24. Why not just use an agency or temp workers?**
-- **Agency:** €9,200–15,000 per hire, 8–13× this plan's all-in €1,200 (9,200 ÷ 1,200 ≈ 8; 15,000 ÷ 1,200 ≈ 13).
+- **Agency:** €9,200–15,000 per hire, 7.5–12× this plan's all-in €1,225 (9,200 ÷ 1,225 ≈ 7.5; 15,000 ÷ 1,225 ≈ 12.2).
 - **Temp:** billed at roughly 2× the temp's wage (industry rule of thumb), capped at 18 months per worker, equal pay after 9 months. Taking a temp on permanently costs a fee; courts accept up to ~2 monthly salaries (BGH III ZR 77/11).
 
 Temps work as a bridge for a few critical shifts, not as the plan.
@@ -205,7 +205,7 @@ Once a role has 10 interviews (first read 2 Nov, confirmed 9 Nov), if the pass r
 **27. Why is electrician the hardest role?**
 - **Dearest last hire:** €2,272, the highest of the four roles (Funnel column H).
 - **Scarcest trade in Brandenburg:** 85.7% of vacancies have no suitable unemployed candidate, vs 41.4% across all jobs (KOFA 2026, https://www.kofa.de/media/Publikationen/Laendersteckbriefe/Brandenburg.pdf).
-- **Most money:** 38% of planned spend (€38.9k of €101.7k).
+- **Most money:** 38% of planned spend (€39.1k of €102.3k).
 - **No alternative route** under the brief: no Polish route and no foreign-trained route.
 
 Automation has the tighter pool (22% of reachable people vs 12%) and less channel headroom (3.2× vs 3.7× coverage, Funnel column E), but needs only 15 hires and its last hire is cheaper (€1,505), so it is watched weekly. Supervisors cost more per hire on average (€1,550) but are only 10 people.
@@ -216,12 +216,12 @@ Yes. That's why internal promotion is only the fallback for a supervisor shortfa
 
 **29. How will you track and attribute?**
 - **Data:** tracked URLs with utm tags captured in the applicant system's source field; a Monday export; recruiter disposition codes; the pre-screener sheet.
-- **Tracker tab:** uses a channel's actual rates once it has €500 spend or 30 applications, and outputs scale/cut/off decisions plus a hire forecast.
+- **Tracker tab:** uses a channel's actual rates once it has €500 spend or 30 applications, and outputs scale/cut/off decisions (column X) plus a hire forecast. It also records signed hires by source and cost per hire to date (columns Y–Z).
 
 **30. What does cash flow look like?**
-- Week 1: €30.4k, the biggest week (tests, StepStone ads, set-up, and media whose applicants fill the assessments of 22 Oct – 1 Nov).
-- Week 2: €16.6k (€5.4k of it the remaining tests).
-- Weeks 3–5: €13.9–16.8k a week.
+- Week 1: €30.5k, the biggest week (tests, StepStone ads, set-up, and media whose applicants fill the assessments of 22 Oct – 1 Nov).
+- Week 2: €16.7k (€5.4k of it the remaining tests).
+- Weeks 3–5: €14.1–16.9k a week.
 - Week 6: €3.5k: €1.6k of media (only 24 Nov is still a useful application day) plus €2.0k of referral bonuses.
 - Weeks 7–9: €0.3–2.4k a week of referral bonuses as people sign.
 - Paid media stops 24 Nov.
@@ -249,8 +249,8 @@ Yes. That's why internal promotion is only the fallback for a supervisor shortfa
 **33. Which numbers are guesses?**
 None are unexplained. Every input on the Assumptions tab carries one of three labels:
 - **Given (11):** from the brief.
-- **Researched (62):** read from, or calculated by stated arithmetic from, the linked source: costs, rates, pools, reach, timings, volumes.
-- **Own estimate (72):** my judgement, with the reason and the benchmark it starts from where there is one. Examples: pass rates (from Gem's ~35%), acceptance (from Königsteiner's ~77%), the decision rules (cut at 1.5× plan cost, judge after €500 or 30 applications), the 3-day offer.
+- **Researched (54):** read from, or calculated by stated arithmetic from, the linked source: costs, rates, pools, reach, timings, volumes.
+- **Own estimate (80):** my judgement, with the reason and the benchmark it starts from where there is one. Examples: pass rates (from Gem's ~35%), acceptance (from Königsteiner's ~77%), the decision rules (cut at 1.5× plan cost, judge after €500 or 30 applications), the 3-day offer.
 
 Calculated cells are in black text: channel caps, rediscovery pool, referral volumes.
 
@@ -270,7 +270,7 @@ Yes. Every derived input is a live formula. For example:
 ## G. Joveo's business
 
 **36. Where are our fees?**
-Not in the €120k. Joveo prices custom (media-based, volume discounts, a performance guarantee), so the fee is quoted separately.
+Not in the €122.5k. Joveo prices custom (media-based, volume discounts, a performance guarantee), so the fee is quoted separately.
 
 **37. Is this repeatable for other clients?**
 Yes, through three pieces:
