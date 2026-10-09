@@ -3,11 +3,11 @@
   "C05": "CUT 50%",
   "C06": "Wait \u2013 too little data",
   "C09": "ADD +25% (if slots free)",
-  "C10": "SWITCH OFF",
+  "C10": "CUT 50%",
   "C13": "ADD +25% (if slots free)",
-  "C14": "CUT 50%",
+  "C14": "SWITCH OFF",
   "C15": "HOLD",
-  "C17": "SWITCH OFF",
+  "C17": "HOLD",
   "C18": "Wait \u2013 too little data",
   "I1a-E": "Wait \u2013 too little data",
   "I3-M": "SWITCH OFF"
@@ -21,7 +21,7 @@
    "cells": 8,
    "example": [
     "Tracker!U10: 0.225 \u2192 0.5",
-    "Tracker!U22: 0.1775 \u2192 0.333333333333333",
+    "Tracker!U22: 0.175 \u2192 0.333333333333333",
     "Tracker!V10: 715.555555555556 \u2192 200"
    ],
    "context": null
@@ -29,11 +29,11 @@
   {
    "rule": "R2",
    "base": 30,
-   "value": 7.5,
+   "value": 60,
    "ok": true,
    "cells": 1,
    "example": [
-    "Tracker!X25: 'Wait \u2013 too little data' \u2192 'HOLD'"
+    "Tracker!X18: 'SWITCH OFF' \u2192 'ADD +25% (if slots free)'"
    ],
    "context": null
   },
@@ -53,9 +53,10 @@
    "base": 1.5,
    "value": 0.75,
    "ok": true,
-   "cells": 1,
+   "cells": 2,
    "example": [
-    "Tracker!X19: 'HOLD' \u2192 'CUT 50%'"
+    "Tracker!X19: 'HOLD' \u2192 'CUT 50%'",
+    "Tracker!X21: 'HOLD' \u2192 'CUT 50%'"
    ],
    "context": null
   },
@@ -64,9 +65,10 @@
    "base": 2,
    "value": 1.0,
    "ok": true,
-   "cells": 2,
+   "cells": 3,
    "example": [
-    "Tracker!X18: 'CUT 50%' \u2192 'SWITCH OFF'",
+    "Tracker!X14: 'CUT 50%' \u2192 'SWITCH OFF'",
+    "Tracker!X21: 'HOLD' \u2192 'SWITCH OFF'",
     "Tracker!X9: 'CUT 50%' \u2192 'SWITCH OFF'"
    ],
    "context": null
@@ -74,12 +76,11 @@
   {
    "rule": "R6",
    "base": 750,
-   "value": 375.0,
+   "value": 1500,
    "ok": true,
-   "cells": 2,
+   "cells": 1,
    "example": [
-    "Tracker!X18: 'CUT 50%' \u2192 'SWITCH OFF'",
-    "Tracker!X9: 'CUT 50%' \u2192 'SWITCH OFF'"
+    "Tracker!X18: 'SWITCH OFF' \u2192 'ADD +25% (if slots free)'"
    ],
    "context": null
   },
