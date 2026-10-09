@@ -32,16 +32,16 @@ Each of the 181 inputs (every Assumptions value and every typed channel value) i
 
 Each time the model recalculates and must pass the full check set above: zero formula errors, tie-out flags, invariants and the 49-output oracle. A fired flag is accepted only when it names the problem. Where the economic direction is known, the headline must move the right way. Examples: more openings → more spend; lower pass rate → more qualified needed; dearer channel → plan never cheaper; longer lags → never more slots. The report also records how many output cells each input moves.
 
-Inputs that change nothing at the base plan, and why:
+Inputs that change nothing at the base plan, and why (from `every_input_results.json`):
 - **G2 (campaign end):** not binding, because the 18 Dec signing date (T1) comes first.
 - **G9 (recognition time):** information only.
-- **R1–R13, F3 and F4:** Tracker rules and flag thresholds (F1 and F2 move a pool read-out at base).
-- **SSW (days per StepStone ad):** 30 → 36 days still gives 2 ads for the 36-day window, so nothing changes.
-- **TK1 (kill significance level):** moving 1% to 0.8% does not cross a Poisson quantile, so the kill bars stay the same. The bars change when the level crosses a quantile (the test cases with other levels cover this). These act only once actuals exist or a threshold is crossed; see below.
+- **R1–R7, R9, R10, R13, F3 and F4:** Tracker rules and flag thresholds. They act only once actuals exist or a threshold is crossed; see below.
+- **SSW (days per StepStone ad):** 30 → 31 days still gives 2 ads for the window.
+- **PLI (Polish industry workers):** feeds only the Polish supply-check text on the Initiatives tab (row 49), which the sweep does not snapshot.
 
 ## Tracker rules live (`test_tracker_rules.py`)
 
-A realistic week of actuals is typed into the Tracker: ten channel cells (one clear performer, one dud) and role-level interview, offer and signing results. Each rule R1–R13 and threshold F1–F4 is then moved, and the test confirms that a decision, re-forecast or flag changes. Example: raising R6 from €750 to €1,500 turns the Polish corridor (€900 spent, 0 qualified, ≥3 expected) from SWITCH OFF to HOLD. R13 is tested with slack capacity, because a week that is already 'Full' (F4) cannot also be under-paced.
+A realistic week of actuals is typed into the Tracker: ten channel cells (one clear performer, one dud) and role-level interview, offer and signing results. Each rule R1–R13 and threshold F1–F4 is then moved, and the test confirms that a decision, re-forecast or flag changes. Example: a channel with €800 spent and 35 applications but no qualified applicant is switched off (R6); one with only 3 applications is held. R13 is tested with slack capacity, because a week that is already 'Full' (F4) cannot also be under-paced.
 
 ## Robustness features
 
@@ -61,18 +61,7 @@ Four independent review passes wrote 60+ edge cases of their own. Re-run against
 
 ## Every input sourced or derived
 
-Each of the 134 inputs carries a linked benchmark, a written derivation or a statistical convention on the Assumptions tab. Checking the old values against the research corrected several of them:
-- **Qualified share by role:** IAB's measured 25% for production occupations and 23% for specialists (was 10–22% judgement).
-- **Channel quality:** the IAB decisive ÷ used index.
-- **Channel volume caps:** Trendence reach × the in-market pool (BA employment × Gallup's 11% actively searching).
-- **Rediscovery pool:** 700 → 211, because consented applicant data is kept for at most about a year. BA data puts maintenance trades at 7.8% of production occupations.
-- **Polish language pass:** Eurostat, 22% → 14%.
-- **Relocators:** Destatis and IAB mobility rates.
-- **Initiative test bars:** Poisson quantiles at the 5% and 1% significance levels.
-- **Scale-up trigger:** a one-sided 95% test.
-- **Capacity flags:** Bagust et al., BMJ 1999 (verified on PubMed): risk above 85% use, regular shortages at 90%.
-
-The recommended budget moved from €102.5k to €117.5k as a result.
+Each of the 181 inputs (148 labelled rows on the Assumptions tab: 11 Given, 54 Researched, 83 Own estimate) carries a linked source, a stated calculation from one, or one line of reasoning. Independent source checks reopened every link; where a source did not support a number, the number or its label was corrected (e.g. the social-media quality index 0.50 → 0.41). Recommended budget after all corrections: €122.5k.
 
 ## Bugs the tests found (all fixed)
 
