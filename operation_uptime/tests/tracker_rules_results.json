@@ -40,8 +40,8 @@
   },
   {
    "rule": "R3",
-   "base": 0.75,
-   "value": 0.375,
+   "base": 0.8,
+   "value": 0.4,
    "ok": true,
    "cells": 1,
    "example": [
@@ -125,8 +125,8 @@
   },
   {
    "rule": "R10",
-   "base": 7,
-   "value": 3.5,
+   "base": 5,
+   "value": 2.5,
    "ok": true,
    "cells": 6,
    "example": [

@@ -407,7 +407,7 @@
   "edits": {
    "G5": "36.0"
   },
-  "cells_changed": 673,
+  "cells_changed": 674,
   "delta": {
    "rec": 12500,
    "planned": 9997.538296295897,
@@ -511,7 +511,7 @@
   "edits": {
    "G6": "54.0"
   },
-  "cells_changed": 732,
+  "cells_changed": 733,
   "delta": {
    "rec": 10000,
    "planned": 6625.306707451891,
@@ -615,7 +615,7 @@
   "edits": {
    "G7": "18.0"
   },
-  "cells_changed": 698,
+  "cells_changed": 699,
   "delta": {
    "rec": 7500,
    "planned": 4526.159329741902,
@@ -719,7 +719,7 @@
   "edits": {
    "G8": "12.0"
   },
-  "cells_changed": 663,
+  "cells_changed": 664,
   "delta": {
    "rec": 5000,
    "planned": 3067.489058336898,
@@ -3388,7 +3388,7 @@
   "edits": {
    "B2": "900.0"
   },
-  "cells_changed": 504,
+  "cells_changed": 503,
   "delta": {
    "rec": 2500,
    "planned": 396.931873647889,
@@ -3988,7 +3988,7 @@
    "W1": "0.06999999999999999",
    "W2": "0.16499999999999998"
   },
-  "cells_changed": 65,
+  "cells_changed": 66,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4088,7 +4088,7 @@
    "W2": "0.12499999999999999",
    "W3": "0.19999999999999998"
   },
-  "cells_changed": 65,
+  "cells_changed": 63,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -5186,7 +5186,7 @@
   "edits": {
    "PSE": "5760.0"
   },
-  "cells_changed": 25,
+  "cells_changed": 24,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -5384,7 +5384,7 @@
   "edits": {
    "PSA": "2400.0"
   },
-  "cells_changed": 31,
+  "cells_changed": 30,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -5582,7 +5582,7 @@
   "edits": {
    "PIE": "0.08800000000000001"
   },
-  "cells_changed": 26,
+  "cells_changed": 25,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -5780,7 +5780,7 @@
   "edits": {
    "PIA": "0.08800000000000001"
   },
-  "cells_changed": 211,
+  "cells_changed": 210,
   "delta": {
    "rec": 2500,
    "planned": 1128.9541630758904,
@@ -6570,7 +6570,7 @@
   "label": "R3 Scale up when re-forecast cost per qualified \u2264 this \u00d7 plan",
   "change": "up 20%",
   "edits": {
-   "R3": "0.8999999999999999"
+   "R3": "0.96"
   },
   "cells_changed": 0,
   "delta": {
@@ -7161,10 +7161,10 @@
  },
  {
   "key": "TP1",
-  "label": "TP1 Initiative test: PASS bar significance level (an on-plan initiative misses the bar with at most this probability)",
+  "label": "TP1 Initiative test: PASS needs at least this share of planned qualified in the window",
   "change": "down 20%",
   "edits": {
-   "TP1": "0.04000000000000001"
+   "TP1": "0.48"
   },
   "cells_changed": 3,
   "delta": {
@@ -7359,12 +7359,12 @@
  },
  {
   "key": "TK1",
-  "label": "TK1 Initiative test: KILL bar significance level (an on-plan initiative falls below the bar with less than this probability)",
+  "label": "TK1 Initiative test: KILL if qualified below this share of plan",
   "change": "down 20%",
   "edits": {
-   "TK1": "0.008"
+   "TK1": "0.24"
   },
-  "cells_changed": 0,
+  "cells_changed": 3,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -7663,7 +7663,7 @@
    "I1W2": "0.26999999999999996",
    "I1W3": "0.13"
   },
-  "cells_changed": 30,
+  "cells_changed": 29,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -7763,7 +7763,7 @@
    "I1W3": "0.09",
    "I1W2": "0.31"
   },
-  "cells_changed": 29,
+  "cells_changed": 30,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -8058,7 +8058,7 @@
   "label": "R10 Minimum offers before using the actual acceptance rate",
   "change": "up 20%",
   "edits": {
-   "R10": "8.4"
+   "R10": "6.0"
   },
   "cells_changed": 0,
   "delta": {
@@ -9044,7 +9044,7 @@
   "edits": {
    "RXP": "0.288"
   },
-  "cells_changed": 48,
+  "cells_changed": 47,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -9143,7 +9143,7 @@
   "edits": {
    "RXL": "0.12"
   },
-  "cells_changed": 209,
+  "cells_changed": 208,
   "delta": {
    "rec": 2500,
    "planned": 1128.9541630758904,
@@ -9242,7 +9242,7 @@
   "edits": {
    "RXG": "0.084"
   },
-  "cells_changed": 44,
+  "cells_changed": 43,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -9737,7 +9737,7 @@
   "edits": {
    "RD2": "35.4"
   },
-  "cells_changed": 244,
+  "cells_changed": 243,
   "delta": {
    "rec": 0,
    "planned": -1817.199999999997,
@@ -10232,7 +10232,7 @@
   "edits": {
    "REFSH": "0.08800000000000001"
   },
-  "cells_changed": 511,
+  "cells_changed": 509,
   "delta": {
    "rec": 2500,
    "planned": 1989.1881249998987,
@@ -11237,7 +11237,7 @@
   "edits": {
    "('C04', 'E')": "1"
   },
-  "cells_changed": 133,
+  "cells_changed": 132,
   "delta": {
    "rec": 0,
    "planned": 35.0,
@@ -11341,7 +11341,7 @@
   "edits": {
    "('C04', 'I')": "1.2"
   },
-  "cells_changed": 201,
+  "cells_changed": 200,
   "delta": {
    "rec": 0,
    "planned": -530.1333333333023,
@@ -11440,7 +11440,7 @@
   "edits": {
    "('C04', 'J')": "1"
   },
-  "cells_changed": 99,
+  "cells_changed": 98,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -12247,7 +12247,7 @@
   "edits": {
    "('C07', 'I')": "1.2"
   },
-  "cells_changed": 255,
+  "cells_changed": 254,
   "delta": {
    "rec": 0,
    "planned": -89.44099378879764,
@@ -12445,7 +12445,7 @@
   "edits": {
    "('C08', 'E')": "193.2"
   },
-  "cells_changed": 173,
+  "cells_changed": 172,
   "delta": {
    "rec": 0,
    "planned": 74.5341614906938,
@@ -12549,7 +12549,7 @@
   "edits": {
    "('C08', 'I')": "1.2"
   },
-  "cells_changed": 213,
+  "cells_changed": 212,
   "delta": {
    "rec": 0,
    "planned": -89.44099378879764,
@@ -12648,7 +12648,7 @@
   "edits": {
    "('C08', 'J')": "1"
   },
-  "cells_changed": 70,
+  "cells_changed": 69,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -14856,7 +14856,7 @@
   "edits": {
    "('C14', 'J')": "1"
   },
-  "cells_changed": 90,
+  "cells_changed": 89,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -16267,7 +16267,7 @@
   "edits": {
    "('C19', 'I')": "1.2"
   },
-  "cells_changed": 249,
+  "cells_changed": 248,
   "delta": {
    "rec": 0,
    "planned": -63.46368715079734,
@@ -16465,7 +16465,7 @@
   "edits": {
    "('C20', 'E')": "214.79999999999998"
   },
-  "cells_changed": 176,
+  "cells_changed": 175,
   "delta": {
    "rec": 0,
    "planned": 52.88640595909965,
@@ -16569,7 +16569,7 @@
   "edits": {
    "('C20', 'I')": "1.2"
   },
-  "cells_changed": 209,
+  "cells_changed": 208,
   "delta": {
    "rec": 0,
    "planned": -63.46368715079734,
@@ -16668,7 +16668,7 @@
   "edits": {
    "('C20', 'J')": "1"
   },
-  "cells_changed": 70,
+  "cells_changed": 69,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -16965,7 +16965,7 @@
   "edits": {
    "I1FQ": "0.36000000000000004"
   },
-  "cells_changed": 448,
+  "cells_changed": 446,
   "delta": {
    "rec": 0,
    "planned": 70.80449999999837,
@@ -17064,7 +17064,7 @@
   "edits": {
    "I1M": "0.36"
   },
-  "cells_changed": 185,
+  "cells_changed": 184,
   "delta": {
    "rec": 0,
    "planned": 12.65999999998894,
@@ -17262,7 +17262,7 @@
   "edits": {
    "I1A": "1.38"
   },
-  "cells_changed": 630,
+  "cells_changed": 628,
   "delta": {
    "rec": 0,
    "planned": -1648.6766833333095,
