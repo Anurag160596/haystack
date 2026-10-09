@@ -1,6 +1,6 @@
 # Model test report: Operation_Uptime_Model.xlsx
 
-**Result: 152/152 scenarios, 2420/2420 checks · every input moved one at a time: 178/179 inputs, 2906/2906 checks · Tracker rules live: 14/14 · deck-vs-model 43/43.**
+**Result: 152/152 scenarios, 2420/2420 checks · every input moved one at a time: 179/179 inputs, 2906/2906 checks · Tracker rules live: 14/14 · deck-vs-model 43/43.**
 
 ## How the model is tested
 
