@@ -1,6 +1,6 @@
 # Model test report: Operation_Uptime_Model.xlsx
 
-**Result: 153/153 scenarios, 2436/2436 checks · every input moved one at a time: 218/218 inputs, 3532/3532 checks · Tracker rules live: 17/17 · deck-vs-model 45/45.**
+**Result: 153/153 scenarios, 2436/2436 checks · every input moved one at a time: 183/183 inputs, 2970/2970 checks · Tracker rules live: 17/17 · deck-vs-model 45/45.**
 
 ## How the model is tested
 
@@ -26,7 +26,7 @@ Each scenario copies the model, changes inputs on the Assumptions tab, recalcula
 
 ## Every input, one at a time (`test_every_input.py`)
 
-Each of the 218 inputs (every Assumptions value plus the six numeric columns of every channel row) is moved on its own:
+Each of the 183 inputs (every Assumptions value and every typed channel value) is moved on its own. The 35 derived cells (channel qualified shares and caps, rediscovery and referral volumes, I2/I3 sizes) are live formulas on the evidence inputs in Assumptions §6a, so moving those inputs moves them:
 - counts, costs and volumes up 20%, shares down 20%, day inputs +1 day, dates shifted by a few days;
 - weekly and rediscovery shares (which must sum to 100%) move 2 points to a neighbouring week.
 
@@ -36,6 +36,7 @@ Inputs that change nothing at the base plan, and why:
 - **G2 (campaign end):** not binding, because the 18 Dec signing date (T1) comes first.
 - **G9 (recognition time):** information only.
 - **R1–R13, F3 and F4:** Tracker rules and flag thresholds (F1 and F2 move a pool read-out at base).
+- **SSW (days per StepStone ad):** 30 → 36 days still gives 2 ads for the 36-day window, so nothing changes.
 - **TK1 (kill significance level):** moving 1% to 0.8% does not cross a Poisson quantile, so the kill bars stay the same. The bars change when the level crosses a quantile (the test cases with other levels cover this). These act only once actuals exist or a threshold is crossed; see below.
 
 ## Tracker rules live (`test_tracker_rules.py`)

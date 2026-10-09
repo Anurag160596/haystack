@@ -36,10 +36,13 @@ def inputs(path):
             continue
         if A.cell(r, 4).value in ("CPC", "CPA", "Slot", "Free"):  # channel row: six numeric inputs
             for col in "EFGHIJ":
-                if A[f"{col}{r}"].value is None:   # not used by this pricing basis (greyed out on the tab)
+                v_ = A[f"{col}{r}"].value
+                if v_ is None or (isinstance(v_, str) and v_.startswith("=")):   # unused, or calculated from evidence inputs
                     continue
                 out.append(((k, col), f"{k} {A.cell(r, 2).value[:28]} / {A.cell(r, 3).value}: {CHCOLS[col]}",
                             A[f"{col}{r}"].value, "%" if col == "G" or (col == "F" and A.cell(r, 4).value == "CPC") else ""))
+        elif isinstance(A.cell(r, 4).value, str) and A.cell(r, 4).value.startswith("="):
+            continue   # derived input: a live formula on the evidence inputs, which are swept themselves
         else:
             out.append((k, f"{k} {A.cell(r, 2).value}", A.cell(r, 4).value, A.cell(r, 5).value))
     return out

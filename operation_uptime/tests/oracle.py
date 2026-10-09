@@ -41,8 +41,77 @@ def read_inputs(path):
     return x, chans
 
 
+def _round_to(v, step):
+    """Excel ROUND(v, -k) for step = 10**k, half away from zero."""
+    return xround(v / step) * step
+
+
+def _roundup_to(v, step):
+    """Excel ROUNDUP(v, -k): away from zero."""
+    return math.copysign(math.ceil(abs(v) / step - 1e-12), v) * step
+
+
+def derive(path, x, chans):
+    """Independent re-implementation of the derived inputs (cells that hold formulas on the Assumptions tab).
+    Only cells that hold a formula are derived; a typed number (e.g. from a test edit) is kept as typed."""
+    A = load_workbook(path)["Assumptions"]
+    raw = {}
+    for r in range(1, A.max_row + 1):
+        k = A.cell(r, 1).value
+        if isinstance(k, str):
+            raw[k] = (A.cell(r, 4).value, A.cell(r, 7).value, A.cell(r, 8).value)
+    isf = lambda v: isinstance(v, str) and v.startswith("=")
+    RSI = {"E": "G5", "M": "G6", "A": "G7", "S": "G8"}
+    conv = {s: x["P" + s] * x["O" + s] * x["A" + s] for s in "EMAS"}
+    tot_open = sum(_num(x[g]) for g in RSI.values())
+    # initiative inputs
+    if isf(raw.get("I2Q", (None,))[0]):
+        x["I2Q"] = x["QE"]
+    for s, g in RSI.items():
+        if isf(raw["I1R" + s][0]):
+            x["I1R" + s] = (xround(x["STAFF"] * x["MSH"] * x["TURN"] * (_num(x[g]) / tot_open) * (1 / conv[s] - 1))
+                            if conv[s] > 0 and tot_open > 0 else 0.0)
+        if isf(raw["I1F" + s][0]):
+            d = x["I1FQ"] * conv[s] * x["I1A"]
+            x["I1F" + s] = xround(x["REFSH"] * _num(x[g]) / d) if d > 0 else 0.0
+    if isf(raw["I2S"][0]):
+        x["I2S"] = x["RD2"] / x["I2Q"] / x["I2P"] if x["I2Q"] * x["I2P"] > 0 else 0.0
+    if isf(raw["I3X"][0]):
+        d = x["I3Q"] * conv["M"] * x["I3A"]
+        x["I3X"] = _roundup_to(x["G4"] * _num(x["G6"]) / d, 10) if d > 0 else 0.0
+    # timeline for StepStone ad counts
+    d_ = lambda v: v.date() if isinstance(v, dt.datetime) else v
+    lastsign = d_(x["T1"]); dE = x["T3"] + x["T4"] + x["T5"]; dS = dE + x["T6"]
+    lastAppE = lastsign - dt.timedelta(days=dE + x["T2"]); lastAppS = lastsign - dt.timedelta(days=dS + x["T2"])
+    start = d_(x["G1"])
+    for c in chans:
+        rq, rmx = raw[c["id"]][1], raw[c["id"]][2]
+        s = {"Electricians": "E", "Mechatronics": "M", "Automation": "A", "Supervisors": "S"}[c["role"]]
+        n = int(c["id"][1:])
+        if isf(rq):
+            kind = "CXH" if n <= 4 or n >= 17 else ("CXS" if n in (15, 16) else "CXB")
+            c["q"] = x["Q" + s] * x[kind]
+        if isf(rmx):
+            q = c["q"]; pool = x["PS" + s] * x["PI" + s] + x["PR" + s]
+            if n <= 4:
+                c["mx"] = xround(_num(x[RSI[s]]) * x["APV"] * x["CPS"])
+            elif n <= 8:
+                c["mx"] = _round_to(pool * x["RXP"] / q, 10) if q > 0 else 0.0
+            elif n <= 12:
+                last = lastAppS if s == "S" else lastAppE
+                c["mx"] = max(0.0, _roundup_to(((last - start).days + 1) / x["SSW"], 1))
+            elif n <= 14:
+                c["mx"] = _round_to(pool * x["RXL"] / q, 10) if q > 0 else 0.0
+            elif n <= 16:
+                c["mx"] = _round_to(x["RD" + s] / q, 10) if q > 0 else 0.0
+            else:
+                c["mx"] = _round_to(pool * x["RXG"] / q, 10) if q > 0 else 0.0
+    return x, chans
+
+
 def compute(path):
     x, chans = read_inputs(path)
+    x, chans = derive(path, x, chans)
     d = lambda v: v.date() if isinstance(v, dt.datetime) else v
     opn = {r: _num(x[f"G{5+i}"]) for i, r in enumerate(ROLES)}
     conv = {r: x["P" + RS[r]] * x["O" + RS[r]] * x["A" + RS[r]] for r in ROLES}
