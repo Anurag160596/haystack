@@ -20,9 +20,9 @@ Every number below comes from the delivered model (`Operation_Uptime_Model.xlsx`
 
 **3. Is €1,017 per hire cheap or expensive?**
 Cheap. That is media cost per hire; all-in, if the whole reserve is spent, it is €1,200 (€120k ÷ 100).
-- **German benchmark:** total cost of a skilled hire is €4,700, of which about a third (~€1,570) is recruiting (IZA DP 7656, 1,001 firms, https://docs.iza.org/dp7656.pdf, 2013 euros).
-- **Agency:** 20–30% of a €37–45k salary (gehalt.de) = €7,400–13,500 per hire (20% × €37k; 30% × €45k), so €0.74–1.35M for 100.
-- **US comparison:** about $4,700 per hire (SHRM).
+- **German benchmark:** total cost of a skilled hire is €4,700, of which about a third (~€1,570) is recruiting (IZA DP 7656, 2013, 1,001 firms from BIBB's 2007 survey, so 2007-era euros, https://docs.iza.org/dp7656.pdf).
+- **Agency:** 20–30% of a €46–50k median salary (gehalt.de: Mechatroniker €46.3k, Industrieelektriker €49.7k, https://www.gehalt.de/beruf/mechatroniker, https://www.gehalt.de/beruf/industrieelektriker) = €9,200–15,000 per hire (20% × €46k; 30% × €50k), so €0.92–1.5M for 100.
+- **US comparison:** about $4,700 per hire (SHRM benchmarking, 2022, https://www.shrm.org/in/topics-tools/news/talent-acquisition/real-costs-recruitment).
 - *Show:* Summary C10, Budget C14–C15.
 
 **4. Why not spend more to be safe?**
@@ -35,7 +35,7 @@ More money buys at most ~2 more hires: there are only ~6 spare assessment slots 
 Three reasons:
 - High-risk projects carry 10–20% contingency (Mastt).
 - The reserve plus rounding (€18.3k) covers about 42% of the extra media a 30% miss on the qualified share would need (+43%, about €43.6k: €145.2k − €101.7k).
-- IZA finds the cost of each extra hire rises when a firm hires 20 or more at once.
+- IZA finds hiring costs are convex: 10% more hires raises total hiring cost by ~13%, and the marginal hire costs up to ~€7,000 at 20 or more hires.
 
 It is released only from week 3 by the Tracker rules. With no reserve the budget would be €102.5k.
 - *Show:* Summary C7, Funnel row 45.
@@ -60,7 +60,7 @@ Qualified → signed = pass × offer × acceptance.
 - *Show:* Funnel rows 5–9, slide 2.
 
 **8. Your 70–75% acceptance is far below SmartRecruiters' 91%. Too pessimistic?**
-The 91% is not a German figure. Königsteiner 2022 (47% accepted vs 14% declined) gives ~77%; I use 70–75% for shift work and competing offers.
+The 91% is SmartRecruiters' German figure (Germany scorecard, Recruiting Benchmarks 2025, https://ta.smartrecruiters.com/rs/664-NIC-529/images/Recruitment-Benchmarks-2025-Report.pdf), but it comes from its own software customers across all job types. Königsteiner 2022 (47% accepted vs 14% declined) gives ~77%; I use 70–75% for shift work and competing offers.
 - If 91% held: budget €87.5k, slots only 78% used.
 - That's upside, checked once 5 offers are out (rule R10).
 
@@ -87,7 +87,7 @@ That gives 24 Nov. Supervisors add one extra round of 7 days, so their cut-off i
 Yes (6 + 8 + 3 + 7 = 24). It's a sprint, and it depends on client commitments: offers within 3 days, e-signature, and offers valid for 7 days. These are in the asks.
 - Each extra day of offer approval costs ~8 assessment slots (55 ÷ 7).
 - If offers take 7 days instead of 3: ~92 hires (model run).
-- The 6 + 8 days for screening and interview scheduling are SmartRecruiters' global medians (2025 Germany edition). German processes run longer, so the client has to keep pace.
+- The 6 + 8 days for screening and interview scheduling are SmartRecruiters' global medians (6 days to review, 14 to interview; Recruiting Benchmarks 2025). Germany's are 8 + 12, so the client has to keep pace.
 
 **12. Is assessment the only bottleneck? What about interviewers?**
 The brief gives assessment capacity only. In the model every qualified applicant who is assessed also takes the technical test or interview, so hiring managers need about 55 interview slots a week as well.
@@ -99,8 +99,8 @@ The brief gives assessment capacity only. In the model every qualified applicant
 
 **13. Programmatic is Joveo's core product. What role does it play?**
 It is the biggest paid channel: €35.2k (35% of planned spend) for ~16 hires. At the market-median Indeed cost of €161 per application (TalentBait, 2,549 DACH campaigns) and job-board quality, programmatic costs €2,143 per hire on average. That's dearer than StepStone (€1,564) and LinkedIn (€1,687) but cheaper than Meta (€2,388) and Search (€3,393), so it fills the electrician and mechatronics gap after the cheaper sources; for automation and supervisors it stays at test level. Two points add to that:
-- **Joveo's platform runs LinkedIn, Meta and search too** ("Reach passive candidates across LinkedIn, Meta, search…", joveo.com), so most of the €72.6k of paid media can run through Joveo.
-- **Joveo's own published manufacturing cases show cost per application down 17–32%.** Applied to programmatic, the budget falls to €115k–€107.5k (model runs).
+- **Joveo's platform runs LinkedIn, Meta and search too** ("Reach passive candidates across LinkedIn, Meta, search, display, audio, and other channels", https://www.joveo.com/), so most of the €72.6k of paid media can run through Joveo.
+- **Joveo's own published manufacturing cases show cost per application down 17–32%** ("Manufacturing giant cut CPAs by 17%", "Global manufacturer reduced CPA by 32%", https://www.joveo.com/customers/). Applied to programmatic, the budget falls to €115k–€107.5k (model runs).
 
 These are vendor results, so they're shown as upside, not built into the base.
 - *Show:* Budget row 30, Channels rows 9–12 (C05–C08), slide 4. The −17%/−32% cases are what-if runs on a copy of the model, not in the delivered file.
@@ -117,7 +117,7 @@ Not very, and the model now buys almost none. The social-media quality index is 
 - *Show:* Channels rows 19–20 (C15–C16), Budget row 33, slide 4.
 
 **16. Why spend €9k on tests?**
-That's about 9% of planned spend (€9k ÷ €101.7k), matching the common "10% testing budget" practice.
+That's about 9% of planned spend (€9k ÷ €101.7k), in line with the common 70/20/10 budgeting rule of thumb, which keeps about 10% for experiments.
 - Only the 12 pay-per-click cells get a €750 test: programmatic, LinkedIn, Meta and Search × role (4 + 2 + 2 + 4 = 12; 12 × €750 = €9k).
 - Tests run in weeks 1–2, so each is fully spent by 2 Nov and judged by Mon 9 Nov on real data.
 - Test applicants are real candidates and their hires count (~3.6 in the plan). Duds are cut from Mon 2 Nov.
@@ -149,11 +149,11 @@ Only consented talent-pool records; the plan uses the last 12 months of records.
 - The pool is 211 records: 10,703 staff × 7.8% in maintenance (BA occupation data) × 12% turnover (IAB) ≈ 100 hires a year, × runners-up per hire.
 - At ~€2.50 per application and ~€14 a hire it's the cheapest paid source.
 - If the export is empty, the budget rises to €132.5k.
-- Joveo's AI Talent CRM does this re-engagement by email, SMS and WhatsApp, which makes it the repeatable product.
+- Joveo's AI Talent CRM and Talent Campaigns do this re-engagement ("Re-engage past applicants… through personalized email, SMS, and WhatsApp campaigns", https://www.joveo.com/), which makes it the repeatable product.
 - *Show:* Initiatives rows 5–12, slide 7.
 
 **20. Is a €1,000 referral bonus enough?**
-Most firms pay €501–1,000 per successful referral (Radancy survey of 335 firms worldwide, via Personalwirtschaft); hard-to-fill roles get €2,000 (KOFA example).
+Most firms pay €501–1,000 per successful referral (Radancy survey of 335 firms worldwide, via Personalwirtschaft); hard-to-fill roles get €2,000 (KOFA sample rules, https://www.kofa.de/media/Publikationen/Handlungsempfehlungen/Mitarbeiter_werben_Mitarbeiter.pdf).
 - Referrals are sized to deliver 11% of hires (CareerPlug); the model gets 11 hires.
 - The bonus is paid only on a signed hire, so it comes out of the budget (~€11k).
 
@@ -178,8 +178,8 @@ The brief says recognition takes 2–4 months, so the plan buys none. But in Ger
 - That's an upside to raise.
 
 **24. Why not just use an agency or temp workers?**
-- **Agency:** €7,400–13,500 per hire, 6–11× this plan's all-in €1,200 (7,400 ÷ 1,200 ≈ 6; 13,500 ÷ 1,200 ≈ 11).
-- **Temp:** billed at about 2× wage, capped at 18 months per worker, equal pay after 9 months. Taking a temp on permanently costs a fee of up to ~2 monthly salaries.
+- **Agency:** €9,200–15,000 per hire, 8–13× this plan's all-in €1,200 (9,200 ÷ 1,200 ≈ 8; 15,000 ÷ 1,200 ≈ 13).
+- **Temp:** billed at roughly 2× the temp's wage (industry rule of thumb), capped at 18 months per worker, equal pay after 9 months. Taking a temp on permanently costs a fee; courts accept up to ~2 monthly salaries (BGH III ZR 77/11).
 
 Temps work as a bridge for a few critical shifts, not as the plan.
 
@@ -248,8 +248,8 @@ Yes. That's why internal promotion is only the fallback for a supervisor shortfa
 **33. Which numbers are guesses?**
 None are unexplained. Every input on the Assumptions tab carries one of three labels:
 - **Given (11):** from the brief.
-- **Researched (64):** read from, or calculated by stated arithmetic from, the linked source: costs, rates, pools, reach, timings, volumes.
-- **Own estimate (70):** my judgement, with the reason and the benchmark it starts from where there is one. Examples: pass rates (from Gem's ~35%), acceptance (from Königsteiner's ~77%), the decision rules (cut at 1.5× plan cost, judge after €500 or 30 applications), the 3-day offer.
+- **Researched (62):** read from, or calculated by stated arithmetic from, the linked source: costs, rates, pools, reach, timings, volumes.
+- **Own estimate (72):** my judgement, with the reason and the benchmark it starts from where there is one. Examples: pass rates (from Gem's ~35%), acceptance (from Königsteiner's ~77%), the decision rules (cut at 1.5× plan cost, judge after €500 or 30 applications), the 3-day offer.
 
 Calculated cells are in black text: channel caps, rediscovery pool, referral volumes.
 

@@ -6,7 +6,7 @@
   "edits": {
    "G1": "2026-10-21 00:00:00"
   },
-  "cells_changed": 217,
+  "cells_changed": 206,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -34,7 +34,7 @@
    {
     "check": "Weekly tie-out flag is \u2713",
     "ok": true,
-    "detail": "\u2713 ties to plan \u00b7 \u2139 22% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
+    "detail": "\u2713 ties to plan \u00b7 \u2139 3% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
    },
    {
     "check": "matches independent oracle (49 outputs)",
@@ -84,7 +84,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, 0.994984936105353), (262.235259898854, 1)]"
+    "detail": "[(307.973076082958, 0.994984936105353), (264.174719851242, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -183,7 +183,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -282,7 +282,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -308,10 +308,10 @@
   "edits": {
    "G4": "0.32000000000000006"
   },
-  "cells_changed": 209,
+  "cells_changed": 181,
   "delta": {
    "rec": 7500,
-   "planned": 5478.490021243895,
+   "planned": 5640.019240018999,
    "hires": 0,
    "qneed": 0.0
   },
@@ -386,7 +386,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.1165762472022)]"
+    "detail": "[(1, 100), (0.7, 86.3733253952676)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -407,10 +407,10 @@
   "edits": {
    "G5": "36.0"
   },
-  "cells_changed": 605,
+  "cells_changed": 597,
   "delta": {
    "rec": 12500,
-   "planned": 9997.538296295897,
+   "planned": 10009.559629629992,
    "hires": 1.959089429870005,
    "qneed": 19.047619047620003
   },
@@ -485,7 +485,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(326.741695130578, 0.96187820216858), (281.650139664513, 1)]"
+    "detail": "[(326.741695130578, 0.96187820216858), (282.341789837329, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -500,7 +500,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 109785.252501112"
+    "detail": "101667.57387493 \u2192 111677.13350456"
    }
   ]
  },
@@ -511,10 +511,10 @@
   "edits": {
    "G6": "54.0"
   },
-  "cells_changed": 657,
+  "cells_changed": 629,
   "delta": {
    "rec": 10000,
-   "planned": 6625.306707451891,
+   "planned": 6786.835926225991,
    "hires": 3.213699171626999,
    "qneed": 24.24242424242499
   },
@@ -589,7 +589,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(331.905000325383, 0.946914671299332), (284.898360303336, 1)]"
+    "detail": "[(331.905000325383, 0.946914671299332), (286.48952287774, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -604,7 +604,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 106413.020912268"
+    "detail": "101667.57387493 \u2192 108454.409801156"
    }
   ]
  },
@@ -615,10 +615,10 @@
   "edits": {
    "G7": "18.0"
   },
-  "cells_changed": 626,
+  "cells_changed": 616,
   "delta": {
-   "rec": 7500,
-   "planned": 4526.159329741902,
+   "rec": 5000,
+   "planned": 4532.169996408993,
    "hires": 1.665519597593999,
    "qneed": 10.58201058201098
   },
@@ -693,7 +693,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(318.411086664969, 0.98704387958829), (274.105528288805, 1)]"
+    "detail": "[(318.411086664969, 0.98704387958829), (272.824605866194, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -708,7 +708,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 104313.873534558"
+    "detail": "101667.57387493 \u2192 106199.743871339"
    }
   ]
  },
@@ -719,10 +719,10 @@
   "edits": {
    "G8": "12.0"
   },
-  "cells_changed": 595,
+  "cells_changed": 585,
   "delta": {
    "rec": 5000,
-   "planned": 3067.489058336898,
+   "planned": 3070.4943916699995,
    "hires": 1.3778596509939973,
    "qneed": 8.403361344537984
   },
@@ -797,7 +797,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(316.214437427496, 0.99390058481367), (270.314652961354, 1)]"
+    "detail": "[(316.214437427496, 0.99390058481367), (272.247632663742, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -812,7 +812,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 102855.203263153"
+    "detail": "101667.57387493 \u2192 104738.0682666"
    }
   ]
  },
@@ -901,7 +901,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1000,7 +1000,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, 0.994984936105353), (262.235259898854, 1)]"
+    "detail": "[(307.973076082958, 0.994984936105353), (264.174719851242, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1021,7 +1021,7 @@
   "edits": {
    "T1": "2026-12-20 00:00:00"
   },
-  "cells_changed": 41,
+  "cells_changed": 43,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1099,7 +1099,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1120,7 +1120,7 @@
   "edits": {
    "T2": "7"
   },
-  "cells_changed": 158,
+  "cells_changed": 148,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1148,7 +1148,7 @@
    {
     "check": "Weekly tie-out flag is \u2713",
     "ok": true,
-    "detail": "\u2713 ties to plan \u00b7 \u2139 22% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
+    "detail": "\u2713 ties to plan \u00b7 \u2139 3% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
    },
    {
     "check": "matches independent oracle (49 outputs)",
@@ -1198,7 +1198,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1224,7 +1224,7 @@
   "edits": {
    "T3": "9"
   },
-  "cells_changed": 219,
+  "cells_changed": 208,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1252,7 +1252,7 @@
    {
     "check": "Weekly tie-out flag is \u2713",
     "ok": true,
-    "detail": "\u2713 ties to plan \u00b7 \u2139 22% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
+    "detail": "\u2713 ties to plan \u00b7 \u2139 3% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
    },
    {
     "check": "matches independent oracle (49 outputs)",
@@ -1302,7 +1302,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, 0.994984936105353), (262.235259898854, 1)]"
+    "detail": "[(307.973076082958, 0.994984936105353), (264.174719851242, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1328,7 +1328,7 @@
   "edits": {
    "T4": "4"
   },
-  "cells_changed": 219,
+  "cells_changed": 208,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1356,7 +1356,7 @@
    {
     "check": "Weekly tie-out flag is \u2713",
     "ok": true,
-    "detail": "\u2713 ties to plan \u00b7 \u2139 22% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
+    "detail": "\u2713 ties to plan \u00b7 \u2139 3% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
    },
    {
     "check": "matches independent oracle (49 outputs)",
@@ -1406,7 +1406,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, 0.994984936105353), (262.235259898854, 1)]"
+    "detail": "[(307.973076082958, 0.994984936105353), (264.174719851242, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1432,7 +1432,7 @@
   "edits": {
    "T5": "8"
   },
-  "cells_changed": 219,
+  "cells_changed": 208,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1460,7 +1460,7 @@
    {
     "check": "Weekly tie-out flag is \u2713",
     "ok": true,
-    "detail": "\u2713 ties to plan \u00b7 \u2139 22% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
+    "detail": "\u2713 ties to plan \u00b7 \u2139 3% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
    },
    {
     "check": "matches independent oracle (49 outputs)",
@@ -1510,7 +1510,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, 0.994984936105353), (262.235259898854, 1)]"
+    "detail": "[(307.973076082958, 0.994984936105353), (264.174719851242, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1614,7 +1614,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1643,7 +1643,7 @@
   "cells_changed": 357,
   "delta": {
    "rec": 15000,
-   "planned": 11893.942592592895,
+   "planned": 12111.720370369992,
    "hires": 0,
    "qneed": 0.0
   },
@@ -1718,7 +1718,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 88.3093912087309)]"
+    "detail": "[(1, 100), (0.7, 88.5176941793148)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1739,10 +1739,10 @@
   "edits": {
    "QM": "0.2"
   },
-  "cells_changed": 330,
+  "cells_changed": 312,
   "delta": {
    "rec": 12500,
-   "planned": 9231.306235770899,
+   "planned": 9665.057676767989,
    "hires": 0,
    "qneed": 0.0
   },
@@ -1817,7 +1817,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.7366007333282)]"
+    "detail": "[(1, 100), (0.7, 87.0045716194805)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1838,10 +1838,10 @@
   "edits": {
    "QA": "0.2"
   },
-  "cells_changed": 287,
+  "cells_changed": 285,
   "delta": {
    "rec": 7500,
-   "planned": 4756.858977071897,
+   "planned": 4756.858977071999,
    "hires": 0,
    "qneed": 0.0
   },
@@ -1916,7 +1916,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.5885062717606)]"
+    "detail": "[(1, 100), (0.7, 86.9281501957862)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1926,7 +1926,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "100 vs 100.0"
    }
   ]
  },
@@ -1937,10 +1937,10 @@
   "edits": {
    "QS": "0.18400000000000002"
   },
-  "cells_changed": 276,
+  "cells_changed": 282,
   "delta": {
    "rec": 5000,
-   "planned": 4075.513822920897,
+   "planned": 4075.5138229199947,
    "hires": 0,
    "qneed": 0.0
   },
@@ -2015,7 +2015,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.4296909750218)]"
+    "detail": "[(1, 100), (0.7, 87.3850723288792)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2036,10 +2036,10 @@
   "edits": {
    "PE": "0.4"
   },
-  "cells_changed": 447,
+  "cells_changed": 451,
   "delta": {
    "rec": 17500,
-   "planned": 14007.777037036896,
+   "planned": 14007.777037036998,
    "hires": -5.115307082701307,
    "qneed": 23.809523809523967
   },
@@ -2114,7 +2114,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(331.229099892482, 0.948846929172987), (284.978690000952, 1)]"
+    "detail": "[(331.229099892482, 0.948846929172987), (285.094810821749, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2140,10 +2140,10 @@
   "edits": {
    "PM": "0.44000000000000006"
   },
-  "cells_changed": 514,
+  "cells_changed": 493,
   "delta": {
    "rec": 12500,
-   "planned": 10652.026331368892,
+   "planned": 10813.555550143996,
    "hires": -6.903713581983695,
    "qneed": 30.303030303030994
   },
@@ -2218,7 +2218,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(337.592106385989, 0.930962864180163), (291.374182590094, 1)]"
+    "detail": "[(337.592106385989, 0.930962864180163), (292.201562383946, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2247,7 +2247,7 @@
   "cells_changed": 483,
   "delta": {
    "rec": 7500,
-   "planned": 6027.300944882896,
+   "planned": 6027.300944881994,
    "hires": -2.0553953612318026,
    "qneed": 13.22751322751401
   },
@@ -2322,7 +2322,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(320.881089310472, 0.979446046387682), (274.124150827868, 1)]"
+    "detail": "[(320.881089310472, 0.979446046387682), (276.063610780256, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2332,7 +2332,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "100 vs 100.0"
    },
    {
     "check": "qneed moves the right way",
@@ -2348,10 +2348,10 @@
   "edits": {
    "PS": "0.32000000000000006"
   },
-  "cells_changed": 429,
+  "cells_changed": 436,
   "delta": {
    "rec": 5000,
-   "planned": 4018.180822920898,
+   "planned": 4018.180822919996,
    "hires": -1.2435654590183987,
    "qneed": 10.504201680672963
   },
@@ -2426,7 +2426,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(318.243277763631, 0.987564345409816), (263.280955908676, 1)]"
+    "detail": "[(318.243277763631, 0.987564345409816), (263.137377076028, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2452,10 +2452,10 @@
   "edits": {
    "OE": "0.7200000000000001"
   },
-  "cells_changed": 447,
+  "cells_changed": 451,
   "delta": {
    "rec": 17500,
-   "planned": 14007.777037036896,
+   "planned": 14007.777037036998,
    "hires": -5.115307082701307,
    "qneed": 23.809523809523967
   },
@@ -2530,7 +2530,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(331.229099892482, 0.948846929172987), (284.978690000952, 1)]"
+    "detail": "[(331.229099892482, 0.948846929172987), (285.094810821749, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2556,10 +2556,10 @@
   "edits": {
    "OM": "0.7200000000000001"
   },
-  "cells_changed": 514,
+  "cells_changed": 493,
   "delta": {
    "rec": 12500,
-   "planned": 10652.026331368892,
+   "planned": 10813.555550143996,
    "hires": -6.903713581983695,
    "qneed": 30.303030303030994
   },
@@ -2634,7 +2634,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(337.592106385989, 0.930962864180163), (291.374182590094, 1)]"
+    "detail": "[(337.592106385989, 0.930962864180163), (292.201562383946, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2663,7 +2663,7 @@
   "cells_changed": 483,
   "delta": {
    "rec": 7500,
-   "planned": 6027.300944882896,
+   "planned": 6027.300944881994,
    "hires": -2.0553953612318026,
    "qneed": 13.22751322751401
   },
@@ -2738,12 +2738,12 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(320.881089310472, 0.979446046387682), (274.124150827868, 1)]"
+    "detail": "[(320.881089310472, 0.979446046387683), (276.063610780256, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
     "ok": true,
-    "detail": "97.9446046387682 vs 97.9446046387682"
+    "detail": "97.9446046387683 vs 97.9446046387682"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -2764,10 +2764,10 @@
   "edits": {
    "OS": "0.68"
   },
-  "cells_changed": 429,
+  "cells_changed": 436,
   "delta": {
    "rec": 5000,
-   "planned": 4018.180822920898,
+   "planned": 4018.180822919996,
    "hires": -1.2435654590183987,
    "qneed": 10.504201680672963
   },
@@ -2842,7 +2842,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(318.243277763631, 0.987564345409816), (263.280955908676, 1)]"
+    "detail": "[(318.243277763631, 0.987564345409816), (263.137377076028, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2868,10 +2868,10 @@
   "edits": {
    "AE": "0.5599999999999999"
   },
-  "cells_changed": 451,
+  "cells_changed": 455,
   "delta": {
    "rec": 17500,
-   "planned": 14007.777037036896,
+   "planned": 14007.777037036998,
    "hires": -5.115307082701307,
    "qneed": 23.809523809523967
   },
@@ -2946,7 +2946,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(331.229099892482, 0.948846929172987), (284.978690000952, 1)]"
+    "detail": "[(331.229099892482, 0.948846929172987), (285.094810821749, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2972,10 +2972,10 @@
   "edits": {
    "AM": "0.6000000000000001"
   },
-  "cells_changed": 518,
+  "cells_changed": 497,
   "delta": {
    "rec": 12500,
-   "planned": 10652.026331368892,
+   "planned": 10813.555550143996,
    "hires": -6.903713581983695,
    "qneed": 30.303030303030994
   },
@@ -3050,7 +3050,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(337.592106385989, 0.930962864180163), (291.374182590094, 1)]"
+    "detail": "[(337.592106385989, 0.930962864180163), (292.201562383946, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3079,7 +3079,7 @@
   "cells_changed": 487,
   "delta": {
    "rec": 7500,
-   "planned": 6027.300944882896,
+   "planned": 6027.300944881994,
    "hires": -2.0553953612318026,
    "qneed": 13.22751322751401
   },
@@ -3154,7 +3154,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(320.881089310472, 0.979446046387682), (274.124150827868, 1)]"
+    "detail": "[(320.881089310472, 0.979446046387682), (276.063610780256, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3164,7 +3164,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "100 vs 100.0"
    },
    {
     "check": "qneed moves the right way",
@@ -3180,10 +3180,10 @@
   "edits": {
    "AS": "0.5599999999999999"
   },
-  "cells_changed": 433,
+  "cells_changed": 440,
   "delta": {
    "rec": 5000,
-   "planned": 4018.180822920898,
+   "planned": 4018.180822919996,
    "hires": -1.2435654590183987,
    "qneed": 10.504201680672963
   },
@@ -3258,7 +3258,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(318.243277763631, 0.987564345409816), (263.280955908676, 1)]"
+    "detail": "[(318.243277763631, 0.987564345409816), (263.137377076028, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3362,7 +3362,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.1139510324794)]"
+    "detail": "[(1, 100), (0.7, 87.480537300255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3377,7 +3377,7 @@
    {
     "check": "rec moves the right way",
     "ok": true,
-    "detail": "117500 \u2192 115000"
+    "detail": "120000 \u2192 117500"
    }
   ]
  },
@@ -3388,10 +3388,10 @@
   "edits": {
    "B2": "900.0"
   },
-  "cells_changed": 441,
+  "cells_changed": 445,
   "delta": {
    "rec": 2500,
-   "planned": 396.931873647889,
+   "planned": 419.3784096909949,
    "hires": 0,
    "qneed": 0.0
   },
@@ -3466,7 +3466,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.3695961546254)]"
+    "detail": "[(1, 100), (0.7, 87.7165117307152)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3570,7 +3570,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3591,9 +3591,9 @@
   "edits": {
    "B5": "3000.0"
   },
-  "cells_changed": 26,
+  "cells_changed": 1,
   "delta": {
-   "rec": 2500,
+   "rec": 0,
    "planned": 0.0,
    "hires": 0,
    "qneed": 0.0
@@ -3669,7 +3669,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.4013360324794)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3690,7 +3690,7 @@
   "edits": {
    "B3": "0.24"
   },
-  "cells_changed": 22,
+  "cells_changed": 27,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -3768,7 +3768,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.76, 89.6888619732496)]"
+    "detail": "[(1, 100), (0.76, 89.9819697804041)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3787,108 +3787,8 @@
   "label": "W1 Share of media spend in week 1",
   "change": "\u22122 pts (to W2)",
   "edits": {
-   "W1": "0.06999999999999999",
+   "W1": "0.24000000000000002",
    "W2": "0.16499999999999998"
-  },
-  "cells_changed": 66,
-  "delta": {
-   "rec": 0,
-   "planned": 0.0,
-   "hires": 0,
-   "qneed": 0.0
-  },
-  "flags": {},
-  "passed": true,
-  "checks": [
-   {
-    "check": "recalculates with 0 formula errors",
-    "ok": true,
-    "detail": "{}"
-   },
-   {
-    "check": "Budget flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 ties to planned spend"
-   },
-   {
-    "check": "Weekly matrix flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 matrix ties to planned spend"
-   },
-   {
-    "check": "Weekly tie-out flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 ties to plan"
-   },
-   {
-    "check": "matches independent oracle (49 outputs)",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "initiative kill bars never overlap pass bars",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "hires never exceed openings (strict, test hires included)",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "roles with no openings get no hires and no tests",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "shortfall column = openings \u2212 planned hires",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "no negative hires, applications or spend",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "Polish hires \u2264 40%-rule cap",
-    "ok": true,
-    "detail": "18 vs cap 18.0"
-   },
-   {
-    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "weekly signatures total = expected hires",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "scenario hires never rise when the budget falls (capacity not binding)",
-    "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
-   },
-   {
-    "check": "scenario at 100% budget = expected hires (capacity-capped)",
-    "ok": true,
-    "detail": "100 vs 100"
-   },
-   {
-    "check": "Tracker forecast with no actuals = planned hires",
-    "ok": true,
-    "detail": "100 vs 100.0"
-   }
-  ]
- },
- {
-  "key": "W2",
-  "label": "W2 Share of media spend in week 2",
-  "change": "\u22122 pts (to W3)",
-  "edits": {
-   "W2": "0.12499999999999999",
-   "W3": "0.19999999999999998"
   },
   "cells_changed": 63,
   "delta": {
@@ -3968,7 +3868,107 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 100.0"
+   }
+  ]
+ },
+ {
+  "key": "W2",
+  "label": "W2 Share of media spend in week 2",
+  "change": "\u22122 pts (to W3)",
+  "edits": {
+   "W2": "0.12499999999999999",
+   "W3": "0.205"
+  },
+  "cells_changed": 61,
+  "delta": {
+   "rec": 0,
+   "planned": 0.0,
+   "hires": 0,
+   "qneed": 0.0
+  },
+  "flags": {},
+  "passed": true,
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (49 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "initiative kill bars never overlap pass bars",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "18 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3987,10 +3987,10 @@
   "label": "W3 Share of media spend in week 3",
   "change": "\u22122 pts (to W4)",
   "edits": {
-   "W3": "0.16",
-   "W4": "0.19999999999999998"
+   "W3": "0.165",
+   "W4": "0.21"
   },
-  "cells_changed": 65,
+  "cells_changed": 62,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4068,7 +4068,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4087,10 +4087,10 @@
   "label": "W4 Share of media spend in week 4",
   "change": "\u22122 pts (to W5)",
   "edits": {
-   "W4": "0.16",
-   "W5": "0.205"
+   "W4": "0.17",
+   "W5": "0.21"
   },
-  "cells_changed": 58,
+  "cells_changed": 56,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4168,7 +4168,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4187,10 +4187,10 @@
   "label": "W5 Share of media spend in week 5",
   "change": "\u22122 pts (to W6)",
   "edits": {
-   "W5": "0.165",
-   "W6": "0.24"
+   "W5": "0.17",
+   "W6": "0.05"
   },
-  "cells_changed": 109,
+  "cells_changed": 107,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4268,7 +4268,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4287,10 +4287,10 @@
   "label": "W6 Share of media spend in week 6",
   "change": "\u22122 pts (to W5)",
   "edits": {
-   "W6": "0.2",
-   "W5": "0.205"
+   "W6": "0.009999999999999998",
+   "W5": "0.21"
   },
-  "cells_changed": 109,
+  "cells_changed": 107,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4368,7 +4368,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4388,9 +4388,9 @@
   "change": "+2 pts (from W6)",
   "edits": {
    "W7": "0.02",
-   "W6": "0.2"
+   "W6": "0.009999999999999998"
   },
-  "cells_changed": 134,
+  "cells_changed": 131,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4468,7 +4468,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4488,9 +4488,9 @@
   "change": "+2 pts (from W6)",
   "edits": {
    "W8": "0.02",
-   "W6": "0.2"
+   "W6": "0.009999999999999998"
   },
-  "cells_changed": 134,
+  "cells_changed": 131,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4568,7 +4568,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4588,9 +4588,9 @@
   "change": "+2 pts (from W6)",
   "edits": {
    "W9": "0.02",
-   "W6": "0.2"
+   "W6": "0.009999999999999998"
   },
-  "cells_changed": 134,
+  "cells_changed": 131,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4668,7 +4668,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4688,9 +4688,9 @@
   "change": "+2 pts (from W6)",
   "edits": {
    "W10": "0.02",
-   "W6": "0.2"
+   "W6": "0.009999999999999998"
   },
-  "cells_changed": 134,
+  "cells_changed": 131,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4768,7 +4768,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4788,9 +4788,9 @@
   "change": "+2 pts (from W6)",
   "edits": {
    "W11": "0.02",
-   "W6": "0.2"
+   "W6": "0.009999999999999998"
   },
-  "cells_changed": 134,
+  "cells_changed": 131,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -4868,7 +4868,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4967,7 +4967,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4988,7 +4988,7 @@
   "edits": {
    "PSE": "5760.0"
   },
-  "cells_changed": 24,
+  "cells_changed": 26,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -5066,7 +5066,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5087,7 +5087,7 @@
   "edits": {
    "PSM": "31680.0"
   },
-  "cells_changed": 24,
+  "cells_changed": 25,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -5165,7 +5165,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5186,7 +5186,7 @@
   "edits": {
    "PSA": "2400.0"
   },
-  "cells_changed": 30,
+  "cells_changed": 31,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -5264,7 +5264,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5363,7 +5363,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5383,6 +5383,105 @@
   "change": "down 20%",
   "edits": {
    "PIE": "0.08800000000000001"
+  },
+  "cells_changed": 27,
+  "delta": {
+   "rec": 0,
+   "planned": 0.0,
+   "hires": 0,
+   "qneed": 0.0
+  },
+  "flags": {},
+  "passed": true,
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (49 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "initiative kill bars never overlap pass bars",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "18 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 100.0"
+   }
+  ]
+ },
+ {
+  "key": "PIM",
+  "label": "PIM Share in-market or persuadable during the 6-week window",
+  "change": "down 20%",
+  "edits": {
+   "PIM": "0.08800000000000001"
   },
   "cells_changed": 25,
   "delta": {
@@ -5462,106 +5561,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
-   },
-   {
-    "check": "scenario at 100% budget = expected hires (capacity-capped)",
-    "ok": true,
-    "detail": "100 vs 100"
-   },
-   {
-    "check": "Tracker forecast with no actuals = planned hires",
-    "ok": true,
-    "detail": "100 vs 100.0"
-   }
-  ]
- },
- {
-  "key": "PIM",
-  "label": "PIM Share in-market or persuadable during the 6-week window",
-  "change": "down 20%",
-  "edits": {
-   "PIM": "0.08800000000000001"
-  },
-  "cells_changed": 24,
-  "delta": {
-   "rec": 0,
-   "planned": 0.0,
-   "hires": 0,
-   "qneed": 0.0
-  },
-  "flags": {},
-  "passed": true,
-  "checks": [
-   {
-    "check": "recalculates with 0 formula errors",
-    "ok": true,
-    "detail": "{}"
-   },
-   {
-    "check": "Budget flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 ties to planned spend"
-   },
-   {
-    "check": "Weekly matrix flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 matrix ties to planned spend"
-   },
-   {
-    "check": "Weekly tie-out flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 ties to plan"
-   },
-   {
-    "check": "matches independent oracle (49 outputs)",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "initiative kill bars never overlap pass bars",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "hires never exceed openings (strict, test hires included)",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "roles with no openings get no hires and no tests",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "shortfall column = openings \u2212 planned hires",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "no negative hires, applications or spend",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "Polish hires \u2264 40%-rule cap",
-    "ok": true,
-    "detail": "18 vs cap 18.0"
-   },
-   {
-    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "weekly signatures total = expected hires",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "scenario hires never rise when the budget falls (capacity not binding)",
-    "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5582,10 +5582,10 @@
   "edits": {
    "PIA": "0.08800000000000001"
   },
-  "cells_changed": 172,
+  "cells_changed": 173,
   "delta": {
    "rec": 2500,
-   "planned": 1128.9541630758904,
+   "planned": 1128.9541630759923,
    "hires": 0,
    "qneed": 0.0
   },
@@ -5660,7 +5660,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.1337402083034)]"
+    "detail": "[(1, 100), (0.7, 87.473384132329)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5759,7 +5759,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5780,7 +5780,7 @@
   "edits": {
    "PRE": "49.199999999999996"
   },
-  "cells_changed": 19,
+  "cells_changed": 20,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -5858,7 +5858,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5879,7 +5879,7 @@
   "edits": {
    "PRM": "33.6"
   },
-  "cells_changed": 23,
+  "cells_changed": 24,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -5957,7 +5957,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6056,7 +6056,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6155,7 +6155,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6254,7 +6254,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6353,7 +6353,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6452,7 +6452,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6551,7 +6551,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6650,7 +6650,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6749,7 +6749,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6848,7 +6848,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6947,7 +6947,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7046,7 +7046,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7145,7 +7145,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7245,7 +7245,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7345,7 +7345,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7367,7 +7367,7 @@
    "I1W3": "0.09",
    "I1W2": "0.31"
   },
-  "cells_changed": 30,
+  "cells_changed": 31,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -7445,7 +7445,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7544,7 +7544,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7643,7 +7643,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7742,7 +7742,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7841,7 +7841,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7940,7 +7940,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8039,7 +8039,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8138,7 +8138,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8237,7 +8237,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8258,10 +8258,10 @@
   "edits": {
    "CXB": "1.08"
   },
-  "cells_changed": 540,
+  "cells_changed": 491,
   "delta": {
-   "rec": -10000,
-   "planned": -9934.298633104801,
+   "rec": -12500,
+   "planned": -11574.574969885303,
    "hires": 0,
    "qneed": 0.0
   },
@@ -8325,7 +8325,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.8720332120811)]"
+    "detail": "[(1, 100), (0.7, 86.8728439821704)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8351,10 +8351,10 @@
   "edits": {
    "CXH": "0.852"
   },
-  "cells_changed": 479,
+  "cells_changed": 468,
   "delta": {
-   "rec": -7500,
-   "planned": -8102.70457355681,
+   "rec": -10000,
+   "planned": -8353.486269397908,
    "hires": 0,
    "qneed": 0.0
   },
@@ -8429,7 +8429,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 88.1268700004515)]"
+    "detail": "[(1, 100), (0.7, 87.8318455497615)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8448,12 +8448,12 @@
   "label": "CXS Channel quality index: social media (Meta)",
   "change": "up 20%",
   "edits": {
-   "CXS": "0.6"
+   "CXS": "0.49199999999999994"
   },
-  "cells_changed": 269,
+  "cells_changed": 288,
   "delta": {
-   "rec": -5000,
-   "planned": -4266.861373943408,
+   "rec": 0,
+   "planned": -1445.5512433880067,
    "hires": 0,
    "qneed": 0.0
   },
@@ -8528,7 +8528,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.5481830611053)]"
+    "detail": "[(1, 100), (0.7, 87.2959629100722)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8549,7 +8549,7 @@
   "edits": {
    "RXP": "0.288"
   },
-  "cells_changed": 47,
+  "cells_changed": 49,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -8627,7 +8627,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8651,7 +8651,7 @@
   "cells_changed": 170,
   "delta": {
    "rec": 2500,
-   "planned": 1128.9541630758904,
+   "planned": 1128.9541630759923,
    "hires": 0,
    "qneed": 0.0
   },
@@ -8726,7 +8726,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.1337402083034)]"
+    "detail": "[(1, 100), (0.7, 87.473384132329)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8825,7 +8825,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8846,10 +8846,10 @@
   "edits": {
    "APV": "32.4"
   },
-  "cells_changed": 308,
+  "cells_changed": 296,
   "delta": {
    "rec": -7500,
-   "planned": -7771.6600000000035,
+   "planned": -8019.055555555606,
    "hires": 0,
    "qneed": 0.0
   },
@@ -8924,7 +8924,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 88.1415608674794)]"
+    "detail": "[(1, 100), (0.7, 88.6081650981717)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8945,10 +8945,10 @@
   "edits": {
    "CPS": "0.10400000000000001"
   },
-  "cells_changed": 324,
+  "cells_changed": 296,
   "delta": {
    "rec": 10000,
-   "planned": 7933.259670113897,
+   "planned": 8094.788888888987,
    "hires": 0,
    "qneed": 0.0
   },
@@ -9023,106 +9023,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 85.8148138605228)]"
-   },
-   {
-    "check": "scenario at 100% budget = expected hires (capacity-capped)",
-    "ok": true,
-    "detail": "100 vs 100"
-   },
-   {
-    "check": "Tracker forecast with no actuals = planned hires",
-    "ok": true,
-    "detail": "100 vs 100"
-   }
-  ]
- },
- {
-  "key": "RDE",
-  "label": "RDE Qualified applications per Elektroniker social campaign (median)",
-  "change": "up 20%",
-  "edits": {
-   "RDE": "24.0"
-  },
-  "cells_changed": 142,
-  "delta": {
-   "rec": 0,
-   "planned": -163.33333333329938,
-   "hires": 0,
-   "qneed": 0.0
-  },
-  "flags": {},
-  "passed": true,
-  "checks": [
-   {
-    "check": "recalculates with 0 formula errors",
-    "ok": true,
-    "detail": "{}"
-   },
-   {
-    "check": "Budget flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 ties to planned spend"
-   },
-   {
-    "check": "Weekly matrix flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 matrix ties to planned spend"
-   },
-   {
-    "check": "Weekly tie-out flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 ties to plan"
-   },
-   {
-    "check": "matches independent oracle (49 outputs)",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "initiative kill bars never overlap pass bars",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "hires never exceed openings (strict, test hires included)",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "roles with no openings get no hires and no tests",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "shortfall column = openings \u2212 planned hires",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "no negative hires, applications or spend",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "Polish hires \u2264 40%-rule cap",
-    "ok": true,
-    "detail": "18 vs cap 18.0"
-   },
-   {
-    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "weekly signatures total = expected hires",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "scenario hires never rise when the budget falls (capacity not binding)",
-    "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.0715630085883)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9137,13 +9038,13 @@
   ]
  },
  {
-  "key": "RDM",
-  "label": "RDM Qualified applications per Kfz-Mechatroniker social campaign (median)",
+  "key": "RDE",
+  "label": "RDE Qualified applications per Elektroniker social campaign (median)",
   "change": "up 20%",
   "edits": {
-   "RDM": "27.599999999999998"
+   "RDE": "24.0"
   },
-  "cells_changed": 15,
+  "cells_changed": 14,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -9221,7 +9122,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9236,16 +9137,16 @@
   ]
  },
  {
-  "key": "RD2",
-  "label": "RD2 Qualified applications per Elektroniker social campaign (mean, sizes I2)",
+  "key": "RDM",
+  "label": "RDM Qualified applications per Kfz-Mechatroniker social campaign (median)",
   "change": "up 20%",
   "edits": {
-   "RD2": "35.4"
+   "RDM": "27.599999999999998"
   },
-  "cells_changed": 210,
+  "cells_changed": 14,
   "delta": {
    "rec": 0,
-   "planned": -1817.199999999997,
+   "planned": 0.0,
    "hires": 0,
    "qneed": 0.0
   },
@@ -9320,7 +9221,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.2932767262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9331,6 +9232,105 @@
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
     "detail": "100 vs 100.0"
+   }
+  ]
+ },
+ {
+  "key": "RD2",
+  "label": "RD2 Qualified applications per Elektroniker social campaign (mean, sizes I2)",
+  "change": "up 20%",
+  "edits": {
+   "RD2": "35.4"
+  },
+  "cells_changed": 220,
+  "delta": {
+   "rec": -2500,
+   "planned": -1817.2000000001135,
+   "hires": 0,
+   "qneed": 0.0
+  },
+  "flags": {},
+  "passed": true,
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (49 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "initiative kill bars never overlap pass bars",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "18 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.7, 86.869554244005)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 99.99999999999999"
    }
   ]
  },
@@ -9419,7 +9419,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9440,10 +9440,10 @@
   "edits": {
    "STAFF": "12843.6"
   },
-  "cells_changed": 465,
+  "cells_changed": 464,
   "delta": {
-   "rec": 0,
-   "planned": -1798.361333333305,
+   "rec": -2500,
+   "planned": -1846.446666666714,
    "hires": 0,
    "qneed": 0.0
   },
@@ -9518,7 +9518,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.5140300754794)]"
+    "detail": "[(1, 100), (0.7, 87.114984385255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9539,10 +9539,10 @@
   "edits": {
    "MSH": "0.062400000000000004"
   },
-  "cells_changed": 474,
+  "cells_changed": 461,
   "delta": {
    "rec": 2500,
-   "planned": 1752.2933333328983,
+   "planned": 1797.3733333329874,
    "hires": 0,
    "qneed": 0.0
   },
@@ -9617,7 +9617,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.5489171049794)]"
+    "detail": "[(1, 100), (0.7, 86.865426536505)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9638,10 +9638,10 @@
   "edits": {
    "TURN": "0.096"
   },
-  "cells_changed": 474,
+  "cells_changed": 461,
   "delta": {
    "rec": 2500,
-   "planned": 1752.2933333328983,
+   "planned": 1797.3733333329874,
    "hires": 0,
    "qneed": 0.0
   },
@@ -9716,7 +9716,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.5489171049794)]"
+    "detail": "[(1, 100), (0.7, 86.865426536505)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9737,10 +9737,10 @@
   "edits": {
    "REFSH": "0.08800000000000001"
   },
-  "cells_changed": 449,
+  "cells_changed": 438,
   "delta": {
    "rec": 2500,
-   "planned": 1989.1881249998987,
+   "planned": 2101.8881249999977,
    "hires": 0,
    "qneed": 0.0
   },
@@ -9815,7 +9815,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.4885928765809)]"
+    "detail": "[(1, 100), (0.7, 86.7704005693566)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9836,9 +9836,9 @@
   "edits": {
    "('C01', 'E')": "1"
   },
-  "cells_changed": 129,
+  "cells_changed": 116,
   "delta": {
-   "rec": 2500,
+   "rec": 0,
    "planned": 105.0,
    "hires": 0,
    "qneed": 0.0
@@ -9914,7 +9914,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.3474513449794)]"
+    "detail": "[(1, 100), (0.7, 86.923728862755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9929,7 +9929,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 99892.7142048161"
+    "detail": "101667.57387493 \u2192 101772.57387493"
    }
   ]
  },
@@ -9940,10 +9940,10 @@
   "edits": {
    "('C01', 'I')": "1.2"
   },
-  "cells_changed": 204,
+  "cells_changed": 203,
   "delta": {
    "rec": -2500,
-   "planned": -2667.233333333308,
+   "planned": -2667.23333333341,
    "hires": 0,
    "qneed": 0.0
   },
@@ -10018,7 +10018,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.0487657199794)]"
+    "detail": "[(1, 100), (0.7, 87.388409644005)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10117,7 +10117,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6374564387294)]"
+    "detail": "[(1, 100), (0.7, 86.977100362755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10138,9 +10138,9 @@
   "edits": {
    "('C02', 'E')": "1"
   },
-  "cells_changed": 125,
+  "cells_changed": 114,
   "delta": {
-   "rec": 2500,
+   "rec": 0,
    "planned": 158.0,
    "hires": 0,
    "qneed": 0.0
@@ -10216,7 +10216,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.3202524074794)]"
+    "detail": "[(1, 100), (0.7, 86.896529925255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10231,7 +10231,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 99945.7142048161"
+    "detail": "101667.57387493 \u2192 101825.57387493"
    }
   ]
  },
@@ -10242,10 +10242,10 @@
   "edits": {
    "('C02', 'I')": "1.2"
   },
-  "cells_changed": 203,
+  "cells_changed": 201,
   "delta": {
-   "rec": -2500,
-   "planned": -3769.248000000007,
+   "rec": -5000,
+   "planned": -4013.5511111112137,
    "hires": 0,
    "qneed": 0.0
   },
@@ -10320,7 +10320,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.8089341779794)]"
+    "detail": "[(1, 100), (0.7, 87.5105849985883)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10419,7 +10419,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6374564387294)]"
+    "detail": "[(1, 100), (0.7, 86.977100362755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10518,7 +10518,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6107706887294)]"
+    "detail": "[(1, 100), (0.7, 86.950414612755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10533,7 +10533,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 99840.7142048161"
+    "detail": "101667.57387493 \u2192 101720.57387493"
    }
   ]
  },
@@ -10544,10 +10544,10 @@
   "edits": {
    "('C03', 'I')": "1.2"
   },
-  "cells_changed": 189,
+  "cells_changed": 190,
   "delta": {
    "rec": 0,
-   "planned": -802.7733333333017,
+   "planned": -802.7733333330107,
    "hires": 0,
    "qneed": 0.0
   },
@@ -10622,7 +10622,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.0499428662294)]"
+    "detail": "[(1, 100), (0.7, 87.389586790255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10721,7 +10721,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6374564387294)]"
+    "detail": "[(1, 100), (0.7, 86.977100362755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10820,7 +10820,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6200080637294)]"
+    "detail": "[(1, 100), (0.7, 86.959651987755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10835,7 +10835,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 99822.7142048161"
+    "detail": "101667.57387493 \u2192 101702.57387493"
    }
   ]
  },
@@ -10849,7 +10849,7 @@
   "cells_changed": 177,
   "delta": {
    "rec": 0,
-   "planned": -530.1333333333023,
+   "planned": -530.1333333330113,
    "hires": 0,
    "qneed": 0.0
   },
@@ -10924,7 +10924,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.9100274262294)]"
+    "detail": "[(1, 100), (0.7, 87.249671350255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11023,7 +11023,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6374564387294)]"
+    "detail": "[(1, 100), (0.7, 86.977100362755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11044,10 +11044,10 @@
   "edits": {
    "('C05', 'E')": "193.2"
   },
-  "cells_changed": 178,
+  "cells_changed": 219,
   "delta": {
-   "rec": 2500,
-   "planned": 1298.286848747899,
+   "rec": 5000,
+   "planned": 3262.7035154149926,
    "hires": 0,
    "qneed": 0.0
   },
@@ -11122,7 +11122,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.4013360324794)]"
+    "detail": "[(1, 100), (0.7, 88.504346362755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11137,7 +11137,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 101086.001053564"
+    "detail": "101667.57387493 \u2192 104930.277390345"
    }
   ]
  },
@@ -11148,10 +11148,10 @@
   "edits": {
    "('C05', 'I')": "1.2"
   },
-  "cells_changed": 265,
+  "cells_changed": 235,
   "delta": {
    "rec": -2500,
-   "planned": -2511.4890406235063,
+   "planned": -3357.9473739569075,
    "hires": 0,
    "qneed": 0.0
   },
@@ -11226,7 +11226,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 85.9714488799293)]"
+    "detail": "[(1, 100), (0.7, 86.4136858500493)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11325,7 +11325,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11346,10 +11346,10 @@
   "edits": {
    "('C06', 'E')": "193.2"
   },
-  "cells_changed": 202,
+  "cells_changed": 223,
   "delta": {
    "rec": 2500,
-   "planned": 117.39130434789695,
+   "planned": 2001.5142179429968,
    "hires": 0,
    "qneed": 0.0
   },
@@ -11424,7 +11424,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.4017156326347)]"
+    "detail": "[(1, 100), (0.7, 87.0081616752898)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11439,7 +11439,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 99905.105509164"
+    "detail": "101667.57387493 \u2192 103669.088092873"
    }
   ]
  },
@@ -11450,10 +11450,10 @@
   "edits": {
    "('C06', 'I')": "1.2"
   },
-  "cells_changed": 247,
+  "cells_changed": 222,
   "delta": {
-   "rec": 0,
-   "planned": -1463.0894266264077,
+   "rec": -2500,
+   "planned": -2256.90743007361,
    "hires": 0,
    "qneed": 0.0
   },
@@ -11528,7 +11528,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.3888088313562)]"
+    "detail": "[(1, 100), (0.7, 87.3724638257759)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11549,7 +11549,7 @@
   "edits": {
    "('C06', 'J')": "1"
   },
-  "cells_changed": 75,
+  "cells_changed": 76,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -11627,7 +11627,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6374564387294)]"
+    "detail": "[(1, 100), (0.7, 86.977100362755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11648,10 +11648,10 @@
   "edits": {
    "('C07', 'E')": "193.2"
   },
-  "cells_changed": 179,
+  "cells_changed": 180,
   "delta": {
    "rec": 0,
-   "planned": 74.5341614906938,
+   "planned": 74.5341614909994,
    "hires": 0,
    "qneed": 0.0
   },
@@ -11726,7 +11726,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6492440827511)]"
+    "detail": "[(1, 100), (0.7, 86.9888880067767)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11741,7 +11741,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 99862.2483663068"
+    "detail": "101667.57387493 \u2192 101742.108036421"
    }
   ]
  },
@@ -11755,7 +11755,7 @@
   "cells_changed": 220,
   "delta": {
    "rec": 0,
-   "planned": -89.44099378879764,
+   "planned": -89.44099378900137,
    "hires": 0,
    "qneed": 0.0
   },
@@ -11830,7 +11830,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6244402784033)]"
+    "detail": "[(1, 100), (0.7, 86.9640842024289)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11840,7 +11840,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "100 vs 100.0"
    }
   ]
  },
@@ -11929,7 +11929,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11953,7 +11953,7 @@
   "cells_changed": 155,
   "delta": {
    "rec": 0,
-   "planned": 74.5341614906938,
+   "planned": 74.5341614909994,
    "hires": 0,
    "qneed": 0.0
   },
@@ -12028,7 +12028,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12043,7 +12043,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 99862.2483663068"
+    "detail": "101667.57387493 \u2192 101742.108036421"
    }
   ]
  },
@@ -12057,7 +12057,7 @@
   "cells_changed": 194,
   "delta": {
    "rec": 0,
-   "planned": -89.44099378879764,
+   "planned": -89.44099378900137,
    "hires": 0,
    "qneed": 0.0
   },
@@ -12132,7 +12132,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12153,7 +12153,7 @@
   "edits": {
    "('C08', 'J')": "1"
   },
-  "cells_changed": 71,
+  "cells_changed": 65,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -12231,7 +12231,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12252,10 +12252,10 @@
   "edits": {
    "('C09', 'E')": "1738.8"
   },
-  "cells_changed": 112,
+  "cells_changed": 103,
   "delta": {
    "rec": 2500,
-   "planned": 579.5999999998894,
+   "planned": 579.5999999999913,
    "hires": 0,
    "qneed": 0.0
   },
@@ -12330,7 +12330,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.1875534074794)]"
+    "detail": "[(1, 100), (0.7, 87.5208075255401)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12345,7 +12345,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 100367.314204816"
+    "detail": "101667.57387493 \u2192 102247.17387493"
    }
   ]
  },
@@ -12356,7 +12356,7 @@
   "edits": {
    "('C09', 'F')": "14.399999999999999"
   },
-  "cells_changed": 147,
+  "cells_changed": 139,
   "delta": {
    "rec": 0,
    "planned": -772.8000000000029,
@@ -12434,7 +12434,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.9781696262294)]"
+    "detail": "[(1, 100), (0.7, 87.317813550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12455,7 +12455,7 @@
   "edits": {
    "('C09', 'I')": "1.2"
   },
-  "cells_changed": 195,
+  "cells_changed": 189,
   "delta": {
    "rec": 0,
    "planned": -772.8000000000029,
@@ -12533,7 +12533,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.9781696262294)]"
+    "detail": "[(1, 100), (0.7, 87.317813550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12554,7 +12554,7 @@
   "edits": {
    "('C09', 'J')": "1"
   },
-  "cells_changed": 81,
+  "cells_changed": 75,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -12632,7 +12632,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6374564387294)]"
+    "detail": "[(1, 100), (0.7, 86.977100362755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12653,10 +12653,10 @@
   "edits": {
    "('C10', 'E')": "1738.8"
   },
-  "cells_changed": 103,
+  "cells_changed": 97,
   "delta": {
    "rec": 2500,
-   "planned": 579.5999999998894,
+   "planned": 579.5999999999913,
    "hires": 0,
    "qneed": 0.0
   },
@@ -12731,7 +12731,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.1038925574794)]"
+    "detail": "[(1, 100), (0.7, 87.443536481505)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12746,7 +12746,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 100367.314204816"
+    "detail": "101667.57387493 \u2192 102247.17387493"
    }
   ]
  },
@@ -12757,10 +12757,10 @@
   "edits": {
    "('C10', 'F')": "14.399999999999999"
   },
-  "cells_changed": 160,
+  "cells_changed": 142,
   "delta": {
    "rec": 0,
-   "planned": -725.7600000000093,
+   "planned": -772.8000000000029,
    "hires": 0,
    "qneed": 0.0
   },
@@ -12835,7 +12835,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.0104205862294)]"
+    "detail": "[(1, 100), (0.7, 87.374204850255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12856,10 +12856,10 @@
   "edits": {
    "('C10', 'I')": "1.2"
   },
-  "cells_changed": 197,
+  "cells_changed": 193,
   "delta": {
    "rec": 0,
-   "planned": -725.7600000000093,
+   "planned": -772.8000000000029,
    "hires": 0,
    "qneed": 0.0
   },
@@ -12934,7 +12934,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.0104205862294)]"
+    "detail": "[(1, 100), (0.7, 87.374204850255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12955,7 +12955,7 @@
   "edits": {
    "('C10', 'J')": "1"
   },
-  "cells_changed": 81,
+  "cells_changed": 75,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -13033,7 +13033,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6374564387294)]"
+    "detail": "[(1, 100), (0.7, 86.977100362755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -13054,7 +13054,7 @@
   "edits": {
    "('C11', 'E')": "1738.8"
   },
-  "cells_changed": 19,
+  "cells_changed": 13,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -13132,7 +13132,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -13147,7 +13147,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 99787.7142048161"
+    "detail": "101667.57387493 \u2192 101667.57387493"
    }
   ]
  },
@@ -13158,7 +13158,7 @@
   "edits": {
    "('C11', 'F')": "14.399999999999999"
   },
-  "cells_changed": 32,
+  "cells_changed": 25,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -13236,7 +13236,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -13257,7 +13257,7 @@
   "edits": {
    "('C11', 'I')": "1.2"
   },
-  "cells_changed": 22,
+  "cells_changed": 15,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -13335,7 +13335,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -13356,7 +13356,7 @@
   "edits": {
    "('C11', 'J')": "1"
   },
-  "cells_changed": 8,
+  "cells_changed": 2,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -13434,7 +13434,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -13455,7 +13455,7 @@
   "edits": {
    "('C12', 'E')": "1738.8"
   },
-  "cells_changed": 17,
+  "cells_changed": 12,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -13533,7 +13533,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -13548,7 +13548,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 99787.7142048161"
+    "detail": "101667.57387493 \u2192 101667.57387493"
    }
   ]
  },
@@ -13559,7 +13559,7 @@
   "edits": {
    "('C12', 'F')": "14.399999999999999"
   },
-  "cells_changed": 32,
+  "cells_changed": 26,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -13637,7 +13637,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -13658,7 +13658,7 @@
   "edits": {
    "('C12', 'I')": "1.2"
   },
-  "cells_changed": 22,
+  "cells_changed": 16,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -13736,7 +13736,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -13757,7 +13757,7 @@
   "edits": {
    "('C12', 'J')": "1"
   },
-  "cells_changed": 8,
+  "cells_changed": 2,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -13835,7 +13835,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -13856,10 +13856,10 @@
   "edits": {
    "('C13', 'E')": "115.19999999999999"
   },
-  "cells_changed": 180,
+  "cells_changed": 174,
   "delta": {
    "rec": 5000,
-   "planned": 2849.8091673848976,
+   "planned": 2849.8091673849995,
    "hires": 0,
    "qneed": 0.0
   },
@@ -13934,7 +13934,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.7022159966421)]"
+    "detail": "[(1, 100), (0.7, 87.0418599206677)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -13949,7 +13949,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 102637.523372201"
+    "detail": "101667.57387493 \u2192 104517.383042315"
    }
   ]
  },
@@ -13960,10 +13960,10 @@
   "edits": {
    "('C13', 'I')": "1.2"
   },
-  "cells_changed": 228,
+  "cells_changed": 223,
   "delta": {
    "rec": -2500,
-   "planned": -2374.8409728207043,
+   "planned": -2374.840972820806,
    "hires": 0,
    "qneed": 0.0
   },
@@ -14038,7 +14038,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.0933419217188)]"
+    "detail": "[(1, 100), (0.7, 87.4329858457444)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -14048,7 +14048,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "100 vs 100.0"
    }
   ]
  },
@@ -14059,7 +14059,7 @@
   "edits": {
    "('C13', 'J')": "1"
   },
-  "cells_changed": 82,
+  "cells_changed": 76,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -14137,7 +14137,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6374564387294)]"
+    "detail": "[(1, 100), (0.7, 86.977100362755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -14161,7 +14161,7 @@
   "cells_changed": 177,
   "delta": {
    "rec": 5000,
-   "planned": 2577.37304406389,
+   "planned": 2577.373044062988,
    "hires": 0,
    "qneed": 0.0
   },
@@ -14236,7 +14236,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.7017487750218)]"
+    "detail": "[(1, 100), (0.7, 87.6571301288792)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -14251,7 +14251,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 102365.08724888"
+    "detail": "101667.57387493 \u2192 104244.946918993"
    }
   ]
  },
@@ -14262,10 +14262,10 @@
   "edits": {
    "('C14', 'I')": "1.2"
   },
-  "cells_changed": 228,
+  "cells_changed": 217,
   "delta": {
    "rec": -2500,
-   "planned": -2147.81087005281,
+   "planned": -2147.810870052912,
    "hires": 0,
    "qneed": 0.0
   },
@@ -14340,7 +14340,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.8142171179845)]"
+    "detail": "[(1, 100), (0.7, 87.2969643271859)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -14361,7 +14361,7 @@
   "edits": {
    "('C14', 'J')": "1"
   },
-  "cells_changed": 82,
+  "cells_changed": 76,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -14439,7 +14439,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6374564387294)]"
+    "detail": "[(1, 100), (0.7, 86.977100362755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -14460,10 +14460,10 @@
   "edits": {
    "('C15', 'E')": "100.8"
   },
-  "cells_changed": 221,
+  "cells_changed": 172,
   "delta": {
-   "rec": 2500,
-   "planned": 955.6018518518977,
+   "rec": 0,
+   "planned": 109.1435185179871,
    "hires": 0,
    "qneed": 0.0
   },
@@ -14538,7 +14538,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.4013360324794)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -14553,7 +14553,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 100743.316056668"
+    "detail": "101667.57387493 \u2192 101776.717393448"
    }
   ]
  },
@@ -14564,10 +14564,10 @@
   "edits": {
    "('C15', 'I')": "1.2"
   },
-  "cells_changed": 252,
+  "cells_changed": 232,
   "delta": {
-   "rec": -2500,
-   "planned": -2862.2222222222044,
+   "rec": 0,
+   "planned": -897.8055555560131,
    "hires": 0,
    "qneed": 0.0
   },
@@ -14642,7 +14642,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.2686870791849)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -14663,7 +14663,7 @@
   "edits": {
    "('C15', 'J')": "1"
   },
-  "cells_changed": 71,
+  "cells_changed": 65,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -14741,7 +14741,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -14762,10 +14762,10 @@
   "edits": {
    "('C16', 'E')": "100.8"
   },
-  "cells_changed": 227,
+  "cells_changed": 189,
   "delta": {
-   "rec": 2500,
-   "planned": 902.9615219659026,
+   "rec": 0,
+   "planned": 109.1435185179871,
    "hires": 0,
    "qneed": 0.0
   },
@@ -14840,7 +14840,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.9775534932113)]"
+    "detail": "[(1, 100), (0.7, 86.9782291349524)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -14855,7 +14855,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 100690.675726782"
+    "detail": "101667.57387493 \u2192 101776.717393448"
    }
   ]
  },
@@ -14866,10 +14866,10 @@
   "edits": {
    "('C16', 'I')": "1.2"
   },
-  "cells_changed": 227,
+  "cells_changed": 248,
   "delta": {
-   "rec": -2500,
-   "planned": -2104.6391517212032,
+   "rec": 0,
+   "planned": -708.2790211650135,
    "hires": 0,
    "qneed": 0.0
   },
@@ -14944,7 +14944,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.9546777246533)]"
+    "detail": "[(1, 100), (0.7, 87.2959629100722)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -14965,7 +14965,7 @@
   "edits": {
    "('C16', 'J')": "1"
   },
-  "cells_changed": 82,
+  "cells_changed": 65,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -15043,7 +15043,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6374564387294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -15064,10 +15064,10 @@
   "edits": {
    "('C17', 'E')": "214.79999999999998"
   },
-  "cells_changed": 200,
+  "cells_changed": 172,
   "delta": {
-   "rec": 2500,
-   "planned": 88.69490999379195,
+   "rec": 0,
+   "planned": 88.69490999399568,
    "hires": 0,
    "qneed": 0.0
   },
@@ -15142,7 +15142,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.4013360324794)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -15152,12 +15152,12 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 99.99999999999999"
    },
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 99876.4091148099"
+    "detail": "101667.57387493 \u2192 101756.268784924"
    }
   ]
  },
@@ -15168,10 +15168,10 @@
   "edits": {
    "('C17', 'I')": "1.2"
   },
-  "cells_changed": 288,
+  "cells_changed": 204,
   "delta": {
    "rec": 0,
-   "planned": -106.43389199250669,
+   "planned": -106.43389199300145,
    "hires": 0,
    "qneed": 0.0
   },
@@ -15246,7 +15246,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -15267,7 +15267,7 @@
   "edits": {
    "('C17', 'J')": "1"
   },
-  "cells_changed": 202,
+  "cells_changed": 65,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -15345,7 +15345,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -15366,10 +15366,10 @@
   "edits": {
    "('C18', 'E')": "214.79999999999998"
   },
-  "cells_changed": 267,
+  "cells_changed": 185,
   "delta": {
    "rec": 0,
-   "planned": 83.29608938549063,
+   "planned": 88.69490999399568,
    "hires": 0,
    "qneed": 0.0
   },
@@ -15444,7 +15444,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6412404851679)]"
+    "detail": "[(1, 100), (0.7, 86.9781138019426)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -15459,7 +15459,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 99871.0102942016"
+    "detail": "101667.57387493 \u2192 101756.268784924"
    }
   ]
  },
@@ -15470,10 +15470,10 @@
   "edits": {
    "('C18', 'I')": "1.2"
   },
-  "cells_changed": 302,
+  "cells_changed": 221,
   "delta": {
    "rec": 0,
-   "planned": -99.95530726249854,
+   "planned": -106.43389199300145,
    "hires": 0,
    "qneed": 0.0
   },
@@ -15548,7 +15548,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6340445955031)]"
+    "detail": "[(1, 100), (0.7, 86.9770132482298)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -15569,7 +15569,7 @@
   "edits": {
    "('C18', 'J')": "1"
   },
-  "cells_changed": 202,
+  "cells_changed": 65,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -15647,7 +15647,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -15668,10 +15668,10 @@
   "edits": {
    "('C19', 'E')": "214.79999999999998"
   },
-  "cells_changed": 263,
+  "cells_changed": 182,
   "delta": {
    "rec": 0,
-   "planned": 52.88640595909965,
+   "planned": 52.886405958997784,
    "hires": 0,
    "qneed": 0.0
   },
@@ -15746,7 +15746,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6459695214808)]"
+    "detail": "[(1, 100), (0.7, 86.9856134455064)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -15756,12 +15756,12 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "100 vs 100.0"
    },
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 99840.6006107752"
+    "detail": "101667.57387493 \u2192 101720.460280889"
    }
   ]
  },
@@ -15772,10 +15772,10 @@
   "edits": {
    "('C19', 'I')": "1.2"
   },
-  "cells_changed": 299,
+  "cells_changed": 218,
   "delta": {
    "rec": 0,
-   "planned": -63.46368715079734,
+   "planned": -63.46368715100107,
    "hires": 0,
    "qneed": 0.0
   },
@@ -15850,7 +15850,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6283697519277)]"
+    "detail": "[(1, 100), (0.7, 86.9680136759533)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -15860,7 +15860,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100"
+    "detail": "100 vs 100.0"
    }
   ]
  },
@@ -15871,7 +15871,7 @@
   "edits": {
    "('C19', 'J')": "1"
   },
-  "cells_changed": 202,
+  "cells_changed": 65,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -15949,7 +15949,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -15970,10 +15970,10 @@
   "edits": {
    "('C20', 'E')": "214.79999999999998"
   },
-  "cells_changed": 248,
+  "cells_changed": 158,
   "delta": {
    "rec": 0,
-   "planned": 52.88640595909965,
+   "planned": 52.886405958997784,
    "hires": 0,
    "qneed": 0.0
   },
@@ -16048,7 +16048,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -16063,7 +16063,7 @@
    {
     "check": "planned moves the right way",
     "ok": true,
-    "detail": "99787.7142048161 \u2192 99840.6006107752"
+    "detail": "101667.57387493 \u2192 101720.460280889"
    }
   ]
  },
@@ -16074,10 +16074,10 @@
   "edits": {
    "('C20', 'I')": "1.2"
   },
-  "cells_changed": 281,
+  "cells_changed": 191,
   "delta": {
    "rec": 0,
-   "planned": -63.46368715079734,
+   "planned": -63.46368715100107,
    "hires": 0,
    "qneed": 0.0
   },
@@ -16152,7 +16152,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -16173,7 +16173,7 @@
   "edits": {
    "('C20', 'J')": "1"
   },
-  "cells_changed": 202,
+  "cells_changed": 65,
   "delta": {
    "rec": 0,
    "planned": 1.0,
@@ -16251,7 +16251,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -16272,10 +16272,10 @@
   "edits": {
    "I1C": "0.096"
   },
-  "cells_changed": 546,
+  "cells_changed": 470,
   "delta": {
    "rec": 2500,
-   "planned": 1775.190933332895,
+   "planned": 1820.8719999999885,
    "hires": 0,
    "qneed": 0.0
   },
@@ -16350,7 +16350,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.5371663428794)]"
+    "detail": "[(1, 100), (0.7, 86.853367314505)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -16371,10 +16371,10 @@
   "edits": {
    "I1Q": "0.4"
   },
-  "cells_changed": 526,
+  "cells_changed": 450,
   "delta": {
    "rec": 2500,
-   "planned": 1775.190933332895,
+   "planned": 1820.8719999999885,
    "hires": 0,
    "qneed": 0.0
   },
@@ -16449,7 +16449,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.5371663428794)]"
+    "detail": "[(1, 100), (0.7, 86.853367314505)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -16470,10 +16470,10 @@
   "edits": {
    "I1FQ": "0.36000000000000004"
   },
-  "cells_changed": 474,
+  "cells_changed": 401,
   "delta": {
    "rec": 0,
-   "planned": 70.80449999999837,
+   "planned": 79.82049999998708,
    "hires": 0,
    "qneed": 0.0
   },
@@ -16548,7 +16548,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6016336418856)]"
+    "detail": "[(1, 100), (0.7, 86.9366506674112)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -16569,7 +16569,7 @@
   "edits": {
    "I1M": "0.36"
   },
-  "cells_changed": 292,
+  "cells_changed": 162,
   "delta": {
    "rec": 0,
    "planned": 12.65999999998894,
@@ -16647,7 +16647,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6314726724794)]"
+    "detail": "[(1, 100), (0.7, 86.971116596505)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -16668,10 +16668,10 @@
   "edits": {
    "I1B": "1200.0"
   },
-  "cells_changed": 302,
+  "cells_changed": 182,
   "delta": {
    "rec": 2500,
-   "planned": 2195.545499999891,
+   "planned": 2195.545499999993,
    "hires": 0,
    "qneed": 0.0
   },
@@ -16746,7 +16746,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.2746095261981)]"
+    "detail": "[(1, 100), (0.7, 86.6142534502237)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -16767,10 +16767,10 @@
   "edits": {
    "I1A": "1.38"
   },
-  "cells_changed": 614,
+  "cells_changed": 557,
   "delta": {
    "rec": 0,
-   "planned": -1648.6766833333095,
+   "planned": -1676.3257500001055,
    "hires": 0,
    "qneed": 0.0
   },
@@ -16845,7 +16845,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.4264054516575)]"
+    "detail": "[(1, 100), (0.7, 87.7802385310831)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -16866,7 +16866,7 @@
   "edits": {
    "I2P": "12000.0"
   },
-  "cells_changed": 150,
+  "cells_changed": 2,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -16944,7 +16944,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
+    "detail": "[(1, 100), (0.7, 86.977613550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -16965,10 +16965,10 @@
   "edits": {
    "I2C": "100.8"
   },
-  "cells_changed": 241,
+  "cells_changed": 124,
   "delta": {
    "rec": 2500,
-   "planned": 1982.3999999998923,
+   "planned": 1982.3999999999942,
    "hires": 0,
    "qneed": 0.0
   },
@@ -17043,7 +17043,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.3839931324794)]"
+    "detail": "[(1, 100), (0.7, 86.723637056505)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -17064,10 +17064,10 @@
   "edits": {
    "I2A": "1.08"
   },
-  "cells_changed": 305,
+  "cells_changed": 206,
   "delta": {
    "rec": -2500,
-   "planned": -3799.600000000006,
+   "planned": -3799.6000000001077,
    "hires": 0,
    "qneed": 0.0
   },
@@ -17142,7 +17142,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.5472532199794)]"
+    "detail": "[(1, 100), (0.7, 87.886897144005)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -17152,7 +17152,7 @@
    {
     "check": "Tracker forecast with no actuals = planned hires",
     "ok": true,
-    "detail": "100 vs 100.0"
+    "detail": "100 vs 99.99999999999999"
    }
   ]
  },
@@ -17163,10 +17163,10 @@
   "edits": {
    "I2F": "1440.0"
   },
-  "cells_changed": 226,
+  "cells_changed": 78,
   "delta": {
-   "rec": 2500,
-   "planned": 239.99999999989814,
+   "rec": 0,
+   "planned": 240.0,
    "hires": 0,
    "qneed": 0.0
   },
@@ -17241,7 +17241,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.2781710324794)]"
+    "detail": "[(1, 100), (0.7, 86.854448550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -17262,10 +17262,10 @@
   "edits": {
    "I3C": "16.8"
   },
-  "cells_changed": 236,
+  "cells_changed": 121,
   "delta": {
    "rec": 2500,
-   "planned": 969.6969696969027,
+   "planned": 969.69696969699,
    "hires": 0,
    "qneed": 0.0
   },
@@ -17340,7 +17340,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.903699668843)]"
+    "detail": "[(1, 100), (0.7, 87.2433435928686)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -17361,10 +17361,10 @@
   "edits": {
    "I3Q": "0.11200000000000002"
   },
-  "cells_changed": 252,
+  "cells_changed": 141,
   "delta": {
    "rec": 2500,
-   "planned": 1623.3766233768984,
+   "planned": 1623.3766233769857,
    "hires": 0,
    "qneed": 0.0
   },
@@ -17439,7 +17439,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.5682394415703)]"
+    "detail": "[(1, 100), (0.7, 86.9078833655959)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -17460,10 +17460,10 @@
   "edits": {
    "I3A": "1.2"
   },
-  "cells_changed": 278,
+  "cells_changed": 182,
   "delta": {
    "rec": 0,
-   "planned": -1082.2510822511103,
+   "planned": -1082.2510822510085,
    "hires": 0,
    "qneed": 0.0
   },
@@ -17538,7 +17538,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.1933673535021)]"
+    "detail": "[(1, 100), (0.7, 87.5330112775277)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -17559,10 +17559,10 @@
   "edits": {
    "I3H": "18.0"
   },
-  "cells_changed": 236,
+  "cells_changed": 110,
   "delta": {
-   "rec": 2500,
-   "planned": 329.00432900390297,
+   "rec": 0,
+   "planned": 329.0043290039903,
    "hires": 0,
    "qneed": 0.0
   },
@@ -17637,7 +17637,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.2324951233885)]"
+    "detail": "[(1, 100), (0.7, 86.8087726411641)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -17658,10 +17658,10 @@
   "edits": {
    "I3W": "22.8"
   },
-  "cells_changed": 236,
+  "cells_changed": 110,
   "delta": {
-   "rec": 2500,
-   "planned": 329.00432900390297,
+   "rec": 0,
+   "planned": 329.0043290039903,
    "hires": 0,
    "qneed": 0.0
   },
@@ -17736,7 +17736,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 87.2324951233885)]"
+    "detail": "[(1, 100), (0.7, 86.8087726411641)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -17757,7 +17757,7 @@
   "edits": {
    "I3T": "480.0"
   },
-  "cells_changed": 213,
+  "cells_changed": 78,
   "delta": {
    "rec": 0,
    "planned": 80.0,
@@ -17835,7 +17835,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.7, 86.5969146262294)]"
+    "detail": "[(1, 100), (0.7, 86.936558550255)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
