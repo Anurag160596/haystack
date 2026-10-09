@@ -1,7 +1,5 @@
 # How I Used AI
 
-**How I used AI**
-
 - I used Claude (Anthropic) as my analyst.
 - It built the Excel model with live formulas and generated the 8 slides directly from the model's values.
 - It researched benchmarks: TalentBait cost per application, IAB, BA and KOFA labour-market data, Redline campaign volumes, StepStone and Pracuj.pl prices, SmartRecruiters timings.
