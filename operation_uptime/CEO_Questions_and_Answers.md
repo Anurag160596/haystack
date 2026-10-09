@@ -241,7 +241,7 @@ Yes. That's why internal promotion is only the fallback for a supervisor shortfa
 **32. How do I know the spreadsheet is right?**
 - An independent Python re-implementation recomputes the headline outputs.
 - 152 scenarios pass, including edge cases.
-- Each of the 179 inputs was changed one at a time with no errors and matching results; derived cells recalculate live from them.
+- Each of the 181 inputs was changed one at a time with no errors and matching results; derived cells recalculate live from them.
 - All 14 live Tracker rules change a decision when actuals are typed in.
 - The deck matches the model on all 43 checks.
 - Report: `tests/README.md`.
@@ -250,7 +250,7 @@ Yes. That's why internal promotion is only the fallback for a supervisor shortfa
 None are unexplained. Every input on the Assumptions tab carries one of three labels:
 - **Given (11):** from the brief.
 - **Researched (54):** read from, or calculated by stated arithmetic from, the linked source: costs, rates, pools, reach, timings, volumes.
-- **Own estimate (81):** my judgement, with the reason and the benchmark it starts from where there is one. Examples: pass rates (from Gem's ~35%), acceptance (from Königsteiner's ~77%), the decision rules (cut at 1.5× plan cost, judge after €500 or 30 applications), the 3-day offer.
+- **Own estimate (83):** my judgement, with the reason and the benchmark it starts from where there is one. Examples: pass rates (from Gem's ~35%), acceptance (from Königsteiner's ~77%), the decision rules (cut at 1.5× plan cost, judge after €500 or 30 applications), the 3-day offer.
 
 Calculated cells are in black text: channel caps, rediscovery pool, referral volumes.
 

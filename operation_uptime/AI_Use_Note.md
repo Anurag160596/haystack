@@ -11,5 +11,5 @@
 
 - Every input is labelled Given, Researched (with link) or Own estimate (with one line of reasoning).
 - Independent AI reviews reopened every source; claims a source didn't support were corrected (e.g. social-media quality index 0.50 → 0.41).
-- Automated tests ran 152 scenarios, changed each of the 179 inputs one at a time, and matched every deck figure to the model. All pass.
+- Automated tests ran 152 scenarios, changed each of the 181 inputs one at a time, and matched every deck figure to the model. All pass.
 - The Own estimates are mine; I can defend each one.
