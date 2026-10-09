@@ -6,7 +6,7 @@
   "edits": {
    "G1": "2026-10-21 00:00:00"
   },
-  "cells_changed": 230,
+  "cells_changed": 232,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1021,7 +1021,7 @@
   "edits": {
    "T1": "2026-12-20 00:00:00"
   },
-  "cells_changed": 131,
+  "cells_changed": 133,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1120,7 +1120,7 @@
   "edits": {
    "T2": "7"
   },
-  "cells_changed": 172,
+  "cells_changed": 174,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1224,7 +1224,7 @@
   "edits": {
    "T3": "9"
   },
-  "cells_changed": 232,
+  "cells_changed": 234,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1328,7 +1328,7 @@
   "edits": {
    "T4": "4"
   },
-  "cells_changed": 232,
+  "cells_changed": 234,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -1432,7 +1432,7 @@
   "edits": {
    "T5": "8"
   },
-  "cells_changed": 232,
+  "cells_changed": 234,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -6765,7 +6765,7 @@
  },
  {
   "key": "TP1",
-  "label": "TP1 Initiative test: PASS needs at least this share of planned qualified in the window",
+  "label": "TP1 Initiative test: PASS needs about this share of planned qualified in the window (rounded down)",
   "change": "down 20%",
   "edits": {
    "TP1": "0.48"
@@ -9835,6 +9835,204 @@
   "change": "up 20%",
   "edits": {
    "PLI": "285000.0"
+  },
+  "cells_changed": 0,
+  "delta": {
+   "rec": 0,
+   "planned": 0.0,
+   "hires": 0,
+   "qneed": 0.0
+  },
+  "flags": {},
+  "passed": true,
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (49 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "initiative kill bars never overlap pass bars",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "18 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.7, 87.0578063312124)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 100.0"
+   }
+  ]
+ },
+ {
+  "key": "PLC",
+  "label": "PLC Polish cross-border commuters working in Brandenburg (all jobs)",
+  "change": "up 20%",
+  "edits": {
+   "PLC": "16530.0"
+  },
+  "cells_changed": 0,
+  "delta": {
+   "rec": 0,
+   "planned": 0.0,
+   "hires": 0,
+   "qneed": 0.0
+  },
+  "flags": {},
+  "passed": true,
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (49 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "initiative kill bars never overlap pass bars",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "18 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.7, 87.0578063312124)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 100.0"
+   }
+  ]
+ },
+ {
+  "key": "PLT",
+  "label": "PLT \u2026of which in machine/vehicle, metalworking and building trades",
+  "change": "up 20%",
+  "edits": {
+   "PLT": "2013.6"
   },
   "cells_changed": 0,
   "delta": {
@@ -17955,7 +18153,7 @@
   "edits": {
    "I2L": "4"
   },
-  "cells_changed": 75,
+  "cells_changed": 76,
   "delta": {
    "rec": 0,
    "planned": 0.0,
@@ -18054,7 +18252,7 @@
   "edits": {
    "I3L": "8"
   },
-  "cells_changed": 65,
+  "cells_changed": 66,
   "delta": {
    "rec": 0,
    "planned": 0.0,
