@@ -4983,7 +4983,7 @@
  },
  {
   "key": "PSE",
-  "label": "PSE Qualified people employed within 75 km (incl. PL border for mechatronics)",
+  "label": "PSE Qualified people employed within 75 km (Berlin + ~60% of Brandenburg)",
   "change": "up 20%",
   "edits": {
    "PSE": "5760.0"
@@ -5082,7 +5082,7 @@
  },
  {
   "key": "PSM",
-  "label": "PSM Qualified people employed within 75 km (incl. PL border for mechatronics)",
+  "label": "PSM Qualified people employed within 75 km (Berlin + ~60% of Brandenburg)",
   "change": "up 20%",
   "edits": {
    "PSM": "31680.0"
@@ -5181,7 +5181,7 @@
  },
  {
   "key": "PSA",
-  "label": "PSA Qualified people employed within 75 km (incl. PL border for mechatronics)",
+  "label": "PSA Qualified people employed within 75 km (Berlin + ~60% of Brandenburg)",
   "change": "up 20%",
   "edits": {
    "PSA": "2400.0"
@@ -5280,7 +5280,7 @@
  },
  {
   "key": "PSS",
-  "label": "PSS Qualified people employed within 75 km (incl. PL border for mechatronics)",
+  "label": "PSS Qualified people employed within 75 km (Berlin + ~60% of Brandenburg)",
   "change": "up 20%",
   "edits": {
    "PSS": "2640.0"
@@ -9816,6 +9816,105 @@
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
     "detail": "[(1, 100), (0.7, 86.8505933503139)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 100.0"
+   }
+  ]
+ },
+ {
+  "key": "PLI",
+  "label": "PLI Industry workers (NACE B\u2013E) in the Polish border regions Lubuskie + Zachodniopomorskie, 2025",
+  "change": "up 20%",
+  "edits": {
+   "PLI": "285000.0"
+  },
+  "cells_changed": 0,
+  "delta": {
+   "rec": 0,
+   "planned": 0.0,
+   "hires": 0,
+   "qneed": 0.0
+  },
+  "flags": {},
+  "passed": true,
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (49 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "initiative kill bars never overlap pass bars",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "18 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.7, 87.0578063312124)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",

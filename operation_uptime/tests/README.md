@@ -1,6 +1,6 @@
 # Model test report: Operation_Uptime_Model.xlsx
 
-**Result: 152/152 scenarios, 2420/2420 checks · every input moved one at a time: 178/178 inputs, 2890/2890 checks · Tracker rules live: 14/14 · deck-vs-model 43/43.**
+**Result: 152/152 scenarios, 2420/2420 checks · every input moved one at a time: 178/179 inputs, 2906/2906 checks · Tracker rules live: 14/14 · deck-vs-model 43/43.**
 
 ## How the model is tested
 
@@ -26,7 +26,7 @@ Each scenario copies the model, changes inputs on the Assumptions tab, recalcula
 
 ## Every input, one at a time (`test_every_input.py`)
 
-Each of the 178 inputs (every Assumptions value and every typed channel value) is moved on its own. The 35 derived cells (channel qualified shares and caps, rediscovery and referral volumes, I2/I3 sizes) are live formulas on the evidence inputs in Assumptions §6a, so moving those inputs moves them:
+Each of the 179 inputs (every Assumptions value and every typed channel value) is moved on its own. The 35 derived cells (channel qualified shares and caps, rediscovery and referral volumes, I2/I3 sizes) are live formulas on the evidence inputs in Assumptions §6a, so moving those inputs moves them:
 - counts, costs and volumes up 20%, shares down 20%, day inputs +1 day, dates shifted by a few days;
 - weekly and rediscovery shares (which must sum to 100%) move 2 points to a neighbouring week.
 

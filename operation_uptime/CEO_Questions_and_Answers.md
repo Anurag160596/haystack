@@ -241,7 +241,7 @@ Yes. That's why internal promotion is only the fallback for a supervisor shortfa
 **32. How do I know the spreadsheet is right?**
 - An independent Python re-implementation recomputes the headline outputs.
 - 152 scenarios pass, including edge cases.
-- Each of the 178 inputs was changed one at a time with no errors and matching results; derived cells recalculate live from them.
+- Each of the 179 inputs was changed one at a time with no errors and matching results; derived cells recalculate live from them.
 - All 14 live Tracker rules change a decision when actuals are typed in.
 - The deck matches the model on all 43 checks.
 - Report: `tests/README.md`.
