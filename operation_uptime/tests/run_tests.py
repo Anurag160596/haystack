@@ -119,7 +119,7 @@ CASES = [
  ("t0_100", "First assessment 100 days after launch", {"T0": 100}, {"weekly_ok": False, "flag_contains": "assessments start"}),
  ("fractional_openings", "Fractional openings (2.5 electricians)", {"G5": 2.5}, {}),
  ("tp_tk_equal", "Initiative pass and kill thresholds both 100% (contradictory)", {"TP1": 1, "TK1": 1}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
- ("tp_tk_close", "Kill significance level just below the pass level (4.9% vs 5%) and kill cost bar equal to pass", {"TK1": 0.049, "TK2": 1.5}, {}),
+ ("tp_tk_close", "Kill threshold just below pass (59% vs 60%), kill cost bar equal to pass", {"TK1": 0.59, "TK2": 1.5}, {}),
  ("combo_stress", "Capacity 45 + electrician pass 40% + 30% cut + I2 rejected", {"G3": 45, "PE": 0.40, "I2Q": 0}, {}),
 ]
 

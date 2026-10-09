@@ -7858,7 +7858,7 @@
  },
  {
   "name": "tp_tk_close",
-  "desc": "Kill significance level just below the pass level (4.9% vs 5%) and kill cost bar equal to pass",
+  "desc": "Kill threshold just below pass (59% vs 60%), kill cost bar equal to pass",
   "checks": [
    {
     "check": "recalculates with 0 formula errors",

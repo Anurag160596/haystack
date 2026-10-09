@@ -118,9 +118,9 @@ That's 9% of the budget, matching the common "10% testing budget" practice.
 
 **17. How do you decide to move money each week?**
 The Tracker rules, each sourced or statistical:
-- **Scale up** if cost per qualified ≤0.75× plan (95% one-sided test).
+- **Scale up** if cost per qualified is 20% better than plan and slots are free.
 - **Cut 50%** at ≥1.5×, **switch off** at ≥2× (ad-industry rules).
-- **Switch off** after €750 with zero qualified when ≥3 were expected (5% false-kill risk, Poisson).
+- **Switch off** a spent test with zero qualified, where at least 3 were expected (so bad luck doesn't kill a good channel).
 - **Pause** the costliest cells if next week is forecast above 55 qualified; **release reserve** below 50.
 
 The rules were tested: all 17 change a decision when actuals are typed in.
@@ -182,7 +182,7 @@ Assessment capacity: 98% used.
 - With 64 slots a week, use falls to 84%.
 
 **26. What if week-1 pass rates come in low?**
-Once ≥10 interviews are in (NIST n·p ≥ 5 rule), if the pass rate is below plan (electricians 50%):
+Once 10 interviews are in, if the pass rate is below plan (electricians 50%):
 - tighten knock-out questions
 - add pre-screen calls
 - ask for more slots
@@ -234,7 +234,7 @@ Yes. That's why internal promotion is only the fallback for a supervisor shortfa
 None are unexplained. Every input is one of three kinds:
 - **A sourced fact** with a link: costs, rates, pools, reach, timings, volumes.
 - **A live formula** on those facts, shown in black text: channel caps, rediscovery pool, referral volumes.
-- **A stated rule or client commitment:** decision thresholds based on NIST/BMJ/ad-industry conventions, the 3-day offer, the 18 Dec cut-off.
+- **A stated rule or client commitment:** plain practice-based decision rules (cut at 1.5× plan cost, off at 2×, judge after €500 or 30 applications), the 3-day offer, the 18 Dec cut-off.
 
 **34. Aren't vendor numbers biased?**
 - TalentBait figures are medians across 2,549 campaigns.
