@@ -185,6 +185,10 @@ def compute(path):
 
     # ---- initiative test bars (Initiatives rows 53-55)
     def rowv(id_, k): return sum(rw[k] for rw in rows if rw["id"] == id_)
+    # weekly shares are re-spread over weeks that start on or before the last useful application (Weekly col D)
+    useful = [(start + dt.timedelta(days=7 * k)) <= lastAppE for k in range(11)]
+    tot_u = sum(w for w, u in zip(W, useful) if u)
+    W = [(w / tot_u if (u and tot_u > 0) else 0.0) for w, u in zip(W, useful)]
     i12 = x["I1W1"] + x["I1W2"]; w12 = W[0] + W[1]
     pq1 = sum(rowv(f"I1a-{RS[r]}", "V") for r in ROLES) * i12 + sum(rowv(f"I1b-{RS[r]}", "V") for r in ROLES) * w12
     sh2 = W[0] * 4 / 7 + W[1] + W[2] * 3 / 7; pq2 = rowv("I2-E", "V") * sh2

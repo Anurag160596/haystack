@@ -51,7 +51,7 @@ CASES = [
  ("deadline_1nov", "Last signing date 1 Nov (window closes before it opens)", {"T1": D(2026, 11, 1)}, {"weekly_ok": False, "matrix_ok": False}),
  ("deadline_23dec", "Last signing date 23 Dec", {"T1": D(2026, 12, 23)}, {}),
  ("supervisors_impossible", "Supervisor extra round 60 days: no supervisor can sign in time", {"T6": 60}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "supervisors cannot apply"}),
- ("weights_bad", "Weekly spend shares sum to 131%", {"W6": 0.5}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "shares must sum"}),
+ ("weights_bad", "Weekly spend shares sum to 131%", {"W6": 0.5}, {"weekly_ok": False, "flag_contains": "shares must sum"}),
  ("i1_waves_bad", "Rediscovery wave shares sum to 90%", {"I1W3": 0.15}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "shares must sum"}),
  ("round_step_1", "Recommended budget not rounded", {"B5": 1}, {}),
  ("capacity_1", "Recruiters can assess 1 qualified applicant a week", {"G3": 1}, {}),
@@ -105,8 +105,11 @@ CASES = [
  ("i3x_negative", "Typo: Polish max applications −100", {"I3X": -100}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
  ("threshold_negative", "Typo: Tracker scale-up threshold −1", {"R3": -1}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
  ("campaign_end_before_start", "Campaign end before its start", {"G2": D(2026, 10, 1)}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
- ("spend_after_cutoff_wk7", "All regular spend in week 7 (after the 27 Nov cut-off), no supervisors", {"G8": 0, "W1": 0, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 0, "W7": 1}, {"weekly_ok": False, "flag_contains": "after the last useful application"}),
- ("spend_after_cutoff_wk11", "All regular spend in week 11, no supervisors", {"G8": 0, "W1": 0, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 0, "W11": 1}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "after the last useful application"}),
+ ("spend_after_cutoff_wk7", "All regular spend in week 7 (after the 24 Nov cut-off), no supervisors", {"G8": 0, "W1": 0, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 0, "W7": 1}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "no spend share falls before the last useful application"}),
+ ("spend_partly_late", "10 pts of weekly spend typed into week 7: re-spread over weeks 1–6, plan still ties", {"W6": 0.15, "W7": 0.10}, {}),
+ ("lags_one_day_longer", "Every lag one day longer (cut-off moves into week 5): week-6 share re-spread", {"T2": 7, "T3": 9, "T4": 4, "T5": 8}, {}),
+ ("start_one_day_later", "Campaign starts Wed 21 Oct: week 6 now starts after the cut-off", {"G1": D(2026, 10, 21)}, {}),
+ ("spend_after_cutoff_wk11", "All regular spend in week 11, no supervisors", {"G8": 0, "W1": 0, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 0, "W11": 1}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "no spend share falls before the last useful application"}),
  ("t0_100", "First assessment 100 days after launch", {"T0": 100}, {"weekly_ok": False, "flag_contains": "assessments start"}),
  ("fractional_openings", "Fractional openings (2.5 electricians)", {"G5": 2.5}, {}),
  ("tp_tk_equal", "Initiative pass and kill thresholds both 100% (contradictory)", {"TP1": 1, "TK1": 1}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
@@ -173,7 +176,7 @@ def run_case(name, desc, edits, expect, tmpdir):
     if rc.get("status") not in ("success", "errors_found"):
         return dict(name=name, desc=desc, checks=checks)
     wb = load_workbook(path, data_only=True)
-    Bg, F, C, Wk, Sc, I, T = (wb[n] for n in ["Budget", "Funnel", "Channels", "Weekly", "Scenarios", "Initiatives", "Tracker"])
+    Bg, F, C, Wk, I, T = (wb[n] for n in ["Budget", "Funnel", "Channels", "Weekly", "Initiatives", "Tracker"])
     o = oracle.compute(path)
 
     # ---- model's own tie-out flags
@@ -249,13 +252,13 @@ def run_case(name, desc, edits, expect, tmpdir):
     lv = [Bg[f"B{45+j}"].value or 0 for j in range(4)]
     order = sorted(range(4), key=lambda j: -lv[j])
     mono = all(tot[order[k]] >= tot[order[k + 1]] - 1e-6 for k in range(3))
-    Scn = wb["Scenarios"]
-    factors = [Scn.cell(47, c).value if isinstance(Scn.cell(47, c).value, (int, float)) else 1.0 for c in range(6, 10)]
+    SOFF = 53  # scenario engine sits under Budget (old Scenarios row r -> Budget row r+53)
+    factors = [Bg.cell(47 + SOFF, c).value if isinstance(Bg.cell(47 + SOFF, c).value, (int, float)) else 1.0 for c in range(6, 10)]
     if all(isinstance(f_, (int, float)) and f_ >= 0.9999 for f_ in factors):
         chk("scenario hires never rise when the budget falls (capacity not binding)", mono, str(list(zip(lv, tot))))
     else:
         # capacity binds: hires may rise as low-conversion sources are cut; check the cap instead
-        qrow = [Scn.cell(46, c).value or 0 for c in range(6, 10)]
+        qrow = [Bg.cell(46 + SOFF, c).value or 0 for c in range(6, 10)]
         slots = F["B22"].value or 0
         capped = all(f_ <= 1 + 1e-9 and (q_ * f_ <= slots + 1e-6) for f_, q_ in zip(factors, qrow))
         chk("scenarios never assess more qualified than there are slots (capacity binding)", capped, str(list(zip(qrow, factors))))

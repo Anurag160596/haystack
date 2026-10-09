@@ -1,11 +1,11 @@
 # Model test report: Operation_Uptime_Model.xlsx
 
-**Result: 150/150 scenarios passed · 2388/2388 checks passed · deck-vs-model 45/45.**
+**Result: 153/153 scenarios, 2436/2436 checks · every input moved one at a time: 218/218 inputs, 3532/3532 checks · Tracker rules live: 17/17 · deck-vs-model 45/45.**
 
 ## How the model is tested
 
 Each scenario copies the model, changes inputs on the Assumptions tab, recalculates in LibreOffice, and checks:
-1. **Zero formula errors** across all ~2,800 formulas.
+1. **Zero formula errors** across all ~3,000 formulas.
 2. **The model's own tie-out flags**: budget, weekly plan and channel × week matrix. For invalid inputs the test expects the flag to fire and to name the problem.
 3. **Invariants**:
    - hires never exceed openings (strict, including test hires)
@@ -24,11 +24,29 @@ Each scenario copies the model, changes inputs on the Assumptions tab, recalcula
 
 `test_deck.py` checks that 45 headline figures on the slides equal the model's values. A negative test against a deliberately altered model fails 17 of them, so the check is real.
 
+## Every input, one at a time (`test_every_input.py`)
+
+Each of the 218 inputs (every Assumptions value plus the six numeric columns of every channel row) is moved on its own:
+- counts, costs and volumes up 20%, shares down 20%, day inputs +1 day, dates shifted by a few days;
+- weekly and rediscovery shares (which must sum to 100%) move 2 points to a neighbouring week.
+
+Each time the model recalculates and must pass the full check set above: zero formula errors, tie-out flags, invariants and the 59-output oracle. A fired flag is accepted only when it names the problem. Where the economic direction is known, the headline must move the right way. Examples: more openings → more spend; lower pass rate → more qualified needed; dearer channel → plan never cheaper; longer lags → never more slots. The report also records how many output cells each input moves.
+
+Inputs that change nothing at the base plan, and why:
+- **G2 (campaign end):** not binding, because the 18 Dec signing date (T1) comes first.
+- **G9 (recognition time):** information only.
+- **R1–R13 and F1, F3, F4:** Tracker rules and flag thresholds (F2 moves a pool read-out at base). These act only once actuals exist or a threshold is crossed; see below.
+
+## Tracker rules live (`test_tracker_rules.py`)
+
+A realistic week of actuals is typed into the Tracker: ten channel cells (one clear performer, one dud) and role-level interview, offer and signing results. Each rule R1–R13 and threshold F1–F4 is then moved, and the test confirms that a decision, re-forecast or flag changes. Example: raising R6 from €750 to €1,500 turns StepStone mechatronics (€1,449 spent, 0 qualified) from SWITCH OFF to HOLD. R13 is tested with slack capacity, because a week that is already 'Full' (F4) cannot also be under-paced.
+
 ## Robustness features
 
 - **Input validation, two layers.** Excel data-validation rules reject out-of-range entries when typed: shares 0–100%, counts and costs ≥ 0, reserve 0–99%, dates inside the campaign. Summary C19 re-checks every numeric input by formula; the list is generated automatically, so no input can be missed. It also catches pasted values. Any invalid input turns the Budget and Weekly tie-out flags to '✗ invalid input: …'.
 - **Test hires can never exceed openings.** Each role's €750 tests are capped so their expected hires stay within its openings.
-- **Schedule sanity flags**: spend placed after the last useful application date, assessments starting after the last useful assessment day, and no spend before the supervisor cut-off are each named explicitly.
+- **Weekly spend can never fall after the cut-off.** Shares typed into weeks that start after the last useful application are re-spread over the earlier weeks, for both E/M/A and supervisors, and Weekly S15 says how much was moved. Changing a date or lag therefore never strands spend. Explicit flags remain for impossible schedules: no week before the cut-off, assessments starting after the last assessment day, or supervisors unable to sign in time.
+- **Whole days only** for the lag inputs (T0, T2–T6), by Excel validation and by the Summary C19 input check.
 - **Initiative test bars can't contradict each other.** Kill bars are capped at the pass bars, and the input check requires kill thresholds below pass thresholds.
 - **Summary C20 shows the plan/schedule check**, so impossible schedules are visible on the front tab.
 - **Costs are clamped at zero**, so a negative typo can't create negative spend.
@@ -40,6 +58,9 @@ Each scenario copies the model, changes inputs on the Assumptions tab, recalcula
 Four independent review passes wrote 60+ edge cases of their own. Re-run against the current model, all pass, except cases whose expected result was written before a fix the reviewer requested. For example, a 100% reserve and negative openings are now correctly flagged as invalid input.
 
 ## Bugs the tests found (all fixed)
+
+- **Moving a date or lag by one day stranded the week-6 spend.** Found by the one-at-a-time sweep: week 6 starts on the cut-off day, so a one-day shift left 25% of spend after the last useful application, and its hires were lost. Shares are now re-spread automatically (see above).
+- **Fractional days were accepted** (e.g. 6.4 days), which the dates then carried silently. Found by the sweep; day inputs are now whole days only.
 
 - **Budget-cut scenarios under-cut in rare cases.** A text criterion (`">"&key`) truncated the number to 15 digits, so a row could count itself as more expensive than itself. Found by a random scenario. All rank and cut comparisons now use exact SUMPRODUCT.
 - **A StepStone ad with 0 applications per ad divided by zero**, and the error cascaded through 338 cells. Now guarded.
@@ -139,7 +160,10 @@ Four independent review passes wrote 60+ edge cases of their own. Re-run against
 | `i3x_negative` | Typo: Polish max applications −100 | ✅ 15/15 |
 | `threshold_negative` | Typo: Tracker scale-up threshold −1 | ✅ 15/15 |
 | `campaign_end_before_start` | Campaign end before its start | ✅ 15/15 |
-| `spend_after_cutoff_wk7` | All regular spend in week 7 (after the 27 Nov cut-off), no supervisors | ✅ 16/16 |
+| `spend_after_cutoff_wk7` | All regular spend in week 7 (after the 24 Nov cut-off), no supervisors | ✅ 16/16 |
+| `spend_partly_late` | 10 pts of weekly spend typed into week 7: re-spread over weeks 1–6, plan still ties | ✅ 16/16 |
+| `lags_one_day_longer` | Every lag one day longer (cut-off moves into week 5): week-6 share re-spread | ✅ 16/16 |
+| `start_one_day_later` | Campaign starts Wed 21 Oct: week 6 now starts after the cut-off | ✅ 16/16 |
 | `spend_after_cutoff_wk11` | All regular spend in week 11, no supervisors | ✅ 16/16 |
 | `t0_100` | First assessment 100 days after launch | ✅ 16/16 |
 | `fractional_openings` | Fractional openings (2.5 electricians) | ✅ 16/16 |

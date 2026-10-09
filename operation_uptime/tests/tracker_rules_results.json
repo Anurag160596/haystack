@@ -1,0 +1,222 @@
+{
+ "decisions": {
+  "C05": "HOLD",
+  "C06": "Wait \u2013 too little data",
+  "C09": "HOLD",
+  "C10": "SWITCH OFF",
+  "C13": "ADD +25% (if slots free)",
+  "C14": "HOLD",
+  "C15": "HOLD",
+  "C17": "HOLD",
+  "C18": "Wait \u2013 too little data",
+  "I1a-E": "Wait \u2013 too little data"
+ },
+ "results": [
+  {
+   "rule": "R1",
+   "base": 500,
+   "value": 250.0,
+   "ok": true,
+   "cells": 2,
+   "example": [
+    "Tracker!X10: 'Wait \u2013 too little data' \u2192 'HOLD'",
+    "Tracker!X22: 'Wait \u2013 too little data' \u2192 'HOLD'"
+   ],
+   "context": null
+  },
+  {
+   "rule": "R2",
+   "base": 30,
+   "value": 15.0,
+   "ok": true,
+   "cells": 5,
+   "example": [
+    "Tracker!V13: 345 \u2192 258.75",
+    "Tracker!V19: 1512 \u2192 900",
+    "Tracker!W13: 1.07142857142857 \u2192 0.803571428571429"
+   ],
+   "context": null
+  },
+  {
+   "rule": "R3",
+   "base": 0.8,
+   "value": 0.4,
+   "ok": true,
+   "cells": 1,
+   "example": [
+    "Tracker!X17: 'ADD +25% (if slots free)' \u2192 'HOLD'"
+   ],
+   "context": null
+  },
+  {
+   "rule": "R4",
+   "base": 1.5,
+   "value": 0.75,
+   "ok": true,
+   "cells": 6,
+   "example": [
+    "Tracker!X13: 'HOLD' \u2192 'CUT 50%'",
+    "Tracker!X17: 'ADD +25% (if slots free)' \u2192 'CUT 50%'",
+    "Tracker!X18: 'HOLD' \u2192 'CUT 50%'"
+   ],
+   "context": null
+  },
+  {
+   "rule": "R5",
+   "base": 2,
+   "value": 1.0,
+   "ok": true,
+   "cells": 4,
+   "example": [
+    "Tracker!X13: 'HOLD' \u2192 'SWITCH OFF'",
+    "Tracker!X18: 'HOLD' \u2192 'SWITCH OFF'",
+    "Tracker!X21: 'HOLD' \u2192 'SWITCH OFF'"
+   ],
+   "context": null
+  },
+  {
+   "rule": "R6",
+   "base": 750,
+   "value": 1500,
+   "ok": true,
+   "cells": 1,
+   "example": [
+    "Tracker!X14: 'SWITCH OFF' \u2192 'HOLD'"
+   ],
+   "context": null
+  },
+  {
+   "rule": "R7",
+   "base": 0.25,
+   "value": 0.125,
+   "ok": true,
+   "cells": 1,
+   "example": [
+    "Tracker!X17: 'ADD +25% (if slots free)' \u2192 'ADD +13% (if slots free)'"
+   ],
+   "context": null
+  },
+  {
+   "rule": "R8",
+   "base": 30,
+   "value": 15.0,
+   "ok": true,
+   "cells": 27,
+   "example": [
+    "Tracker!U10: 0.252941176470588 \u2192 0.278947368421053",
+    "Tracker!U13: 0.28 \u2192 0.271428571428571",
+    "Tracker!U14: 0.276315789473684 \u2192 0.228260869565217"
+   ],
+   "context": null
+  },
+  {
+   "rule": "R9",
+   "base": 10,
+   "value": 20,
+   "ok": true,
+   "cells": 10,
+   "example": [
+    "Tracker!I40: 0.416666666666667 \u2192 0.5",
+    "Tracker!I41: 0.6 \u2192 0.55",
+    "Tracker!L40: 0.251887658104485 \u2192 0.302265189725383"
+   ],
+   "context": null
+  },
+  {
+   "rule": "R10",
+   "base": 5,
+   "value": 2.5,
+   "ok": true,
+   "cells": 6,
+   "example": [
+    "Tracker!K40: 0.7 \u2192 0.5",
+    "Tracker!L40: 0.251887658104485 \u2192 0.179919755788918",
+    "Tracker!N40: 26.0073481027462 \u2192 19.1481057876758"
+   ],
+   "context": null
+  },
+  {
+   "rule": "R11",
+   "base": 2,
+   "value": 0.5,
+   "ok": true,
+   "cells": 1,
+   "example": [
+    "Tracker!X21: 'HOLD' \u2192 'SWITCH OFF'"
+   ],
+   "context": null
+  },
+  {
+   "rule": "R12",
+   "base": 0.5,
+   "value": 1.0,
+   "ok": true,
+   "cells": 1,
+   "example": [
+    "Tracker!X21: 'HOLD' \u2192 'SWITCH OFF'"
+   ],
+   "context": null
+  },
+  {
+   "rule": "R13",
+   "base": 45,
+   "value": 22.5,
+   "ok": true,
+   "cells": 1,
+   "example": [
+    "Weekly!S4: 'Under 45 \u2013 release reserve' \u2192 None"
+   ],
+   "context": {
+    "G3": 80
+   }
+  },
+  {
+   "rule": "F1",
+   "base": 0.25,
+   "value": 0.125,
+   "ok": true,
+   "cells": 2,
+   "example": [
+    "Funnel!K58: 'Tight' \u2192 'Very hard'",
+    "Funnel!K61: 'Tight' \u2192 'Very hard'"
+   ],
+   "context": null
+  },
+  {
+   "rule": "F2",
+   "base": 0.12,
+   "value": 0.06,
+   "ok": true,
+   "cells": 2,
+   "example": [
+    "Funnel!K59: 'Comfortable' \u2192 'Tight'",
+    "Funnel!K60: 'Comfortable' \u2192 'Tight'"
+   ],
+   "context": null
+  },
+  {
+   "rule": "F3",
+   "base": 0.85,
+   "value": 0.99,
+   "ok": true,
+   "cells": 1,
+   "example": [
+    "Funnel!C24: 'Tight: little headroom' \u2192 'OK'"
+   ],
+   "context": null
+  },
+  {
+   "rule": "F4",
+   "base": 0.9,
+   "value": 0.99,
+   "ok": true,
+   "cells": 5,
+   "example": [
+    "Weekly!S4: 'Full' \u2192 None",
+    "Weekly!S5: 'Full' \u2192 None",
+    "Weekly!S6: 'Full' \u2192 None"
+   ],
+   "context": null
+  }
+ ]
+}
