@@ -34,7 +34,7 @@ More money buys at most ~2 more hires: there are only ~6 spare assessment slots 
 **5. Why a 15% reserve?**
 Three reasons:
 - High-risk projects carry 10–20% contingency (Mastt).
-- The reserve plus rounding (€18.3k) covers about 42% of the extra media a 30% miss on the qualified share would need (+43%, about €43.6k: €145.2k − €101.7k).
+- The reserve plus rounding (€18.3k) covers about a third (34%) of the extra media a 30% miss on the qualified share would need: a full re-run of the model gives €155.8k planned, +€54.1k (+53%), because the cheap channels hit their caps. The Funnel table's +43% is a lower bound that ignores caps.
 - IZA finds hiring costs are convex: 10% more hires raises total hiring cost by ~13%, and the marginal hire costs up to ~€7,000 at 20 or more hires.
 
 It is released only from week 3 by the Tracker rules. With no reserve the budget would be €102.5k.
@@ -45,7 +45,7 @@ About 87 hires.
 - Electricians fall to ~20.6 of 30, supervisors to ~7.5 of 10.
 - Mechatronics (44.4 of 45) and automation (14.5 of 15) stay almost full.
 - Rule: cut the most expensive cost-per-hire cells first.
-- Advice: keep the money; the last €36k buys ~13 hires, mostly electricians. If forced, cover supervisors by internal promotion and protect electricians.
+- Advice: keep the money; the last €36k buys ~13 hires, mostly electricians. If forced, know that the cut rule removes the dearest channels first, which are mostly electrician programmatic (9.4 of the 13 lost hires): agree that up front, and cover supervisors by internal promotion.
 - *Show:* Budget rows 45–46, slide 6.
 
 ---
@@ -55,7 +55,7 @@ About 87 hires.
 **7. Why 308 qualified applicants for 100 hires?**
 Qualified → signed = pass × offer × acceptance.
 - Electricians: 0.50 × 0.90 × 0.70 = 31.5%.
-- Blended across roles: 32%, so 100 ÷ 0.32 ≈ 311 needed. The plan delivers 308 qualified, which means 100 hires because referrals and past applicants convert better than the standard rates.
+- Blended across roles: 32%, so 100 ÷ 0.321 ≈ 311 needed. The plan delivers 308 qualified, which means 100 hires because referrals and past applicants convert better than the standard rates.
 - Sources: pass rates are my estimates starting from Gem 2025 (~35% of onsite candidates get offers); acceptance starts from Königsteiner 2022 (~77%), and I use 70–75%; 25% of applications qualified from IAB 2026.
 - *Show:* Funnel rows 5–9, slide 2.
 
@@ -67,7 +67,7 @@ The 91% is SmartRecruiters' German figure (Germany scorecard, Recruiting Benchma
 **9. Why is the pass rate the most sensitive input?**
 Because slots are full.
 - A lower pass rate means more qualified applicants per hire, and there are no spare slots to assess them, so money can't buy the hires back: 30% worse → 440 qualified for 314 slots → ~71 hires.
-- A lower qualified share or a higher cost per application only costs money (+43% / +30% media), with hires unchanged.
+- A lower qualified share or a higher cost per application only costs money (at least +43% / +30% media; a full re-run gives +53% for the qualified share because channels hit their caps), with hires unchanged.
 - Acceptance ties with the pass rate (same arithmetic). I name the pass rate because it depends on the plant's own test, so it is the least known and only readable after interviews; fast offers protect acceptance. Capacity ×0.7 also gives ~71, but 55/week is given in the brief, so it is shown for context, not ranked.
 - *Show:* Funnel rows 41–50, slide 3.
 
@@ -88,6 +88,7 @@ Yes (6 + 8 + 3 + 7 = 24). It's a sprint, and it depends on client commitments: o
 - Each extra day of offer approval costs ~8 assessment slots (55 ÷ 7).
 - If offers take 7 days instead of 3: ~92 hires (model run).
 - The 6 + 8 days for screening and interview scheduling are SmartRecruiters' global medians (6 days to review, 14 to interview; Recruiting Benchmarks 2025). Germany's are 8 + 12, so the client has to keep pace.
+- Why can assessments start Thu 22 Oct if review takes 6 days? At launch there is no queue, so the first applicants and re-applicants are assessed within 2 days (T0). The 6-day median includes waiting in a queue, so it applies once the queue is full, which is why it sets the 24 Nov cut-off. If it applied from day 1, about 24 of the 31 slots on 22–25 Oct would go unused (re-applicants fill ~7), and hires would fall to ~94 (≈18 more qualified lost × 0.325). So the kick-off locks recruiter time for 22–25 Oct.
 
 **12. Is assessment the only bottleneck? What about interviewers?**
 The brief gives assessment capacity only. In the model every qualified applicant who is assessed also takes the technical test or interview, so hiring managers need about 55 interview slots a week as well.
@@ -207,7 +208,7 @@ Once a role has 10 interviews (first read 2 Nov, confirmed 9 Nov), if the pass r
 - **Most money:** 38% of planned spend (€38.9k of €101.7k).
 - **No alternative route** under the brief: no Polish route and no foreign-trained route.
 
-Automation has the tighter pool (22% of reachable people vs 12%), but needs only 15 hires and its last hire is cheaper (€1,505), so it is watched weekly. Supervisors cost more per hire on average (€1,550) but are only 10 people.
+Automation has the tighter pool (22% of reachable people vs 12%) and less channel headroom (3.2× vs 3.7× coverage, Funnel column E), but needs only 15 hires and its last hire is cheaper (€1,505), so it is watched weekly. Supervisors cost more per hire on average (€1,550) but are only 10 people.
 - *Show:* Funnel rows 29–35, slide 3.
 
 **28. Doesn't promoting a technician to supervisor just create another opening?**
@@ -219,10 +220,10 @@ Yes. That's why internal promotion is only the fallback for a supervisor shortfa
 
 **30. What does cash flow look like?**
 - Week 1: €30.4k, the biggest week (tests, StepStone ads, set-up, and media whose applicants fill the assessments of 22 Oct – 1 Nov).
-- Week 2: €16.2k (the rest of the tests).
-- Weeks 3–5: €13.8–16.7k a week.
-- Week 6: €3.9k, because only 24 Nov is still a useful application day.
-- Weeks 7–9: €0.5–2.1k a week of referral bonuses as people sign.
+- Week 2: €16.6k (€5.4k of it the remaining tests).
+- Weeks 3–5: €13.9–16.8k a week.
+- Week 6: €3.5k: €1.6k of media (only 24 Nov is still a useful application day) plus €2.0k of referral bonuses.
+- Weeks 7–9: €0.3–2.4k a week of referral bonuses as people sign.
 - Paid media stops 24 Nov.
 - *Show:* Weekly M/N (rows 4–12), slide 5 chart.
 

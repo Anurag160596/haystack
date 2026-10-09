@@ -171,13 +171,11 @@
   {
    "rule": "F4",
    "base": 0.9,
-   "value": 0.99,
+   "value": 0.45,
    "ok": true,
-   "cells": 5,
+   "cells": 1,
    "example": [
-    "Weekly!S5: 'Full' \u2192 None",
-    "Weekly!S6: 'Full' \u2192 None",
-    "Weekly!S7: 'Full' \u2192 None"
+    "Weekly!S9: None \u2192 'Full'"
    ],
    "context": null
   }

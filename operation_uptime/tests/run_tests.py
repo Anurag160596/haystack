@@ -110,7 +110,7 @@ CASES = [
  ("i1w_even", "Rediscovery waves 1/3 each", {"I1W1": 1/3, "I1W2": 1/3, "I1W3": 1 - 2/3}, {}),
  ("i3x_negative", "Typo: Polish max applications −100", {"I3X": -100}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
  ("threshold_negative", "Typo: Tracker scale-up threshold −1", {"R3": -1}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
- ("campaign_end_before_start", "Campaign end before its start", {"G2": D(2026, 10, 1)}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
+ ("campaign_end_before_start", "Campaign end before its start", {"G2": D(2026, 10, 1)}, {"budget_ok": False, "weekly_ok": False, "matrix_ok": False, "flag_contains": "invalid input"}),
  ("spend_after_cutoff_wk7", "All regular spend in week 7 (after the 24 Nov cut-off), no supervisors", {"G8": 0, "W1": 0, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 0, "W7": 1}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "no spend share falls before the last useful application"}),
  ("spend_partly_late", "10 pts of weekly spend typed into week 7: re-spread over weeks 1–6, plan still ties", {"W5": _W5 - 0.10, "W7": 0.10}, {}),
  ("lags_one_day_longer", "Every lag one day longer (cut-off moves into week 5): week-6 share re-spread", {"T2": 7, "T3": 9, "T4": 4, "T5": 8}, {}),

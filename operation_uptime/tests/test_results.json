@@ -7012,8 +7012,8 @@
    },
    {
     "check": "Weekly matrix flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 matrix ties to planned spend"
+    "ok": false,
+    "detail": "\u2717 matrix \u2260 planned spend"
    },
    {
     "check": "Weekly flag explains the problem",
@@ -7076,7 +7076,7 @@
     "detail": "100 vs 100.0"
    }
   ],
-  "passed": true
+  "passed": false
  },
  {
   "name": "spend_after_cutoff_wk7",
@@ -7176,8 +7176,8 @@
    },
    {
     "check": "Budget flag is \u2713",
-    "ok": false,
-    "detail": "\u2717 invalid input: a share/rate is outside 0\u2013100%; "
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
    },
    {
     "check": "Weekly matrix flag is \u2713",
@@ -7186,8 +7186,8 @@
    },
    {
     "check": "Weekly tie-out flag is \u2713",
-    "ok": false,
-    "detail": "\u2717 invalid input: a share/rate is outside 0\u2013100%; "
+    "ok": true,
+    "detail": "\u2713 ties to plan \u00b7 \u2139 10% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
    },
    {
     "check": "matches independent oracle (49 outputs)",
@@ -7250,7 +7250,7 @@
     "detail": "100 vs 100.0"
    }
   ],
-  "passed": false
+  "passed": true
  },
  {
   "name": "lags_one_day_longer",
