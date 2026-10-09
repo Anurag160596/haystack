@@ -168,7 +168,7 @@ Only if the client accepts the profile. That decision is needed by 23 Oct.
 - **Legal:** EU free movement, so no work permit.
 - **Insurance and tax:** social insurance in the country of work (TK); German working days taxed in Germany, with no special commuter rule in the Germany–Poland treaty.
 - **Recognition:** mechatronics is non-regulated, so none is needed.
-- **Supply:** ~13,800 Poles already commute to Brandenburg jobs, ~1,700 of them in machine, metal and building trades (IAB 2020). The border regions have ~18,500 maintenance-type workers (Eurostat 2025: 237,500 industry workers in Lubuskie + Zachodniopomorskie × 7.8%). The plan's 346 applications = 1.9% of them, above the 1.2% response assumed for construction electricians; German pay is the pull, and it is the corridor's main risk. At the 1.2% rate (~219 applications) the budget rises to €132.5k; if only half pass the language check (7%), €130k; if the corridor fails, €155k (model runs; Initiatives row 49, slide 7).
+- **Supply:** ~13,800 Poles already commute to Brandenburg jobs, ~1,700 of them in machine, metal and building trades (IAB 2020). The border regions have ~18,500 maintenance-type workers (Eurostat 2025: 237,500 industry workers in Lubuskie + Zachodniopomorskie × the German BA maintenance share of 7.8%, applied to Poland as my estimate; an upper bound). The plan's 346 applications = 1.9% of them, above the 1.2% response assumed for construction electricians; German pay is the pull, and it is the corridor's main risk. At the 1.2% rate (~219 applications) the budget rises to €132.5k; if only half pass the language check (7%), €130k; if the corridor fails, €155k (model runs; Initiatives row 49, slide 7).
 - **Language** is the binding filter (my estimate, because the ads use trade knock-out questions): 14% of vocationally trained Poles speak a foreign language well (Eurostat AES 2022). A Polish-speaking freelancer pre-screens applicants.
 
 It delivers 18 hires (the 40% cap) at €383 each. Without it the budget would be €155k (slide 7).
@@ -219,11 +219,11 @@ Yes. That's why internal promotion is only the fallback for a supervisor shortfa
 - **Tracker tab:** uses a channel's actual rates once it has €500 spend or 30 applications, and outputs scale/cut/off decisions (column X) plus a hire forecast. It also records signed hires by source and cost per hire to date (columns Y–Z).
 
 **30. What does cash flow look like?**
-- Week 1: €30.5k, the biggest week (tests, StepStone ads, set-up, and media whose applicants fill the assessments of 22 Oct – 1 Nov).
-- Week 2: €16.7k (€5.4k of it the remaining tests).
-- Weeks 3–5: €14.1–16.9k a week.
-- Week 6: €3.5k: €1.6k of media (only 24 Nov is still a useful application day) plus €2.0k of referral bonuses.
-- Weeks 7–9: €0.3–2.4k a week of referral bonuses as people sign.
+- Week 1: €32.5k, the biggest week (tests, StepStone ads, set-up, and media whose applicants fill the assessments of 22 Oct – 1 Nov). The construction-electrician campaign starts 23 Oct and the Polish corridor 27 Oct, so their spend starts from those dates.
+- Week 2: €16.2k (€5.4k of it the remaining tests).
+- Weeks 3–5: €13.3–17.1k a week.
+- Week 6: €3.6k: €1.8k of media (only 24 Nov is still a useful application day) plus €1.8k of referral bonuses.
+- Weeks 7–9: €0.3–2.2k a week of referral bonuses as people sign.
 - Paid media stops 24 Nov.
 - *Show:* Weekly M/N (rows 4–12), slide 5 chart.
 
