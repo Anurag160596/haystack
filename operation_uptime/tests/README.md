@@ -35,7 +35,8 @@ Each time the model recalculates and must pass the full check set above: zero fo
 Inputs that change nothing at the base plan, and why:
 - **G2 (campaign end):** not binding, because the 18 Dec signing date (T1) comes first.
 - **G9 (recognition time):** information only.
-- **R1–R13, F3 and F4:** Tracker rules and flag thresholds (F1 and F2 move a pool read-out at base). These act only once actuals exist or a threshold is crossed; see below.
+- **R1–R13, F3 and F4:** Tracker rules and flag thresholds (F1 and F2 move a pool read-out at base).
+- **TK1 (kill significance level):** moving 1% to 0.8% does not cross a Poisson quantile, so the kill bars stay the same. The bars change when the level crosses a quantile (the test cases with other levels cover this). These act only once actuals exist or a threshold is crossed; see below.
 
 ## Tracker rules live (`test_tracker_rules.py`)
 
@@ -59,15 +60,18 @@ Four independent review passes wrote 60+ edge cases of their own. Re-run against
 
 ## Every input sourced or derived
 
-Each of the 134 inputs carries a linked benchmark or a written derivation on the Assumptions tab. Checking the old values against the research corrected several of them:
-- the rediscovery pool (700 → 136, because consented applicant data is kept for at most about a year);
-- channel quality (IAB decisive ÷ used index);
-- channel volume caps (Trendence reach × in-market pool);
-- Polish language pass (Eurostat, 22% → 14%);
-- relocators (Destatis and IAB mobility rates);
-- the zero-qualified switch-off rule (R11 = 3, a 5% false-kill risk).
+Each of the 134 inputs carries a linked benchmark, a written derivation or a statistical convention on the Assumptions tab. Checking the old values against the research corrected several of them:
+- **Qualified share by role:** IAB's measured 25% for production occupations and 23% for specialists (was 10–22% judgement).
+- **Channel quality:** the IAB decisive ÷ used index.
+- **Channel volume caps:** Trendence reach × the in-market pool (BA employment × Gallup's 11% actively searching).
+- **Rediscovery pool:** 700 → 211, because consented applicant data is kept for at most about a year. BA data puts maintenance trades at 7.8% of production occupations.
+- **Polish language pass:** Eurostat, 22% → 14%.
+- **Relocators:** Destatis and IAB mobility rates.
+- **Initiative test bars:** Poisson quantiles at the 5% and 1% significance levels.
+- **Scale-up trigger:** a one-sided 95% test.
+- **Capacity flag:** the 85% occupancy standard (BMJ 1999).
 
-The recommended budget rose from €102.5k to €207.5k as a result.
+The recommended budget moved from €102.5k to €117.5k as a result.
 
 ## Bugs the tests found (all fixed)
 

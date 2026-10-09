@@ -196,9 +196,24 @@ def compute(path):
     cpq2 = x["I2C"] / x["I2Q"] if x["I2Q"] > 0 else 0
     i3row = [rw for rw in rows if rw["id"] == "I3-M"][0]
     cpq3 = i3row["cpa"] / i3row["q"] if i3row["q"] > 0 else 0
+    def crit(lam, alpha, n=100000):
+        """Smallest k with Binomial(n, lam/n) CDF(k) >= alpha (Excel CRITBINOM, ≈ Poisson quantile)."""
+        alpha = min(max(alpha, 1e-9), 1 - 1e-9)
+        p = min(1.0, lam / n)
+        if p <= 0:
+            return 0
+        if p >= 1:
+            return n
+        logq = n * math.log1p(-p)
+        pmf = math.exp(logq); cdf = pmf; k = 0
+        while cdf < alpha - 1e-15 and k < n:
+            pmf *= (n - k) / (k + 1) * p / (1 - p); k += 1; cdf += pmf
+        return k
     def bar(pq):
-        p_ = max(1, math.floor(pq * x["TP1"] + 1e-9))
-        return (p_, min(p_, max(1, math.ceil(pq * x["TK1"] - 1e-9))))
+        if pq <= 0:
+            return (1, 1)
+        p_ = max(1, crit(pq, x["TP1"]))
+        return (p_, min(p_, max(1, crit(pq, x["TK1"]))))
     out["tests"] = [
         dict(planq=pq1, budget=sum(x["I1R" + RS[r]] for r in ROLES) * x["I1M"], passq=bar(pq1)[0], killq=bar(pq1)[1]),
         dict(planq=pq2, budget=x["I2F"] + rowv("I2-E", "X") * sh2, passq=bar(pq2)[0], killq=bar(pq2)[1],

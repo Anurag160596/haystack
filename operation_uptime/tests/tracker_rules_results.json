@@ -2,7 +2,7 @@
  "decisions": {
   "C05": "HOLD",
   "C06": "Wait \u2013 too little data",
-  "C09": "ADD +25% (if slots free)",
+  "C09": "HOLD",
   "C10": "HOLD",
   "C13": "ADD +25% (if slots free)",
   "C14": "HOLD",
@@ -30,22 +30,21 @@
    "base": 30,
    "value": 15.0,
    "ok": true,
-   "cells": 5,
+   "cells": 6,
    "example": [
-    "Tracker!V13: 667.127071823204 \u2192 400.276243093923",
-    "Tracker!V19: 1163.07692307692 \u2192 692.307692307692",
-    "Tracker!W13: 0.74585635359116 \u2192 0.447513812154696"
+    "Tracker!V13: 513.829787234043 \u2192 308.297872340426",
+    "Tracker!V19: 795.789473684211 \u2192 473.684210526316",
+    "Tracker!W13: 0.957446808510638 \u2192 0.574468085106383"
    ],
    "context": null
   },
   {
    "rule": "R3",
-   "base": 0.8,
-   "value": 0.4,
+   "base": 0.75,
+   "value": 0.375,
    "ok": true,
-   "cells": 2,
+   "cells": 1,
    "example": [
-    "Tracker!X13: 'ADD +25% (if slots free)' \u2192 'HOLD'",
     "Tracker!X17: 'ADD +25% (if slots free)' \u2192 'HOLD'"
    ],
    "context": null
@@ -55,11 +54,11 @@
    "base": 1.5,
    "value": 0.75,
    "ok": true,
-   "cells": 5,
+   "cells": 6,
    "example": [
+    "Tracker!X13: 'HOLD' \u2192 'CUT 50%'",
     "Tracker!X14: 'HOLD' \u2192 'CUT 50%'",
-    "Tracker!X18: 'HOLD' \u2192 'CUT 50%'",
-    "Tracker!X19: 'HOLD' \u2192 'CUT 50%'"
+    "Tracker!X18: 'HOLD' \u2192 'CUT 50%'"
    ],
    "context": null
   },
@@ -92,9 +91,8 @@
    "base": 0.25,
    "value": 0.125,
    "ok": true,
-   "cells": 2,
+   "cells": 1,
    "example": [
-    "Tracker!X13: 'ADD +25% (if slots free)' \u2192 'ADD +13% (if slots free)'",
     "Tracker!X17: 'ADD +25% (if slots free)' \u2192 'ADD +13% (if slots free)'"
    ],
    "context": null
@@ -106,9 +104,9 @@
    "ok": true,
    "cells": 31,
    "example": [
-    "Tracker!U10: 0.233529411764706 \u2192 0.261578947368421",
-    "Tracker!U13: 0.181 \u2192 0.200714285714286",
-    "Tracker!U14: 0.156315789473684 \u2192 0.129130434782609"
+    "Tracker!U10: 0.257352941176471 \u2192 0.282894736842105",
+    "Tracker!U13: 0.235 \u2192 0.239285714285714",
+    "Tracker!U14: 0.177631578947368 \u2192 0.146739130434783"
    ],
    "context": null
   },
@@ -121,7 +119,7 @@
    "example": [
     "Tracker!I40: 0.416666666666667 \u2192 0.5",
     "Tracker!I41: 0.6 \u2192 0.55",
-    "Tracker!L40: 0.259016103894566 \u2192 0.310819324673479"
+    "Tracker!L40: 0.259548543734918 \u2192 0.311458252481902"
    ],
    "context": null
   },
@@ -133,8 +131,8 @@
    "cells": 6,
    "example": [
     "Tracker!K40: 0.7 \u2192 0.5",
-    "Tracker!L40: 0.259016103894566 \u2192 0.185011502781833",
-    "Tracker!N40: 25.9218067532652 \u2192 19.0870048237609"
+    "Tracker!L40: 0.259548543734918 \u2192 0.185391816953513",
+    "Tracker!N40: 25.915417475181 \u2192 19.0824410537007"
    ],
    "context": null
   },
@@ -163,12 +161,12 @@
   },
   {
    "rule": "R13",
-   "base": 45,
-   "value": 22.5,
+   "base": 47,
+   "value": 23.5,
    "ok": true,
    "cells": 1,
    "example": [
-    "Weekly!S4: 'Under 45 \u2013 release reserve' \u2192 None"
+    "Weekly!S4: 'Under 47 \u2013 release reserve' \u2192 None"
    ],
    "context": {
     "G3": 80
@@ -210,14 +208,14 @@
   },
   {
    "rule": "F4",
-   "base": 0.9,
+   "base": 0.86,
    "value": 0.99,
    "ok": true,
-   "cells": 4,
+   "cells": 5,
    "example": [
-    "Weekly!S4: 'Full' \u2192 None",
     "Weekly!S5: 'Full' \u2192 None",
-    "Weekly!S6: 'Full' \u2192 None"
+    "Weekly!S6: 'Full' \u2192 None",
+    "Weekly!S7: 'Full' \u2192 None"
    ],
    "context": null
   }

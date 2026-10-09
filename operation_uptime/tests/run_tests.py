@@ -20,6 +20,12 @@ RECALC = (glob.glob("/root/.claude/skills/synced/*/xlsx/scripts/recalc.py") + gl
 ROLES = oracle.ROLES
 D = dt.datetime
 
+def _current(key):
+    """Current value of an Assumptions input in the delivered model (used where a case moves spend between weeks)."""
+    A_ = load_workbook(MODEL, data_only=True)["Assumptions"]
+    return next(A_.cell(r, 4).value for r in range(1, A_.max_row + 1) if A_.cell(r, 1).value == key)
+_W6 = _current("W6")
+
 # name, description, {input ID or (channel ID, column letter): value}, expected flags
 CASES = [
  ("base", "Recommended plan as delivered", {}, {}),
@@ -106,14 +112,14 @@ CASES = [
  ("threshold_negative", "Typo: Tracker scale-up threshold −1", {"R3": -1}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
  ("campaign_end_before_start", "Campaign end before its start", {"G2": D(2026, 10, 1)}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
  ("spend_after_cutoff_wk7", "All regular spend in week 7 (after the 24 Nov cut-off), no supervisors", {"G8": 0, "W1": 0, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 0, "W7": 1}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "no spend share falls before the last useful application"}),
- ("spend_partly_late", "10 pts of weekly spend typed into week 7: re-spread over weeks 1–6, plan still ties", {"W6": 0.11, "W7": 0.10}, {}),
+ ("spend_partly_late", "10 pts of weekly spend typed into week 7: re-spread over weeks 1–6, plan still ties", {"W6": _W6 - 0.10, "W7": 0.10}, {}),
  ("lags_one_day_longer", "Every lag one day longer (cut-off moves into week 5): week-6 share re-spread", {"T2": 7, "T3": 9, "T4": 4, "T5": 8}, {}),
  ("start_one_day_later", "Campaign starts Wed 21 Oct: week 6 now starts after the cut-off", {"G1": D(2026, 10, 21)}, {}),
  ("spend_after_cutoff_wk11", "All regular spend in week 11, no supervisors", {"G8": 0, "W1": 0, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 0, "W11": 1}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "no spend share falls before the last useful application"}),
  ("t0_100", "First assessment 100 days after launch", {"T0": 100}, {"weekly_ok": False, "flag_contains": "assessments start"}),
  ("fractional_openings", "Fractional openings (2.5 electricians)", {"G5": 2.5}, {}),
  ("tp_tk_equal", "Initiative pass and kill thresholds both 100% (contradictory)", {"TP1": 1, "TK1": 1}, {"budget_ok": False, "weekly_ok": False, "flag_contains": "invalid input"}),
- ("tp_tk_close", "Kill threshold just below pass (59% vs 60%)", {"TK1": 0.59, "TK2": 1.25}, {}),
+ ("tp_tk_close", "Kill significance level just below the pass level (4.9% vs 5%) and kill cost bar equal to pass", {"TK1": 0.049, "TK2": 1.5}, {}),
  ("combo_stress", "Capacity 45 + electrician pass 40% + 30% cut + I2 rejected", {"G3": 45, "PE": 0.40, "I2Q": 0}, {}),
 ]
 
