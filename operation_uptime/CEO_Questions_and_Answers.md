@@ -158,6 +158,7 @@ Only consented talent-pool records; the plan uses the last 12 months of records.
 Most firms pay €501–1,000 per successful referral (Radancy survey of 335 firms worldwide, via Personalwirtschaft); hard-to-fill roles get €2,000 (KOFA sample rules, https://www.kofa.de/media/Publikationen/Handlungsempfehlungen/Mitarbeiter_werben_Mitarbeiter.pdf).
 - Referrals are sized to deliver 11% of hires (CareerPlug); the model gets 11 hires.
 - The bonus is paid only on a signed hire, so it comes out of the budget (~€11k).
+- If referrals deliver only half, the budget rises to €130k (model run; slide 7).
 
 **21. Will construction electricians cut it?**
 Only if the client accepts the profile. That decision is needed by 23 Oct.
@@ -209,7 +210,7 @@ Once a role has 10 interviews (first read 2 Nov, confirmed 9 Nov), if the pass r
 - **Most money:** 38% of planned spend (€39.1k of €102.3k).
 - **No alternative route** under the brief: no Polish route and no foreign-trained route.
 
-Automation has the tighter pool (22% of reachable people vs 12%) and less channel headroom (3.2× vs 3.7× coverage, Funnel column E), but needs only 15 hires and its last hire is cheaper (€1,505), so it is watched weekly. Supervisors cost more per hire on average (€1,550) but are only 10 people.
+Automation has the tighter pool (22% of reachable people vs 12%) and less channel headroom (3.2× vs 3.7× coverage, Funnel column E), but needs only 15 hires and its last hire is cheaper (€1,505), so it is watched weekly. Supervisors cost more per hire on average (€1,555) but are only 10 people.
 - *Show:* Funnel rows 29–35, slide 3.
 
 **28. Doesn't promoting a technician to supervisor just create another opening?**
@@ -250,8 +251,8 @@ Yes. That's why internal promotion is only the fallback for a supervisor shortfa
 **33. Which numbers are guesses?**
 None are unexplained. Every input on the Assumptions tab carries one of three labels:
 - **Given (11):** from the brief.
-- **Researched (45):** read from, or calculated by stated arithmetic from, the linked source: costs, rates, pools, reach, timings, volumes.
-- **Own estimate (95):** my judgement, with the reason and the benchmark it starts from where there is one. Examples: pass rates (from Gem's ~35%), acceptance (from Königsteiner's ~77%), the decision rules (cut at 1.5× plan cost, judge after €500 or 30 applications), the 3-day offer.
+- **Researched (44):** read from, or calculated by stated arithmetic from, the linked source: costs, rates, pools, reach, timings, volumes.
+- **Own estimate (96):** my judgement, with the reason and the benchmark it starts from where there is one. Examples: pass rates (from Gem's ~35%), acceptance (from Königsteiner's ~77%), the decision rules (cut at 1.5× plan cost, judge after €500 or 30 applications), the 3-day offer.
 
 Calculated cells are in black text: channel caps, rediscovery pool, referral volumes.
 
