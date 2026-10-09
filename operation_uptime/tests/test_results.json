@@ -24,7 +24,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -71,7 +71,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -111,7 +111,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -158,7 +158,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, 0.834952393934562), (288.166074188322, 0.892342576644916), (262.235259898854, 0.980580785520755), (227.605359441284, 1)]"
+    "detail": "[(307.973076082958, 0.834952393934562), (262.235259898854, 0.980580785520755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -198,7 +198,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -245,7 +245,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -285,7 +285,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -332,7 +332,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, 0), (288.166074188322, 0), (262.235259898854, 0), (227.605359441284, 0)]"
+    "detail": "[(307.973076082958, 0), (262.235259898854, 0)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -372,7 +372,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -419,7 +419,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(331.229099892482, 0.948846929172987), (309.564917503585, 1), (284.978690000952, 1), (241.264853488904, 1)]"
+    "detail": "[(331.229099892482, 0.948846929172987), (284.978690000952, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -459,7 +459,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -506,7 +506,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 70), (0.85, 66.8328922668544), (0.7, 61.9224084114512), (0.5, 54.8851712867742)]"
+    "detail": "[(1, 70), (0.7, 61.9224084114512)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -546,7 +546,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -593,7 +593,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 95.0628337670697), (0.7, 88.0515536132697), (0.5, 76.9727504260095)]"
+    "detail": "[(1, 100), (0.7, 88.0515536132697)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -633,7 +633,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -680,7 +680,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 70), (0.85, 66.2261937933544), (0.7, 61.6104538180241), (0.5, 54.8570733777521)]"
+    "detail": "[(1, 70), (0.7, 61.6104538180241)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -720,7 +720,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -767,7 +767,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(727.562980844863, 0.431970458311057), (680.115370497388, 0.462106471812081), (618.970638211711, 0.507755448939755), (528.691135106121, 0.594459966162719)]"
+    "detail": "[(727.562980844863, 0.431970458311057), (618.970638211711, 0.507755448939755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -807,7 +807,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -854,7 +854,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 0), (0.85, 0), (0.7, 0), (0.5, 0)]"
+    "detail": "[(1, 0), (0.7, 0)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -894,7 +894,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -941,7 +941,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 91.9535962007554), (0.7, 82.3731266779358), (0.5, 69.1430218642712)]"
+    "detail": "[(1, 100), (0.7, 82.3731266779358)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -981,7 +981,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -1028,7 +1028,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 94.949899221112), (0.7, 88.9298886739391), (0.5, 79.8534303476335)]"
+    "detail": "[(1, 100), (0.7, 88.9298886739391)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1068,7 +1068,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -1115,7 +1115,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 94.1491650939665), (0.7, 86.7966690154995), (0.5, 76.005793578807)]"
+    "detail": "[(1, 100), (0.7, 86.7966690154995)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1155,7 +1155,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -1202,7 +1202,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 95.8551692264243), (0.7, 89.5874468648257), (0.5, 78.7593230870322)]"
+    "detail": "[(1, 100), (0.7, 89.5874468648257)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1242,7 +1242,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -1289,7 +1289,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1329,7 +1329,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -1376,7 +1376,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1416,7 +1416,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -1463,7 +1463,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9521432232497), (0.7, 86.6828735324794), (0.5, 75.9546971238277)]"
+    "detail": "[(1, 100), (0.7, 86.6828735324794)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1503,7 +1503,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -1550,7 +1550,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9521432232497), (0.7, 86.6828735324794), (0.5, 75.9546971238277)]"
+    "detail": "[(1, 100), (0.7, 86.6828735324794)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1590,7 +1590,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -1637,7 +1637,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (1, 100), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (1, 100)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1677,7 +1677,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -1724,7 +1724,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0, 20.309834), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0, 20.309834)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1764,7 +1764,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -1811,7 +1811,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.7227042003999), (0.7, 86.5144400982497), (0.5, 75.9073856887294)]"
+    "detail": "[(1, 100), (0.7, 86.5144400982497)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1851,7 +1851,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -1898,7 +1898,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 94.3835805590956), (0.7, 87.1875534074794), (0.5, 76.4071681059706)]"
+    "detail": "[(1, 100), (0.7, 87.1875534074794)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -1938,7 +1938,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -1985,7 +1985,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 94.6097022341068), (0.7, 87.7500854246953), (0.5, 77.0016497083034)]"
+    "detail": "[(1, 100), (0.7, 87.7500854246953)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2025,7 +2025,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -2072,7 +2072,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 96.5503570398594), (0.7, 91.3739292328593), (0.5, 83.9243932933)]"
+    "detail": "[(1, 100), (0.7, 91.3739292328593)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2112,7 +2112,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -2159,7 +2159,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 95.993963033148), (0.7, 90.0141106599348), (0.5, 81.0147129101696)]"
+    "detail": "[(1, 100), (0.7, 90.0141106599348)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2199,7 +2199,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -2246,7 +2246,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(314.327076082958, 0.999868411599282), (291.874969096838, 1), (265.271961136552, 1), (219.218134441128, 1)]"
+    "detail": "[(314.327076082958, 0.999868411599282), (265.271961136552, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2286,7 +2286,7 @@
     "detail": "\u2717 no application can sign by the deadline (Funnel B19 is before the campaign starts)"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -2328,7 +2328,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, 0), (288.569317073404, 0), (264.556854151837, 0), (227.011460631761, 0)]"
+    "detail": "[(307.973076082958, 0), (264.556854151837, 0)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2368,7 +2368,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -2415,7 +2415,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2460,7 +2460,7 @@
     "detail": "\u2717 supervisors cannot apply in time (Funnel B20 is before the campaign starts)"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -2502,7 +2502,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2547,7 +2547,7 @@
     "detail": "\u2717 shares must sum to 100%"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -2589,7 +2589,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2634,7 +2634,7 @@
     "detail": "\u2717 shares must sum to 100%"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -2676,7 +2676,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2716,7 +2716,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -2763,7 +2763,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.8677940044996), (0.7, 86.6068242768544), (0.5, 75.8962197242742)]"
+    "detail": "[(1, 100), (0.7, 86.6068242768544)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2803,7 +2803,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -2850,7 +2850,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, 0.0185544976429903), (288.166074188322, 0.0198298350365537), (262.235259898854, 0.0217906841226834), (227.605359441284, 0.0251061123003118)]"
+    "detail": "[(307.973076082958, 0.0185544976429903), (262.235259898854, 0.0217906841226834)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2890,7 +2890,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -2937,7 +2937,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 300), (0.85, 282.548481711563), (0.7, 259.593278080258), (0.5, 226.665017210693)]"
+    "detail": "[(1, 300), (0.7, 259.593278080258)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -2977,7 +2977,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -3024,7 +3024,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 4), (0.85, 3.72883207008608), (0.7, 3.34673391089639), (0.5, 2.74367945066209)]"
+    "detail": "[(1, 4), (0.7, 3.34673391089639)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3064,7 +3064,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -3111,7 +3111,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 56), (0.85, 52.5818096419269), (0.7, 47.6511455794268), (0.5, 40.5569542685222)]"
+    "detail": "[(1, 56), (0.7, 47.6511455794268)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3151,7 +3151,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -3198,7 +3198,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 92.3642266940471), (0.7, 84.1397622803552), (0.5, 71.4160252721757)]"
+    "detail": "[(1, 100), (0.7, 84.1397622803552)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3238,7 +3238,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -3285,7 +3285,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 94.6734424318535), (0.7, 87.4821741716839), (0.5, 76.8289696844145)]"
+    "detail": "[(1, 100), (0.7, 87.4821741716839)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3325,7 +3325,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -3372,7 +3372,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3412,7 +3412,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -3459,7 +3459,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3499,7 +3499,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -3546,7 +3546,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3586,7 +3586,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -3633,7 +3633,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 100), (0.7, 100), (0.5, 93.9521432232497)]"
+    "detail": "[(1, 100), (0.7, 100)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3673,7 +3673,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -3720,7 +3720,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 85), (0.85, 80.0779548700078), (0.7, 74.1855050652565), (0.5, 65.5021133677057)]"
+    "detail": "[(1, 85), (0.7, 74.1855050652565)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3760,7 +3760,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -3807,7 +3807,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.8724557232497), (0.7, 86.6110272824794), (0.5, 75.8994515881135)]"
+    "detail": "[(1, 100), (0.7, 86.6110272824794)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -3852,7 +3852,7 @@
     "detail": "\u2717 invalid input: reserve share must be 0\u201399%; "
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -3894,7 +3894,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 20.309834), (0.85, 20.309834), (0.7, 20.309834), (0.5, 20.309834)]"
+    "detail": "[(1, 20.309834), (0.7, 20.309834)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -3929,7 +3929,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -3976,7 +3976,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, 0.834952393934562), (288.166074188322, 0.892342576644916), (262.235259898854, 0.980580785520755), (227.605359441284, 1)]"
+    "detail": "[(307.973076082958, 0.834952393934562), (262.235259898854, 0.980580785520755)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4016,7 +4016,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -4063,7 +4063,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, 0.0371089952859805), (288.166074188322, 0.0396596700731074), (227.605359441284, 0.0502122246006236), (227.605359441284, 0.0502122246006236)]"
+    "detail": "[(307.973076082958, 0.0371089952859805), (227.605359441284, 0.0502122246006236)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4103,7 +4103,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -4150,7 +4150,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(889.042359632742, 0.353510393380518), (841.216266881946, 0.373608698094542), (779.166732453654, 0.403361310481013), (688.293285248685, 0.456615981909748)]"
+    "detail": "[(889.042359632742, 0.353510393380518), (779.166732453654, 0.403361310481013)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4190,7 +4190,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -4237,7 +4237,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 40), (0.85, 37.8494844794778), (0.7, 34.4129610419778), (0.5, 29.5925225946875)]"
+    "detail": "[(1, 40), (0.7, 34.4129610419778)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4277,7 +4277,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -4324,7 +4324,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4364,7 +4364,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -4411,7 +4411,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 94.8469869732497), (0.7, 88.1629062824794), (0.5, 78.2661703381134)]"
+    "detail": "[(1, 100), (0.7, 88.1629062824794)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4451,7 +4451,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -4498,7 +4498,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 94.0293600445505), (0.7, 86.7747090584395), (0.5, 76.0034337309706)]"
+    "detail": "[(1, 100), (0.7, 86.7747090584395)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4543,7 +4543,7 @@
     "detail": "\u2717 no application can sign by the deadline (Funnel B19 is before the campaign starts)"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -4585,7 +4585,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, 0), (288.569317073404, 0), (264.556854151837, 0), (227.011460631761, 0)]"
+    "detail": "[(307.973076082958, 0), (264.556854151837, 0)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4625,7 +4625,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -4672,7 +4672,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4712,7 +4712,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -4759,94 +4759,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 94.1488359918888), (0.7, 86.7964574163138), (0.5, 76.005679412254)]"
-   },
-   {
-    "check": "scenario at 100% budget = expected hires (capacity-capped)",
-    "ok": true,
-    "detail": "100 vs 100"
-   },
-   {
-    "check": "Tracker forecast with no actuals = planned hires",
-    "ok": true,
-    "detail": "100 vs 100.0"
-   }
-  ],
-  "passed": true
- },
- {
-  "name": "levels_all_100",
-  "desc": "All scenario levels at 100%",
-  "checks": [
-   {
-    "check": "recalculates with 0 formula errors",
-    "ok": true,
-    "detail": "{}"
-   },
-   {
-    "check": "Budget flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 ties to planned spend"
-   },
-   {
-    "check": "Weekly matrix flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 matrix ties to planned spend"
-   },
-   {
-    "check": "Weekly tie-out flag is \u2713",
-    "ok": true,
-    "detail": "\u2713 ties to plan"
-   },
-   {
-    "check": "matches independent oracle (59 outputs)",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "initiative kill bars never overlap pass bars",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "hires never exceed openings (strict, test hires included)",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "roles with no openings get no hires and no tests",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "shortfall column = openings \u2212 planned hires",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "no negative hires, applications or spend",
-    "ok": true,
-    "detail": "[]"
-   },
-   {
-    "check": "Polish hires \u2264 40%-rule cap",
-    "ok": true,
-    "detail": "18 vs cap 18.0"
-   },
-   {
-    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "weekly signatures total = expected hires",
-    "ok": true,
-    "detail": ""
-   },
-   {
-    "check": "scenario hires never rise when the budget falls (capacity not binding)",
-    "ok": true,
-    "detail": "[(1, 100), (1, 100), (1, 100), (1, 100)]"
+    "detail": "[(1, 100), (0.7, 86.7964574163138)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4891,7 +4804,7 @@
     "detail": "\u2717 no spend share falls before the supervisor cut-off (Funnel B20): move weekly shares into weeks 1\u20135"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -4933,7 +4846,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -4973,7 +4886,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -5020,7 +4933,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(6155.33219360269, 0.928347249921724), (5891.32060258451, 0.969949880469732), (5554.46709171494, 1), (5125.04550786401, 1)]"
+    "detail": "[(6155.33219360269, 0.928347249921724), (5554.46709171494, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5060,7 +4973,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -5107,7 +5020,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.8675606017311), (0.7, 86.6066138409182), (0.5, 75.8960579114304)]"
+    "detail": "[(1, 100), (0.7, 86.6066138409182)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5152,7 +5065,7 @@
     "detail": "\u2717 invalid input: a count, cost or day value is negative; a channel input (Assumptions \u00a77) is out of range; "
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -5194,7 +5107,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 70), (0.85, 66.5239472336044), (0.7, 61.9272209117742), (0.5, 55.1865253386896)]"
+    "detail": "[(1, 70), (0.7, 61.9272209117742)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -5234,7 +5147,7 @@
     "detail": "\u2717 invalid input: a share/rate is outside 0\u2013100%; "
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -5276,7 +5189,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 95.9150270656622), (0.7, 90.4125936450256), (0.5, 82.2223927224661)]"
+    "detail": "[(1, 100), (0.7, 90.4125936450256)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -5316,7 +5229,7 @@
     "detail": "\u2717 invalid input: a channel input (Assumptions \u00a77) is out of range; "
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -5358,7 +5271,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 96.0344779208246), (0.7, 90.2338207931931), (0.5, 81.5613568576589)]"
+    "detail": "[(1, 100), (0.7, 90.2338207931931)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -5398,7 +5311,7 @@
     "detail": "\u2717 invalid input: a channel input (Assumptions \u00a77) is out of range; "
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -5440,7 +5353,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 95.4496344145115), (0.7, 89.3460789171397), (0.5, 80.2568810689249)]"
+    "detail": "[(1, 100), (0.7, 89.3460789171397)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -5480,7 +5393,7 @@
     "detail": "\u2717 invalid input: last signing date must fall inside the campaign; "
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -5522,7 +5435,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -5562,7 +5475,7 @@
     "detail": "\u2717 invalid input: a count, cost or day value is negative; "
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -5604,7 +5517,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, -0.185544976429903), (288.166074188322, -0.198298350365537), (262.235259898854, -0.217906841226834), (227.605359441284, -0.251061123003118)]"
+    "detail": "[(307.973076082958, -0.185544976429903), (262.235259898854, -0.217906841226834)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -5639,7 +5552,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -5686,7 +5599,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 4), (0.85, 3.72883207008608), (0.7, 3.34673391089639), (0.5, 2.74367945066209)]"
+    "detail": "[(1, 4), (0.7, 3.34673391089639)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5726,7 +5639,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -5773,7 +5686,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 96.6099855741314), (0.7, 90.9731376071656), (0.5, 81.4503293325313)]"
+    "detail": "[(1, 100), (0.7, 90.9731376071656)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5813,7 +5726,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -5860,7 +5773,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 94.6548910139972), (0.7, 87.3692598506525), (0.5, 76.6057017742365)]"
+    "detail": "[(1, 100), (0.7, 87.3692598506525)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5900,7 +5813,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -5947,7 +5860,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 100), (0.7, 97.7951102137479), (0.5, 94.1758182535827)]"
+    "detail": "[(1, 100), (0.7, 97.7951102137479)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -5987,7 +5900,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -6034,7 +5947,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 91.9426501271687), (0.7, 81.4887248278134), (0.5, 65.4675271547408)]"
+    "detail": "[(1, 100), (0.7, 81.4887248278134)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6074,7 +5987,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -6121,7 +6034,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 97.7157909340526), (0.7, 94.4155988011815), (0.5, 88.3651209002969)]"
+    "detail": "[(1, 100), (0.7, 94.4155988011815)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6161,7 +6074,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -6208,7 +6121,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 94.8147498638747), (0.7, 88.4547701263856), (0.5, 79.0499539458143)]"
+    "detail": "[(1, 100), (0.7, 88.4547701263856)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6248,7 +6161,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -6295,7 +6208,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.7227042003999), (0.7, 86.5144400982497), (0.5, 75.9073856887294)]"
+    "detail": "[(1, 100), (0.7, 86.5144400982497)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6335,7 +6248,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -6382,7 +6295,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 91.9535962007554), (0.7, 82.3731266779358), (0.5, 69.1430218642712)]"
+    "detail": "[(1, 100), (0.7, 82.3731266779358)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6422,7 +6335,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -6469,7 +6382,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6509,7 +6422,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -6556,7 +6469,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6596,7 +6509,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -6643,7 +6556,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6683,7 +6596,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -6730,7 +6643,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 94.1491650939665), (0.7, 86.7966690154995), (0.5, 76.005793578807)]"
+    "detail": "[(1, 100), (0.7, 86.7966690154995)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6770,7 +6683,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -6817,7 +6730,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(314.327076082958, 0.999868411599282), (291.874969096838, 1), (265.271961136552, 1), (219.218134441128, 1)]"
+    "detail": "[(314.327076082958, 0.999868411599282), (265.271961136552, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6857,7 +6770,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -6904,7 +6817,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -6949,7 +6862,7 @@
     "detail": "\u2717 invalid input: a count, cost or day value is negative; "
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -6991,7 +6904,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 91.9535962007554), (0.7, 82.3731266779358), (0.5, 69.1430218642712)]"
+    "detail": "[(1, 100), (0.7, 82.3731266779358)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -7031,7 +6944,7 @@
     "detail": "\u2717 invalid input: a count, cost or day value is negative; "
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -7073,7 +6986,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -7113,7 +7026,7 @@
     "detail": "\u2717 invalid input: last signing date must fall inside the campaign; campaign end must be after its start; "
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -7155,7 +7068,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -7195,7 +7108,7 @@
     "detail": "\u2717 no spend share falls before the last useful application (Funnel B19): move shares into the early weeks"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -7237,7 +7150,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 90), (0.85, 85.3544868687718), (0.7, 79.2924399887831), (0.5, 69.524748141424)]"
+    "detail": "[(1, 90), (0.7, 79.2924399887831)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7277,7 +7190,7 @@
     "detail": "\u2713 ties to plan \u00b7 \u2139 10% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -7324,7 +7237,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7364,7 +7277,7 @@
     "detail": "\u2713 ties to plan \u00b7 \u2139 22% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -7411,7 +7324,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, 0.94396006758713), (288.166074188322, 1), (262.235259898854, 1), (227.605359441284, 1)]"
+    "detail": "[(307.973076082958, 0.94396006758713), (262.235259898854, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7451,7 +7364,7 @@
     "detail": "\u2713 ties to plan \u00b7 \u2139 22% of the weekly input shares (col Z) fall after the last useful application and are re-spread over earlier weeks (col D)"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -7498,7 +7411,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, 0.994984936105353), (288.166074188322, 1), (262.235259898854, 1), (227.605359441284, 1)]"
+    "detail": "[(307.973076082958, 0.994984936105353), (262.235259898854, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7543,7 +7456,7 @@
     "detail": "\u2717 no spend share falls before the last useful application (Funnel B19): move shares into the early weeks"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -7585,7 +7498,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 90), (0.85, 85.3544868687718), (0.7, 79.2924399887831), (0.5, 69.524748141424)]"
+    "detail": "[(1, 90), (0.7, 79.2924399887831)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7630,7 +7543,7 @@
     "detail": "\u2717 assessments start (Funnel B13) after the last useful assessment day (Funnel B17): no hire can sign in time"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -7672,7 +7585,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(307.973076082958, 0), (288.166074188322, 0), (262.235259898854, 0), (227.605359441284, 0)]"
+    "detail": "[(307.973076082958, 0), (262.235259898854, 0)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7712,7 +7625,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -7759,7 +7672,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 72.5), (0.85, 69.6845917122919), (0.7, 64.6136577279169), (0.5, 57.4523521896759)]"
+    "detail": "[(1, 72.5), (0.7, 64.6136577279169)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7804,7 +7717,7 @@
     "detail": "\u2717 invalid input: initiative kill thresholds must sit below pass thresholds (TK1 < TP1, TK2 \u2265 TP2); "
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -7846,7 +7759,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "Tracker forecast with no actuals = planned hires",
@@ -7881,7 +7794,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -7928,7 +7841,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 93.9023385357497), (0.7, 86.6379696262294), (0.5, 75.9201686640063)]"
+    "detail": "[(1, 100), (0.7, 86.6379696262294)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -7968,7 +7881,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -8015,7 +7928,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(328.279099892482, 0.783305599494687), (305.69115973961, 0.841185127374615), (279.854591416628, 0.918844517937676), (243.269348400652, 1)]"
+    "detail": "[(328.279099892482, 0.783305599494687), (279.854591416628, 0.918844517937676)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8055,7 +7968,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -8102,7 +8015,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(487.204580346071, 0.926568816549123), (435.096477891735, 1), (443.070459455981, 1), (295.551800517433, 1)]"
+    "detail": "[(487.204580346071, 0.926568816549123), (443.070459455981, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8142,7 +8055,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -8189,7 +8102,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(494.45733939408, 0.566277366502677), (441.448119075017, 0.634276119664288), (475.074753391787, 0.589380930055629), (328.791010086463, 0.851604792741651)]"
+    "detail": "[(494.45733939408, 0.566277366502677), (475.074753391787, 0.589380930055629)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8229,7 +8142,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -8276,7 +8189,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 83), (0.85, 79.5679356366875), (0.66, 74.2609107210004), (0.5, 68.3091291773565)]"
+    "detail": "[(1, 83), (0.66, 74.2609107210004)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8316,7 +8229,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -8363,7 +8276,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(490.815220774251, 0.48898239060599), (457.461558303635, 0.52463424662385), (441.46783159556, 0.543640969564165), (364.1648191732, 0.659042245060619)]"
+    "detail": "[(490.815220774251, 0.48898239060599), (441.46783159556, 0.543640969564165)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8403,7 +8316,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -8450,7 +8363,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(285.15029837803, 0.761503173512327), (260.197473602709, 0.834530997308639), (214.948866096459, 1), (194.085074086125, 1)]"
+    "detail": "[(285.15029837803, 0.761503173512327), (214.948866096459, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8490,7 +8403,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -8537,7 +8450,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(353.167869929516, 0.889904606408386), (339.447250492578, 0.925874974181256), (287.926330609766, 1), (282.139247276433, 1)]"
+    "detail": "[(353.167869929516, 0.889904606408386), (287.926330609766, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8577,7 +8490,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -8624,7 +8537,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 100), (0.85, 94.911438824245), (0.9, 96.7705968269624), (0.5, 80.2850565911046)]"
+    "detail": "[(1, 100), (0.9, 96.7705968269624)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8664,7 +8577,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -8711,7 +8624,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 141), (0.85, 134.692186439473), (0.79, 130.801824373821), (0.5, 111.984780827966)]"
+    "detail": "[(1, 141), (0.79, 130.801824373821)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8751,7 +8664,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -8798,7 +8711,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 103), (0.85, 97.9263017137585), (0.44, 76.1924927383794), (0.5, 80.1153253185651)]"
+    "detail": "[(1, 103), (0.44, 76.1924927383794)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8838,7 +8751,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -8885,7 +8798,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(244.353413394377, 0.771715958258712), (227.847161199385, 0.82762246226282), (222.829521447832, 0.846258733341022), (183.942813373298, 1)]"
+    "detail": "[(244.353413394377, 0.771715958258712), (222.829521447832, 0.846258733341022)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -8925,7 +8838,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -8972,7 +8885,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 130), (0.85, 126.655193589075), (0.62, 113.733856002416), (0.5, 104.786785242069)]"
+    "detail": "[(1, 130), (0.62, 113.733856002416)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9012,7 +8925,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -9059,7 +8972,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 110), (0.85, 104.354362756543), (0.72, 98.4913728629088), (0.5, 88.3191039432788)]"
+    "detail": "[(1, 110), (0.72, 98.4913728629088)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9099,7 +9012,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -9146,7 +9059,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(360.887331838065, 0.886703333060159), (353.497626392801, 0.905239458791787), (299.437841539066, 1), (313.770321985994, 1)]"
+    "detail": "[(360.887331838065, 0.886703333060159), (299.437841539066, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9186,7 +9099,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -9233,7 +9146,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 27), (0.85, 26.4256854993911), (0.76, 25.8952994165409), (0.5, 23.6809438018245)]"
+    "detail": "[(1, 27), (0.76, 25.8952994165409)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9273,7 +9186,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -9320,7 +9233,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(452.690856126453, 0.971965733447667), (433.357262466571, 1), (357.049459769289, 1), (362.01478945679, 1)]"
+    "detail": "[(452.690856126453, 0.971965733447667), (357.049459769289, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9360,7 +9273,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -9407,7 +9320,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(514.84245427219, 0.632648459759857), (482.079678637957, 0.675644089861954), (486.779942613113, 0.669120185942336), (399.590113377192, 0.815120982252203)]"
+    "detail": "[(514.84245427219, 0.632648459759857), (486.779942613113, 0.669120185942336)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9447,7 +9360,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -9494,7 +9407,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(674.166421970515, 0.491612398107639), (631.440238945309, 0.5248771791645), (529.183053231024, 0.626302315247954), (526.175488945309, 0.629882194043098)]"
+    "detail": "[(674.166421970515, 0.491612398107639), (529.183053231024, 0.626302315247954)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9534,7 +9447,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -9581,7 +9494,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 101), (0.85, 95.1125252901665), (0.84, 94.6829010228916), (0.5, 74.5324362620288)]"
+    "detail": "[(1, 101), (0.84, 94.6829010228916)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9621,7 +9534,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -9668,7 +9581,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(438.877373775018, 0.664031888729735), (417.2457313038, 0.698457885999029), (373.468864010195, 0.780328963167907), (358.023305350977, 0.813993298963816)]"
+    "detail": "[(438.877373775018, 0.664031888729735), (373.468864010195, 0.780328963167907)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9708,7 +9621,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -9755,7 +9668,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(557.55553287167, 0.379206301369867), (532.716476026776, 0.39688761460035), (551.192718262801, 0.383583752874916), (406.122964690844, 0.520602353992758)]"
+    "detail": "[(557.55553287167, 0.379206301369867), (551.192718262801, 0.383583752874916)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9795,7 +9708,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -9842,7 +9755,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(407.489420943376, 0.827365913849591), (377.244172966852, 0.893699310161331), (287.726958311635, 1), (287.726958311635, 1)]"
+    "detail": "[(407.489420943376, 0.827365913849591), (287.726958311635, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9882,7 +9795,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -9929,7 +9842,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(323.915426491134, 0.882064459878715), (291.649356534184, 0.97964997800637), (200.947803739153, 1), (212.285497838532, 1)]"
+    "detail": "[(323.915426491134, 0.882064459878715), (200.947803739153, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -9969,7 +9882,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -10016,7 +9929,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 47), (0.85, 44.5718257502318), (0.66, 40.2774125234094), (0.5, 36.4670194871602)]"
+    "detail": "[(1, 47), (0.66, 40.2774125234094)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10056,7 +9969,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -10103,7 +10016,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 83), (0.85, 77.8174373776214), (0.96, 81.9721171315688), (0.5, 59.7828174847839)]"
+    "detail": "[(1, 83), (0.96, 81.9721171315688)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10143,7 +10056,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -10190,7 +10103,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(496.812494635596, 0.41406826103513), (452.231614965137, 0.454887006805449), (314.616121257408, 0.653858056898417), (343.387864965137, 0.599072671759006)]"
+    "detail": "[(496.812494635596, 0.41406826103513), (314.616121257408, 0.653858056898417)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10230,7 +10143,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -10277,7 +10190,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 66), (0.85, 62.8704827132766), (0.52, 51.3953337103661), (0.5, 50.6994280050961)]"
+    "detail": "[(1, 66), (0.52, 51.3953337103661)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10317,7 +10230,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -10364,7 +10277,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 180), (0.85, 174.006829169216), (0.7, 162.560114207002), (0.5, 143.919223852599)]"
+    "detail": "[(1, 180), (0.7, 162.560114207002)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10404,7 +10317,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -10451,7 +10364,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 73), (0.85, 70.2245469561876), (0.79, 68.3722762022954), (0.5, 55.5692885985197)]"
+    "detail": "[(1, 73), (0.79, 68.3722762022954)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10491,7 +10404,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -10538,7 +10451,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(492.510044900489, 0.696142436904849), (472.041901162894, 0.726327773048325), (415.062102730936, 0.826038177422813), (422.762231222556, 0.810992840740902)]"
+    "detail": "[(492.510044900489, 0.696142436904849), (415.062102730936, 0.826038177422813)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10578,7 +10491,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -10625,7 +10538,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(437.99172543163, 0.861073018608268), (400.705549045814, 0.941196991259379), (307.285223993433, 1), (294.283468092812, 1)]"
+    "detail": "[(437.99172543163, 0.861073018608268), (307.285223993433, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10665,7 +10578,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -10712,7 +10625,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(456.001493523162, 0.927315258531416), (416.494223491983, 1), (424.970714175213, 0.995026548306577), (317.601832187635, 1)]"
+    "detail": "[(456.001493523162, 0.927315258531416), (424.970714175213, 0.995026548306577)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10752,7 +10665,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -10799,7 +10712,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(487.416176110678, 0.703417653457792), (467.901773442937, 0.732754527375084), (370.224154474093, 0.926079886235879), (384.971029474093, 0.890605049750154)]"
+    "detail": "[(487.416176110678, 0.703417653457792), (370.224154474093, 0.926079886235879)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10839,7 +10752,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -10886,7 +10799,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 84), (0.85, 80.1426889282298), (0.71, 75.3608426012516), (0.5, 63.3501927025884)]"
+    "detail": "[(1, 84), (0.71, 75.3608426012516)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -10926,7 +10839,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -10973,7 +10886,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(735.643074915728, 0.419458075652758), (691.718803002699, 0.446093741028787), (620.713313038473, 0.497123909040924), (557.311003255865, 0.553679053111682)]"
+    "detail": "[(735.643074915728, 0.419458075652758), (620.713313038473, 0.497123909040924)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11013,7 +10926,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -11060,7 +10973,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(413.470405284526, 0.566632366649053), (397.403911883124, 0.589540533648843), (411.514269425023, 0.569325857431538), (346.890673670831, 0.675387757781089)]"
+    "detail": "[(413.470405284526, 0.566632366649053), (411.514269425023, 0.569325857431538)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11100,7 +11013,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -11147,7 +11060,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 58), (0.85, 56.0013509915857), (0.43, 42.9862278364033), (0.5, 45.7699073270791)]"
+    "detail": "[(1, 58), (0.43, 42.9862278364033)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11187,7 +11100,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -11234,7 +11147,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(213.805045110307, 0.962158239101203), (203.784297447136, 1), (188.713555827025, 1), (176.022404989036, 1)]"
+    "detail": "[(213.805045110307, 0.962158239101203), (188.713555827025, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11274,7 +11187,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -11321,7 +11234,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(368.97937845933, 0.944690811792477), (349.979588354724, 0.995976451684182), (352.59794813126, 0.988580422599815), (262.40620717118, 1)]"
+    "detail": "[(368.97937845933, 0.944690811792477), (352.59794813126, 0.988580422599815)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11361,7 +11274,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -11408,7 +11321,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 131), (0.85, 125.100654882603), (0.89, 126.801136794677), (0.5, 100.070392222482)]"
+    "detail": "[(1, 131), (0.89, 126.801136794677)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11448,7 +11361,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -11495,7 +11408,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(472.025471208781, 0.835306012779378), (446.722951986512, 0.88261799070852), (396.18456791056, 0.995207148943584), (381.029250351561, 1)]"
+    "detail": "[(472.025471208781, 0.835306012779378), (396.18456791056, 0.995207148943584)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11535,7 +11448,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -11582,7 +11495,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(509.522270709836, 0.728974164193293), (484.287865575509, 0.766958244942149), (414.438057750821, 0.896222160301434), (420.60948632225, 0.883072264195205)]"
+    "detail": "[(509.522270709836, 0.728974164193293), (414.438057750821, 0.896222160301434)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11622,7 +11535,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -11669,7 +11582,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(343.774906714408, 0.615020373212454), (311.473102152806, 0.678802021642455), (230.944963355714, 0.915493320817383), (228.569502486149, 0.92500779469205)]"
+    "detail": "[(343.774906714408, 0.615020373212454), (230.944963355714, 0.915493320817383)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11709,7 +11622,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -11756,7 +11669,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(427.338623865809, 0.695333490932391), (406.416876653662, 0.731128243466313), (406.416876653662, 0.731128243466313), (340.491395068022, 0.872688301222693)]"
+    "detail": "[(427.338623865809, 0.695333490932391), (406.416876653662, 0.731128243466313)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11796,7 +11709,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -11843,7 +11756,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 55), (0.85, 52.1528831026799), (0.83, 51.4736662393049), (0.5, 40.5666664557244)]"
+    "detail": "[(1, 55), (0.83, 51.4736662393049)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11883,7 +11796,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -11930,7 +11843,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(546.094592963754, 0.523195595407131), (498.772207046107, 0.572835217516187), (374.620211589493, 0.762677177779638), (378.31803767645, 0.755222477545832)]"
+    "detail": "[(546.094592963754, 0.523195595407131), (374.620211589493, 0.762677177779638)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -11970,7 +11883,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -12017,7 +11930,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 54), (0.85, 52.6665083504918), (0.97, 53.8464669090169), (0.5, 47.8312774864109)]"
+    "detail": "[(1, 54), (0.97, 53.8464669090169)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12057,7 +11970,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -12104,7 +12017,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 76), (0.85, 71.3645938435201), (0.82, 70.3081228778059), (0.5, 58.8492294405677)]"
+    "detail": "[(1, 76), (0.82, 70.3081228778059)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12144,7 +12057,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -12191,7 +12104,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 41), (0.85, 39.6971847141832), (0.71, 38.0814316775608), (0.5, 34.6269202055062)]"
+    "detail": "[(1, 41), (0.71, 38.0814316775608)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12231,7 +12144,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -12278,7 +12191,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(220.390429158431, 0.855624399351169), (207.658416526151, 0.908084688913541), (165.523002242865, 1), (169.007424117865, 1)]"
+    "detail": "[(220.390429158431, 0.855624399351169), (165.523002242865, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12318,7 +12231,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -12365,7 +12278,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 39), (0.85, 38.4176347813576), (0.73, 37.4940771805259), (0.5, 33.5777885900506)]"
+    "detail": "[(1, 39), (0.73, 37.4940771805259)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12405,7 +12318,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -12452,7 +12365,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(648.528601416761, 0.370068489617422), (604.309961853391, 0.397147184640033), (462.6396999236, 0.51876222477153), (438.093213122358, 0.547828619141308)]"
+    "detail": "[(648.528601416761, 0.370068489617422), (462.6396999236, 0.51876222477153)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12492,7 +12405,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -12539,7 +12452,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(509.696618530718, 0.896892073682271), (472.57239075499, 0.967349904662262), (503.857149034863, 0.907286634750569), (395.960053607547, 1)]"
+    "detail": "[(509.696618530718, 0.896892073682271), (503.857149034863, 0.907286634750569)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12579,7 +12492,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -12626,7 +12539,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(518.196380158827, 0.562390210713646), (479.245716869575, 0.608098437127781), (468.341322459637, 0.622256797452861), (370.587999846951, 0.786395057446351)]"
+    "detail": "[(518.196380158827, 0.562390210713646), (468.341322459637, 0.622256797452861)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12666,7 +12579,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -12713,7 +12626,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(609.199387105614, 0.572179545727281), (579.981768506274, 0.601004113403709), (558.941183723665, 0.623628100275679), (513.034453288883, 0.679430838098417)]"
+    "detail": "[(609.199387105614, 0.572179545727281), (558.941183723665, 0.623628100275679)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12753,7 +12666,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -12800,7 +12713,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 89), (0.85, 84.6952555095208), (0.83, 83.8112970939954), (0.5, 65.3173645114833)]"
+    "detail": "[(1, 89), (0.83, 83.8112970939954)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12840,7 +12753,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -12887,7 +12800,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(242.139635443746, 0.920366227729443), (222.732912269628, 1), (191.695030735885, 1), (167.150290829052, 1)]"
+    "detail": "[(242.139635443746, 0.920366227729443), (191.695030735885, 1)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -12927,7 +12840,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -12974,7 +12887,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(402.632671108777, 0.581884509373108), (377.169396792913, 0.621168409414591), (317.435407152302, 0.738057913537371), (301.458398223731, 0.777174282309549)]"
+    "detail": "[(402.632671108777, 0.581884509373108), (317.435407152302, 0.738057913537371)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -13014,7 +12927,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -13061,7 +12974,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(537.387918028416, 0.701807473689639), (495.37258572076, 0.761331708726109), (399.941966656514, 0.942993955587467), (394.158292773833, 0.956830958670863)]"
+    "detail": "[(537.387918028416, 0.701807473689639), (399.941966656514, 0.942993955587467)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -13101,7 +13014,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -13148,7 +13061,7 @@
    {
     "check": "scenario hires never rise when the budget falls (capacity not binding)",
     "ok": true,
-    "detail": "[(1, 42), (0.85, 39.4218994475455), (0.65, 35.5747841975455), (0.5, 32.6894477600455)]"
+    "detail": "[(1, 42), (0.65, 35.5747841975455)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",
@@ -13188,7 +13101,7 @@
     "detail": "\u2713 ties to plan"
    },
    {
-    "check": "matches independent oracle (59 outputs)",
+    "check": "matches independent oracle (49 outputs)",
     "ok": true,
     "detail": ""
    },
@@ -13235,7 +13148,7 @@
    {
     "check": "scenarios never assess more qualified than there are slots (capacity binding)",
     "ok": true,
-    "detail": "[(493.62318693904, 0.451472193271716), (455.347325464907, 0.489422316535201), (476.578381365528, 0.467619077094089), (358.441920176729, 0.621738502983312)]"
+    "detail": "[(493.62318693904, 0.451472193271716), (476.578381365528, 0.467619077094089)]"
    },
    {
     "check": "scenario at 100% budget = expected hires (capacity-capped)",

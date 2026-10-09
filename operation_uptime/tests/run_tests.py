@@ -83,7 +83,6 @@ CASES = [
  ("deadline_first_assess", "Last assessment falls on the first assessment day", {"T1": D(2026, 11, 8)}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "no application can sign"}),
  ("t0_0", "Assessments start on launch day", {"T0": 0}, {}),
  ("b2_1euro", "€1 test tranches", {"B2": 1}, {}),
- ("levels_all_100", "All scenario levels at 100%", {"B3": 0, "B6": 0, "B7": 0}, {}),
  ("w_all_week6", "All regular spend in week 6 (after the supervisor cut-off)", {"W1": 0, "W2": 0, "W3": 0, "W4": 0, "W5": 0, "W6": 1}, {"weekly_ok": False, "matrix_ok": False, "flag_contains": "supervisor cut-off"}),
  ("open_1000_cap1000", "1,000 openings per role, capacity 1,000/week", {"G3": 1000, "G5": 1000, "G6": 1000, "G7": 1000, "G8": 1000}, {}),
  ("round_step_0", "Rounding step 0 (no rounding)", {"B5": 0}, {}),
@@ -254,17 +253,17 @@ def run_case(name, desc, edits, expect, tmpdir):
     chk("expected hires ≤ plan hires and ≤ capacity limit", c13 <= o["hires_plan"] + 1e-6 and c13 <= (F["B26"].value or 0) + 1e-6)
     if exp_wk:
         chk("weekly signatures total = expected hires", close(Wk["V15"].value, c13))
-    tot = [Bg[f"H{45+j}"].value or 0 for j in range(4)]
-    lv = [Bg[f"B{45+j}"].value or 0 for j in range(4)]
-    order = sorted(range(4), key=lambda j: -lv[j])
-    mono = all(tot[order[k]] >= tot[order[k + 1]] - 1e-6 for k in range(3))
-    SOFF = 53  # scenario engine sits under Budget (old Scenarios row r -> Budget row r+53)
-    factors = [Bg.cell(47 + SOFF, c).value if isinstance(Bg.cell(47 + SOFF, c).value, (int, float)) else 1.0 for c in range(6, 10)]
+    tot = [Bg[f"H{45+j}"].value or 0 for j in range(2)]
+    lv = [Bg[f"B{45+j}"].value or 0 for j in range(2)]
+    order = sorted(range(2), key=lambda j: -lv[j])
+    mono = all(tot[order[k]] >= tot[order[k + 1]] - 1e-6 for k in range(1))
+    SOFF = 48  # scenario engine sits under Budget (old Scenarios row r -> Budget row r+48)
+    factors = [Bg.cell(47 + SOFF, c).value if isinstance(Bg.cell(47 + SOFF, c).value, (int, float)) else 1.0 for c in range(6, 8)]
     if all(isinstance(f_, (int, float)) and f_ >= 0.9999 for f_ in factors):
         chk("scenario hires never rise when the budget falls (capacity not binding)", mono, str(list(zip(lv, tot))))
     else:
         # capacity binds: hires may rise as low-conversion sources are cut; check the cap instead
-        qrow = [Bg.cell(46 + SOFF, c).value or 0 for c in range(6, 10)]
+        qrow = [Bg.cell(46 + SOFF, c).value or 0 for c in range(6, 8)]
         slots = F["B22"].value or 0
         capped = all(f_ <= 1 + 1e-9 and (q_ * f_ <= slots + 1e-6) for f_, q_ in zip(factors, qrow))
         chk("scenarios never assess more qualified than there are slots (capacity binding)", capped, str(list(zip(qrow, factors))))

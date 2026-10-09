@@ -44,7 +44,7 @@ About 87 hires.
 - Mechatronics and automation stay almost full.
 - Rule: cut the most expensive cost-per-hire cells first.
 - Advice: keep the money; if forced, cover supervisors by internal promotion and protect electricians.
-- *Show:* Budget rows 45–48, slide 6.
+- *Show:* Budget rows 45–46, slide 6.
 
 ---
 
@@ -202,7 +202,7 @@ Yes. That's why internal promotion is only the fallback for a supervisor shortfa
 
 **29. How will you track and attribute?**
 - **Data:** tracked URLs with utm tags captured in the applicant system's source field; a Monday export; recruiter disposition codes; the pre-screener sheet.
-- **Tracker tab:** blends actuals with plan (30-application prior) and outputs scale/cut/off decisions plus a hire forecast.
+- **Tracker tab:** judges a channel once it has €500 spend or 30 applications (actual rates replace plan from 30 applications) and outputs scale/cut/off decisions plus a hire forecast.
 
 **30. What does cash flow look like?**
 - Weeks 1–2: about €34k (tests, StepStone ads, set-up).

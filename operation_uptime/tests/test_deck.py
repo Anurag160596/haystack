@@ -28,8 +28,8 @@ checks = [
  ("qualified in plan", n0(F["B23"].value) in slides[2]),
  ("applications in plan", n0(F["M9"].value) in slides[2]),
  ("last useful application E/M/A", F["B19"].value.strftime("%d %b").lstrip("0") in slides[1] or F["B19"].value.strftime("%d %b") in slides[1]),
- ("30%-cut hires", f"~{round(B['H47'].value)}" in slides[1] and f"~{round(B['H47'].value)}" in slides[6]),
- ("30%-cut budget", k(B["C47"].value, 2) in slides[6]),
+ ("30%-cut hires", f"~{round(B['H46'].value)}" in slides[1] and f"~{round(B['H46'].value)}" in slides[6]),
+ ("30%-cut budget", k(B["C46"].value, 2) in slides[6]),
  ("sensitivity hires (pass ×0.7)", f"~{round(F['D43'].value)}" in slides[3]),
  ("sensitivity qualified needed", n0(F["B43"].value) in slides[3]),
 ]
@@ -38,7 +38,7 @@ for i, r in enumerate(R):
                (f"{r}: cost per hire", e0(B[f"H{21+i}"].value) in slides[1]),
                (f"{r}: qualified needed (Part 1)", n0(F[f"K{5+i}"].value) in slides[2]),
                (f"{r}: applications needed (Part 1)", n0(F[f"L{5+i}"].value) in slides[2])]
-for j in range(4):
+for j in range(2):
     checks.append((f"scenario {j}: total hires", f"| {round(B[f'H{45+j}'].value)} |" in slides[6] or f"| **{round(B[f'H{45+j}'].value)}** |" in slides[6]))
 for j, r in enumerate((53, 54, 55)):
     checks.append((f"initiative {j+1}: pass bar", f"≥{I[f'G{r}'].value} qualified" in slides[7]))

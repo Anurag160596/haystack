@@ -212,7 +212,7 @@ def compute(path):
     out["spend_by_role"] = {r: sum(rw["AA"] for rw in rows if rw["role"] == r) for r in ROLES}
 
     # ---- scenarios
-    levels = [1, 1 - x["B6"], 1 - x["B3"], 1 - x["B7"]]
+    levels = [1, 1 - x["B3"]]
     scen = []
     keys = {rw["row"]: (rw["AB"] if rw["AB"] is not None else 0) + (rw["row"] + 3) / 1e6 for rw in rows}
     for L in levels:

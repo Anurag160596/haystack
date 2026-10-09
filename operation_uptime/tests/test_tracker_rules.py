@@ -18,7 +18,7 @@ ACT = {"C09": (1449, 20, 5), "C13": (800, 12, 6), "C14": (600, 4, 0), "C17": (75
        "C15": (750, 15, 1), "C06": (400, 4, 2), "C18": (300, 3, 1), "I1a-E": (30, 12, 6), "C10": (1449, 8, 0), "I3-M": (900, 10, 0)}   # C13 = clear performer; C10 and I3-M = duds (I3-M is cheap enough for the zero-qualified rule)
 # role actuals: qualified assessed, interviewed, passed, offers, signed
 ROLE = {"Electricians": (30, 12, 5, 4, 2), "Mechatronics": (40, 15, 9, 7, 5), "Automation": (10, 4, 2, 1, 1), "Supervisors": (8, 3, 1, 1, 0)}
-RULES = ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10", "R11", "R12", "R13", "F1", "F2", "F3", "F4"]
+RULES = ["R1", "R2", "R3", "R4", "R5", "R6", "R7", "R9", "R10", "R13", "F1", "F2", "F3", "F4"]
 MULTS = [0.5, 2, 0.8, 1.2, 1.5, 3, 0.25, 4]
 # R13 (pacing floor) only shows when a week is not already 'Full' (F4 takes precedence), so test it with slack capacity
 CONTEXT = {"R13": {"G3": 80}}
@@ -68,7 +68,7 @@ def main():
             p = os.path.join(tmp, f"{rule}_{m}.xlsx")
             shutil.copy(start, p)
             v = vals[rule] * m
-            if rule in ("R12", "F1", "F2", "F3", "F4", "R7") and v > 1:
+            if rule in ("F1", "F2", "F3", "F4", "R7") and v > 1:
                 v = min(v, 0.99) if rule != "F1" else v
             rt.apply_edits(p, {rule: v})
             r = rt.recalc(p)
