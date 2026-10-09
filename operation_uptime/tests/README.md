@@ -1,6 +1,6 @@
 # Model test report: Operation_Uptime_Model.xlsx
 
-**Result: 153/153 scenarios, 2436/2436 checks · every input moved one at a time: 183/183 inputs, 2970/2970 checks · Tracker rules live: 17/17 · deck-vs-model 45/45.**
+**Result: 152/152 scenarios, 2420/2420 checks · every input moved one at a time: 178/178 inputs, 2890/2890 checks · Tracker rules live: 14/14 · deck-vs-model 43/43.**
 
 ## How the model is tested
 
@@ -20,7 +20,7 @@ Each scenario copies the model, changes inputs on the Assumptions tab, recalcula
    - the 100% scenario = expected hires
    - with no actuals, the Tracker forecasts the plan
    - initiative kill bars never overlap pass bars
-4. **Agreement with an independent oracle** (`oracle.py`): a separate plain-Python re-implementation that reads the same inputs and recomputes 59 outputs. These cover spend, reserve, budget, hires by role, slots, qualified, applications, the recommended and 30%-cut budgets by role, the six sensitivity cases and the three initiative test bars.
+4. **Agreement with an independent oracle** (`oracle.py`): a separate plain-Python re-implementation that reads the same inputs and recomputes 49 outputs. These cover spend, reserve, budget, hires by role, slots, qualified, applications, the recommended and 30%-cut budgets by role, the six sensitivity cases and the three initiative test bars.
 
 `test_deck.py` checks that 45 headline figures on the slides equal the model's values. A negative test against a deliberately altered model fails 17 of them, so the check is real.
 
