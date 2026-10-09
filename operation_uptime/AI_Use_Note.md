@@ -1,10 +1,15 @@
-# How I used AI
+# How I Used AI
 
-I used Claude (Anthropic) as my analyst. It built the Excel model, generated the 8-slide deck directly from the model's values, and researched benchmarks: TalentBait cost per application, IAB and BA labour-market data, Trendence channel reach, Redline social-campaign volumes, StepStone and Pracuj.pl prices, and German hiring-process timings.
+**How I used AI**
 
-How the output was checked:
-- Every input carries a linked source or a written derivation; nothing is a bare guess.
-- An automated test suite with an independent Python re-implementation ran over 152 scenarios, including edge cases, and changed each of the 178 inputs one at a time. All passed after fixing the bugs it found.
-- A deck-vs-model test confirmed the slide figures.
+- I used Claude (Anthropic) as my analyst.
+- It built the Excel model with live formulas and generated the 8 slides directly from the model's values.
+- It researched benchmarks: TalentBait cost per application, IAB, BA and KOFA labour-market data, Redline campaign volumes, StepStone and Pracuj.pl prices, SmartRecruiters timings.
+- I directed the approach and cut everything the brief didn't ask for.
 
-Inputs labelled "Own estimate" are derived by stated arithmetic or rules; I take ownership of them and can defend each line.
+**How the output was checked**
+
+- Every input is labelled Given, Researched (with link) or Own estimate (with one line of reasoning).
+- Independent AI reviews reopened every source; claims a source didn't support were corrected (e.g. social-media quality index 0.50 → 0.41).
+- Automated tests ran 152 scenarios, changed each of the 178 inputs one at a time, and matched every deck figure to the model. All pass.
+- The Own estimates are mine; I can defend each one.
