@@ -18147,6 +18147,105 @@
   ]
  },
  {
+  "key": "I2W",
+  "label": "I2W I2: bridge course after signing (weeks, run by the client's maintenance trainers)",
+  "change": "up 20%",
+  "edits": {
+   "I2W": "3.5999999999999996"
+  },
+  "cells_changed": 0,
+  "delta": {
+   "rec": 0,
+   "planned": 0.0,
+   "hires": 0,
+   "qneed": 0.0
+  },
+  "flags": {},
+  "passed": true,
+  "checks": [
+   {
+    "check": "recalculates with 0 formula errors",
+    "ok": true,
+    "detail": "{}"
+   },
+   {
+    "check": "Budget flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to planned spend"
+   },
+   {
+    "check": "Weekly matrix flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 matrix ties to planned spend"
+   },
+   {
+    "check": "Weekly tie-out flag is \u2713",
+    "ok": true,
+    "detail": "\u2713 ties to plan"
+   },
+   {
+    "check": "matches independent oracle (49 outputs)",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "initiative kill bars never overlap pass bars",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "hires never exceed openings (strict, test hires included)",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "roles with no openings get no hires and no tests",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "shortfall column = openings \u2212 planned hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "no negative hires, applications or spend",
+    "ok": true,
+    "detail": "[]"
+   },
+   {
+    "check": "Polish hires \u2264 40%-rule cap",
+    "ok": true,
+    "detail": "18 vs cap 18.0"
+   },
+   {
+    "check": "expected hires \u2264 plan hires and \u2264 capacity limit",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "weekly signatures total = expected hires",
+    "ok": true,
+    "detail": ""
+   },
+   {
+    "check": "scenario hires never rise when the budget falls (capacity not binding)",
+    "ok": true,
+    "detail": "[(1, 100), (0.7, 87.0578063312124)]"
+   },
+   {
+    "check": "scenario at 100% budget = expected hires (capacity-capped)",
+    "ok": true,
+    "detail": "100 vs 100"
+   },
+   {
+    "check": "Tracker forecast with no actuals = planned hires",
+    "ok": true,
+    "detail": "100 vs 100.0"
+   }
+  ]
+ },
+ {
   "key": "I2L",
   "label": "I2L I2: days from campaign start to go-live (ads, quiz, German copy)",
   "change": "+1 day",

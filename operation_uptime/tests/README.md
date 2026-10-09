@@ -1,6 +1,6 @@
 # Model test report: Operation_Uptime_Model.xlsx
 
-**Result: 152/152 scenarios, 2420/2420 checks · every input moved one at a time: 183/183 inputs, 2970/2970 checks · Tracker rules live: 14/14 · deck-vs-model 43/43.**
+**Result: 152/152 scenarios, 2420/2420 checks · every input moved one at a time: 184/184 inputs, 2986/2986 checks · Tracker rules live: 14/14 · deck-vs-model 43/43.**
 
 ## How the model is tested
 
@@ -26,7 +26,7 @@ Each scenario copies the model, changes inputs on the Assumptions tab, recalcula
 
 ## Every input, one at a time (`test_every_input.py`)
 
-Each of the 183 inputs (every Assumptions value and every typed channel value) is moved on its own. The 35 derived cells (channel qualified shares and caps, rediscovery and referral volumes, I2/I3 sizes) are live formulas on the evidence inputs in Assumptions §6a, so moving those inputs moves them:
+Each of the 184 inputs (every Assumptions value and every typed channel value) is moved on its own. The 35 derived cells (channel qualified shares and caps, rediscovery and referral volumes, I2/I3 sizes) are live formulas on the evidence inputs in Assumptions §6a, so moving those inputs moves them:
 - counts, costs and volumes up 20%, shares down 20%, day inputs +1 day, dates shifted by a few days;
 - weekly and rediscovery shares (which must sum to 100%) move 2 points to a neighbouring week.
 
@@ -37,6 +37,7 @@ Inputs that change nothing at the base plan, and why (from `every_input_results.
 - **G9 (recognition time):** information only.
 - **R1–R7, R9, R10, R13, F3 and F4:** Tracker rules and flag thresholds. They act only once actuals exist or a threshold is crossed; see below.
 - **SSW (days per StepStone ad):** 30 → 31 days still gives 2 ads for the window.
+- **I2W (bridge-course length):** information only (onboarding time, outside the campaign budget).
 - **PLI, PLC, PLT (Polish industry workers and commuters):** information inputs for the Polish supply check; PLI feeds only the check text on the Initiatives tab (row 49), which the sweep does not snapshot.
 
 ## Tracker rules live (`test_tracker_rules.py`)
@@ -61,7 +62,7 @@ Four independent review passes wrote 60+ edge cases of their own. Re-run against
 
 ## Every input sourced or derived
 
-Each of the 183 inputs (151 labelled rows on the Assumptions tab: 11 Given, 45 Researched, 95 Own estimate) carries a linked source, a stated calculation from one, or one line of reasoning. Independent source checks reopened every link; where a source did not support a number, the number or its label was corrected (e.g. the social-media quality index 0.50 → 0.41). Recommended budget after all corrections: €122.5k.
+Each of the 184 inputs (151 labelled rows on the Assumptions tab: 11 Given, 45 Researched, 95 Own estimate) carries a linked source, a stated calculation from one, or one line of reasoning. Independent source checks reopened every link; where a source did not support a number, the number or its label was corrected (e.g. the social-media quality index 0.50 → 0.41). Recommended budget after all corrections: €122.5k.
 
 ## Bugs the tests found (all fixed)
 
