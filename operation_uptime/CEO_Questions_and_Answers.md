@@ -147,7 +147,7 @@ Organic volume = openings × 27 applications per vacancy at firms with 250+ staf
 **19. Is re-contacting past applicants legal?**
 Only consented talent-pool records; the plan uses the last 12 months of records.
 - Day-1 ask: a GDPR-checked export.
-- The pool is 211 records: 10,703 staff × 7.8% in maintenance (BA occupation data) × 12% turnover (IAB) ≈ 100 hires a year, × runners-up per hire.
+- I estimate the pool at 211 records (the real export replaces it on day 1): 10,703 staff × 7.8% in maintenance (BA occupation data) × 12% turnover (IAB) ≈ 100 hires a year, × runners-up per hire.
 - At ~€2.50 per application and ~€14 a hire it's the cheapest paid source.
 - If the export is empty, the budget rises to €135k.
 - Joveo's AI Talent CRM and Talent Campaigns do this re-engagement ("Re-engage past applicants… through personalized email, SMS, and WhatsApp campaigns", https://www.joveo.com/), which makes it the repeatable product.
@@ -168,8 +168,8 @@ Only if the client accepts the profile. That decision is needed by 23 Oct.
 - **Legal:** EU free movement, so no work permit.
 - **Insurance and tax:** social insurance in the country of work (TK); German working days taxed in Germany, with no special commuter rule in the Germany–Poland treaty.
 - **Recognition:** mechatronics is non-regulated, so none is needed.
-- **Supply:** ~13,800 Poles already commute to Brandenburg jobs, ~1,700 of them in machine, metal and building trades (IAB 2020).
-- **Language** is the binding filter: 14% of vocationally trained Poles speak a foreign language well (Eurostat AES 2022). A Polish-speaking freelancer pre-screens applicants.
+- **Supply:** ~13,800 Poles already commute to Brandenburg jobs, ~1,700 of them in machine, metal and building trades (IAB 2020). The border regions have ~18,500 maintenance-type workers (Eurostat 2025: 237,500 industry workers in Lubuskie + Zachodniopomorskie × 7.8%). The plan's 346 applications = 1.9% of them, above the 1.2% response assumed for construction electricians; German pay is the pull, and it is the corridor's main risk. At the 1.2% rate (~219 applications) the budget rises to €132.5k; if only half pass the language check (7%), €130k; if the corridor fails, €155k (model runs; Initiatives row 49, slide 7).
+- **Language** is the binding filter (my estimate, because the ads use trade knock-out questions): 14% of vocationally trained Poles speak a foreign language well (Eurostat AES 2022). A Polish-speaking freelancer pre-screens applicants.
 
 It delivers 18 hires (the 40% cap) at €383 each. Without it the budget would be €155k (slide 7).
 
@@ -250,7 +250,7 @@ Yes. That's why internal promotion is only the fallback for a supervisor shortfa
 None are unexplained. Every input on the Assumptions tab carries one of three labels:
 - **Given (11):** from the brief.
 - **Researched (54):** read from, or calculated by stated arithmetic from, the linked source: costs, rates, pools, reach, timings, volumes.
-- **Own estimate (80):** my judgement, with the reason and the benchmark it starts from where there is one. Examples: pass rates (from Gem's ~35%), acceptance (from Königsteiner's ~77%), the decision rules (cut at 1.5× plan cost, judge after €500 or 30 applications), the 3-day offer.
+- **Own estimate (81):** my judgement, with the reason and the benchmark it starts from where there is one. Examples: pass rates (from Gem's ~35%), acceptance (from Königsteiner's ~77%), the decision rules (cut at 1.5× plan cost, judge after €500 or 30 applications), the 3-day offer.
 
 Calculated cells are in black text: channel caps, rediscovery pool, referral volumes.
 
