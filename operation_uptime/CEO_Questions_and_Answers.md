@@ -66,7 +66,8 @@ The 91–92% figure is a global benchmark. German surveys give 71–78%, so the 
 Because slots are full.
 - A lower pass rate means more qualified applicants per hire, and there are no spare slots to assess them, so money can't buy the hires back: 30% worse → ~71 hires.
 - A lower qualified share or a higher cost per application only costs money (+43% / +30% media), with hires unchanged.
-- *Show:* Funnel rows 41–47, slide 3.
+- Acceptance ties with the pass rate (same arithmetic). I name the pass rate because it depends on the plant's own test, so it is the least known and only readable after interviews; fast offers protect acceptance. Capacity ×0.7 also gives ~71, but 55/week is given in the brief, so it is shown for context, not ranked.
+- *Show:* Funnel rows 41–50, slide 3.
 
 **10. Why must applications arrive by 24 Nov?**
 Work backwards from Fri 18 Dec:

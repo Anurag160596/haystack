@@ -4,7 +4,7 @@ I used Claude (Anthropic) as my analyst. It built the Excel model, generated the
 
 How the output was checked:
 - Every input carries a linked source or a written derivation; nothing is a bare guess.
-- An automated test suite with an independent Python re-implementation ran over 150 scenarios, including edge cases, and changed each of the 218 inputs one at a time. All passed after fixing the bugs it found.
+- An automated test suite with an independent Python re-implementation ran over 152 scenarios, including edge cases, and changed each of the 178 inputs one at a time. All passed after fixing the bugs it found.
 - A deck-vs-model test confirmed the slide figures.
 
 Inputs labelled "Own estimate" are derived by stated arithmetic or rules; I take ownership of them and can defend each line.
