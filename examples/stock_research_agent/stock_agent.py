@@ -5,10 +5,15 @@ There is no single best stock: the answer depends on what you want (growth, valu
 how long you plan to hold. The agent pulls live market data with yfinance, scores candidates on several
 factors, weights those factors by your profile, and explains its reasoning and the risks.
 
+Before recommending anything it also checks:
+- governance and legal: SEC filings, ISS governance scores, and legal headlines. A red flag disqualifies a stock.
+- industry tailwinds and headwinds: sector performance against the S&P 500 and a PESTLE news scan.
+
 This is an educational research tool, not financial advice.
 
 Usage:
     export OPENAI_API_KEY=...
+    export SEC_USER_AGENT="Your Name you@example.com"   # required by SEC EDGAR for the filings check
     python stock_agent.py                         # interactive chat
     python stock_agent.py "Best growth stock among NVDA, MSFT, AMZN?"
 """
@@ -19,6 +24,7 @@ import sys
 from typing import Annotated, Any, Literal
 
 import yfinance as yf
+from due_diligence import RED, governance_check, governance_screen, pestle_scan, sector_moves
 
 from haystack.components.agents import Agent
 from haystack.components.generators.chat import OpenAIChatGenerator
@@ -48,11 +54,22 @@ PROFILE_WEIGHTS: dict[str, dict[str, float]] = {
 FACTOR_METRICS: dict[str, list[tuple[str, bool]]] = {
     "growth": [("revenue_growth", True), ("earnings_growth", True)],
     "profitability": [("profit_margin", True), ("return_on_equity", True)],
-    "valuation": [("forward_pe", False), ("peg_ratio", False), ("price_to_book", False)],
-    "momentum": [("return_1y", True), ("return_6m", True)],
+    "valuation": [
+        ("forward_pe", False),
+        ("peg_ratio", False),
+        ("price_to_book", False),
+        ("ev_to_ebitda", False),
+        ("fcf_yield", True),
+    ],
+    # sector_vs_sp500_6m is the industry tailwind: how the stock's sector has done against the market
+    "momentum": [("return_1y", True), ("return_6m", True), ("sector_vs_sp500_6m", True)],
     "safety": [("volatility", False), ("max_drawdown", True), ("debt_to_equity", False)],
     "yield": [("dividend_yield", True)],
 }
+
+
+# Valuation ratios where a negative value means losses or negative equity, which is worse than any positive value.
+RATIOS_WORST_WHEN_NEGATIVE = {"forward_pe", "peg_ratio", "price_to_book", "ev_to_ebitda"}
 
 
 def _num(value: Any) -> float | None:
@@ -114,6 +131,10 @@ def fetch_metrics(ticker: str) -> dict[str, Any]:
         "forward_pe": _num(info.get("forwardPE")),
         "peg_ratio": _num(info.get("trailingPegRatio") or info.get("pegRatio")),
         "price_to_book": _num(info.get("priceToBook")),
+        "ev_to_ebitda": _num(info.get("enterpriseToEbitda")),
+        "fcf_yield": _num(info.get("freeCashflow")) / _num(info.get("marketCap"))
+        if _num(info.get("freeCashflow")) is not None and _num(info.get("marketCap"))
+        else None,
         "revenue_growth": _num(info.get("revenueGrowth")),
         "earnings_growth": _num(info.get("earningsGrowth")),
         "profit_margin": _num(info.get("profitMargins")),
@@ -123,6 +144,11 @@ def fetch_metrics(ticker: str) -> dict[str, Any]:
         "beta": _num(info.get("beta")),
         "analyst_target_price": _num(info.get("targetMeanPrice")),
         "analyst_recommendation": info.get("recommendationKey"),
+        # ISS governance risk scores, 1 (low risk) to 10 (high risk)
+        **{
+            k: info.get(k)
+            for k in ("overallRisk", "auditRisk", "boardRisk", "compensationRisk", "shareHolderRightsRisk")
+        },
         **_price_stats(closes),
     }
 
@@ -143,7 +169,7 @@ def score_candidates(metrics: list[dict[str, Any]], profile: str = "balanced") -
             v = _num(m.get(metric))
             if v is None:
                 continue
-            if not higher_is_better and metric in {"forward_pe", "peg_ratio", "price_to_book"} and v <= 0:
+            if not higher_is_better and metric in RATIOS_WORST_WHEN_NEGATIVE and v <= 0:
                 v = math.inf
             values[m["ticker"]] = v if higher_is_better else -v
         if len(values) < 2:
@@ -199,8 +225,9 @@ def rank_stocks(
     """
     Rank US stocks for an investor profile.
 
-    Each stock gets 0-100 factor scores (growth, profitability, valuation, momentum, safety, yield) relative to
-    the other candidates, combined into an overall score. Scores are relative to the candidate set, not absolute.
+    Each stock gets 0-100 factor scores (growth, profitability, valuation, momentum including its sector's trend,
+    safety, yield) relative to the other candidates, combined into an overall score. Scores are relative to the
+    candidate set, not absolute. Stocks with a red governance flag in SEC filings are excluded from the ranking.
     """
     universe = [t.upper() for t in tickers] if tickers else DEFAULT_UNIVERSE
     metrics, errors = [], []
@@ -210,15 +237,48 @@ def rank_stocks(
         except Exception as e:
             errors.append(f"{ticker}: {e}")
 
-    ranked = score_candidates(metrics, profile)[:top_n]
+    try:
+        sectors = sector_moves()["sectors"]
+    except Exception as e:
+        sectors = {}
+        errors.append(f"sector moves: {e}")
+    for m in metrics:
+        m["sector_vs_sp500_6m"] = sectors.get(m.get("sector") or "", {}).get("vs_sp500_6m")
+
+    screens = {m["ticker"]: governance_screen(m["ticker"], info=m) for m in metrics}
+    excluded = [
+        {"ticker": t, "red_flags": s["sec"].get("red_flags", [])} for t, s in screens.items() if s["status"] == RED
+    ]
+    eligible = [m for m in metrics if screens[m["ticker"]]["status"] != RED]
+
+    ranked = score_candidates(eligible, profile)[:top_n]
     by_ticker = {m["ticker"]: m for m in metrics}
     for r in ranked:
         m = by_ticker[r["ticker"]]
         r["key_metrics"] = {
             k: m[k]
-            for k in ("sector", "price", "forward_pe", "revenue_growth", "return_1y", "volatility", "dividend_yield")
+            for k in (
+                "sector",
+                "price",
+                "forward_pe",
+                "fcf_yield",
+                "revenue_growth",
+                "return_1y",
+                "sector_vs_sp500_6m",
+                "volatility",
+                "dividend_yield",
+            )
         }
-    return {"profile": profile, "weights": PROFILE_WEIGHTS[profile], "ranking": ranked, "errors": errors}
+        r["governance_screen"] = screens[r["ticker"]]["status"]
+    return {
+        "profile": profile,
+        "weights": PROFILE_WEIGHTS[profile],
+        "ranking": ranked,
+        "excluded_for_governance": excluded,
+        "note": "governance_screen covers SEC filings and ISS scores only; run check_governance_and_legal "
+        "(which adds legal news) on any stock before recommending it",
+        "errors": errors,
+    }
 
 
 @tool
@@ -245,6 +305,47 @@ def get_recent_news(
     return headlines
 
 
+@tool
+def check_governance_and_legal(ticker: Annotated[str, "US stock ticker symbol"]) -> dict[str, Any]:
+    """
+    Run the full governance and legal check on one stock. Required before recommending any stock.
+
+    Checks the last two years of SEC filings (restatements, late filings, auditor changes, delisting and
+    bankruptcy notices), ISS governance risk scores, and legal/regulatory headlines from the last 90 days.
+    Returns status green, amber, red (disqualified) or unverified, with the evidence.
+    """
+    try:
+        return governance_check(ticker)
+    except Exception as e:
+        return {"ticker": ticker, "status": "unverified", "error": str(e)}
+
+
+@tool
+def get_pestle_analysis(
+    topic: Annotated[str, "Industry or company to scan, e.g. 'semiconductor industry' or 'Nvidia'"],
+    days: Annotated[int, "How many days of news to look back"] = 30,
+) -> dict[str, Any]:
+    """
+    Get recent PESTLE headlines for an industry or company, to judge its tailwinds and headwinds.
+
+    Covers the political, economic, social, technological, legal and environmental dimensions.
+    """
+    return pestle_scan(topic, days=days)
+
+
+@tool
+def get_sector_moves() -> dict[str, Any]:
+    """
+    Get how each US sector has moved against the S&P 500, to see which industries lead or lag.
+
+    Returns 1-month, 3-month, 6-month and 1-year returns of each sector ETF and SPY, and each sector's lead or lag.
+    """
+    try:
+        return sector_moves()
+    except Exception as e:
+        return {"error": str(e)}
+
+
 SYSTEM_PROMPT = """You are a careful equity research assistant for the US stock market.
 
 Your job is to help the user understand which stock looks best *for them*, and why.
@@ -252,11 +353,24 @@ Your job is to help the user understand which stock looks best *for them*, and w
 How to work:
 1. "Best" depends on goals. If the user hasn't said, briefly ask (or assume "balanced" and say so):
    growth, value, income, or low risk; and their time horizon.
-2. Use `rank_stocks` to compare candidates (the user's tickers, or the default large-cap screen).
-3. Use `get_stock_snapshot` and `get_recent_news` to dig into the top 2-3 before concluding.
-4. Give a clear answer: your top pick for the stated profile, the runner-ups, and why, citing the numbers.
-5. Always cover the risks and what would make the pick wrong (valuation, concentration, drawdowns, news).
-6. Explain jargon in plain language. Scores are relative to the candidate set; say so.
+2. Use `get_sector_moves` to see which industries are leading or lagging the market.
+3. Use `rank_stocks` to compare candidates (the user's tickers, or the default large-cap screen).
+4. For the top 2-3, use `get_stock_snapshot`, `get_recent_news`, `check_governance_and_legal`, and
+   `get_pestle_analysis` on the stock's industry.
+5. Give a clear answer: your top pick for the stated profile, the runners-up, and why, citing the numbers.
+6. For each pick, give:
+   - Governance & legal: the status and every flag found, in plain language.
+   - Industry tailwinds and headwinds: the sector's trend against the market, and a short PESTLE summary that
+     labels each relevant point as a tailwind or headwind. Only cite headlines the tools returned.
+   - Risks and what would make the pick wrong (valuation, concentration, drawdowns, news).
+7. Explain jargon in plain language. Scores are relative to the candidate set; say so.
+
+Governance rules (non-negotiable):
+- Never recommend a stock you have not run `check_governance_and_legal` on.
+- A "red" status disqualifies the stock, however well it scores. Say it was excluded and why.
+- An "amber" stock can only be recommended if you explain every amber flag and why you judge it acceptable.
+  Ongoing fraud, accounting, or criminal matters are not acceptable.
+- If a check is "unverified", say which part could not be checked. Never describe the company as clean.
 
 Rules:
 - Use only data returned by tools; never invent figures. Note missing or stale data.
@@ -270,10 +384,17 @@ def build_agent(model: str = "gpt-5-mini") -> Agent:
     """Create the stock research agent with its tools and system prompt."""
     return Agent(
         chat_generator=OpenAIChatGenerator(model=model),
-        tools=[rank_stocks, get_stock_snapshot, get_recent_news],
+        tools=[
+            rank_stocks,
+            get_stock_snapshot,
+            get_recent_news,
+            check_governance_and_legal,
+            get_pestle_analysis,
+            get_sector_moves,
+        ],
         system_prompt=SYSTEM_PROMPT,
         streaming_callback=print_streaming_chunk,
-        max_agent_steps=20,
+        max_agent_steps=30,
     )
 
 
