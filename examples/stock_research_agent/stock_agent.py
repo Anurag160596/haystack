@@ -25,6 +25,7 @@ from typing import Annotated, Any, Literal
 
 import yfinance as yf
 from due_diligence import RED, governance_check, governance_screen, pestle_scan, sector_moves
+from nasdaq_data import market_overview, stock_summary
 
 from haystack.components.agents import Agent
 from haystack.components.generators.chat import OpenAIChatGenerator
@@ -334,6 +335,31 @@ def get_pestle_analysis(
 
 
 @tool
+def get_nasdaq_market_overview() -> dict[str, Any]:
+    """
+    Read the Nasdaq market from Nasdaq's own data before ranking stocks.
+
+    Returns Nasdaq Composite and Nasdaq-100 levels and daily change, market status, the biggest Nasdaq-100 movers,
+    and the most-traded stocks by dollar volume.
+    """
+    return market_overview()
+
+
+@tool
+def get_nasdaq_stock_summary(ticker: Annotated[str, "US stock ticker symbol"]) -> dict[str, Any]:
+    """
+    Get Nasdaq's quote and summary for one stock.
+
+    Includes last price and daily move, listing exchange, Nasdaq-100 membership, Nasdaq's 1-year price target,
+    52-week range and volume. Use it to cross-check Yahoo Finance figures.
+    """
+    try:
+        return stock_summary(ticker)
+    except Exception as e:
+        return {"ticker": ticker, "error": str(e)}
+
+
+@tool
 def get_sector_moves() -> dict[str, Any]:
     """
     Get how each US sector has moved against the S&P 500, to see which industries lead or lag.
@@ -353,10 +379,11 @@ Your job is to help the user understand which stock looks best *for them*, and w
 How to work:
 1. "Best" depends on goals. If the user hasn't said, briefly ask (or assume "balanced" and say so):
    growth, value, income, or low risk; and their time horizon.
-2. Use `get_sector_moves` to see which industries are leading or lagging the market.
+2. Use `get_nasdaq_market_overview` and `get_sector_moves` to read the market first: how the Nasdaq and the
+   S&P 500 moved, what is driving the biggest moves, and which industries lead or lag.
 3. Use `rank_stocks` to compare candidates (the user's tickers, or the default large-cap screen).
-4. For the top 2-3, use `get_stock_snapshot`, `get_recent_news`, `check_governance_and_legal`, and
-   `get_pestle_analysis` on the stock's industry.
+4. For the top 2-3, use `get_stock_snapshot`, `get_nasdaq_stock_summary`, `get_recent_news`,
+   `check_governance_and_legal`, and `get_pestle_analysis` on the stock's industry.
 5. Give a clear answer: your top pick for the stated profile, the runners-up, and why, citing the numbers.
 6. For each pick, give:
    - Governance & legal: the status and every flag found, in plain language.
@@ -391,6 +418,8 @@ def build_agent(model: str = "gpt-5-mini") -> Agent:
             check_governance_and_legal,
             get_pestle_analysis,
             get_sector_moves,
+            get_nasdaq_market_overview,
+            get_nasdaq_stock_summary,
         ],
         system_prompt=SYSTEM_PROMPT,
         streaming_callback=print_streaming_chunk,

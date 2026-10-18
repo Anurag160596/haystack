@@ -6,8 +6,10 @@ and explains why.
 There is no single "best stock". The agent asks (or assumes) your profile — `balanced`, `growth`, `value`,
 `income` or `low_risk` — then:
 
-1. **Reads the market** (`get_sector_moves`): each sector's 1-month to 1-year return against the S&P 500, to see
-   which industries have a tailwind and which are under pressure.
+1. **Reads the market** (`get_nasdaq_market_overview`, `get_sector_moves`): Nasdaq Composite and Nasdaq-100 moves,
+   how many Nasdaq-100 stocks rose or fell, the biggest Nasdaq-100 movers, and the most-traded stocks, all from
+   Nasdaq's own data. Also each sector's 1-month to 1-year return against the S&P 500, to see which industries
+   have a tailwind and which are under pressure.
 2. **Ranks candidates** (`rank_stocks`): your tickers, or a default screen of 30 large caps. Each stock gets 0-100
    scores, relative to the others, on growth, profitability, valuation (including EV/EBITDA and free-cash-flow
    yield), momentum (including its sector's trend), safety and dividend yield. The scores are then weighted by
@@ -25,12 +27,14 @@ There is no single "best stock". The agent asks (or assumes) your profile — `b
    check couldn't run ("unverified").
 4. **Scans the industry with PESTLE** (`get_pestle_analysis`): recent political, economic, social, technological,
    legal and environmental headlines. The agent labels each point as a tailwind or a headwind.
-5. **Looks closer at the leaders** (`get_stock_snapshot`, `get_recent_news`).
+5. **Looks closer at the leaders** (`get_stock_snapshot`, `get_nasdaq_stock_summary`, `get_recent_news`). Nasdaq's
+   quote, price target and 52-week range cross-check the Yahoo Finance figures.
 6. **Explains** its top pick, the runners-up, the governance status, the industry tailwinds and headwinds, and
    the risks, in plain language.
 
 Data sources are all free:
 - prices and fundamentals: Yahoo Finance via `yfinance`
+- market moves and quotes: Nasdaq (api.nasdaq.com)
 - filings: SEC EDGAR
 - headlines: Google News RSS
 
